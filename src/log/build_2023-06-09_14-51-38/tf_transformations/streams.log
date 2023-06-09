@@ -1,0 +1,19 @@
+[0.893s] Invoking command in '/home/kim/lostchild/src/tf_transformations': PYTHONPATH=/home/kim/lostchild/src/build/tf_transformations/prefix_override:/home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/tf_transformations build --build-base /home/kim/lostchild/src/build/tf_transformations/build install --record /home/kim/lostchild/src/build/tf_transformations/install.log --single-version-externally-managed
+[1.062s] running egg_info
+[1.062s] writing ../build/tf_transformations/tf_transformations.egg-info/PKG-INFO
+[1.062s] writing dependency_links to ../build/tf_transformations/tf_transformations.egg-info/dependency_links.txt
+[1.062s] writing requirements to ../build/tf_transformations/tf_transformations.egg-info/requires.txt
+[1.062s] writing top-level names to ../build/tf_transformations/tf_transformations.egg-info/top_level.txt
+[1.088s] reading manifest file '../build/tf_transformations/tf_transformations.egg-info/SOURCES.txt'
+[1.088s] writing manifest file '../build/tf_transformations/tf_transformations.egg-info/SOURCES.txt'
+[1.088s] running build
+[1.088s] running build_py
+[1.089s] running install
+[1.089s] running install_lib
+[1.090s] running install_data
+[1.090s] running install_egg_info
+[1.091s] removing '/home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages/tf_transformations-1.0.0-py3.8.egg-info' (and everything under it)
+[1.091s] Copying ../build/tf_transformations/tf_transformations.egg-info to /home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages/tf_transformations-1.0.0-py3.8.egg-info
+[1.092s] running install_scripts
+[1.103s] writing list of installed files to '/home/kim/lostchild/src/build/tf_transformations/install.log'
+[1.121s] Invoked command in '/home/kim/lostchild/src/tf_transformations' returned '0': PYTHONPATH=/home/kim/lostchild/src/build/tf_transformations/prefix_override:/home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/tf_transformations build --build-base /home/kim/lostchild/src/build/tf_transformations/build install --record /home/kim/lostchild/src/build/tf_transformations/install.log --single-version-externally-managed

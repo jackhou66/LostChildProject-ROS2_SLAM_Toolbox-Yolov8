@@ -1,0 +1,20 @@
+[0.859s] Invoking command in '/home/kim/lostchild/src/static_tf': PYTHONPATH=/home/kim/lostchild/src/build/static_tf/prefix_override:/home/kim/lostchild/src/install/static_tf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/static_tf build --build-base /home/kim/lostchild/src/build/static_tf/build install --record /home/kim/lostchild/src/build/static_tf/install.log --install-scripts $base/lib/static_tf --single-version-externally-managed
+[1.033s] running egg_info
+[1.033s] writing ../build/static_tf/static_tf.egg-info/PKG-INFO
+[1.033s] writing dependency_links to ../build/static_tf/static_tf.egg-info/dependency_links.txt
+[1.033s] writing entry points to ../build/static_tf/static_tf.egg-info/entry_points.txt
+[1.033s] writing requirements to ../build/static_tf/static_tf.egg-info/requires.txt
+[1.033s] writing top-level names to ../build/static_tf/static_tf.egg-info/top_level.txt
+[1.059s] reading manifest file '../build/static_tf/static_tf.egg-info/SOURCES.txt'
+[1.059s] writing manifest file '../build/static_tf/static_tf.egg-info/SOURCES.txt'
+[1.060s] running build
+[1.060s] running build_py
+[1.060s] running install
+[1.060s] running install_lib
+[1.061s] running install_data
+[1.061s] running install_egg_info
+[1.062s] removing '/home/kim/lostchild/src/install/static_tf/lib/python3.8/site-packages/static_tf-0.0.0-py3.8.egg-info' (and everything under it)
+[1.063s] Copying ../build/static_tf/static_tf.egg-info to /home/kim/lostchild/src/install/static_tf/lib/python3.8/site-packages/static_tf-0.0.0-py3.8.egg-info
+[1.063s] running install_scripts
+[1.075s] writing list of installed files to '/home/kim/lostchild/src/build/static_tf/install.log'
+[1.093s] Invoked command in '/home/kim/lostchild/src/static_tf' returned '0': PYTHONPATH=/home/kim/lostchild/src/build/static_tf/prefix_override:/home/kim/lostchild/src/install/static_tf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/static_tf build --build-base /home/kim/lostchild/src/build/static_tf/build install --record /home/kim/lostchild/src/build/static_tf/install.log --install-scripts $base/lib/static_tf --single-version-externally-managed

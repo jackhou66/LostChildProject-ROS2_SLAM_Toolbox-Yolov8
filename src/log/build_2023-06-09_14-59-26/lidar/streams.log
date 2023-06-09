@@ -1,0 +1,20 @@
+[0.878s] Invoking command in '/home/kim/lostchild/src/lidar': PYTHONPATH=/home/kim/lostchild/src/build/lidar/prefix_override:/home/kim/lostchild/src/install/lidar/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/lidar build --build-base /home/kim/lostchild/src/build/lidar/build install --record /home/kim/lostchild/src/build/lidar/install.log --install-scripts $base/lib/lidar --single-version-externally-managed
+[1.044s] running egg_info
+[1.044s] writing ../build/lidar/lidar.egg-info/PKG-INFO
+[1.044s] writing dependency_links to ../build/lidar/lidar.egg-info/dependency_links.txt
+[1.044s] writing entry points to ../build/lidar/lidar.egg-info/entry_points.txt
+[1.044s] writing requirements to ../build/lidar/lidar.egg-info/requires.txt
+[1.044s] writing top-level names to ../build/lidar/lidar.egg-info/top_level.txt
+[1.071s] reading manifest file '../build/lidar/lidar.egg-info/SOURCES.txt'
+[1.072s] writing manifest file '../build/lidar/lidar.egg-info/SOURCES.txt'
+[1.072s] running build
+[1.072s] running build_py
+[1.072s] running install
+[1.073s] running install_lib
+[1.074s] running install_data
+[1.074s] running install_egg_info
+[1.075s] removing '/home/kim/lostchild/src/install/lidar/lib/python3.8/site-packages/lidar-0.0.0-py3.8.egg-info' (and everything under it)
+[1.075s] Copying ../build/lidar/lidar.egg-info to /home/kim/lostchild/src/install/lidar/lib/python3.8/site-packages/lidar-0.0.0-py3.8.egg-info
+[1.076s] running install_scripts
+[1.088s] writing list of installed files to '/home/kim/lostchild/src/build/lidar/install.log'
+[1.119s] Invoked command in '/home/kim/lostchild/src/lidar' returned '0': PYTHONPATH=/home/kim/lostchild/src/build/lidar/prefix_override:/home/kim/lostchild/src/install/lidar/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/lidar build --build-base /home/kim/lostchild/src/build/lidar/build install --record /home/kim/lostchild/src/build/lidar/install.log --install-scripts $base/lib/lidar --single-version-externally-managed

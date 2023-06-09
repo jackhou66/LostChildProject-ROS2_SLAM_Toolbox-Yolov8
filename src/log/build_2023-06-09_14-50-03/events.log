@@ -1,0 +1,1526 @@
+[0.000000] (-) TimerEvent: {}
+[0.000512] (lidar) JobQueued: {'identifier': 'lidar', 'dependencies': OrderedDict()}
+[0.000547] (slam_toolbox) JobQueued: {'identifier': 'slam_toolbox', 'dependencies': OrderedDict()}
+[0.000571] (static_tf) JobQueued: {'identifier': 'static_tf', 'dependencies': OrderedDict()}
+[0.000590] (tf_transformations) JobQueued: {'identifier': 'tf_transformations', 'dependencies': OrderedDict()}
+[0.000606] (robot_localization) JobQueued: {'identifier': 'robot_localization', 'dependencies': OrderedDict([('tf_transformations', '/home/kim/lostchild/src/install/tf_transformations')])}
+[0.000624] (tf_transformations) JobStarted: {'identifier': 'tf_transformations'}
+[0.012483] (lidar) JobStarted: {'identifier': 'lidar'}
+[0.022853] (slam_toolbox) JobStarted: {'identifier': 'slam_toolbox'}
+[0.029678] (static_tf) JobStarted: {'identifier': 'static_tf'}
+[0.099810] (-) TimerEvent: {}
+[0.200125] (-) TimerEvent: {}
+[0.300409] (-) TimerEvent: {}
+[0.400706] (-) TimerEvent: {}
+[0.403547] (slam_toolbox) JobProgress: {'identifier': 'slam_toolbox', 'progress': 'cmake'}
+[0.403975] (slam_toolbox) Command: {'cmd': ['/usr/local/bin/cmake', '/home/kim/lostchild/src/slam_toolbox-foxy-devel', '-DCMAKE_INSTALL_PREFIX=/home/kim/lostchild/src/install/slam_toolbox'], 'cwd': '/home/kim/lostchild/src/build/slam_toolbox', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'kim'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_NAMESPACE', 'robot1'), ('SSH_AGENT_PID', '2357'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}]: {message}'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kim'), ('OLDPWD', '/home/kim/lostchild'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2176'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '13810'), ('_colcon_cd_root', '/home/kim/robot_ws'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/kim/robot_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kim'), ('JOURNAL_STREAM', '8:44987'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'kim'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/kim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kim-MS-7C92:@/tmp/.ICE-unix/2393,unix/kim-MS-7C92:/tmp/.ICE-unix/2393'), ('INVOCATION_ID', 'e792ec723ace4ec1ac0f69599d3dc9db'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/home/kim/robot_ws/install/lidar:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:5c07853e-65b2-4968-a99d-4ef92c27ea5c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/kim/lostchild/src/build/slam_toolbox'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kim/robot_ws/install/lidar/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/kim/robot_ws/install/lidar:/opt/ros/foxy')]), 'shell': False}
+[0.500857] (-) TimerEvent: {}
+[0.589662] (slam_toolbox) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.590093] (slam_toolbox) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.591105] (slam_toolbox) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.591346] (slam_toolbox) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.595247] (slam_toolbox) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.595649] (slam_toolbox) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.595980] (slam_toolbox) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.599357] (slam_toolbox) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600907] (-) TimerEvent: {}
+[0.645170] (slam_toolbox) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.654310] (slam_toolbox) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.654623] (slam_toolbox) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.655121] (slam_toolbox) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.659004] (slam_toolbox) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.680379] (slam_toolbox) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.680537] (slam_toolbox) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.700980] (-) TimerEvent: {}
+[0.801202] (-) TimerEvent: {}
+[0.871665] (slam_toolbox) StdoutLine: {'line': b'-- Found message_filters: 3.2.5 (/opt/ros/foxy/share/message_filters/cmake)\n'}
+[0.875949] (lidar) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/lidar', 'build', '--build-base', '/home/kim/lostchild/src/build/lidar/build', 'install', '--record', '/home/kim/lostchild/src/build/lidar/install.log', '--install-scripts', '$base/lib/lidar', '--single-version-externally-managed'], 'cwd': '/home/kim/lostchild/src/lidar', 'env': {'RCUTILS_LOGGING_BUFFERED_STREAM': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'kim', 'LC_TIME': 'ko_KR.UTF-8', 'ROS_NAMESPACE': 'robot1', 'SSH_AGENT_PID': '2357', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'RCUTILS_CONSOLE_OUTPUT_FORMAT': '[{severity}]: {message}', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/kim', 'OLDPWD': '/home/kim/lostchild', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '2176', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '13810', '_colcon_cd_root': '/home/kim/robot_ws', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/kim/robot_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'kim', 'JOURNAL_STREAM': '8:44987', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'kim', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/kim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/kim-MS-7C92:@/tmp/.ICE-unix/2393,unix/kim-MS-7C92:/tmp/.ICE-unix/2393', 'INVOCATION_ID': 'e792ec723ace4ec1ac0f69599d3dc9db', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/home/kim/robot_ws/install/lidar:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:5c07853e-65b2-4968-a99d-4ef92c27ea5c', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'RCUTILS_LOGGING_USE_STDOUT': '0', 'PWD': '/home/kim/lostchild/src/build/lidar', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'RCUTILS_COLORIZED_OUTPUT': '1', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/kim/lostchild/src/build/lidar/prefix_override:/home/kim/lostchild/src/install/lidar/lib/python3.8/site-packages:/home/kim/robot_ws/install/lidar/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[0.878802] (slam_toolbox) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[0.880964] (static_tf) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/static_tf', 'build', '--build-base', '/home/kim/lostchild/src/build/static_tf/build', 'install', '--record', '/home/kim/lostchild/src/build/static_tf/install.log', '--install-scripts', '$base/lib/static_tf', '--single-version-externally-managed'], 'cwd': '/home/kim/lostchild/src/static_tf', 'env': {'RCUTILS_LOGGING_BUFFERED_STREAM': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'kim', 'LC_TIME': 'ko_KR.UTF-8', 'ROS_NAMESPACE': 'robot1', 'SSH_AGENT_PID': '2357', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'RCUTILS_CONSOLE_OUTPUT_FORMAT': '[{severity}]: {message}', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/kim', 'OLDPWD': '/home/kim/lostchild', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '2176', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '13810', '_colcon_cd_root': '/home/kim/robot_ws', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/kim/robot_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'kim', 'JOURNAL_STREAM': '8:44987', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'kim', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/kim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/kim-MS-7C92:@/tmp/.ICE-unix/2393,unix/kim-MS-7C92:/tmp/.ICE-unix/2393', 'INVOCATION_ID': 'e792ec723ace4ec1ac0f69599d3dc9db', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/home/kim/robot_ws/install/lidar:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:5c07853e-65b2-4968-a99d-4ef92c27ea5c', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'RCUTILS_LOGGING_USE_STDOUT': '0', 'PWD': '/home/kim/lostchild/src/build/static_tf', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'RCUTILS_COLORIZED_OUTPUT': '1', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/kim/lostchild/src/build/static_tf/prefix_override:/home/kim/lostchild/src/install/static_tf/lib/python3.8/site-packages:/home/kim/robot_ws/install/lidar/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[0.884056] (tf_transformations) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/tf_transformations', 'build', '--build-base', '/home/kim/lostchild/src/build/tf_transformations/build', 'install', '--record', '/home/kim/lostchild/src/build/tf_transformations/install.log', '--single-version-externally-managed'], 'cwd': '/home/kim/lostchild/src/tf_transformations', 'env': {'RCUTILS_LOGGING_BUFFERED_STREAM': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'kim', 'LC_TIME': 'ko_KR.UTF-8', 'ROS_NAMESPACE': 'robot1', 'SSH_AGENT_PID': '2357', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'RCUTILS_CONSOLE_OUTPUT_FORMAT': '[{severity}]: {message}', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/kim', 'OLDPWD': '/home/kim/lostchild', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '2176', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '13810', '_colcon_cd_root': '/home/kim/robot_ws', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/kim/robot_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'kim', 'JOURNAL_STREAM': '8:44987', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'kim', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/kim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/kim-MS-7C92:@/tmp/.ICE-unix/2393,unix/kim-MS-7C92:/tmp/.ICE-unix/2393', 'INVOCATION_ID': 'e792ec723ace4ec1ac0f69599d3dc9db', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/home/kim/robot_ws/install/lidar:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:5c07853e-65b2-4968-a99d-4ef92c27ea5c', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'RCUTILS_LOGGING_USE_STDOUT': '0', 'PWD': '/home/kim/lostchild/src/build/tf_transformations', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'RCUTILS_COLORIZED_OUTPUT': '1', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/kim/lostchild/src/build/tf_transformations/prefix_override:/home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages:/home/kim/robot_ws/install/lidar/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[0.901276] (-) TimerEvent: {}
+[0.922672] (slam_toolbox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.928842] (slam_toolbox) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.983666] (slam_toolbox) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.001344] (-) TimerEvent: {}
+[1.009122] (slam_toolbox) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.049831] (lidar) StdoutLine: {'line': b'running egg_info\n'}
+[1.050086] (lidar) StdoutLine: {'line': b'creating ../build/lidar/lidar.egg-info\n'}
+[1.050227] (lidar) StdoutLine: {'line': b'writing ../build/lidar/lidar.egg-info/PKG-INFO\n'}
+[1.050373] (lidar) StdoutLine: {'line': b'writing dependency_links to ../build/lidar/lidar.egg-info/dependency_links.txt\n'}
+[1.050469] (lidar) StdoutLine: {'line': b'writing entry points to ../build/lidar/lidar.egg-info/entry_points.txt\n'}
+[1.050579] (lidar) StdoutLine: {'line': b'writing requirements to ../build/lidar/lidar.egg-info/requires.txt\n'}
+[1.050655] (lidar) StdoutLine: {'line': b'writing top-level names to ../build/lidar/lidar.egg-info/top_level.txt\n'}
+[1.050757] (tf_transformations) StdoutLine: {'line': b'running egg_info\n'}
+[1.050997] (tf_transformations) StdoutLine: {'line': b'creating ../build/tf_transformations/tf_transformations.egg-info\n'}
+[1.051125] (tf_transformations) StdoutLine: {'line': b'writing ../build/tf_transformations/tf_transformations.egg-info/PKG-INFO\n'}
+[1.051274] (tf_transformations) StdoutLine: {'line': b'writing dependency_links to ../build/tf_transformations/tf_transformations.egg-info/dependency_links.txt\n'}
+[1.051369] (tf_transformations) StdoutLine: {'line': b'writing requirements to ../build/tf_transformations/tf_transformations.egg-info/requires.txt\n'}
+[1.051466] (tf_transformations) StdoutLine: {'line': b'writing top-level names to ../build/tf_transformations/tf_transformations.egg-info/top_level.txt\n'}
+[1.051568] (lidar) StdoutLine: {'line': b"writing manifest file '../build/lidar/lidar.egg-info/SOURCES.txt'\n"}
+[1.052238] (tf_transformations) StdoutLine: {'line': b"writing manifest file '../build/tf_transformations/tf_transformations.egg-info/SOURCES.txt'\n"}
+[1.056783] (static_tf) StdoutLine: {'line': b'running egg_info\n'}
+[1.057116] (static_tf) StdoutLine: {'line': b'creating ../build/static_tf/static_tf.egg-info\n'}
+[1.057243] (static_tf) StdoutLine: {'line': b'writing ../build/static_tf/static_tf.egg-info/PKG-INFO\n'}
+[1.057393] (static_tf) StdoutLine: {'line': b'writing dependency_links to ../build/static_tf/static_tf.egg-info/dependency_links.txt\n'}
+[1.057502] (static_tf) StdoutLine: {'line': b'writing entry points to ../build/static_tf/static_tf.egg-info/entry_points.txt\n'}
+[1.057605] (static_tf) StdoutLine: {'line': b'writing requirements to ../build/static_tf/static_tf.egg-info/requires.txt\n'}
+[1.057682] (static_tf) StdoutLine: {'line': b'writing top-level names to ../build/static_tf/static_tf.egg-info/top_level.txt\n'}
+[1.058388] (static_tf) StdoutLine: {'line': b"writing manifest file '../build/static_tf/static_tf.egg-info/SOURCES.txt'\n"}
+[1.076054] (lidar) StdoutLine: {'line': b"reading manifest file '../build/lidar/lidar.egg-info/SOURCES.txt'\n"}
+[1.076500] (lidar) StdoutLine: {'line': b"writing manifest file '../build/lidar/lidar.egg-info/SOURCES.txt'\n"}
+[1.076596] (lidar) StdoutLine: {'line': b'running build\n'}
+[1.076652] (lidar) StdoutLine: {'line': b'running build_py\n'}
+[1.076744] (lidar) StdoutLine: {'line': b'creating /home/kim/lostchild/src/build/lidar/build\n'}
+[1.076800] (lidar) StdoutLine: {'line': b'creating /home/kim/lostchild/src/build/lidar/build/lib\n'}
+[1.076849] (lidar) StdoutLine: {'line': b'creating /home/kim/lostchild/src/build/lidar/build/lib/lidar\n'}
+[1.076935] (lidar) StdoutLine: {'line': b'copying lidar/__init__.py -> /home/kim/lostchild/src/build/lidar/build/lib/lidar\n'}
+[1.076987] (lidar) StdoutLine: {'line': b'copying lidar/lidar.py -> /home/kim/lostchild/src/build/lidar/build/lib/lidar\n'}
+[1.077035] (lidar) StdoutLine: {'line': b'copying lidar/lidar_subscriber.py -> /home/kim/lostchild/src/build/lidar/build/lib/lidar\n'}
+[1.077102] (tf_transformations) StdoutLine: {'line': b"reading manifest file '../build/tf_transformations/tf_transformations.egg-info/SOURCES.txt'\n"}
+[1.077179] (lidar) StdoutLine: {'line': b'running install\n'}
+[1.077301] (tf_transformations) StdoutLine: {'line': b"writing manifest file '../build/tf_transformations/tf_transformations.egg-info/SOURCES.txt'\n"}
+[1.077365] (tf_transformations) StdoutLine: {'line': b'running build\n'}
+[1.077430] (tf_transformations) StdoutLine: {'line': b'running build_py\n'}
+[1.077499] (tf_transformations) StdoutLine: {'line': b'creating /home/kim/lostchild/src/build/tf_transformations/build\n'}
+[1.077567] (lidar) StdoutLine: {'line': b'running install_lib\n'}
+[1.077646] (tf_transformations) StdoutLine: {'line': b'creating /home/kim/lostchild/src/build/tf_transformations/build/lib\n'}
+[1.077726] (tf_transformations) StdoutLine: {'line': b'creating /home/kim/lostchild/src/build/tf_transformations/build/lib/tf_transformations\n'}
+[1.077775] (tf_transformations) StdoutLine: {'line': b'copying tf_transformations/__init__.py -> /home/kim/lostchild/src/build/tf_transformations/build/lib/tf_transformations\n'}
+[1.077847] (tf_transformations) StdoutLine: {'line': b'running install\n'}
+[1.078141] (lidar) StdoutLine: {'line': b'creating /home/kim/lostchild/src/install/lidar/lib/python3.8/site-packages/lidar\n'}
+[1.078207] (lidar) StdoutLine: {'line': b'copying /home/kim/lostchild/src/build/lidar/build/lib/lidar/__init__.py -> /home/kim/lostchild/src/install/lidar/lib/python3.8/site-packages/lidar\n'}
+[1.078272] (lidar) StdoutLine: {'line': b'copying /home/kim/lostchild/src/build/lidar/build/lib/lidar/lidar.py -> /home/kim/lostchild/src/install/lidar/lib/python3.8/site-packages/lidar\n'}
+[1.078368] (tf_transformations) StdoutLine: {'line': b'running install_lib\n'}
+[1.078418] (lidar) StdoutLine: {'line': b'copying /home/kim/lostchild/src/build/lidar/build/lib/lidar/lidar_subscriber.py -> /home/kim/lostchild/src/install/lidar/lib/python3.8/site-packages/lidar\n'}
+[1.078655] (lidar) StdoutLine: {'line': b'byte-compiling /home/kim/lostchild/src/install/lidar/lib/python3.8/site-packages/lidar/__init__.py to __init__.cpython-38.pyc\n'}
+[1.078980] (tf_transformations) StdoutLine: {'line': b'creating /home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages/tf_transformations\n'}
+[1.079055] (tf_transformations) StdoutLine: {'line': b'copying /home/kim/lostchild/src/build/tf_transformations/build/lib/tf_transformations/__init__.py -> /home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages/tf_transformations\n'}
+[1.079389] (lidar) StdoutLine: {'line': b'byte-compiling /home/kim/lostchild/src/install/lidar/lib/python3.8/site-packages/lidar/lidar.py to lidar.cpython-38.pyc\n'}
+[1.079467] (tf_transformations) StdoutLine: {'line': b'byte-compiling /home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages/tf_transformations/__init__.py to __init__.cpython-38.pyc\n'}
+[1.079738] (lidar) StdoutLine: {'line': b'byte-compiling /home/kim/lostchild/src/install/lidar/lib/python3.8/site-packages/lidar/lidar_subscriber.py to lidar_subscriber.cpython-38.pyc\n'}
+[1.079965] (lidar) StdoutLine: {'line': b'running install_data\n'}
+[1.080297] (lidar) StdoutLine: {'line': b'creating /home/kim/lostchild/src/install/lidar/share/ament_index\n'}
+[1.080372] (lidar) StdoutLine: {'line': b'creating /home/kim/lostchild/src/install/lidar/share/ament_index/resource_index\n'}
+[1.080458] (lidar) StdoutLine: {'line': b'creating /home/kim/lostchild/src/install/lidar/share/ament_index/resource_index/packages\n'}
+[1.080509] (lidar) StdoutLine: {'line': b'copying resource/lidar -> /home/kim/lostchild/src/install/lidar/share/ament_index/resource_index/packages\n'}
+[1.080558] (lidar) StdoutLine: {'line': b'copying package.xml -> /home/kim/lostchild/src/install/lidar/share/lidar\n'}
+[1.080628] (lidar) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.081801] (lidar) StdoutLine: {'line': b'Copying ../build/lidar/lidar.egg-info to /home/kim/lostchild/src/install/lidar/lib/python3.8/site-packages/lidar-0.0.0-py3.8.egg-info\n'}
+[1.082309] (lidar) StdoutLine: {'line': b'running install_scripts\n'}
+[1.082896] (static_tf) StdoutLine: {'line': b"reading manifest file '../build/static_tf/static_tf.egg-info/SOURCES.txt'\n"}
+[1.083065] (slam_toolbox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.083361] (tf_transformations) StdoutLine: {'line': b'running install_data\n'}
+[1.083466] (static_tf) StdoutLine: {'line': b"writing manifest file '../build/static_tf/static_tf.egg-info/SOURCES.txt'\n"}
+[1.083535] (static_tf) StdoutLine: {'line': b'running build\n'}
+[1.083632] (static_tf) StdoutLine: {'line': b'running build_py\n'}
+[1.083698] (static_tf) StdoutLine: {'line': b'creating /home/kim/lostchild/src/build/static_tf/build\n'}
+[1.083756] (static_tf) StdoutLine: {'line': b'creating /home/kim/lostchild/src/build/static_tf/build/lib\n'}
+[1.083811] (static_tf) StdoutLine: {'line': b'creating /home/kim/lostchild/src/build/static_tf/build/lib/static_tf\n'}
+[1.083865] (static_tf) StdoutLine: {'line': b'copying static_tf/__init__.py -> /home/kim/lostchild/src/build/static_tf/build/lib/static_tf\n'}
+[1.083953] (static_tf) StdoutLine: {'line': b'running install\n'}
+[1.084000] (tf_transformations) StdoutLine: {'line': b'creating /home/kim/lostchild/src/install/tf_transformations/share/ament_index\n'}
+[1.084086] (tf_transformations) StdoutLine: {'line': b'creating /home/kim/lostchild/src/install/tf_transformations/share/ament_index/resource_index\n'}
+[1.084137] (tf_transformations) StdoutLine: {'line': b'creating /home/kim/lostchild/src/install/tf_transformations/share/ament_index/resource_index/packages\n'}
+[1.084184] (tf_transformations) StdoutLine: {'line': b'copying resource/tf_transformations -> /home/kim/lostchild/src/install/tf_transformations/share/ament_index/resource_index/packages\n'}
+[1.084240] (tf_transformations) StdoutLine: {'line': b'copying package.xml -> /home/kim/lostchild/src/install/tf_transformations/share/tf_transformations\n'}
+[1.084334] (tf_transformations) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.084385] (static_tf) StdoutLine: {'line': b'running install_lib\n'}
+[1.084831] (static_tf) StdoutLine: {'line': b'creating /home/kim/lostchild/src/install/static_tf/lib/python3.8/site-packages/static_tf\n'}
+[1.084900] (static_tf) StdoutLine: {'line': b'copying /home/kim/lostchild/src/build/static_tf/build/lib/static_tf/__init__.py -> /home/kim/lostchild/src/install/static_tf/lib/python3.8/site-packages/static_tf\n'}
+[1.085016] (tf_transformations) StdoutLine: {'line': b'Copying ../build/tf_transformations/tf_transformations.egg-info to /home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages/tf_transformations-1.0.0-py3.8.egg-info\n'}
+[1.085208] (static_tf) StdoutLine: {'line': b'byte-compiling /home/kim/lostchild/src/install/static_tf/lib/python3.8/site-packages/static_tf/__init__.py to __init__.cpython-38.pyc\n'}
+[1.085532] (tf_transformations) StdoutLine: {'line': b'running install_scripts\n'}
+[1.085919] (static_tf) StdoutLine: {'line': b'running install_data\n'}
+[1.086245] (static_tf) StdoutLine: {'line': b'creating /home/kim/lostchild/src/install/static_tf/share/ament_index\n'}
+[1.086329] (static_tf) StdoutLine: {'line': b'creating /home/kim/lostchild/src/install/static_tf/share/ament_index/resource_index\n'}
+[1.086419] (static_tf) StdoutLine: {'line': b'creating /home/kim/lostchild/src/install/static_tf/share/ament_index/resource_index/packages\n'}
+[1.086499] (static_tf) StdoutLine: {'line': b'copying resource/static_tf -> /home/kim/lostchild/src/install/static_tf/share/ament_index/resource_index/packages\n'}
+[1.086552] (static_tf) StdoutLine: {'line': b'copying package.xml -> /home/kim/lostchild/src/install/static_tf/share/static_tf\n'}
+[1.086596] (static_tf) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.088019] (static_tf) StdoutLine: {'line': b'Copying ../build/static_tf/static_tf.egg-info to /home/kim/lostchild/src/install/static_tf/lib/python3.8/site-packages/static_tf-0.0.0-py3.8.egg-info\n'}
+[1.088562] (static_tf) StdoutLine: {'line': b'running install_scripts\n'}
+[1.093631] (lidar) StdoutLine: {'line': b"writing list of installed files to '/home/kim/lostchild/src/build/lidar/install.log'\n"}
+[1.096806] (tf_transformations) StdoutLine: {'line': b"writing list of installed files to '/home/kim/lostchild/src/build/tf_transformations/install.log'\n"}
+[1.099929] (static_tf) StdoutLine: {'line': b"writing list of installed files to '/home/kim/lostchild/src/build/static_tf/install.log'\n"}
+[1.101405] (-) TimerEvent: {}
+[1.108490] (lidar) CommandEnded: {'returncode': 0}
+[1.129537] (lidar) JobEnded: {'identifier': 'lidar', 'rc': 0}
+[1.133729] (tf_transformations) CommandEnded: {'returncode': 0}
+[1.144511] (tf_transformations) JobEnded: {'identifier': 'tf_transformations', 'rc': 0}
+[1.144908] (static_tf) CommandEnded: {'returncode': 0}
+[1.151908] (static_tf) JobEnded: {'identifier': 'static_tf', 'rc': 0}
+[1.154230] (robot_localization) JobStarted: {'identifier': 'robot_localization'}
+[1.201533] (-) TimerEvent: {}
+[1.230730] (slam_toolbox) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.273667] (slam_toolbox) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.275050] (slam_toolbox) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.276134] (slam_toolbox) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.301592] (-) TimerEvent: {}
+[1.318696] (slam_toolbox) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.318854] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.350214] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.350413] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.388485] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.389564] (slam_toolbox) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.401653] (-) TimerEvent: {}
+[1.501177] (slam_toolbox) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[1.501716] (-) TimerEvent: {}
+[1.560185] (slam_toolbox) StdoutLine: {'line': b'-- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[1.569819] (slam_toolbox) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[1.601792] (-) TimerEvent: {}
+[1.627862] (robot_localization) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/robot_localization', 'build', '--build-base', '/home/kim/lostchild/src/build/robot_localization/build', 'install', '--record', '/home/kim/lostchild/src/build/robot_localization/install.log', '--install-scripts', '$base/lib/robot_localization', '--single-version-externally-managed'], 'cwd': '/home/kim/lostchild/src/robot_localization', 'env': {'RCUTILS_LOGGING_BUFFERED_STREAM': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'kim', 'LC_TIME': 'ko_KR.UTF-8', 'ROS_NAMESPACE': 'robot1', 'SSH_AGENT_PID': '2357', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'RCUTILS_CONSOLE_OUTPUT_FORMAT': '[{severity}]: {message}', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/kim', 'OLDPWD': '/home/kim/lostchild', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '2176', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '13810', '_colcon_cd_root': '/home/kim/robot_ws', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/kim/robot_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'kim', 'JOURNAL_STREAM': '8:44987', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'kim', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/kim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/kim-MS-7C92:@/tmp/.ICE-unix/2393,unix/kim-MS-7C92:/tmp/.ICE-unix/2393', 'INVOCATION_ID': 'e792ec723ace4ec1ac0f69599d3dc9db', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/home/kim/lostchild/src/install/tf_transformations:/home/kim/robot_ws/install/lidar:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:5c07853e-65b2-4968-a99d-4ef92c27ea5c', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'RCUTILS_LOGGING_USE_STDOUT': '0', 'PWD': '/home/kim/lostchild/src/build/robot_localization', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'RCUTILS_COLORIZED_OUTPUT': '1', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/kim/lostchild/src/build/robot_localization/prefix_override:/home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages:/home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages:/home/kim/robot_ws/install/lidar/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[1.702107] (-) TimerEvent: {}
+[1.795765] (robot_localization) StdoutLine: {'line': b'running egg_info\n'}
+[1.796070] (robot_localization) StdoutLine: {'line': b'creating ../build/robot_localization/robot_localization.egg-info\n'}
+[1.796196] (robot_localization) StdoutLine: {'line': b'writing ../build/robot_localization/robot_localization.egg-info/PKG-INFO\n'}
+[1.796361] (robot_localization) StdoutLine: {'line': b'writing dependency_links to ../build/robot_localization/robot_localization.egg-info/dependency_links.txt\n'}
+[1.796498] (robot_localization) StdoutLine: {'line': b'writing entry points to ../build/robot_localization/robot_localization.egg-info/entry_points.txt\n'}
+[1.796597] (robot_localization) StdoutLine: {'line': b'writing requirements to ../build/robot_localization/robot_localization.egg-info/requires.txt\n'}
+[1.796658] (robot_localization) StdoutLine: {'line': b'writing top-level names to ../build/robot_localization/robot_localization.egg-info/top_level.txt\n'}
+[1.797383] (robot_localization) StdoutLine: {'line': b"writing manifest file '../build/robot_localization/robot_localization.egg-info/SOURCES.txt'\n"}
+[1.802376] (-) TimerEvent: {}
+[1.821336] (robot_localization) StdoutLine: {'line': b"reading manifest file '../build/robot_localization/robot_localization.egg-info/SOURCES.txt'\n"}
+[1.821894] (robot_localization) StdoutLine: {'line': b"writing manifest file '../build/robot_localization/robot_localization.egg-info/SOURCES.txt'\n"}
+[1.822011] (robot_localization) StdoutLine: {'line': b'running build\n'}
+[1.822081] (robot_localization) StdoutLine: {'line': b'running build_py\n'}
+[1.822232] (robot_localization) StdoutLine: {'line': b'creating /home/kim/lostchild/src/build/robot_localization/build\n'}
+[1.822344] (robot_localization) StdoutLine: {'line': b'creating /home/kim/lostchild/src/build/robot_localization/build/lib\n'}
+[1.822414] (robot_localization) StdoutLine: {'line': b'creating /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization\n'}
+[1.822476] (robot_localization) StdoutLine: {'line': b'copying robot_localization/__init__.py -> /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization\n'}
+[1.822546] (robot_localization) StdoutLine: {'line': b'copying robot_localization/Odometry.py -> /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization\n'}
+[1.822603] (robot_localization) StdoutLine: {'line': b'copying robot_localization/Pulse_publisher.py -> /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization\n'}
+[1.822682] (robot_localization) StdoutLine: {'line': b'copying robot_localization/IMU_publisher.py -> /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization\n'}
+[1.822762] (robot_localization) StdoutLine: {'line': b'running install\n'}
+[1.823004] (robot_localization) StdoutLine: {'line': b'running install_lib\n'}
+[1.823599] (robot_localization) StdoutLine: {'line': b'creating /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization\n'}
+[1.823683] (robot_localization) StdoutLine: {'line': b'copying /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization/__init__.py -> /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization\n'}
+[1.823765] (robot_localization) StdoutLine: {'line': b'copying /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization/Odometry.py -> /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization\n'}
+[1.823836] (robot_localization) StdoutLine: {'line': b'copying /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization/Pulse_publisher.py -> /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization\n'}
+[1.823917] (robot_localization) StdoutLine: {'line': b'copying /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization/IMU_publisher.py -> /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization\n'}
+[1.824157] (robot_localization) StdoutLine: {'line': b'byte-compiling /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization/__init__.py to __init__.cpython-38.pyc\n'}
+[1.824895] (robot_localization) StdoutLine: {'line': b'byte-compiling /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization/Odometry.py to Odometry.cpython-38.pyc\n'}
+[1.825549] (robot_localization) StdoutLine: {'line': b'byte-compiling /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization/Pulse_publisher.py to Pulse_publisher.cpython-38.pyc\n'}
+[1.825839] (robot_localization) StdoutLine: {'line': b'byte-compiling /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization/IMU_publisher.py to IMU_publisher.cpython-38.pyc\n'}
+[1.826152] (robot_localization) StdoutLine: {'line': b'running install_data\n'}
+[1.826471] (robot_localization) StdoutLine: {'line': b'creating /home/kim/lostchild/src/install/robot_localization/share/ament_index\n'}
+[1.826570] (robot_localization) StdoutLine: {'line': b'creating /home/kim/lostchild/src/install/robot_localization/share/ament_index/resource_index\n'}
+[1.826642] (robot_localization) StdoutLine: {'line': b'creating /home/kim/lostchild/src/install/robot_localization/share/ament_index/resource_index/packages\n'}
+[1.826697] (robot_localization) StdoutLine: {'line': b'copying resource/robot_localization -> /home/kim/lostchild/src/install/robot_localization/share/ament_index/resource_index/packages\n'}
+[1.826772] (robot_localization) StdoutLine: {'line': b'copying package.xml -> /home/kim/lostchild/src/install/robot_localization/share/robot_localization\n'}
+[1.826850] (robot_localization) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.827955] (robot_localization) StdoutLine: {'line': b'Copying ../build/robot_localization/robot_localization.egg-info to /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization-0.0.0-py3.8.egg-info\n'}
+[1.828502] (robot_localization) StdoutLine: {'line': b'running install_scripts\n'}
+[1.839597] (robot_localization) StdoutLine: {'line': b'Installing robot_localization script to /home/kim/lostchild/src/install/robot_localization/lib/robot_localization\n'}
+[1.839878] (robot_localization) StdoutLine: {'line': b"writing list of installed files to '/home/kim/lostchild/src/build/robot_localization/install.log'\n"}
+[1.845028] (slam_toolbox) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[1.854662] (robot_localization) CommandEnded: {'returncode': 0}
+[1.863470] (robot_localization) JobEnded: {'identifier': 'robot_localization', 'rc': 0}
+[1.902230] (slam_toolbox) StdoutLine: {'line': b'-- Found pluginlib: 2.5.4 (/opt/ros/foxy/share/pluginlib/cmake)\n'}
+[1.902438] (-) TimerEvent: {}
+[1.918632] (slam_toolbox) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)\n'}
+[1.925619] (slam_toolbox) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[1.928343] (slam_toolbox) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[1.948037] (slam_toolbox) StdoutLine: {'line': b'-- Found tf2_sensor_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_sensor_msgs/cmake)\n'}
+[1.961575] (slam_toolbox) StdoutLine: {'line': b'-- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)\n'}
+[1.971538] (slam_toolbox) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.981664] (slam_toolbox) StdoutLine: {'line': b'-- Found nav2_map_server: 0.4.7 (/opt/ros/foxy/share/nav2_map_server/cmake)\n'}
+[1.984095] (slam_toolbox) StdoutLine: {'line': b'-- Found rviz_common: 8.2.8 (/opt/ros/foxy/share/rviz_common/cmake)\n'}
+[2.002515] (-) TimerEvent: {}
+[2.025653] (slam_toolbox) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/foxy/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[2.027457] (slam_toolbox) StdoutLine: {'line': b'-- Found OGRE\n'}
+[2.027535] (slam_toolbox) StdoutLine: {'line': b'--   static     : OFF\n'}
+[2.027598] (slam_toolbox) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[2.027659] (slam_toolbox) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[2.027715] (slam_toolbox) StdoutLine: {'line': b'--   media      : /opt/ros/foxy/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[2.027824] (slam_toolbox) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[2.027881] (slam_toolbox) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/foxy/opt/rviz_ogre_vendor/lib\n'}
+[2.027952] (slam_toolbox) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[2.028008] (slam_toolbox) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[2.028066] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[2.028120] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[2.028196] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[2.028253] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[2.057986] (slam_toolbox) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11")  \n'}
+[2.062885] (slam_toolbox) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[2.102581] (-) TimerEvent: {}
+[2.146289] (slam_toolbox) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[2.146695] (slam_toolbox) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[2.193528] (slam_toolbox) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[2.193705] (slam_toolbox) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[2.202655] (-) TimerEvent: {}
+[2.239595] (slam_toolbox) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[2.239759] (slam_toolbox) StdoutLine: {'line': b'-- Looking for connect\n'}
+[2.279621] (slam_toolbox) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[2.279817] (slam_toolbox) StdoutLine: {'line': b'-- Looking for remove\n'}
+[2.302733] (-) TimerEvent: {}
+[2.320142] (slam_toolbox) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[2.320286] (slam_toolbox) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[2.362084] (slam_toolbox) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[2.362249] (slam_toolbox) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[2.402823] (-) TimerEvent: {}
+[2.406663] (slam_toolbox) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[2.409541] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND\n'}
+[2.409617] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND\n'}
+[2.414461] (slam_toolbox) StdoutLine: {'line': b'-- library: libassimp.so.5\n'}
+[2.470469] (slam_toolbox) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[2.502884] (-) TimerEvent: {}
+[2.532706] (slam_toolbox) StdoutLine: {'line': b"-- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'\n"}
+[2.536474] (slam_toolbox) StdoutLine: {'line': b'-- Found rviz_default_plugins: 8.2.8 (/opt/ros/foxy/share/rviz_default_plugins/cmake)\n'}
+[2.602951] (-) TimerEvent: {}
+[2.703100] (-) TimerEvent: {}
+[2.803247] (-) TimerEvent: {}
+[2.822876] (slam_toolbox) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: system serialization filesystem thread \n'}
+[2.896806] (slam_toolbox) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") \n'}
+[2.900320] (slam_toolbox) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[2.900418] (slam_toolbox) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (CSPARSE)\n'}
+[2.900492] (slam_toolbox) StderrLine: {'line': b'  does not match the name of the calling package (CSparse).  This can lead to\n'}
+[2.900557] (slam_toolbox) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[2.900619] (slam_toolbox) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[2.900680] (slam_toolbox) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.900739] (slam_toolbox) StderrLine: {'line': b'  CMake/FindCSparse.cmake:24 (find_package_handle_standard_args)\n'}
+[2.900798] (slam_toolbox) StderrLine: {'line': b'  CMakeLists.txt:77 (find_package)\n'}
+[2.900854] (slam_toolbox) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.900910] (slam_toolbox) StderrLine: {'line': b'\x1b[0m\n'}
+[2.900997] (slam_toolbox) StdoutLine: {'line': b'-- Found CSPARSE: /usr/include/suitesparse  \n'}
+[2.903308] (-) TimerEvent: {}
+[2.950767] (slam_toolbox) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[2.950865] (slam_toolbox) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (CHOLMOD)\n'}
+[2.950931] (slam_toolbox) StderrLine: {'line': b'  does not match the name of the calling package (Cholmod).  This can lead to\n'}
+[2.950991] (slam_toolbox) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[2.951051] (slam_toolbox) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[2.951110] (slam_toolbox) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.951167] (slam_toolbox) StderrLine: {'line': b'  CMake/FindCholmod.cmake:86 (find_package_handle_standard_args)\n'}
+[2.951260] (slam_toolbox) StderrLine: {'line': b'  CMakeLists.txt:79 (find_package)\n'}
+[2.951318] (slam_toolbox) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.951373] (slam_toolbox) StderrLine: {'line': b'\x1b[0m\n'}
+[2.951427] (slam_toolbox) StdoutLine: {'line': b'-- Found CHOLMOD: /usr/include/suitesparse  \n'}
+[2.953773] (slam_toolbox) StdoutLine: {'line': b'-- Looking for sgemm_\n'}
+[2.993789] (slam_toolbox) StdoutLine: {'line': b'-- Looking for sgemm_ - not found\n'}
+[3.003374] (-) TimerEvent: {}
+[3.063742] (slam_toolbox) StdoutLine: {'line': b'-- Looking for sgemm_\n'}
+[3.103465] (-) TimerEvent: {}
+[3.107266] (slam_toolbox) StdoutLine: {'line': b'-- Looking for sgemm_ - found\n'}
+[3.107578] (slam_toolbox) StdoutLine: {'line': b'-- Found BLAS: /usr/lib/x86_64-linux-gnu/libblas.so  \n'}
+[3.109986] (slam_toolbox) StdoutLine: {'line': b'-- Looking for cheev_\n'}
+[3.153815] (slam_toolbox) StdoutLine: {'line': b'-- Looking for cheev_ - not found\n'}
+[3.175195] (slam_toolbox) StdoutLine: {'line': b'-- Looking for cheev_\n'}
+[3.203549] (-) TimerEvent: {}
+[3.224337] (slam_toolbox) StdoutLine: {'line': b'-- Looking for cheev_ - found\n'}
+[3.224673] (slam_toolbox) StdoutLine: {'line': b'-- Found LAPACK: /usr/lib/x86_64-linux-gnu/liblapack.so;/usr/lib/x86_64-linux-gnu/libblas.so  \n'}
+[3.228073] (slam_toolbox) StdoutLine: {'line': b'-- Found installed version of Eigen: /usr/lib/cmake/eigen3\n'}
+[3.229462] (slam_toolbox) StdoutLine: {'line': b'-- Found required Ceres dependency: Eigen version 3.3.7 in /usr/include/eigen3\n'}
+[3.232503] (slam_toolbox) StdoutLine: {'line': b'-- Found required Ceres dependency: glog\n'}
+[3.235008] (slam_toolbox) StdoutLine: {'line': b'-- Found installed version of gflags: /usr/lib/x86_64-linux-gnu/cmake/gflags\n'}
+[3.235119] (slam_toolbox) StdoutLine: {'line': b'-- Detected gflags version: 2.2.2\n'}
+[3.236340] (slam_toolbox) StdoutLine: {'line': b'-- Found required Ceres dependency: gflags\n'}
+[3.237058] (slam_toolbox) StdoutLine: {'line': b'-- Found Ceres version: 1.14.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, OpenMP, Multithreading]\n'}
+[3.267357] (slam_toolbox) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[3.303628] (-) TimerEvent: {}
+[3.403810] (-) TimerEvent: {}
+[3.477297] (slam_toolbox) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[3.503896] (-) TimerEvent: {}
+[3.604077] (-) TimerEvent: {}
+[3.704256] (-) TimerEvent: {}
+[3.710392] (slam_toolbox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.804343] (-) TimerEvent: {}
+[3.820047] (slam_toolbox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.842068] (slam_toolbox) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[3.843675] (slam_toolbox) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[3.869145] (slam_toolbox) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[3.869290] (slam_toolbox) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.869371] (slam_toolbox) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[3.869452] (slam_toolbox) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[3.888025] (slam_toolbox) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.904425] (-) TimerEvent: {}
+[4.004600] (-) TimerEvent: {}
+[4.007175] (slam_toolbox) StdoutLine: {'line': b'-- Configuring done (3.6s)\n'}
+[4.104695] (-) TimerEvent: {}
+[4.190207] (slam_toolbox) StdoutLine: {'line': b'-- Generating done (0.2s)\n'}
+[4.193819] (slam_toolbox) StdoutLine: {'line': b'-- Build files have been written to: /home/kim/lostchild/src/build/slam_toolbox\n'}
+[4.204781] (-) TimerEvent: {}
+[4.207503] (slam_toolbox) CommandEnded: {'returncode': 0}
+[4.208391] (slam_toolbox) JobProgress: {'identifier': 'slam_toolbox', 'progress': 'build'}
+[4.210715] (slam_toolbox) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/kim/lostchild/src/build/slam_toolbox', '--', '-j12', '-l12'], 'cwd': '/home/kim/lostchild/src/build/slam_toolbox', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'kim'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_NAMESPACE', 'robot1'), ('SSH_AGENT_PID', '2357'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}]: {message}'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kim'), ('OLDPWD', '/home/kim/lostchild'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2176'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '13810'), ('_colcon_cd_root', '/home/kim/robot_ws'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/kim/robot_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kim'), ('JOURNAL_STREAM', '8:44987'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'kim'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/kim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kim-MS-7C92:@/tmp/.ICE-unix/2393,unix/kim-MS-7C92:/tmp/.ICE-unix/2393'), ('INVOCATION_ID', 'e792ec723ace4ec1ac0f69599d3dc9db'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/home/kim/robot_ws/install/lidar:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:5c07853e-65b2-4968-a99d-4ef92c27ea5c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/kim/lostchild/src/build/slam_toolbox'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kim/robot_ws/install/lidar/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/kim/robot_ws/install/lidar:/opt/ros/foxy')]), 'shell': False}
+[4.252887] (slam_toolbox) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.255041] (slam_toolbox) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object lib/karto_sdk/CMakeFiles/kartoSlamToolbox.dir/src/Karto.cpp.o\x1b[0m\n'}
+[4.255417] (slam_toolbox) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object lib/karto_sdk/CMakeFiles/kartoSlamToolbox.dir/src/Mapper.cpp.o\x1b[0m\n'}
+[4.256009] (slam_toolbox) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.304877] (-) TimerEvent: {}
+[4.405128] (-) TimerEvent: {}
+[4.505349] (-) TimerEvent: {}
+[4.605569] (-) TimerEvent: {}
+[4.705822] (-) TimerEvent: {}
+[4.806047] (-) TimerEvent: {}
+[4.848917] (slam_toolbox) StdoutLine: {'line': b'[  3%] Built target slam_toolbox__cpp\n'}
+[4.851514] (slam_toolbox) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.852017] (slam_toolbox) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.852376] (slam_toolbox) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.906135] (-) TimerEvent: {}
+[4.940847] (slam_toolbox) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/pause__functions.c.o\x1b[0m\n'}
+[4.941046] (slam_toolbox) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/clear__functions.c.o\x1b[0m\n'}
+[4.941206] (slam_toolbox) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/toggle_interactive__functions.c.o\x1b[0m\n'}
+[4.941333] (slam_toolbox) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/clear_queue__functions.c.o\x1b[0m\n'}
+[4.941473] (slam_toolbox) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/save_map__functions.c.o\x1b[0m\n'}
+[4.941624] (slam_toolbox) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/loop_closure__functions.c.o\x1b[0m\n'}
+[4.943017] (slam_toolbox) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/merge_maps__functions.c.o\x1b[0m\n'}
+[5.006227] (-) TimerEvent: {}
+[5.077177] (slam_toolbox) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/add_submap__functions.c.o\x1b[0m\n'}
+[5.080289] (slam_toolbox) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/deserialize_pose_graph__functions.c.o\x1b[0m\n'}
+[5.080487] (slam_toolbox) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/serialize_pose_graph__functions.c.o\x1b[0m\n'}
+[5.106317] (-) TimerEvent: {}
+[5.206541] (-) TimerEvent: {}
+[5.230196] (slam_toolbox) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking C shared library libslam_toolbox__rosidl_generator_c.so\x1b[0m\n'}
+[5.261838] (slam_toolbox) StdoutLine: {'line': b'[ 14%] Built target slam_toolbox__rosidl_generator_c\n'}
+[5.264810] (slam_toolbox) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.266178] (slam_toolbox) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.284019] (slam_toolbox) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/pause__type_support.cpp.o\x1b[0m\n'}
+[5.284284] (slam_toolbox) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/clear_queue__type_support.cpp.o\x1b[0m\n'}
+[5.284403] (slam_toolbox) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/clear__type_support.cpp.o\x1b[0m\n'}
+[5.284542] (slam_toolbox) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/toggle_interactive__type_support.cpp.o\x1b[0m\n'}
+[5.284681] (slam_toolbox) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/loop_closure__type_support.cpp.o\x1b[0m\n'}
+[5.306629] (-) TimerEvent: {}
+[5.308487] (slam_toolbox) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/save_map__type_support.cpp.o\x1b[0m\n'}
+[5.406715] (-) TimerEvent: {}
+[5.506986] (-) TimerEvent: {}
+[5.556291] (slam_toolbox) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/pause__type_support.cpp.o\x1b[0m\n'}
+[5.607076] (-) TimerEvent: {}
+[5.625310] (slam_toolbox) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/merge_maps__type_support.cpp.o\x1b[0m\n'}
+[5.636008] (slam_toolbox) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/add_submap__type_support.cpp.o\x1b[0m\n'}
+[5.636439] (slam_toolbox) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/deserialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[5.641430] (slam_toolbox) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/serialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[5.641653] (slam_toolbox) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/clear_queue__type_support.cpp.o\x1b[0m\n'}
+[5.654346] (slam_toolbox) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/pause__type_support.cpp.o\x1b[0m\n'}
+[5.659143] (slam_toolbox) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/clear_queue__type_support.cpp.o\x1b[0m\n'}
+[5.707168] (-) TimerEvent: {}
+[5.807446] (-) TimerEvent: {}
+[5.907708] (-) TimerEvent: {}
+[5.912103] (slam_toolbox) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/pause__type_support.cpp.o\x1b[0m\n'}
+[5.914062] (slam_toolbox) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/toggle_interactive__type_support.cpp.o\x1b[0m\n'}
+[5.942624] (slam_toolbox) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/clear_queue__type_support.cpp.o\x1b[0m\n'}
+[5.967070] (slam_toolbox) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/toggle_interactive__type_support.cpp.o\x1b[0m\n'}
+[5.972825] (slam_toolbox) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/clear__type_support.cpp.o\x1b[0m\n'}
+[5.988658] (slam_toolbox) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/toggle_interactive__type_support.cpp.o\x1b[0m\n'}
+[5.996768] (slam_toolbox) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/save_map__type_support.cpp.o\x1b[0m\n'}
+[6.001641] (slam_toolbox) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/loop_closure__type_support.cpp.o\x1b[0m\n'}
+[6.005075] (slam_toolbox) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/clear__type_support.cpp.o\x1b[0m\n'}
+[6.006049] (slam_toolbox) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/merge_maps__type_support.cpp.o\x1b[0m\n'}
+[6.007630] (slam_toolbox) StdoutLine: {'line': b'[ 34%] \x1b[32m\x1b[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[6.007796] (-) TimerEvent: {}
+[6.029769] (slam_toolbox) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/loop_closure__type_support.cpp.o\x1b[0m\n'}
+[6.029985] (slam_toolbox) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/save_map__type_support.cpp.o\x1b[0m\n'}
+[6.031480] (slam_toolbox) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/add_submap__type_support.cpp.o\x1b[0m\n'}
+[6.046298] (slam_toolbox) StdoutLine: {'line': b'[ 35%] Built target slam_toolbox__rosidl_typesupport_cpp\n'}
+[6.048506] (slam_toolbox) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/deserialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[6.061303] (slam_toolbox) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/serialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[6.077931] (slam_toolbox) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/merge_maps__type_support.cpp.o\x1b[0m\n'}
+[6.089762] (slam_toolbox) StdoutLine: {'line': b'[ 39%] \x1b[32m\x1b[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.107907] (-) TimerEvent: {}
+[6.122426] (slam_toolbox) StdoutLine: {'line': b'[ 39%] Built target slam_toolbox__rosidl_typesupport_c\n'}
+[6.124745] (slam_toolbox) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/add_submap__type_support.cpp.o\x1b[0m\n'}
+[6.173623] (slam_toolbox) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/clear__type_support.cpp.o\x1b[0m\n'}
+[6.175575] (slam_toolbox) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/pause__type_support.c.o\x1b[0m\n'}
+[6.185206] (slam_toolbox) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[6.208017] (-) TimerEvent: {}
+[6.220481] (slam_toolbox) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/clear_queue__type_support.c.o\x1b[0m\n'}
+[6.266550] (slam_toolbox) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/toggle_interactive__type_support.c.o\x1b[0m\n'}
+[6.308131] (-) TimerEvent: {}
+[6.312502] (slam_toolbox) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/clear__type_support.c.o\x1b[0m\n'}
+[6.341711] (slam_toolbox) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/serialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[6.354855] (slam_toolbox) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/save_map__type_support.c.o\x1b[0m\n'}
+[6.380625] (slam_toolbox) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/loop_closure__type_support.c.o\x1b[0m\n'}
+[6.388952] (slam_toolbox) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/merge_maps__type_support.c.o\x1b[0m\n'}
+[6.401974] (slam_toolbox) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.c.o\x1b[0m\n'}
+[6.402193] (slam_toolbox) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/add_submap__type_support.c.o\x1b[0m\n'}
+[6.408233] (-) TimerEvent: {}
+[6.421150] (slam_toolbox) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/serialize_pose_graph__type_support.c.o\x1b[0m\n'}
+[6.430129] (slam_toolbox) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/save_map__type_support.cpp.o\x1b[0m\n'}
+[6.433331] (slam_toolbox) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/loop_closure__type_support.cpp.o\x1b[0m\n'}
+[6.445426] (slam_toolbox) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/merge_maps__type_support.cpp.o\x1b[0m\n'}
+[6.446312] (slam_toolbox) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/add_submap__type_support.cpp.o\x1b[0m\n'}
+[6.447267] (slam_toolbox) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/deserialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[6.464218] (slam_toolbox) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking C shared library libslam_toolbox__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.491292] (slam_toolbox) StdoutLine: {'line': b'[ 54%] Built target slam_toolbox__rosidl_typesupport_introspection_c\n'}
+[6.493780] (slam_toolbox) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/serialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[6.508336] (-) TimerEvent: {}
+[6.608640] (-) TimerEvent: {}
+[6.705287] (slam_toolbox) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.708722] (-) TimerEvent: {}
+[6.760293] (slam_toolbox) StdoutLine: {'line': b'[ 55%] Built target slam_toolbox__rosidl_typesupport_introspection_cpp\n'}
+[6.808844] (-) TimerEvent: {}
+[6.909141] (-) TimerEvent: {}
+[7.009392] (-) TimerEvent: {}
+[7.019087] (slam_toolbox) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[7.075473] (slam_toolbox) StdoutLine: {'line': b'[ 56%] Built target slam_toolbox__rosidl_typesupport_fastrtps_cpp\n'}
+[7.078878] (slam_toolbox) StdoutLine: {'line': b'[ 57%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.109475] (-) TimerEvent: {}
+[7.209699] (-) TimerEvent: {}
+[7.309957] (-) TimerEvent: {}
+[7.410190] (-) TimerEvent: {}
+[7.510420] (-) TimerEvent: {}
+[7.610667] (-) TimerEvent: {}
+[7.619643] (slam_toolbox) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/pause__type_support_c.cpp.o\x1b[0m\n'}
+[7.619962] (slam_toolbox) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/clear__type_support_c.cpp.o\x1b[0m\n'}
+[7.620148] (slam_toolbox) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/clear_queue__type_support_c.cpp.o\x1b[0m\n'}
+[7.620253] (slam_toolbox) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/toggle_interactive__type_support_c.cpp.o\x1b[0m\n'}
+[7.620609] (slam_toolbox) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/merge_maps__type_support_c.cpp.o\x1b[0m\n'}
+[7.620785] (slam_toolbox) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/loop_closure__type_support_c.cpp.o\x1b[0m\n'}
+[7.620895] (slam_toolbox) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/save_map__type_support_c.cpp.o\x1b[0m\n'}
+[7.621128] (slam_toolbox) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/deserialize_pose_graph__type_support_c.cpp.o\x1b[0m\n'}
+[7.621246] (slam_toolbox) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/add_submap__type_support_c.cpp.o\x1b[0m\n'}
+[7.621582] (slam_toolbox) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/serialize_pose_graph__type_support_c.cpp.o\x1b[0m\n'}
+[7.710952] (-) TimerEvent: {}
+[7.811269] (-) TimerEvent: {}
+[7.911590] (-) TimerEvent: {}
+[8.012611] (-) TimerEvent: {}
+[8.116804] (-) TimerEvent: {}
+[8.136687] (slam_toolbox) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[8.190642] (slam_toolbox) StdoutLine: {'line': b'[ 65%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c\n'}
+[8.197381] (slam_toolbox) StdoutLine: {'line': b'[ 65%] Built target slam_toolbox\n'}
+[8.200444] (slam_toolbox) StdoutLine: {'line': b'[ 65%] \x1b[34m\x1b[1mGenerating rviz_plugin/moc_slam_toolbox_rviz_plugin.cpp\x1b[0m\n'}
+[8.203841] (slam_toolbox) StdoutLine: {'line': b'[ 66%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[8.209935] (slam_toolbox) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/SlamToolboxPlugin.dir/rviz_plugin/slam_toolbox_rviz_plugin.cpp.o\x1b[0m\n'}
+[8.210131] (slam_toolbox) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/SlamToolboxPlugin.dir/rviz_plugin/moc_slam_toolbox_rviz_plugin.cpp.o\x1b[0m\n'}
+[8.216873] (-) TimerEvent: {}
+[8.317075] (-) TimerEvent: {}
+[8.417304] (-) TimerEvent: {}
+[8.517542] (-) TimerEvent: {}
+[8.617766] (-) TimerEvent: {}
+[8.718010] (-) TimerEvent: {}
+[8.818286] (-) TimerEvent: {}
+[8.918538] (-) TimerEvent: {}
+[9.018802] (-) TimerEvent: {}
+[9.119077] (-) TimerEvent: {}
+[9.219320] (-) TimerEvent: {}
+[9.319560] (-) TimerEvent: {}
+[9.419792] (-) TimerEvent: {}
+[9.473898] (slam_toolbox) StdoutLine: {'line': b'[ 68%] Built target slam_toolbox__py\n'}
+[9.480023] (slam_toolbox) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_pause_s.c.o\x1b[0m\n'}
+[9.480230] (slam_toolbox) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_toggle_interactive_s.c.o\x1b[0m\n'}
+[9.480361] (slam_toolbox) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_clear_queue_s.c.o\x1b[0m\n'}
+[9.480618] (slam_toolbox) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_save_map_s.c.o\x1b[0m\n'}
+[9.480955] (slam_toolbox) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_clear_s.c.o\x1b[0m\n'}
+[9.481074] (slam_toolbox) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_merge_maps_s.c.o\x1b[0m\n'}
+[9.481623] (slam_toolbox) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_loop_closure_s.c.o\x1b[0m\n'}
+[9.482126] (slam_toolbox) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_add_submap_s.c.o\x1b[0m\n'}
+[9.519897] (-) TimerEvent: {}
+[9.605706] (slam_toolbox) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_deserialize_pose_graph_s.c.o\x1b[0m\n'}
+[9.607927] (slam_toolbox) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_serialize_pose_graph_s.c.o\x1b[0m\n'}
+[9.619997] (-) TimerEvent: {}
+[9.696018] (slam_toolbox) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/slam_toolbox/libslam_toolbox__python.so\x1b[0m\n'}
+[9.720091] (-) TimerEvent: {}
+[9.720460] (slam_toolbox) StdoutLine: {'line': b'[ 76%] Built target slam_toolbox__python\n'}
+[9.726432] (slam_toolbox) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[9.726845] (slam_toolbox) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[9.727766] (slam_toolbox) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[9.820200] (-) TimerEvent: {}
+[9.920490] (-) TimerEvent: {}
+[9.985308] (slam_toolbox) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/slam_toolbox/slam_toolbox_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[9.989433] (slam_toolbox) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/slam_toolbox/slam_toolbox_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[10.010653] (slam_toolbox) StdoutLine: {'line': b'[ 78%] Built target slam_toolbox__rosidl_typesupport_introspection_c__pyext\n'}
+[10.020593] (-) TimerEvent: {}
+[10.029374] (slam_toolbox) StdoutLine: {'line': b'[ 78%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c__pyext\n'}
+[10.120682] (-) TimerEvent: {}
+[10.134229] (slam_toolbox) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/slam_toolbox/slam_toolbox_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[10.157180] (slam_toolbox) StdoutLine: {'line': b'[ 79%] Built target slam_toolbox__rosidl_typesupport_c__pyext\n'}
+[10.220775] (-) TimerEvent: {}
+[10.321026] (-) TimerEvent: {}
+[10.421266] (-) TimerEvent: {}
+[10.521506] (-) TimerEvent: {}
+[10.621744] (-) TimerEvent: {}
+[10.721992] (-) TimerEvent: {}
+[10.822236] (-) TimerEvent: {}
+[10.922485] (-) TimerEvent: {}
+[11.022737] (-) TimerEvent: {}
+[11.122983] (-) TimerEvent: {}
+[11.223234] (-) TimerEvent: {}
+[11.323471] (-) TimerEvent: {}
+[11.423720] (-) TimerEvent: {}
+[11.523964] (-) TimerEvent: {}
+[11.624202] (-) TimerEvent: {}
+[11.724440] (-) TimerEvent: {}
+[11.824674] (-) TimerEvent: {}
+[11.924923] (-) TimerEvent: {}
+[12.025163] (-) TimerEvent: {}
+[12.125405] (-) TimerEvent: {}
+[12.225641] (-) TimerEvent: {}
+[12.325878] (-) TimerEvent: {}
+[12.426120] (-) TimerEvent: {}
+[12.526356] (-) TimerEvent: {}
+[12.626599] (-) TimerEvent: {}
+[12.726838] (-) TimerEvent: {}
+[12.827071] (-) TimerEvent: {}
+[12.927308] (-) TimerEvent: {}
+[13.027553] (-) TimerEvent: {}
+[13.127796] (-) TimerEvent: {}
+[13.228044] (-) TimerEvent: {}
+[13.328284] (-) TimerEvent: {}
+[13.428523] (-) TimerEvent: {}
+[13.528762] (-) TimerEvent: {}
+[13.629007] (-) TimerEvent: {}
+[13.729257] (-) TimerEvent: {}
+[13.829518] (-) TimerEvent: {}
+[13.929778] (-) TimerEvent: {}
+[14.030038] (-) TimerEvent: {}
+[14.130301] (-) TimerEvent: {}
+[14.230538] (-) TimerEvent: {}
+[14.330775] (-) TimerEvent: {}
+[14.431003] (-) TimerEvent: {}
+[14.531230] (-) TimerEvent: {}
+[14.631460] (-) TimerEvent: {}
+[14.731712] (-) TimerEvent: {}
+[14.831960] (-) TimerEvent: {}
+[14.932218] (-) TimerEvent: {}
+[15.032475] (-) TimerEvent: {}
+[15.132715] (-) TimerEvent: {}
+[15.232950] (-) TimerEvent: {}
+[15.333186] (-) TimerEvent: {}
+[15.433438] (-) TimerEvent: {}
+[15.533674] (-) TimerEvent: {}
+[15.633904] (-) TimerEvent: {}
+[15.734131] (-) TimerEvent: {}
+[15.834362] (-) TimerEvent: {}
+[15.934597] (-) TimerEvent: {}
+[16.034820] (-) TimerEvent: {}
+[16.135044] (-) TimerEvent: {}
+[16.235271] (-) TimerEvent: {}
+[16.335502] (-) TimerEvent: {}
+[16.435735] (-) TimerEvent: {}
+[16.535965] (-) TimerEvent: {}
+[16.636199] (-) TimerEvent: {}
+[16.736422] (-) TimerEvent: {}
+[16.836647] (-) TimerEvent: {}
+[16.936878] (-) TimerEvent: {}
+[17.037105] (-) TimerEvent: {}
+[17.137331] (-) TimerEvent: {}
+[17.237560] (-) TimerEvent: {}
+[17.337787] (-) TimerEvent: {}
+[17.438013] (-) TimerEvent: {}
+[17.538236] (-) TimerEvent: {}
+[17.638461] (-) TimerEvent: {}
+[17.738697] (-) TimerEvent: {}
+[17.838937] (-) TimerEvent: {}
+[17.939167] (-) TimerEvent: {}
+[18.039388] (-) TimerEvent: {}
+[18.139612] (-) TimerEvent: {}
+[18.239838] (-) TimerEvent: {}
+[18.340064] (-) TimerEvent: {}
+[18.440292] (-) TimerEvent: {}
+[18.540517] (-) TimerEvent: {}
+[18.640738] (-) TimerEvent: {}
+[18.740963] (-) TimerEvent: {}
+[18.841187] (-) TimerEvent: {}
+[18.941417] (-) TimerEvent: {}
+[19.041649] (-) TimerEvent: {}
+[19.141886] (-) TimerEvent: {}
+[19.242116] (-) TimerEvent: {}
+[19.342350] (-) TimerEvent: {}
+[19.442587] (-) TimerEvent: {}
+[19.542821] (-) TimerEvent: {}
+[19.643053] (-) TimerEvent: {}
+[19.743286] (-) TimerEvent: {}
+[19.843538] (-) TimerEvent: {}
+[19.943782] (-) TimerEvent: {}
+[19.950242] (slam_toolbox) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libSlamToolboxPlugin.so\x1b[0m\n'}
+[20.043875] (-) TimerEvent: {}
+[20.144120] (-) TimerEvent: {}
+[20.244358] (-) TimerEvent: {}
+[20.344603] (-) TimerEvent: {}
+[20.444843] (-) TimerEvent: {}
+[20.545078] (-) TimerEvent: {}
+[20.567575] (slam_toolbox) StdoutLine: {'line': b'[ 79%] Built target SlamToolboxPlugin\n'}
+[20.645150] (-) TimerEvent: {}
+[20.745344] (-) TimerEvent: {}
+[20.845539] (-) TimerEvent: {}
+[20.945753] (-) TimerEvent: {}
+[21.045961] (-) TimerEvent: {}
+[21.146196] (-) TimerEvent: {}
+[21.246439] (-) TimerEvent: {}
+[21.346724] (-) TimerEvent: {}
+[21.446948] (-) TimerEvent: {}
+[21.493997] (slam_toolbox) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libkartoSlamToolbox.so\x1b[0m\n'}
+[21.547045] (-) TimerEvent: {}
+[21.647306] (-) TimerEvent: {}
+[21.708025] (slam_toolbox) StdoutLine: {'line': b'[ 80%] Built target kartoSlamToolbox\n'}
+[21.714655] (slam_toolbox) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/ceres_solver_plugin.dir/solvers/ceres_solver.cpp.o\x1b[0m\n'}
+[21.714904] (slam_toolbox) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/map_saver.cpp.o\x1b[0m\n'}
+[21.715133] (slam_toolbox) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/loop_closure_assistant.cpp.o\x1b[0m\n'}
+[21.715300] (slam_toolbox) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/slam_toolbox_common.cpp.o\x1b[0m\n'}
+[21.715622] (slam_toolbox) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/laser_utils.cpp.o\x1b[0m\n'}
+[21.715898] (slam_toolbox) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/slam_mapper.cpp.o\x1b[0m\n'}
+[21.747441] (-) TimerEvent: {}
+[21.847776] (-) TimerEvent: {}
+[21.948056] (-) TimerEvent: {}
+[22.048343] (-) TimerEvent: {}
+[22.148622] (-) TimerEvent: {}
+[22.248927] (-) TimerEvent: {}
+[22.349256] (-) TimerEvent: {}
+[22.449547] (-) TimerEvent: {}
+[22.549843] (-) TimerEvent: {}
+[22.650157] (-) TimerEvent: {}
+[22.750448] (-) TimerEvent: {}
+[22.850746] (-) TimerEvent: {}
+[22.951038] (-) TimerEvent: {}
+[23.051330] (-) TimerEvent: {}
+[23.151611] (-) TimerEvent: {}
+[23.251922] (-) TimerEvent: {}
+[23.352226] (-) TimerEvent: {}
+[23.452508] (-) TimerEvent: {}
+[23.552804] (-) TimerEvent: {}
+[23.653094] (-) TimerEvent: {}
+[23.753381] (-) TimerEvent: {}
+[23.853681] (-) TimerEvent: {}
+[23.953980] (-) TimerEvent: {}
+[24.054292] (-) TimerEvent: {}
+[24.154607] (-) TimerEvent: {}
+[24.254900] (-) TimerEvent: {}
+[24.355193] (-) TimerEvent: {}
+[24.455482] (-) TimerEvent: {}
+[24.555774] (-) TimerEvent: {}
+[24.656066] (-) TimerEvent: {}
+[24.756334] (-) TimerEvent: {}
+[24.856628] (-) TimerEvent: {}
+[24.956924] (-) TimerEvent: {}
+[25.057245] (-) TimerEvent: {}
+[25.157579] (-) TimerEvent: {}
+[25.257874] (-) TimerEvent: {}
+[25.358167] (-) TimerEvent: {}
+[25.458457] (-) TimerEvent: {}
+[25.558752] (-) TimerEvent: {}
+[25.659035] (-) TimerEvent: {}
+[25.759315] (-) TimerEvent: {}
+[25.859619] (-) TimerEvent: {}
+[25.959912] (-) TimerEvent: {}
+[26.060200] (-) TimerEvent: {}
+[26.160486] (-) TimerEvent: {}
+[26.260797] (-) TimerEvent: {}
+[26.361099] (-) TimerEvent: {}
+[26.461385] (-) TimerEvent: {}
+[26.561678] (-) TimerEvent: {}
+[26.661987] (-) TimerEvent: {}
+[26.762292] (-) TimerEvent: {}
+[26.862561] (-) TimerEvent: {}
+[26.962860] (-) TimerEvent: {}
+[27.063145] (-) TimerEvent: {}
+[27.163421] (-) TimerEvent: {}
+[27.263691] (-) TimerEvent: {}
+[27.363932] (-) TimerEvent: {}
+[27.464171] (-) TimerEvent: {}
+[27.564423] (-) TimerEvent: {}
+[27.664702] (-) TimerEvent: {}
+[27.764945] (-) TimerEvent: {}
+[27.865184] (-) TimerEvent: {}
+[27.965440] (-) TimerEvent: {}
+[28.065680] (-) TimerEvent: {}
+[28.165924] (-) TimerEvent: {}
+[28.266162] (-) TimerEvent: {}
+[28.366409] (-) TimerEvent: {}
+[28.466660] (-) TimerEvent: {}
+[28.566900] (-) TimerEvent: {}
+[28.667142] (-) TimerEvent: {}
+[28.767386] (-) TimerEvent: {}
+[28.867638] (-) TimerEvent: {}
+[28.967885] (-) TimerEvent: {}
+[29.068121] (-) TimerEvent: {}
+[29.168373] (-) TimerEvent: {}
+[29.268649] (-) TimerEvent: {}
+[29.368892] (-) TimerEvent: {}
+[29.469130] (-) TimerEvent: {}
+[29.569372] (-) TimerEvent: {}
+[29.669613] (-) TimerEvent: {}
+[29.769860] (-) TimerEvent: {}
+[29.870117] (-) TimerEvent: {}
+[29.970357] (-) TimerEvent: {}
+[30.070597] (-) TimerEvent: {}
+[30.170854] (-) TimerEvent: {}
+[30.271100] (-) TimerEvent: {}
+[30.371349] (-) TimerEvent: {}
+[30.471801] (-) TimerEvent: {}
+[30.572067] (-) TimerEvent: {}
+[30.672335] (-) TimerEvent: {}
+[30.772604] (-) TimerEvent: {}
+[30.872885] (-) TimerEvent: {}
+[30.973160] (-) TimerEvent: {}
+[31.073428] (-) TimerEvent: {}
+[31.173710] (-) TimerEvent: {}
+[31.273977] (-) TimerEvent: {}
+[31.289680] (slam_toolbox) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX shared library libceres_solver_plugin.so\x1b[0m\n'}
+[31.374074] (-) TimerEvent: {}
+[31.474345] (-) TimerEvent: {}
+[31.540890] (slam_toolbox) StdoutLine: {'line': b'[ 86%] Built target ceres_solver_plugin\n'}
+[31.574410] (-) TimerEvent: {}
+[31.674631] (-) TimerEvent: {}
+[31.774864] (-) TimerEvent: {}
+[31.875083] (-) TimerEvent: {}
+[31.975306] (-) TimerEvent: {}
+[32.075542] (-) TimerEvent: {}
+[32.175777] (-) TimerEvent: {}
+[32.276015] (-) TimerEvent: {}
+[32.376250] (-) TimerEvent: {}
+[32.476486] (-) TimerEvent: {}
+[32.576729] (-) TimerEvent: {}
+[32.676967] (-) TimerEvent: {}
+[32.777210] (-) TimerEvent: {}
+[32.877468] (-) TimerEvent: {}
+[32.977728] (-) TimerEvent: {}
+[33.078176] (-) TimerEvent: {}
+[33.178433] (-) TimerEvent: {}
+[33.278697] (-) TimerEvent: {}
+[33.378952] (-) TimerEvent: {}
+[33.479195] (-) TimerEvent: {}
+[33.579410] (-) TimerEvent: {}
+[33.679626] (-) TimerEvent: {}
+[33.779844] (-) TimerEvent: {}
+[33.880058] (-) TimerEvent: {}
+[33.980249] (-) TimerEvent: {}
+[34.080453] (-) TimerEvent: {}
+[34.180655] (-) TimerEvent: {}
+[34.280870] (-) TimerEvent: {}
+[34.381117] (-) TimerEvent: {}
+[34.481335] (-) TimerEvent: {}
+[34.581553] (-) TimerEvent: {}
+[34.681765] (-) TimerEvent: {}
+[34.781977] (-) TimerEvent: {}
+[34.882188] (-) TimerEvent: {}
+[34.982397] (-) TimerEvent: {}
+[35.082612] (-) TimerEvent: {}
+[35.182827] (-) TimerEvent: {}
+[35.283048] (-) TimerEvent: {}
+[35.383262] (-) TimerEvent: {}
+[35.483478] (-) TimerEvent: {}
+[35.583673] (-) TimerEvent: {}
+[35.683864] (-) TimerEvent: {}
+[35.784054] (-) TimerEvent: {}
+[35.884250] (-) TimerEvent: {}
+[35.984450] (-) TimerEvent: {}
+[36.084675] (-) TimerEvent: {}
+[36.184890] (-) TimerEvent: {}
+[36.285104] (-) TimerEvent: {}
+[36.385314] (-) TimerEvent: {}
+[36.485523] (-) TimerEvent: {}
+[36.585734] (-) TimerEvent: {}
+[36.685932] (-) TimerEvent: {}
+[36.786148] (-) TimerEvent: {}
+[36.886364] (-) TimerEvent: {}
+[36.986536] (-) TimerEvent: {}
+[37.086745] (-) TimerEvent: {}
+[37.186954] (-) TimerEvent: {}
+[37.287161] (-) TimerEvent: {}
+[37.387372] (-) TimerEvent: {}
+[37.487585] (-) TimerEvent: {}
+[37.587801] (-) TimerEvent: {}
+[37.688016] (-) TimerEvent: {}
+[37.788232] (-) TimerEvent: {}
+[37.888432] (-) TimerEvent: {}
+[37.988645] (-) TimerEvent: {}
+[38.088854] (-) TimerEvent: {}
+[38.189061] (-) TimerEvent: {}
+[38.289267] (-) TimerEvent: {}
+[38.389471] (-) TimerEvent: {}
+[38.489680] (-) TimerEvent: {}
+[38.589886] (-) TimerEvent: {}
+[38.690109] (-) TimerEvent: {}
+[38.790364] (-) TimerEvent: {}
+[38.890625] (-) TimerEvent: {}
+[38.990879] (-) TimerEvent: {}
+[39.091135] (-) TimerEvent: {}
+[39.191401] (-) TimerEvent: {}
+[39.291644] (-) TimerEvent: {}
+[39.391883] (-) TimerEvent: {}
+[39.492113] (-) TimerEvent: {}
+[39.592338] (-) TimerEvent: {}
+[39.692558] (-) TimerEvent: {}
+[39.792793] (-) TimerEvent: {}
+[39.893018] (-) TimerEvent: {}
+[39.993236] (-) TimerEvent: {}
+[40.093463] (-) TimerEvent: {}
+[40.193685] (-) TimerEvent: {}
+[40.293909] (-) TimerEvent: {}
+[40.394150] (-) TimerEvent: {}
+[40.494397] (-) TimerEvent: {}
+[40.594634] (-) TimerEvent: {}
+[40.694849] (-) TimerEvent: {}
+[40.795064] (-) TimerEvent: {}
+[40.895280] (-) TimerEvent: {}
+[40.995507] (-) TimerEvent: {}
+[41.095725] (-) TimerEvent: {}
+[41.195946] (-) TimerEvent: {}
+[41.296163] (-) TimerEvent: {}
+[41.396383] (-) TimerEvent: {}
+[41.496602] (-) TimerEvent: {}
+[41.596813] (-) TimerEvent: {}
+[41.697019] (-) TimerEvent: {}
+[41.797222] (-) TimerEvent: {}
+[41.897423] (-) TimerEvent: {}
+[41.997632] (-) TimerEvent: {}
+[42.097849] (-) TimerEvent: {}
+[42.198068] (-) TimerEvent: {}
+[42.298294] (-) TimerEvent: {}
+[42.398528] (-) TimerEvent: {}
+[42.498752] (-) TimerEvent: {}
+[42.598978] (-) TimerEvent: {}
+[42.699212] (-) TimerEvent: {}
+[42.799438] (-) TimerEvent: {}
+[42.899671] (-) TimerEvent: {}
+[42.999917] (-) TimerEvent: {}
+[43.100154] (-) TimerEvent: {}
+[43.166252] (slam_toolbox) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libtoolbox_common.so\x1b[0m\n'}
+[43.200242] (-) TimerEvent: {}
+[43.300475] (-) TimerEvent: {}
+[43.400725] (-) TimerEvent: {}
+[43.500957] (-) TimerEvent: {}
+[43.553742] (slam_toolbox) StdoutLine: {'line': b'[ 87%] Built target toolbox_common\n'}
+[43.559224] (slam_toolbox) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/lifelong_slam_toolbox.dir/src/experimental/slam_toolbox_lifelong.cpp.o\x1b[0m\n'}
+[43.559375] (slam_toolbox) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding CXX object CMakeFiles/async_slam_toolbox.dir/src/slam_toolbox_async.cpp.o\x1b[0m\n'}
+[43.559760] (slam_toolbox) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/localization_slam_toolbox.dir/src/slam_toolbox_localization.cpp.o\x1b[0m\n'}
+[43.559852] (slam_toolbox) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/sync_slam_toolbox.dir/src/slam_toolbox_sync.cpp.o\x1b[0m\n'}
+[43.559994] (slam_toolbox) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/merge_maps_kinematic.dir/src/merge_maps_kinematic.cpp.o\x1b[0m\n'}
+[43.601052] (-) TimerEvent: {}
+[43.701291] (-) TimerEvent: {}
+[43.801536] (-) TimerEvent: {}
+[43.901809] (-) TimerEvent: {}
+[44.002089] (-) TimerEvent: {}
+[44.102347] (-) TimerEvent: {}
+[44.202628] (-) TimerEvent: {}
+[44.302894] (-) TimerEvent: {}
+[44.403158] (-) TimerEvent: {}
+[44.503461] (-) TimerEvent: {}
+[44.603754] (-) TimerEvent: {}
+[44.704053] (-) TimerEvent: {}
+[44.804356] (-) TimerEvent: {}
+[44.904653] (-) TimerEvent: {}
+[45.004979] (-) TimerEvent: {}
+[45.105273] (-) TimerEvent: {}
+[45.205544] (-) TimerEvent: {}
+[45.305803] (-) TimerEvent: {}
+[45.406079] (-) TimerEvent: {}
+[45.506351] (-) TimerEvent: {}
+[45.606648] (-) TimerEvent: {}
+[45.706925] (-) TimerEvent: {}
+[45.807217] (-) TimerEvent: {}
+[45.907514] (-) TimerEvent: {}
+[46.007804] (-) TimerEvent: {}
+[46.108094] (-) TimerEvent: {}
+[46.208376] (-) TimerEvent: {}
+[46.308664] (-) TimerEvent: {}
+[46.408944] (-) TimerEvent: {}
+[46.509197] (-) TimerEvent: {}
+[46.609459] (-) TimerEvent: {}
+[46.709723] (-) TimerEvent: {}
+[46.809981] (-) TimerEvent: {}
+[46.910239] (-) TimerEvent: {}
+[47.010497] (-) TimerEvent: {}
+[47.110751] (-) TimerEvent: {}
+[47.211001] (-) TimerEvent: {}
+[47.311258] (-) TimerEvent: {}
+[47.411508] (-) TimerEvent: {}
+[47.511760] (-) TimerEvent: {}
+[47.612010] (-) TimerEvent: {}
+[47.712259] (-) TimerEvent: {}
+[47.812505] (-) TimerEvent: {}
+[47.912756] (-) TimerEvent: {}
+[48.013004] (-) TimerEvent: {}
+[48.113257] (-) TimerEvent: {}
+[48.213501] (-) TimerEvent: {}
+[48.313750] (-) TimerEvent: {}
+[48.414004] (-) TimerEvent: {}
+[48.514259] (-) TimerEvent: {}
+[48.614532] (-) TimerEvent: {}
+[48.714790] (-) TimerEvent: {}
+[48.815045] (-) TimerEvent: {}
+[48.915304] (-) TimerEvent: {}
+[49.015556] (-) TimerEvent: {}
+[49.115809] (-) TimerEvent: {}
+[49.216065] (-) TimerEvent: {}
+[49.316317] (-) TimerEvent: {}
+[49.416574] (-) TimerEvent: {}
+[49.516831] (-) TimerEvent: {}
+[49.617083] (-) TimerEvent: {}
+[49.717342] (-) TimerEvent: {}
+[49.817601] (-) TimerEvent: {}
+[49.917862] (-) TimerEvent: {}
+[50.018121] (-) TimerEvent: {}
+[50.118391] (-) TimerEvent: {}
+[50.218665] (-) TimerEvent: {}
+[50.318924] (-) TimerEvent: {}
+[50.419170] (-) TimerEvent: {}
+[50.519431] (-) TimerEvent: {}
+[50.619690] (-) TimerEvent: {}
+[50.719941] (-) TimerEvent: {}
+[50.820185] (-) TimerEvent: {}
+[50.920427] (-) TimerEvent: {}
+[51.020673] (-) TimerEvent: {}
+[51.120918] (-) TimerEvent: {}
+[51.221168] (-) TimerEvent: {}
+[51.321411] (-) TimerEvent: {}
+[51.421656] (-) TimerEvent: {}
+[51.521901] (-) TimerEvent: {}
+[51.622145] (-) TimerEvent: {}
+[51.722389] (-) TimerEvent: {}
+[51.822647] (-) TimerEvent: {}
+[51.922891] (-) TimerEvent: {}
+[52.023134] (-) TimerEvent: {}
+[52.123387] (-) TimerEvent: {}
+[52.159339] (slam_toolbox) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX shared library libasync_slam_toolbox.so\x1b[0m\n'}
+[52.223477] (-) TimerEvent: {}
+[52.323726] (-) TimerEvent: {}
+[52.423968] (-) TimerEvent: {}
+[52.428938] (slam_toolbox) StdoutLine: {'line': b'[ 93%] Built target async_slam_toolbox\n'}
+[52.434125] (slam_toolbox) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object CMakeFiles/async_slam_toolbox_node.dir/src/slam_toolbox_async_node.cpp.o\x1b[0m\n'}
+[52.524061] (-) TimerEvent: {}
+[52.624317] (-) TimerEvent: {}
+[52.637464] (slam_toolbox) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX shared library liblifelong_slam_toolbox.so\x1b[0m\n'}
+[52.724433] (-) TimerEvent: {}
+[52.824709] (-) TimerEvent: {}
+[52.909585] (slam_toolbox) StdoutLine: {'line': b'[ 95%] Built target lifelong_slam_toolbox\n'}
+[52.915774] (slam_toolbox) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/lifelong_slam_toolbox_node.dir/src/experimental/slam_toolbox_lifelong_node.cpp.o\x1b[0m\n'}
+[52.924809] (-) TimerEvent: {}
+[52.939638] (slam_toolbox) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX shared library libsync_slam_toolbox.so\x1b[0m\n'}
+[53.024908] (-) TimerEvent: {}
+[53.125176] (-) TimerEvent: {}
+[53.208641] (slam_toolbox) StdoutLine: {'line': b'[ 96%] Built target sync_slam_toolbox\n'}
+[53.214917] (slam_toolbox) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding CXX object CMakeFiles/sync_slam_toolbox_node.dir/src/slam_toolbox_sync_node.cpp.o\x1b[0m\n'}
+[53.225258] (-) TimerEvent: {}
+[53.325522] (-) TimerEvent: {}
+[53.425803] (-) TimerEvent: {}
+[53.526080] (-) TimerEvent: {}
+[53.626347] (-) TimerEvent: {}
+[53.726636] (-) TimerEvent: {}
+[53.826921] (-) TimerEvent: {}
+[53.927173] (-) TimerEvent: {}
+[54.027419] (-) TimerEvent: {}
+[54.127672] (-) TimerEvent: {}
+[54.227926] (-) TimerEvent: {}
+[54.328173] (-) TimerEvent: {}
+[54.428418] (-) TimerEvent: {}
+[54.528669] (-) TimerEvent: {}
+[54.628915] (-) TimerEvent: {}
+[54.729173] (-) TimerEvent: {}
+[54.829437] (-) TimerEvent: {}
+[54.929699] (-) TimerEvent: {}
+[55.029983] (-) TimerEvent: {}
+[55.130245] (-) TimerEvent: {}
+[55.230504] (-) TimerEvent: {}
+[55.330751] (-) TimerEvent: {}
+[55.431011] (-) TimerEvent: {}
+[55.514250] (slam_toolbox) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX executable merge_maps_kinematic\x1b[0m\n'}
+[55.531127] (-) TimerEvent: {}
+[55.631435] (-) TimerEvent: {}
+[55.731708] (-) TimerEvent: {}
+[55.832011] (-) TimerEvent: {}
+[55.932283] (-) TimerEvent: {}
+[56.020168] (slam_toolbox) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX shared library liblocalization_slam_toolbox.so\x1b[0m\n'}
+[56.032377] (-) TimerEvent: {}
+[56.047804] (slam_toolbox) StdoutLine: {'line': b'[ 96%] Built target merge_maps_kinematic\n'}
+[56.132481] (-) TimerEvent: {}
+[56.232772] (-) TimerEvent: {}
+[56.302957] (slam_toolbox) StdoutLine: {'line': b'[ 96%] Built target localization_slam_toolbox\n'}
+[56.308817] (slam_toolbox) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding CXX object CMakeFiles/localization_slam_toolbox_node.dir/src/slam_toolbox_localization_node.cpp.o\x1b[0m\n'}
+[56.332877] (-) TimerEvent: {}
+[56.433177] (-) TimerEvent: {}
+[56.533481] (-) TimerEvent: {}
+[56.633771] (-) TimerEvent: {}
+[56.734049] (-) TimerEvent: {}
+[56.834298] (-) TimerEvent: {}
+[56.934547] (-) TimerEvent: {}
+[57.034807] (-) TimerEvent: {}
+[57.135049] (-) TimerEvent: {}
+[57.235291] (-) TimerEvent: {}
+[57.335534] (-) TimerEvent: {}
+[57.435780] (-) TimerEvent: {}
+[57.536029] (-) TimerEvent: {}
+[57.636269] (-) TimerEvent: {}
+[57.736523] (-) TimerEvent: {}
+[57.836816] (-) TimerEvent: {}
+[57.937113] (-) TimerEvent: {}
+[58.037399] (-) TimerEvent: {}
+[58.137648] (-) TimerEvent: {}
+[58.237890] (-) TimerEvent: {}
+[58.338136] (-) TimerEvent: {}
+[58.438382] (-) TimerEvent: {}
+[58.538645] (-) TimerEvent: {}
+[58.638895] (-) TimerEvent: {}
+[58.739141] (-) TimerEvent: {}
+[58.839386] (-) TimerEvent: {}
+[58.939639] (-) TimerEvent: {}
+[59.039884] (-) TimerEvent: {}
+[59.140128] (-) TimerEvent: {}
+[59.240388] (-) TimerEvent: {}
+[59.340647] (-) TimerEvent: {}
+[59.440912] (-) TimerEvent: {}
+[59.541183] (-) TimerEvent: {}
+[59.641437] (-) TimerEvent: {}
+[59.741676] (-) TimerEvent: {}
+[59.841923] (-) TimerEvent: {}
+[59.942180] (-) TimerEvent: {}
+[60.042421] (-) TimerEvent: {}
+[60.142671] (-) TimerEvent: {}
+[60.242906] (-) TimerEvent: {}
+[60.343146] (-) TimerEvent: {}
+[60.443382] (-) TimerEvent: {}
+[60.543621] (-) TimerEvent: {}
+[60.643865] (-) TimerEvent: {}
+[60.744105] (-) TimerEvent: {}
+[60.844344] (-) TimerEvent: {}
+[60.944582] (-) TimerEvent: {}
+[61.044823] (-) TimerEvent: {}
+[61.084601] (slam_toolbox) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable async_slam_toolbox_node\x1b[0m\n'}
+[61.144915] (-) TimerEvent: {}
+[61.245164] (-) TimerEvent: {}
+[61.345406] (-) TimerEvent: {}
+[61.445649] (-) TimerEvent: {}
+[61.497440] (slam_toolbox) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking CXX executable lifelong_slam_toolbox_node\x1b[0m\n'}
+[61.531799] (slam_toolbox) StdoutLine: {'line': b'[ 98%] Built target async_slam_toolbox_node\n'}
+[61.545727] (-) TimerEvent: {}
+[61.645971] (-) TimerEvent: {}
+[61.746229] (-) TimerEvent: {}
+[61.846485] (-) TimerEvent: {}
+[61.907080] (slam_toolbox) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking CXX executable sync_slam_toolbox_node\x1b[0m\n'}
+[61.938175] (slam_toolbox) StdoutLine: {'line': b'[ 99%] Built target lifelong_slam_toolbox_node\n'}
+[61.946509] (-) TimerEvent: {}
+[62.046709] (-) TimerEvent: {}
+[62.146950] (-) TimerEvent: {}
+[62.247415] (-) TimerEvent: {}
+[62.324513] (slam_toolbox) StdoutLine: {'line': b'[ 99%] Built target sync_slam_toolbox_node\n'}
+[62.347492] (-) TimerEvent: {}
+[62.447708] (-) TimerEvent: {}
+[62.547968] (-) TimerEvent: {}
+[62.648224] (-) TimerEvent: {}
+[62.748481] (-) TimerEvent: {}
+[62.848733] (-) TimerEvent: {}
+[62.948986] (-) TimerEvent: {}
+[63.049230] (-) TimerEvent: {}
+[63.149477] (-) TimerEvent: {}
+[63.249720] (-) TimerEvent: {}
+[63.349950] (-) TimerEvent: {}
+[63.450155] (-) TimerEvent: {}
+[63.550353] (-) TimerEvent: {}
+[63.650555] (-) TimerEvent: {}
+[63.750758] (-) TimerEvent: {}
+[63.850967] (-) TimerEvent: {}
+[63.951177] (-) TimerEvent: {}
+[64.051393] (-) TimerEvent: {}
+[64.151603] (-) TimerEvent: {}
+[64.251812] (-) TimerEvent: {}
+[64.352026] (-) TimerEvent: {}
+[64.452227] (-) TimerEvent: {}
+[64.552425] (-) TimerEvent: {}
+[64.652626] (-) TimerEvent: {}
+[64.752835] (-) TimerEvent: {}
+[64.780804] (slam_toolbox) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable localization_slam_toolbox_node\x1b[0m\n'}
+[64.852925] (-) TimerEvent: {}
+[64.953161] (-) TimerEvent: {}
+[65.053399] (-) TimerEvent: {}
+[65.153649] (-) TimerEvent: {}
+[65.186231] (slam_toolbox) StdoutLine: {'line': b'[100%] Built target localization_slam_toolbox_node\n'}
+[65.194678] (slam_toolbox) CommandEnded: {'returncode': 0}
+[65.253738] (-) TimerEvent: {}
+[65.330508] (slam_toolbox) JobProgress: {'identifier': 'slam_toolbox', 'progress': 'install'}
+[65.353832] (-) TimerEvent: {}
+[65.355940] (slam_toolbox) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/kim/lostchild/src/build/slam_toolbox'], 'cwd': '/home/kim/lostchild/src/build/slam_toolbox', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'kim'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_NAMESPACE', 'robot1'), ('SSH_AGENT_PID', '2357'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}]: {message}'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kim'), ('OLDPWD', '/home/kim/lostchild'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2176'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '13810'), ('_colcon_cd_root', '/home/kim/robot_ws'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/kim/robot_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kim'), ('JOURNAL_STREAM', '8:44987'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'kim'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/kim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kim-MS-7C92:@/tmp/.ICE-unix/2393,unix/kim-MS-7C92:/tmp/.ICE-unix/2393'), ('INVOCATION_ID', 'e792ec723ace4ec1ac0f69599d3dc9db'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/home/kim/robot_ws/install/lidar:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:5c07853e-65b2-4968-a99d-4ef92c27ea5c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/kim/lostchild/src/build/slam_toolbox'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kim/robot_ws/install/lidar/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/kim/robot_ws/install/lidar:/opt/ros/foxy')]), 'shell': False}
+[65.378565] (slam_toolbox) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[65.378728] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/ament_index/resource_index/rosidl_interfaces/slam_toolbox\n'}
+[65.378887] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox\n'}
+[65.378987] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/msg\n'}
+[65.379179] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/msg/rosidl_generator_c__visibility_control.h\n'}
+[65.379246] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv\n'}
+[65.379365] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/loop_closure.h\n'}
+[65.379501] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/clear_queue.h\n'}
+[65.379590] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/deserialize_pose_graph.h\n'}
+[65.379752] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/save_map.h\n'}
+[65.379822] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/serialize_pose_graph.h\n'}
+[65.379884] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail\n'}
+[65.379942] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__functions.c\n'}
+[65.380033] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__functions.h\n'}
+[65.380150] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__type_support.h\n'}
+[65.380210] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__struct.h\n'}
+[65.380268] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__functions.c\n'}
+[65.380391] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__type_support.h\n'}
+[65.380453] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__functions.c\n'}
+[65.380541] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__functions.h\n'}
+[65.380631] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__functions.h\n'}
+[65.380722] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__type_support.h\n'}
+[65.380813] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__type_support.h\n'}
+[65.380909] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__functions.h\n'}
+[65.381025] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__struct.h\n'}
+[65.381120] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__struct.h\n'}
+[65.381209] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__functions.h\n'}
+[65.381298] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__type_support.h\n'}
+[65.381384] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__functions.c\n'}
+[65.381468] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__type_support.h\n'}
+[65.381552] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__functions.h\n'}
+[65.381639] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__functions.c\n'}
+[65.381732] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__functions.c\n'}
+[65.381828] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__functions.h\n'}
+[65.381917] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__struct.h\n'}
+[65.382007] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__type_support.h\n'}
+[65.382101] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__struct.h\n'}
+[65.382190] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__functions.c\n'}
+[65.382280] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__struct.h\n'}
+[65.382364] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__struct.h\n'}
+[65.382456] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__functions.c\n'}
+[65.382567] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__struct.h\n'}
+[65.382656] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__functions.c\n'}
+[65.382754] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__functions.h\n'}
+[65.382849] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__type_support.h\n'}
+[65.382937] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__struct.h\n'}
+[65.383020] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__type_support.h\n'}
+[65.383105] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__functions.h\n'}
+[65.383202] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__functions.c\n'}
+[65.383300] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__functions.h\n'}
+[65.383393] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__struct.h\n'}
+[65.383478] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.h\n'}
+[65.383562] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/pause.h\n'}
+[65.383662] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/toggle_interactive.h\n'}
+[65.383740] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/merge_maps.h\n'}
+[65.383827] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/clear.h\n'}
+[65.383904] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/add_submap.h\n'}
+[65.384071] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/environment/library_path.sh\n'}
+[65.384212] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/environment/library_path.dsv\n'}
+[65.384380] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/libslam_toolbox__rosidl_generator_c.so\n'}
+[65.384722] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/libslam_toolbox__rosidl_generator_c.so" to ""\n'}
+[65.384828] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox\n'}
+[65.384902] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/msg\n'}
+[65.384958] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[65.385047] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv\n'}
+[65.385175] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail\n'}
+[65.385273] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_fastrtps_c.h\n'}
+[65.385348] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_fastrtps_c.h\n'}
+[65.385418] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__rosidl_typesupport_fastrtps_c.h\n'}
+[65.385523] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_fastrtps_c.h\n'}
+[65.385636] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_fastrtps_c.h\n'}
+[65.385732] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_fastrtps_c.h\n'}
+[65.385804] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_fastrtps_c.h\n'}
+[65.385909] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__rosidl_typesupport_fastrtps_c.h\n'}
+[65.386015] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_fastrtps_c.h\n'}
+[65.386137] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__rosidl_typesupport_fastrtps_c.h\n'}
+[65.386210] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_c.so\n'}
+[65.386427] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[65.386553] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox\n'}
+[65.386666] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/msg\n'}
+[65.386786] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[65.386857] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv\n'}
+[65.386927] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail\n'}
+[65.386995] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[65.387128] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[65.387200] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[65.387271] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[65.387340] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/dds_fastrtps\n'}
+[65.387444] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[65.387557] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[65.387633] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[65.387763] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[65.387837] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[65.387904] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[65.388006] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_cpp.so\n'}
+[65.388248] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[65.388339] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox\n'}
+[65.388396] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/msg\n'}
+[65.388485] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[65.388565] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv\n'}
+[65.388613] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail\n'}
+[65.388684] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_introspection_c.h\n'}
+[65.388757] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__rosidl_typesupport_introspection_c.h\n'}
+[65.388827] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__type_support.c\n'}
+[65.388898] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__type_support.c\n'}
+[65.388971] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_introspection_c.h\n'}
+[65.389059] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__type_support.c\n'}
+[65.389155] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__rosidl_typesupport_introspection_c.h\n'}
+[65.389239] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_introspection_c.h\n'}
+[65.389322] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__type_support.c\n'}
+[65.389415] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__rosidl_typesupport_introspection_c.h\n'}
+[65.389499] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__type_support.c\n'}
+[65.389594] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__type_support.c\n'}
+[65.389694] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__type_support.c\n'}
+[65.389794] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_introspection_c.h\n'}
+[65.389880] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__type_support.c\n'}
+[65.389971] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_introspection_c.h\n'}
+[65.390055] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__type_support.c\n'}
+[65.390150] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_introspection_c.h\n'}
+[65.390235] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.c\n'}
+[65.390337] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_introspection_c.h\n'}
+[65.390474] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_c.so\n'}
+[65.390757] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_c.so" to ""\n'}
+[65.390834] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_c.so\n'}
+[65.391073] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_c.so" to ""\n'}
+[65.391146] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox\n'}
+[65.391224] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv\n'}
+[65.391269] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/pause.hpp\n'}
+[65.391341] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/clear.hpp\n'}
+[65.391413] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/save_map.hpp\n'}
+[65.391480] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/deserialize_pose_graph.hpp\n'}
+[65.391603] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/loop_closure.hpp\n'}
+[65.391674] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/merge_maps.hpp\n'}
+[65.391745] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/add_submap.hpp\n'}
+[65.391832] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/serialize_pose_graph.hpp\n'}
+[65.391906] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail\n'}
+[65.391975] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__traits.hpp\n'}
+[65.392053] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__traits.hpp\n'}
+[65.392138] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__builder.hpp\n'}
+[65.392220] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__struct.hpp\n'}
+[65.392318] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__builder.hpp\n'}
+[65.392401] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__traits.hpp\n'}
+[65.392485] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__builder.hpp\n'}
+[65.392568] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__struct.hpp\n'}
+[65.392657] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__traits.hpp\n'}
+[65.392747] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__struct.hpp\n'}
+[65.392836] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__builder.hpp\n'}
+[65.392918] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__traits.hpp\n'}
+[65.393001] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__builder.hpp\n'}
+[65.393087] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__builder.hpp\n'}
+[65.393177] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__builder.hpp\n'}
+[65.393266] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__struct.hpp\n'}
+[65.393358] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__traits.hpp\n'}
+[65.393481] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__traits.hpp\n'}
+[65.393566] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__struct.hpp\n'}
+[65.393663] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__struct.hpp\n'}
+[65.393751] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__struct.hpp\n'}
+[65.393839] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__struct.hpp\n'}
+[65.393933] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__builder.hpp\n'}
+[65.394015] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__traits.hpp\n'}
+[65.394101] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__struct.hpp\n'}
+[65.394189] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__struct.hpp\n'}
+[65.394279] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__traits.hpp\n'}
+[65.394363] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__builder.hpp\n'}
+[65.394448] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__builder.hpp\n'}
+[65.394548] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__traits.hpp\n'}
+[65.394635] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/clear_queue.hpp\n'}
+[65.394717] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/toggle_interactive.hpp\n'}
+[65.394842] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox\n'}
+[65.394924] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv\n'}
+[65.394972] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail\n'}
+[65.395044] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_introspection_cpp.hpp\n'}
+[65.395116] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__type_support.cpp\n'}
+[65.395180] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__type_support.cpp\n'}
+[65.395249] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__type_support.cpp\n'}
+[65.395322] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_introspection_cpp.hpp\n'}
+[65.395395] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.cpp\n'}
+[65.395474] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__rosidl_typesupport_introspection_cpp.hpp\n'}
+[65.395547] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__type_support.cpp\n'}
+[65.395625] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__type_support.cpp\n'}
+[65.395706] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__type_support.cpp\n'}
+[65.395811] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_introspection_cpp.hpp\n'}
+[65.395873] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_introspection_cpp.hpp\n'}
+[65.395931] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__type_support.cpp\n'}
+[65.395989] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_introspection_cpp.hpp\n'}
+[65.396074] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__type_support.cpp\n'}
+[65.396146] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_introspection_cpp.hpp\n'}
+[65.396204] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_introspection_cpp.hpp\n'}
+[65.396264] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__type_support.cpp\n'}
+[65.396327] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__rosidl_typesupport_introspection_cpp.hpp\n'}
+[65.396389] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__rosidl_typesupport_introspection_cpp.hpp\n'}
+[65.396490] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_cpp.so\n'}
+[65.396717] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[65.396775] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_cpp.so\n'}
+[65.396954] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_cpp.so" to ""\n'}
+[65.397008] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/environment/pythonpath.sh\n'}
+[65.397074] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/environment/pythonpath.dsv\n'}
+[65.397187] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/__init__.py\n'}
+[65.421282] (slam_toolbox) StdoutLine: {'line': b"Compiling '/home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/__init__.py'...\n"}
+[65.423721] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv\n'}
+[65.423798] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_loop_closure_s.c\n'}
+[65.423873] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_serialize_pose_graph_s.c\n'}
+[65.423948] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/__init__.py\n'}
+[65.424022] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_deserialize_pose_graph.py\n'}
+[65.424095] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_clear_queue_s.c\n'}
+[65.424166] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_add_submap.py\n'}
+[65.424239] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_serialize_pose_graph.py\n'}
+[65.424312] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_deserialize_pose_graph_s.c\n'}
+[65.424380] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_toggle_interactive.py\n'}
+[65.424451] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_merge_maps_s.c\n'}
+[65.424523] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_clear_queue.py\n'}
+[65.424603] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_save_map.py\n'}
+[65.424664] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_loop_closure.py\n'}
+[65.424741] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_clear_s.c\n'}
+[65.424800] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_pause.py\n'}
+[65.424877] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_clear.py\n'}
+[65.424938] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_merge_maps.py\n'}
+[65.425013] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_add_submap_s.c\n'}
+[65.425069] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_pause_s.c\n'}
+[65.425145] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_toggle_interactive_s.c\n'}
+[65.425203] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_save_map_s.c\n'}
+[65.425273] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[65.425555] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[65.425638] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[65.425903] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[65.425974] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[65.426244] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[65.426334] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/libslam_toolbox__python.so\n'}
+[65.426596] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/libslam_toolbox__python.so" to ""\n'}
+[65.426675] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srv/Pause.idl\n'}
+[65.426779] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srv/ClearQueue.idl\n'}
+[65.426876] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srv/ToggleInteractive.idl\n'}
+[65.426972] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srv/Clear.idl\n'}
+[65.427066] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srv/SaveMap.idl\n'}
+[65.427158] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srv/LoopClosure.idl\n'}
+[65.427256] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srv/MergeMaps.idl\n'}
+[65.427350] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srv/AddSubmap.idl\n'}
+[65.427443] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srv/DeserializePoseGraph.idl\n'}
+[65.427537] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srv/SerializePoseGraph.idl\n'}
+[65.427653] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/Pause.srv\n'}
+[65.427750] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/Pause_Request.msg\n'}
+[65.427844] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/Pause_Response.msg\n'}
+[65.427937] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/ClearQueue.srv\n'}
+[65.428028] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/ClearQueue_Request.msg\n'}
+[65.428120] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/ClearQueue_Response.msg\n'}
+[65.428211] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/ToggleInteractive.srv\n'}
+[65.428300] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/ToggleInteractive_Request.msg\n'}
+[65.428391] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/ToggleInteractive_Response.msg\n'}
+[65.428479] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/Clear.srv\n'}
+[65.428568] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/Clear_Request.msg\n'}
+[65.428666] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/Clear_Response.msg\n'}
+[65.428752] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/SaveMap.srv\n'}
+[65.428845] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/SaveMap_Request.msg\n'}
+[65.428937] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/SaveMap_Response.msg\n'}
+[65.429030] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/LoopClosure.srv\n'}
+[65.429139] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/LoopClosure_Request.msg\n'}
+[65.429262] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/LoopClosure_Response.msg\n'}
+[65.429352] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/MergeMaps.srv\n'}
+[65.429445] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/MergeMaps_Request.msg\n'}
+[65.429543] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/MergeMaps_Response.msg\n'}
+[65.429627] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/AddSubmap.srv\n'}
+[65.429717] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/AddSubmap_Request.msg\n'}
+[65.429812] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/AddSubmap_Response.msg\n'}
+[65.429901] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/DeserializePoseGraph.srv\n'}
+[65.429993] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/DeserializePoseGraph_Request.msg\n'}
+[65.430088] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/DeserializePoseGraph_Response.msg\n'}
+[65.430180] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/SerializePoseGraph.srv\n'}
+[65.430272] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/SerializePoseGraph_Request.msg\n'}
+[65.430364] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/srvs/SerializePoseGraph_Response.msg\n'}
+[65.430451] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/rviz_plugins.xml\n'}
+[65.430551] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/solver_plugins.xml\n'}
+[65.430685] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/slam_toolbox/async_slam_toolbox_node\n'}
+[65.431564] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/slam_toolbox/async_slam_toolbox_node" to ""\n'}
+[65.431642] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/slam_toolbox/sync_slam_toolbox_node\n'}
+[65.432585] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/slam_toolbox/sync_slam_toolbox_node" to ""\n'}
+[65.432662] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/slam_toolbox/localization_slam_toolbox_node\n'}
+[65.433664] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/slam_toolbox/localization_slam_toolbox_node" to ""\n'}
+[65.433756] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/slam_toolbox/lifelong_slam_toolbox_node\n'}
+[65.434727] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/slam_toolbox/lifelong_slam_toolbox_node" to ""\n'}
+[65.434810] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/slam_toolbox/merge_maps_kinematic\n'}
+[65.435940] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/slam_toolbox/merge_maps_kinematic" to ""\n'}
+[65.436012] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/libtoolbox_common.so\n'}
+[65.437857] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/libtoolbox_common.so" to ""\n'}
+[65.437924] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/libSlamToolboxPlugin.so\n'}
+[65.438694] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/libSlamToolboxPlugin.so" to ""\n'}
+[65.438770] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/libceres_solver_plugin.so\n'}
+[65.439528] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/libceres_solver_plugin.so" to ""\n'}
+[65.439604] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/libasync_slam_toolbox.so\n'}
+[65.440354] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/libasync_slam_toolbox.so" to ""\n'}
+[65.440427] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/libsync_slam_toolbox.so\n'}
+[65.441196] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/libsync_slam_toolbox.so" to ""\n'}
+[65.441270] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/liblocalization_slam_toolbox.so\n'}
+[65.442291] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/liblocalization_slam_toolbox.so" to ""\n'}
+[65.442359] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/liblifelong_slam_toolbox.so\n'}
+[65.443148] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/liblifelong_slam_toolbox.so" to ""\n'}
+[65.443275] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/lib/libSlamToolboxPlugin.so\n'}
+[65.443403] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include\n'}
+[65.443507] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox\n'}
+[65.443585] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/slam_toolbox_async.hpp\n'}
+[65.443689] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/visualization_utils.hpp\n'}
+[65.443764] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/laser_utils.hpp\n'}
+[65.443834] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/map_saver.hpp\n'}
+[65.443942] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/serialization.hpp\n'}
+[65.444019] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/slam_toolbox_common.hpp\n'}
+[65.444091] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/slam_toolbox_localization.hpp\n'}
+[65.444162] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/loop_closure_assistant.hpp\n'}
+[65.444254] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/get_pose_helper.hpp\n'}
+[65.444365] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/merge_maps_kinematic.hpp\n'}
+[65.444436] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/slam_mapper.hpp\n'}
+[65.444507] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/toolbox_types.hpp\n'}
+[65.444577] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/experimental\n'}
+[65.444646] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/experimental/slam_toolbox_lifelong.hpp\n'}
+[65.444755] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/toolbox_msgs.hpp\n'}
+[65.444825] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/snap_utils.hpp\n'}
+[65.444894] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include/slam_toolbox/slam_toolbox_sync.hpp\n'}
+[65.444964] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/launch\n'}
+[65.445035] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/launch/online_async_launch.py\n'}
+[65.445106] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/launch/online_sync_launch.py\n'}
+[65.445223] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/launch/localization_launch.py\n'}
+[65.445297] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/launch/offline_launch.py\n'}
+[65.445367] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/launch/merge_maps_kinematic_launch.py\n'}
+[65.445437] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/launch/lifelong_launch.py\n'}
+[65.445507] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/launch/__pycache__\n'}
+[65.445576] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/launch/__pycache__/online_async_launch.cpython-38.pyc\n'}
+[65.445646] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/launch/__pycache__/online_sync_launch.cpython-38.pyc\n'}
+[65.445715] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/config\n'}
+[65.445820] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/config/mapper_params_lifelong.yaml\n'}
+[65.445896] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/config/mapper_params_localization.yaml\n'}
+[65.445968] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/config/mapper_params_online_sync.yaml\n'}
+[65.446055] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/config/mapper_params_offline.yaml\n'}
+[65.446128] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/config/mapper_params_online_async.yaml\n'}
+[65.446197] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/solver_plugins.xml\n'}
+[65.446266] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/rviz_plugins.xml\n'}
+[65.446335] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/ament_index/resource_index/package_run_dependencies/slam_toolbox\n'}
+[65.446440] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/ament_index/resource_index/parent_prefix_path/slam_toolbox\n'}
+[65.446533] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/environment/ament_prefix_path.sh\n'}
+[65.446624] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/environment/ament_prefix_path.dsv\n'}
+[65.446698] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/environment/path.sh\n'}
+[65.446791] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/environment/path.dsv\n'}
+[65.446863] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/local_setup.bash\n'}
+[65.446961] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/local_setup.sh\n'}
+[65.447046] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/local_setup.zsh\n'}
+[65.447117] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/local_setup.dsv\n'}
+[65.447207] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/package.dsv\n'}
+[65.447273] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/ament_index/resource_index/packages/slam_toolbox\n'}
+[65.447347] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/ament_index/resource_index/rviz_common__pluginlib__plugin/slam_toolbox\n'}
+[65.447456] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/ament_index/resource_index/slam_toolbox__pluginlib__plugin/slam_toolbox\n'}
+[65.447566] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_generator_cExport.cmake\n'}
+[65.447663] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_generator_cExport-release.cmake\n'}
+[65.447761] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cExport.cmake\n'}
+[65.447850] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[65.447940] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cExport.cmake\n'}
+[65.448033] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cExport-release.cmake\n'}
+[65.448127] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_generator_cppExport.cmake\n'}
+[65.448228] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[65.448312] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[65.448408] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cppExport.cmake\n'}
+[65.448494] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cppExport-release.cmake\n'}
+[65.448590] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/SlamToolboxPluginExport.cmake\n'}
+[65.448676] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/SlamToolboxPluginExport-release.cmake\n'}
+[65.448760] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake-extras.cmake\n'}
+[65.448845] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[65.448934] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[65.449018] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[65.449105] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[65.449192] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[65.449278] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[65.449355] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolboxConfig.cmake\n'}
+[65.449426] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolboxConfig-version.cmake\n'}
+[65.449495] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/package.xml\n'}
+[65.449764] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/kim/lostchild/src/install/slam_toolbox/include/\n'}
+[65.449830] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include//karto_sdk\n'}
+[65.449900] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include//karto_sdk/Karto.h\n'}
+[65.449987] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include//karto_sdk/nanoflann.hpp\n'}
+[65.450077] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include//karto_sdk/Mapper.h\n'}
+[65.450164] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include//karto_sdk/nanoflann_adaptors.h\n'}
+[65.450226] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include//karto_sdk/Math.h\n'}
+[65.450290] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include//karto_sdk/Macros.h\n'}
+[65.450359] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/include//karto_sdk/Types.h\n'}
+[65.450429] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/lib/libkartoSlamToolbox.so\n'}
+[65.452859] (slam_toolbox) StdoutLine: {'line': b'-- Set runtime path of "/home/kim/lostchild/src/install/slam_toolbox/lib/libkartoSlamToolbox.so" to ""\n'}
+[65.452937] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/environment/library_path.sh\n'}
+[65.453016] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/environment/library_path.dsv\n'}
+[65.453100] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/ament_index/resource_index/package_run_dependencies/karto_sdk\n'}
+[65.453187] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/ament_index/resource_index/parent_prefix_path/karto_sdk\n'}
+[65.453270] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/environment/ament_prefix_path.sh\n'}
+[65.453357] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/environment/ament_prefix_path.dsv\n'}
+[65.453438] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/environment/path.sh\n'}
+[65.453520] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/environment/path.dsv\n'}
+[65.453599] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/local_setup.bash\n'}
+[65.453680] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/local_setup.sh\n'}
+[65.453757] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/local_setup.zsh\n'}
+[65.453838] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/local_setup.dsv\n'}
+[65.453894] (-) TimerEvent: {}
+[65.454025] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/package.dsv\n'}
+[65.454125] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/ament_index/resource_index/packages/karto_sdk\n'}
+[65.454206] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[65.454275] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[65.454345] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[65.454422] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/cmake/karto_sdkConfig.cmake\n'}
+[65.454515] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/cmake/karto_sdkConfig-version.cmake\n'}
+[65.454610] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/kim/lostchild/src/install/slam_toolbox/share/karto_sdk/package.xml\n'}
+[65.458768] (slam_toolbox) CommandEnded: {'returncode': 0}
+[65.553997] (-) TimerEvent: {}
+[65.634366] (slam_toolbox) JobEnded: {'identifier': 'slam_toolbox', 'rc': 0}
+[65.635088] (-) EventReactorShutdown: {}

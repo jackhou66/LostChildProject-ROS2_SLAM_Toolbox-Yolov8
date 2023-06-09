@@ -1,0 +1,41 @@
+running egg_info
+creating ../build/robot_localization/robot_localization.egg-info
+writing ../build/robot_localization/robot_localization.egg-info/PKG-INFO
+writing dependency_links to ../build/robot_localization/robot_localization.egg-info/dependency_links.txt
+writing entry points to ../build/robot_localization/robot_localization.egg-info/entry_points.txt
+writing requirements to ../build/robot_localization/robot_localization.egg-info/requires.txt
+writing top-level names to ../build/robot_localization/robot_localization.egg-info/top_level.txt
+writing manifest file '../build/robot_localization/robot_localization.egg-info/SOURCES.txt'
+reading manifest file '../build/robot_localization/robot_localization.egg-info/SOURCES.txt'
+writing manifest file '../build/robot_localization/robot_localization.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/kim/lostchild/src/build/robot_localization/build
+creating /home/kim/lostchild/src/build/robot_localization/build/lib
+creating /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization
+copying robot_localization/__init__.py -> /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization
+copying robot_localization/Odometry.py -> /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization
+copying robot_localization/Pulse_publisher.py -> /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization
+copying robot_localization/IMU_publisher.py -> /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization
+running install
+running install_lib
+creating /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization
+copying /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization/__init__.py -> /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization
+copying /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization/Odometry.py -> /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization
+copying /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization/Pulse_publisher.py -> /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization
+copying /home/kim/lostchild/src/build/robot_localization/build/lib/robot_localization/IMU_publisher.py -> /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization
+byte-compiling /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization/Odometry.py to Odometry.cpython-38.pyc
+byte-compiling /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization/Pulse_publisher.py to Pulse_publisher.cpython-38.pyc
+byte-compiling /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization/IMU_publisher.py to IMU_publisher.cpython-38.pyc
+running install_data
+creating /home/kim/lostchild/src/install/robot_localization/share/ament_index
+creating /home/kim/lostchild/src/install/robot_localization/share/ament_index/resource_index
+creating /home/kim/lostchild/src/install/robot_localization/share/ament_index/resource_index/packages
+copying resource/robot_localization -> /home/kim/lostchild/src/install/robot_localization/share/ament_index/resource_index/packages
+copying package.xml -> /home/kim/lostchild/src/install/robot_localization/share/robot_localization
+running install_egg_info
+Copying ../build/robot_localization/robot_localization.egg-info to /home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages/robot_localization-0.0.0-py3.8.egg-info
+running install_scripts
+Installing robot_localization script to /home/kim/lostchild/src/install/robot_localization/lib/robot_localization
+writing list of installed files to '/home/kim/lostchild/src/build/robot_localization/install.log'

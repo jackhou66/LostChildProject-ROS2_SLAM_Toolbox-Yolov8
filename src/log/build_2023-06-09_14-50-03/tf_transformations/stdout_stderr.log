@@ -1,0 +1,30 @@
+running egg_info
+creating ../build/tf_transformations/tf_transformations.egg-info
+writing ../build/tf_transformations/tf_transformations.egg-info/PKG-INFO
+writing dependency_links to ../build/tf_transformations/tf_transformations.egg-info/dependency_links.txt
+writing requirements to ../build/tf_transformations/tf_transformations.egg-info/requires.txt
+writing top-level names to ../build/tf_transformations/tf_transformations.egg-info/top_level.txt
+writing manifest file '../build/tf_transformations/tf_transformations.egg-info/SOURCES.txt'
+reading manifest file '../build/tf_transformations/tf_transformations.egg-info/SOURCES.txt'
+writing manifest file '../build/tf_transformations/tf_transformations.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/kim/lostchild/src/build/tf_transformations/build
+creating /home/kim/lostchild/src/build/tf_transformations/build/lib
+creating /home/kim/lostchild/src/build/tf_transformations/build/lib/tf_transformations
+copying tf_transformations/__init__.py -> /home/kim/lostchild/src/build/tf_transformations/build/lib/tf_transformations
+running install
+running install_lib
+creating /home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages/tf_transformations
+copying /home/kim/lostchild/src/build/tf_transformations/build/lib/tf_transformations/__init__.py -> /home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages/tf_transformations
+byte-compiling /home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages/tf_transformations/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/kim/lostchild/src/install/tf_transformations/share/ament_index
+creating /home/kim/lostchild/src/install/tf_transformations/share/ament_index/resource_index
+creating /home/kim/lostchild/src/install/tf_transformations/share/ament_index/resource_index/packages
+copying resource/tf_transformations -> /home/kim/lostchild/src/install/tf_transformations/share/ament_index/resource_index/packages
+copying package.xml -> /home/kim/lostchild/src/install/tf_transformations/share/tf_transformations
+running install_egg_info
+Copying ../build/tf_transformations/tf_transformations.egg-info to /home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages/tf_transformations-1.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/kim/lostchild/src/build/tf_transformations/install.log'

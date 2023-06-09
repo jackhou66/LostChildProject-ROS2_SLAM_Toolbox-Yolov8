@@ -1,0 +1,345 @@
+[0.264s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.264s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f30ab9a71f0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f30ab9a71f0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f30ab9a7730>)
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.289s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kim/lostchild/src'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(lidar) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(lidar) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(lidar) by extension 'ignore_ament_install'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(lidar) by extensions ['colcon_pkg']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(lidar) by extension 'colcon_pkg'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(lidar) by extensions ['colcon_meta']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(lidar) by extension 'colcon_meta'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(lidar) by extensions ['ros']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(lidar) by extension 'ros'
+[0.300s] DEBUG:colcon.colcon_core.package_identification:Package 'lidar' with type 'ros.ament_python' and name 'lidar'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(robot_localization) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(robot_localization) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(robot_localization) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(robot_localization) by extensions ['colcon_pkg']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(robot_localization) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(robot_localization) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(robot_localization) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(robot_localization) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(robot_localization) by extension 'ros'
+[0.301s] DEBUG:colcon.colcon_core.package_identification:Package 'robot_localization' with type 'ros.ament_python' and name 'robot_localization'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(slam_toolbox-foxy-devel) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(slam_toolbox-foxy-devel) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(slam_toolbox-foxy-devel) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(slam_toolbox-foxy-devel) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(slam_toolbox-foxy-devel) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(slam_toolbox-foxy-devel) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(slam_toolbox-foxy-devel) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(slam_toolbox-foxy-devel) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(slam_toolbox-foxy-devel) by extension 'ros'
+[0.303s] DEBUG:colcon.colcon_core.package_identification:Package 'slam_toolbox-foxy-devel' with type 'ros.ament_cmake' and name 'slam_toolbox'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(static_tf) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(static_tf) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(static_tf) by extension 'ignore_ament_install'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(static_tf) by extensions ['colcon_pkg']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(static_tf) by extension 'colcon_pkg'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(static_tf) by extensions ['colcon_meta']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(static_tf) by extension 'colcon_meta'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(static_tf) by extensions ['ros']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(static_tf) by extension 'ros'
+[0.304s] DEBUG:colcon.colcon_core.package_identification:Package 'static_tf' with type 'ros.ament_python' and name 'static_tf'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extensions ['ignore', 'ignore_ament_install']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extension 'ignore'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extension 'ignore_ament_install'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extensions ['colcon_pkg']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extension 'colcon_pkg'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extensions ['colcon_meta']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extension 'colcon_meta'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extensions ['ros']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extension 'ros'
+[0.304s] DEBUG:colcon.colcon_core.package_identification:Package 'tf_transformations' with type 'ros.ament_python' and name 'tf_transformations'
+[0.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.324s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/kim/robot_ws/install
+[0.325s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 277 installed packages in /opt/ros/foxy
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_target' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_clean_cache' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_clean_first' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_force_configure' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'ament_cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'catkin_cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.378s] DEBUG:colcon.colcon_core.verb:Building package 'lidar' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kim/lostchild/src/build/lidar', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kim/lostchild/src/install/lidar', 'merge_install': False, 'path': '/home/kim/lostchild/src/lidar', 'symlink_install': False, 'test_result_base': None}
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_args' from command line to 'None'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_target' from command line to 'None'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_clean_cache' from command line to 'False'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_clean_first' from command line to 'False'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_force_configure' from command line to 'False'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'ament_cmake_args' from command line to 'None'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'catkin_cmake_args' from command line to 'None'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.380s] DEBUG:colcon.colcon_core.verb:Building package 'slam_toolbox' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kim/lostchild/src/build/slam_toolbox', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kim/lostchild/src/install/slam_toolbox', 'merge_install': False, 'path': '/home/kim/lostchild/src/slam_toolbox-foxy-devel', 'symlink_install': False, 'test_result_base': None}
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'cmake_args' from command line to 'None'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'cmake_target' from command line to 'None'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'cmake_clean_cache' from command line to 'False'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'cmake_clean_first' from command line to 'False'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'cmake_force_configure' from command line to 'False'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'ament_cmake_args' from command line to 'None'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'catkin_cmake_args' from command line to 'None'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.381s] DEBUG:colcon.colcon_core.verb:Building package 'static_tf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kim/lostchild/src/build/static_tf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kim/lostchild/src/install/static_tf', 'merge_install': False, 'path': '/home/kim/lostchild/src/static_tf', 'symlink_install': False, 'test_result_base': None}
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_args' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_target' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_clean_cache' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_clean_first' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_force_configure' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'ament_cmake_args' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'catkin_cmake_args' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.382s] DEBUG:colcon.colcon_core.verb:Building package 'tf_transformations' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kim/lostchild/src/build/tf_transformations', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kim/lostchild/src/install/tf_transformations', 'merge_install': False, 'path': '/home/kim/lostchild/src/tf_transformations', 'symlink_install': False, 'test_result_base': None}
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_args' from command line to 'None'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_target' from command line to 'None'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_clean_first' from command line to 'False'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_force_configure' from command line to 'False'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'ament_cmake_args' from command line to 'None'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.383s] DEBUG:colcon.colcon_core.verb:Building package 'robot_localization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kim/lostchild/src/build/robot_localization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kim/lostchild/src/install/robot_localization', 'merge_install': False, 'path': '/home/kim/lostchild/src/robot_localization', 'symlink_install': False, 'test_result_base': None}
+[0.384s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.389s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.389s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kim/lostchild/src/tf_transformations' with build type 'ament_python'
+[0.389s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf_transformations', 'ament_prefix_path')
+[0.393s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/tf_transformations/share/tf_transformations/hook/ament_prefix_path.ps1'
+[0.394s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kim/lostchild/src/install/tf_transformations/share/tf_transformations/hook/ament_prefix_path.dsv'
+[0.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/tf_transformations/share/tf_transformations/hook/ament_prefix_path.sh'
+[0.396s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.396s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.401s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kim/lostchild/src/lidar' with build type 'ament_python'
+[0.401s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar', 'ament_prefix_path')
+[0.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/lidar/share/lidar/hook/ament_prefix_path.ps1'
+[0.404s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kim/lostchild/src/install/lidar/share/lidar/hook/ament_prefix_path.dsv'
+[0.404s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/lidar/share/lidar/hook/ament_prefix_path.sh'
+[0.406s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.406s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.411s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kim/lostchild/src/slam_toolbox-foxy-devel' with build type 'ament_cmake'
+[0.412s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kim/lostchild/src/slam_toolbox-foxy-devel'
+[0.414s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.414s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.418s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kim/lostchild/src/static_tf' with build type 'ament_python'
+[0.418s] Level 1:colcon.colcon_core.shell:create_environment_hook('static_tf', 'ament_prefix_path')
+[0.420s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/static_tf/share/static_tf/hook/ament_prefix_path.ps1'
+[0.421s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kim/lostchild/src/install/static_tf/share/static_tf/hook/ament_prefix_path.dsv'
+[0.421s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/static_tf/share/static_tf/hook/ament_prefix_path.sh'
+[0.423s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.423s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.602s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kim/lostchild/src/tf_transformations'
+[0.605s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.605s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.783s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kim/lostchild/src/lidar'
+[0.785s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.786s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.795s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kim/lostchild/src/build/slam_toolbox': CMAKE_PREFIX_PATH=/home/kim/robot_ws/install/lidar:/opt/ros/foxy /usr/local/bin/cmake /home/kim/lostchild/src/slam_toolbox-foxy-devel -DCMAKE_INSTALL_PREFIX=/home/kim/lostchild/src/install/slam_toolbox
+[0.969s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kim/lostchild/src/static_tf'
+[0.971s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.972s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.267s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kim/lostchild/src/lidar': PYTHONPATH=/home/kim/lostchild/src/build/lidar/prefix_override:/home/kim/lostchild/src/install/lidar/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/lidar build --build-base /home/kim/lostchild/src/build/lidar/build install --record /home/kim/lostchild/src/build/lidar/install.log --install-scripts $base/lib/lidar --single-version-externally-managed
+[1.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kim/lostchild/src/static_tf': PYTHONPATH=/home/kim/lostchild/src/build/static_tf/prefix_override:/home/kim/lostchild/src/install/static_tf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/static_tf build --build-base /home/kim/lostchild/src/build/static_tf/build install --record /home/kim/lostchild/src/build/static_tf/install.log --install-scripts $base/lib/static_tf --single-version-externally-managed
+[1.275s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kim/lostchild/src/tf_transformations': PYTHONPATH=/home/kim/lostchild/src/build/tf_transformations/prefix_override:/home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/tf_transformations build --build-base /home/kim/lostchild/src/build/tf_transformations/build install --record /home/kim/lostchild/src/build/tf_transformations/install.log --single-version-externally-managed
+[1.497s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kim/lostchild/src/lidar' returned '0': PYTHONPATH=/home/kim/lostchild/src/build/lidar/prefix_override:/home/kim/lostchild/src/install/lidar/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/lidar build --build-base /home/kim/lostchild/src/build/lidar/build install --record /home/kim/lostchild/src/build/lidar/install.log --install-scripts $base/lib/lidar --single-version-externally-managed
+[1.505s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/lidar' for CMake module files
+[1.505s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/lidar' for CMake config files
+[1.506s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/lidar/lib'
+[1.506s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/lidar/bin'
+[1.506s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/lidar/lib/pkgconfig/lidar.pc'
+[1.507s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/lidar/lib/python3.8/site-packages'
+[1.507s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar', 'pythonpath')
+[1.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/lidar/share/lidar/hook/pythonpath.ps1'
+[1.510s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kim/lostchild/src/install/lidar/share/lidar/hook/pythonpath.dsv'
+[1.511s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/lidar/share/lidar/hook/pythonpath.sh'
+[1.511s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/lidar/bin'
+[1.511s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lidar)
+[1.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/lidar/share/lidar/package.ps1'
+[1.515s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kim/lostchild/src/install/lidar/share/lidar/package.dsv'
+[1.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/lidar/share/lidar/package.sh'
+[1.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/lidar/share/lidar/package.bash'
+[1.517s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/lidar/share/lidar/package.zsh'
+[1.518s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kim/lostchild/src/install/lidar/share/colcon-core/packages/lidar)
+[1.522s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/tf_transformations' for CMake module files
+[1.523s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kim/lostchild/src/tf_transformations' returned '0': PYTHONPATH=/home/kim/lostchild/src/build/tf_transformations/prefix_override:/home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/tf_transformations build --build-base /home/kim/lostchild/src/build/tf_transformations/build install --record /home/kim/lostchild/src/build/tf_transformations/install.log --single-version-externally-managed
+[1.523s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/tf_transformations' for CMake config files
+[1.523s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/tf_transformations/lib'
+[1.523s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/tf_transformations/bin'
+[1.523s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/tf_transformations/lib/pkgconfig/tf_transformations.pc'
+[1.524s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages'
+[1.524s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf_transformations', 'pythonpath')
+[1.526s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/tf_transformations/share/tf_transformations/hook/pythonpath.ps1'
+[1.526s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kim/lostchild/src/install/tf_transformations/share/tf_transformations/hook/pythonpath.dsv'
+[1.526s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/tf_transformations/share/tf_transformations/hook/pythonpath.sh'
+[1.527s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/tf_transformations/bin'
+[1.527s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tf_transformations)
+[1.529s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/tf_transformations/share/tf_transformations/package.ps1'
+[1.529s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kim/lostchild/src/install/tf_transformations/share/tf_transformations/package.dsv'
+[1.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/tf_transformations/share/tf_transformations/package.sh'
+[1.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/tf_transformations/share/tf_transformations/package.bash'
+[1.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/tf_transformations/share/tf_transformations/package.zsh'
+[1.530s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kim/lostchild/src/install/tf_transformations/share/colcon-core/packages/tf_transformations)
+[1.533s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/static_tf' for CMake module files
+[1.533s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/static_tf' for CMake config files
+[1.534s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kim/lostchild/src/static_tf' returned '0': PYTHONPATH=/home/kim/lostchild/src/build/static_tf/prefix_override:/home/kim/lostchild/src/install/static_tf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/static_tf build --build-base /home/kim/lostchild/src/build/static_tf/build install --record /home/kim/lostchild/src/build/static_tf/install.log --install-scripts $base/lib/static_tf --single-version-externally-managed
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/static_tf/lib'
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/static_tf/bin'
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/static_tf/lib/pkgconfig/static_tf.pc'
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/static_tf/lib/python3.8/site-packages'
+[1.534s] Level 1:colcon.colcon_core.shell:create_environment_hook('static_tf', 'pythonpath')
+[1.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/static_tf/share/static_tf/hook/pythonpath.ps1'
+[1.537s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kim/lostchild/src/install/static_tf/share/static_tf/hook/pythonpath.dsv'
+[1.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/static_tf/share/static_tf/hook/pythonpath.sh'
+[1.537s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/static_tf/bin'
+[1.537s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(static_tf)
+[1.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/static_tf/share/static_tf/package.ps1'
+[1.539s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kim/lostchild/src/install/static_tf/share/static_tf/package.dsv'
+[1.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/static_tf/share/static_tf/package.sh'
+[1.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/static_tf/share/static_tf/package.bash'
+[1.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/static_tf/share/static_tf/package.zsh'
+[1.540s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kim/lostchild/src/install/static_tf/share/colcon-core/packages/static_tf)
+[1.540s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kim/lostchild/src/robot_localization' with build type 'ament_python'
+[1.541s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_localization', 'ament_prefix_path')
+[1.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/robot_localization/share/robot_localization/hook/ament_prefix_path.ps1'
+[1.543s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kim/lostchild/src/install/robot_localization/share/robot_localization/hook/ament_prefix_path.dsv'
+[1.543s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/robot_localization/share/robot_localization/hook/ament_prefix_path.sh'
+[1.545s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.545s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.725s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kim/lostchild/src/robot_localization'
+[1.728s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.728s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.019s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kim/lostchild/src/robot_localization': AMENT_PREFIX_PATH=/home/kim/lostchild/src/install/tf_transformations:${AMENT_PREFIX_PATH} PYTHONPATH=/home/kim/lostchild/src/build/robot_localization/prefix_override:/home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages:/home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/robot_localization build --build-base /home/kim/lostchild/src/build/robot_localization/build install --record /home/kim/lostchild/src/build/robot_localization/install.log --install-scripts $base/lib/robot_localization --single-version-externally-managed
+[2.243s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/robot_localization' for CMake module files
+[2.244s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kim/lostchild/src/robot_localization' returned '0': AMENT_PREFIX_PATH=/home/kim/lostchild/src/install/tf_transformations:${AMENT_PREFIX_PATH} PYTHONPATH=/home/kim/lostchild/src/build/robot_localization/prefix_override:/home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages:/home/kim/lostchild/src/install/tf_transformations/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/robot_localization build --build-base /home/kim/lostchild/src/build/robot_localization/build install --record /home/kim/lostchild/src/build/robot_localization/install.log --install-scripts $base/lib/robot_localization --single-version-externally-managed
+[2.244s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/robot_localization' for CMake config files
+[2.244s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/robot_localization/lib'
+[2.244s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/robot_localization/bin'
+[2.245s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/robot_localization/lib/pkgconfig/robot_localization.pc'
+[2.245s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/robot_localization/lib/python3.8/site-packages'
+[2.245s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_localization', 'pythonpath')
+[2.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/robot_localization/share/robot_localization/hook/pythonpath.ps1'
+[2.247s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kim/lostchild/src/install/robot_localization/share/robot_localization/hook/pythonpath.dsv'
+[2.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/robot_localization/share/robot_localization/hook/pythonpath.sh'
+[2.248s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/robot_localization/bin'
+[2.248s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_localization)
+[2.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/robot_localization/share/robot_localization/package.ps1'
+[2.251s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kim/lostchild/src/install/robot_localization/share/robot_localization/package.dsv'
+[2.251s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/robot_localization/share/robot_localization/package.sh'
+[2.251s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/robot_localization/share/robot_localization/package.bash'
+[2.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/robot_localization/share/robot_localization/package.zsh'
+[2.252s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kim/lostchild/src/install/robot_localization/share/colcon-core/packages/robot_localization)
+[4.597s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kim/lostchild/src/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=/home/kim/robot_ws/install/lidar:/opt/ros/foxy /usr/local/bin/cmake /home/kim/lostchild/src/slam_toolbox-foxy-devel -DCMAKE_INSTALL_PREFIX=/home/kim/lostchild/src/install/slam_toolbox
+[4.600s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kim/lostchild/src/build/slam_toolbox': CMAKE_PREFIX_PATH=/home/kim/robot_ws/install/lidar:/opt/ros/foxy /usr/local/bin/cmake --build /home/kim/lostchild/src/build/slam_toolbox -- -j12 -l12
+[65.584s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kim/lostchild/src/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=/home/kim/robot_ws/install/lidar:/opt/ros/foxy /usr/local/bin/cmake --build /home/kim/lostchild/src/build/slam_toolbox -- -j12 -l12
+[65.746s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kim/lostchild/src/build/slam_toolbox': CMAKE_PREFIX_PATH=/home/kim/robot_ws/install/lidar:/opt/ros/foxy /usr/local/bin/cmake --install /home/kim/lostchild/src/build/slam_toolbox
+[65.847s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_toolbox)
+[65.851s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/slam_toolbox' for CMake module files
+[65.851s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kim/lostchild/src/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=/home/kim/robot_ws/install/lidar:/opt/ros/foxy /usr/local/bin/cmake --install /home/kim/lostchild/src/build/slam_toolbox
+[65.852s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/slam_toolbox' for CMake config files
+[65.853s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'cmake_prefix_path')
+[65.855s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.ps1'
+[65.855s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.dsv'
+[65.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.sh'
+[65.856s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/slam_toolbox/lib'
+[65.856s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'ld_library_path_lib')
+[65.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.ps1'
+[65.859s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.dsv'
+[65.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.sh'
+[65.859s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/slam_toolbox/bin'
+[65.859s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/slam_toolbox/lib/pkgconfig/slam_toolbox.pc'
+[65.860s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages'
+[65.860s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'pythonpath')
+[65.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.ps1'
+[65.863s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.dsv'
+[65.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.sh'
+[65.863s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/slam_toolbox/bin'
+[65.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/package.ps1'
+[65.866s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/package.dsv'
+[65.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/package.sh'
+[65.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/package.bash'
+[65.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/package.zsh'
+[65.867s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kim/lostchild/src/install/slam_toolbox/share/colcon-core/packages/slam_toolbox)
+[66.005s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_toolbox)
+[66.009s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/slam_toolbox' for CMake module files
+[66.009s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/slam_toolbox' for CMake config files
+[66.010s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'cmake_prefix_path')
+[66.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.ps1'
+[66.013s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.dsv'
+[66.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.sh'
+[66.014s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/slam_toolbox/lib'
+[66.014s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'ld_library_path_lib')
+[66.015s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.ps1'
+[66.016s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.dsv'
+[66.016s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.sh'
+[66.016s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/slam_toolbox/bin'
+[66.016s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/slam_toolbox/lib/pkgconfig/slam_toolbox.pc'
+[66.016s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/slam_toolbox/lib/python3.8/site-packages'
+[66.016s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'pythonpath')
+[66.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.ps1'
+[66.019s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.dsv'
+[66.019s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.sh'
+[66.019s] Level 1:colcon.colcon_core.environment:checking '/home/kim/lostchild/src/install/slam_toolbox/bin'
+[66.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/package.ps1'
+[66.022s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/package.dsv'
+[66.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/package.sh'
+[66.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/package.bash'
+[66.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/kim/lostchild/src/install/slam_toolbox/share/slam_toolbox/package.zsh'
+[66.023s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kim/lostchild/src/install/slam_toolbox/share/colcon-core/packages/slam_toolbox)
+[66.023s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[66.023s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[66.023s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[66.023s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[66.028s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[66.028s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[66.028s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[66.043s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[66.046s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kim/lostchild/src/install/local_setup.ps1'
+[66.046s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kim/lostchild/src/install/_local_setup_util_ps1.py'
+[66.048s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kim/lostchild/src/install/setup.ps1'
+[66.049s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kim/lostchild/src/install/local_setup.sh'
+[66.049s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kim/lostchild/src/install/_local_setup_util_sh.py'
+[66.050s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kim/lostchild/src/install/setup.sh'
+[66.051s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kim/lostchild/src/install/local_setup.bash'
+[66.052s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kim/lostchild/src/install/setup.bash'
+[66.053s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kim/lostchild/src/install/local_setup.zsh'
+[66.053s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kim/lostchild/src/install/setup.zsh'
