@@ -14,7 +14,7 @@ class camera_pub(Node):
         topic_msg_name = 'camera_image' # Topic msg name
         qos_profile = 10
         fps = 1 # 얼마의 주기로 topic msg 를 보낼 것인지 (카메리의 FPS와 동일하게 설정)
-        timer_period = 1
+        timer_period = 0.1
         #fps를 너무 빠르게 하면 못 하는 것 같음
 
         super().__init__(node_name)
@@ -30,8 +30,15 @@ class camera_pub(Node):
     def camera_publish(self):
         cam_image = self.camera_instance.read()
 
-
-        camera_msg = self.br.cv2_to_imgmsg(cam_image)
+        try:
+            camera_msg = self.br.cv2_to_imgmsg(cam_image)
+            self.publisher_.publish(camera_msg) # Init에서 create_publish 한 instance를 이용해 publish 
+        except (UnboundLocalError, TypeError) as e:
+            self.get_logger().info('Camera is loading : {0}'.format(e))
+        except Exception as e:
+            self.get_logger().info('Error : {error}'.format(error = e))
+        else:
+            self.get_logger().info('Camera Publishing')
         # camera_msg = Image()
         # camera_msg.header = Header()
 
@@ -48,8 +55,7 @@ class camera_pub(Node):
         # camera_msg.width = cam_width
         # print (cam_height, cam_width, cam_channel)
         # camera_msg.data = sum(cam_image, []) # 풀어 해진 8bit data #8bit 데이터라서 딱히 변환할 필요 없을 것 같음
-        self.publisher_.publish(camera_msg) # Init에서 create_publish 한 instance를 이용해 publish 
-        self.get_logger().info('Camera Publishing')
+
 
 def main(args = None):
     camera_type = 'usb0'
