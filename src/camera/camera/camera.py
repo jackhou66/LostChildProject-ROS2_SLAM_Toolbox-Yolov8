@@ -3,6 +3,8 @@ from rclpy.node import Node
 import roboidai as ai
 from sensor_msgs.msg import *
 from std_msgs.msg import *
+import cv2
+from cv_bridge import CvBridge
 class camera_pub(Node):
     def __init__ (self, camera_instance_):
         self.camera_instance = camera_instance_
@@ -17,7 +19,7 @@ class camera_pub(Node):
 
         super().__init__(node_name)
 
-
+        self.br = CvBridge()
         self.publisher_ = self.create_publisher(topic_msg_type, 
                                                 topic_msg_name, 
                                                 qos_profile)
@@ -28,22 +30,24 @@ class camera_pub(Node):
     def camera_publish(self):
         cam_image = self.camera_instance.read()
 
-        camera_msg = Image()
-        camera_msg.header = Header()
 
-        camera_msg.header.frame_id = "image"
-        camera_msg.header.stamp = Node.get_clock(self).now().to_msg()
-        cam_height = len(cam_image)
-        cam_width = len(cam_image[0])
-        cam_channel = len(cam_image[0][0])
+        camera_msg = self.br.cv2_to_imgmsg(cam_image)
+        # camera_msg = Image()
+        # camera_msg.header = Header()
 
-        camera_msg.encoding = "bgr8"
-        camera_msg.is_bigendian = False
-        camera_msg.step = cam_height * cam_channel
-        camera_msg.height = cam_height
-        camera_msg.width = cam_width
-        print (camera_msg.height, camera_msg.width, len(cam_image[0][0]))
-        camera_msg.data = sum(cam_image, []) # 풀어 해진 8bit data #8bit 데이터라서 딱히 변환할 필요 없을 것 같음
+        # camera_msg.header.frame_id = "image"
+        # camera_msg.header.stamp = Node.get_clock(self).now().to_msg()
+        # cam_height = len(cam_image)
+        # cam_width = len(cam_image[0])
+        # cam_channel = len(cam_image[0][0])
+
+        # camera_msg.encoding = "bgr8"
+        # camera_msg.is_bigendian = False
+        # camera_msg.step = cam_height * cam_channel * 1 # 1 byte = 8 bit
+        # camera_msg.height = cam_height
+        # camera_msg.width = cam_width
+        # print (cam_height, cam_width, cam_channel)
+        # camera_msg.data = sum(cam_image, []) # 풀어 해진 8bit data #8bit 데이터라서 딱히 변환할 필요 없을 것 같음
         self.publisher_.publish(camera_msg) # Init에서 create_publish 한 instance를 이용해 publish 
         self.get_logger().info('Camera Publishing')
 
