@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating static_tf.egg-info
+writing static_tf.egg-info/PKG-INFO
+writing dependency_links to static_tf.egg-info/dependency_links.txt
+writing entry points to static_tf.egg-info/entry_points.txt
+writing requirements to static_tf.egg-info/requires.txt
+writing top-level names to static_tf.egg-info/top_level.txt
+writing manifest file 'static_tf.egg-info/SOURCES.txt'
+reading manifest file 'static_tf.egg-info/SOURCES.txt'
+writing manifest file 'static_tf.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/lib/python3.8/site-packages/site.py
+Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/lib/python3.8/site-packages/static-tf.egg-link (link to .)
+
+Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf
+running install_data
+creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/share/ament_index
+creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/share/ament_index/resource_index
+creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/share/ament_index/resource_index/packages
+copying resource/static_tf -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/share/ament_index/resource_index/packages
+copying package.xml -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/share/static_tf

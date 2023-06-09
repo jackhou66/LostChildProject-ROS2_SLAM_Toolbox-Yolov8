@@ -1,0 +1,13 @@
+train: /home/yumjunstar/Desktop/ai_/dataset/train/images/
+val: /home/yumjunstar/Desktop/ai_/dataset/valid/images/
+test: /home/yumjunstar/Desktop/ai_/dataset/test/images/
+
+nc: 6
+names: ['ben_afflek', 'elton_john', 'face', 'jerry_seinfeld', 'madonna', 'mindy_kaling']
+
+roboflow:
+  workspace: robotprogramming
+  project: childeren-or-human-detector
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/robotprogramming/childeren-or-human-detector/dataset/1

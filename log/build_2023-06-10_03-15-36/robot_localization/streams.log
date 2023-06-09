@@ -1,0 +1,25 @@
+[0.829s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/robot_localization': AMENT_PREFIX_PATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations:${AMENT_PREFIX_PATH} PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/robot_localization/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/lib/python3.8/site-packages:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/robot_localization/build --no-deps install_data
+[1.119s] running develop
+[1.315s] running egg_info
+[1.315s] creating robot_localization.egg-info
+[1.315s] writing robot_localization.egg-info/PKG-INFO
+[1.315s] writing dependency_links to robot_localization.egg-info/dependency_links.txt
+[1.315s] writing entry points to robot_localization.egg-info/entry_points.txt
+[1.315s] writing requirements to robot_localization.egg-info/requires.txt
+[1.315s] writing top-level names to robot_localization.egg-info/top_level.txt
+[1.317s] writing manifest file 'robot_localization.egg-info/SOURCES.txt'
+[1.349s] reading manifest file 'robot_localization.egg-info/SOURCES.txt'
+[1.349s] writing manifest file 'robot_localization.egg-info/SOURCES.txt'
+[1.384s] running build_ext
+[1.384s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/lib/python3.8/site-packages/site.py
+[1.386s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/lib/python3.8/site-packages/robot-localization.egg-link (link to .)
+[1.386s] Installing robot_localization script to /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/lib/robot_localization
+[1.387s] 
+[1.387s] Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/robot_localization
+[1.387s] running install_data
+[1.387s] creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/share/ament_index
+[1.387s] creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/share/ament_index/resource_index
+[1.387s] creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/share/ament_index/resource_index/packages
+[1.387s] copying resource/robot_localization -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/share/ament_index/resource_index/packages
+[1.387s] copying package.xml -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/share/robot_localization
+[1.414s] Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/robot_localization' returned '0': AMENT_PREFIX_PATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations:${AMENT_PREFIX_PATH} PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/robot_localization/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/lib/python3.8/site-packages:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/robot_localization/build --no-deps install_data

@@ -1,0 +1,18 @@
+[0.710s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera/build --no-deps install_data
+[1.002s] running develop
+[1.171s] running egg_info
+[1.171s] creating camera.egg-info
+[1.171s] writing camera.egg-info/PKG-INFO
+[1.171s] writing dependency_links to camera.egg-info/dependency_links.txt
+[1.171s] writing entry points to camera.egg-info/entry_points.txt
+[1.171s] writing requirements to camera.egg-info/requires.txt
+[1.171s] writing top-level names to camera.egg-info/top_level.txt
+[1.172s] writing manifest file 'camera.egg-info/SOURCES.txt'
+[1.202s] reading manifest file 'camera.egg-info/SOURCES.txt'
+[1.202s] writing manifest file 'camera.egg-info/SOURCES.txt'
+[1.238s] running build_ext
+[1.238s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/lib/python3.8/site-packages/camera.egg-link (link to .)
+[1.239s] 
+[1.239s] Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera
+[1.239s] running install_data
+[1.269s] Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera' returned '0': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera/build --no-deps install_data

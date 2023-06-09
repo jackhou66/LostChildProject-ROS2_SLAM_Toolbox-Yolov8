@@ -1,0 +1,1222 @@
+[0.000000] (-) TimerEvent: {}
+[0.000143] (camera) JobQueued: {'identifier': 'camera', 'dependencies': OrderedDict()}
+[0.001071] (lidar) JobQueued: {'identifier': 'lidar', 'dependencies': OrderedDict()}
+[0.001121] (slam_toolbox) JobQueued: {'identifier': 'slam_toolbox', 'dependencies': OrderedDict()}
+[0.001144] (static_tf) JobQueued: {'identifier': 'static_tf', 'dependencies': OrderedDict()}
+[0.001168] (tf_transformations) JobQueued: {'identifier': 'tf_transformations', 'dependencies': OrderedDict()}
+[0.001194] (robot_localization) JobQueued: {'identifier': 'robot_localization', 'dependencies': OrderedDict([('tf_transformations', '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations')])}
+[0.002214] (tf_transformations) JobStarted: {'identifier': 'tf_transformations'}
+[0.017676] (camera) JobStarted: {'identifier': 'camera'}
+[0.035949] (lidar) JobStarted: {'identifier': 'lidar'}
+[0.046003] (slam_toolbox) JobStarted: {'identifier': 'slam_toolbox'}
+[0.057441] (static_tf) JobStarted: {'identifier': 'static_tf'}
+[0.099793] (-) TimerEvent: {}
+[0.200179] (-) TimerEvent: {}
+[0.300520] (-) TimerEvent: {}
+[0.400882] (-) TimerEvent: {}
+[0.501242] (-) TimerEvent: {}
+[0.601609] (-) TimerEvent: {}
+[0.702042] (-) TimerEvent: {}
+[0.802358] (-) TimerEvent: {}
+[0.827345] (slam_toolbox) JobProgress: {'identifier': 'slam_toolbox', 'progress': 'cmake'}
+[0.827435] (slam_toolbox) Command: {'cmd': ['/home/yumjunstar/.local/bin/cmake', '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/slam_toolbox-foxy-devel', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox'], 'cwd': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '0'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'yumjunstar'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_NAMESPACE', 'robot1'), ('SSH_AGENT_PID', '1718'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}]: {message}'), ('LD_LIBRARY_PATH', '/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/yumjunstar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1540'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=ea6c23a1f269d6be18762ed664835c92'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/yumjunstar/robot_ws'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/yumjunstar/robot_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'yumjunstar'), ('JOURNAL_STREAM', '8:47342'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yumjunstar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/yumjunstar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/yumjunstar:@/tmp/.ICE-unix/1756,unix/yumjunstar:/tmp/.ICE-unix/1756'), ('INVOCATION_ID', 'cad7fa623799496fa99b06fc780fff75'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45de19b1_21f2_4d42_a9f2_ec65765261d8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/home/yumjunstar/robot_ws/install/topic_service_action_rclpy_example:/home/yumjunstar/robot_ws/install/topic_service_action_rclcpp_example:/home/yumjunstar/robot_ws/install/time_rclpy_example:/home/yumjunstar/robot_ws/install/time_rclcpp_example:/home/yumjunstar/robot_ws/install/tf2_rclpy_example:/home/yumjunstar/robot_ws/install/tf2_rclcpp_example:/home/yumjunstar/robot_ws/install/testbot_description:/home/yumjunstar/robot_ws/install/rqt_example:/home/yumjunstar/robot_ws/install/ros2env:/home/yumjunstar/robot_ws/install/my_first_ros_rclpy_pkg:/home/yumjunstar/robot_ws/install/my_first_ros_rclcpp_pkg:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example:/home/yumjunstar/robot_ws/install/logging_rclpy_example:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=ea6c23a1f269d6be18762ed664835c92'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yumjunstar/robot_ws/build/topic_service_action_rclpy_example:/home/yumjunstar/robot_ws/install/topic_service_action_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/time_rclpy_example:/home/yumjunstar/robot_ws/install/time_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/tf2_rclpy_example:/home/yumjunstar/robot_ws/install/tf2_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/install/rqt_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/ros2env:/home/yumjunstar/robot_ws/install/ros2env/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/my_first_ros_rclpy_pkg:/home/yumjunstar/robot_ws/install/my_first_ros_rclpy_pkg/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/logging_rclpy_example:/home/yumjunstar/robot_ws/install/logging_rclpy_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/yumjunstar/robot_ws/install/topic_service_action_rclcpp_example:/home/yumjunstar/robot_ws/install/time_rclcpp_example:/home/yumjunstar/robot_ws/install/tf2_rclcpp_example:/home/yumjunstar/robot_ws/install/testbot_description:/home/yumjunstar/robot_ws/install/rqt_example:/home/yumjunstar/robot_ws/install/my_first_ros_rclcpp_pkg:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example:/home/yumjunstar/robot_ws/install/topic_service_action_rclpy_example:/home/yumjunstar/robot_ws/install/time_rclpy_example:/home/yumjunstar/robot_ws/install/tf2_rclpy_example:/home/yumjunstar/robot_ws/install/ros2env:/home/yumjunstar/robot_ws/install/my_first_ros_rclpy_pkg:/home/yumjunstar/robot_ws/install/logging_rclpy_example:/opt/ros/foxy')]), 'shell': False}
+[0.902535] (-) TimerEvent: {}
+[1.003091] (-) TimerEvent: {}
+[1.103368] (-) TimerEvent: {}
+[1.138595] (slam_toolbox) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.139988] (slam_toolbox) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.141853] (slam_toolbox) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.142010] (slam_toolbox) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.142436] (slam_toolbox) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.142807] (slam_toolbox) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.142948] (slam_toolbox) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.143496] (slam_toolbox) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.143637] (slam_toolbox) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.143910] (slam_toolbox) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.144034] (slam_toolbox) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.145999] (slam_toolbox) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.146177] (slam_toolbox) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.146257] (slam_toolbox) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.146325] (slam_toolbox) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.203516] (-) TimerEvent: {}
+[1.304126] (-) TimerEvent: {}
+[1.385047] (slam_toolbox) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.404229] (-) TimerEvent: {}
+[1.417383] (slam_toolbox) StdoutLine: {'line': b'-- Found message_filters: 3.2.5 (/opt/ros/foxy/share/message_filters/cmake)\n'}
+[1.421924] (slam_toolbox) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[1.457288] (slam_toolbox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.465851] (slam_toolbox) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.504329] (-) TimerEvent: {}
+[1.544537] (slam_toolbox) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.591062] (slam_toolbox) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.604443] (-) TimerEvent: {}
+[1.634911] (camera) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera/build', '--no-deps', 'install_data'], 'cwd': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera', 'env': {'RCUTILS_LOGGING_BUFFERED_STREAM': '0', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en', 'USER': 'yumjunstar', 'LC_TIME': 'ko_KR.UTF-8', 'ROS_NAMESPACE': 'robot1', 'SSH_AGENT_PID': '1718', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'RCUTILS_CONSOLE_OUTPUT_FORMAT': '[{severity}]: {message}', 'LD_LIBRARY_PATH': '/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/yumjunstar', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1540', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=ea6c23a1f269d6be18762ed664835c92', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/home/yumjunstar/robot_ws', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/yumjunstar/robot_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'yumjunstar', 'JOURNAL_STREAM': '8:47342', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'yumjunstar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/yumjunstar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/yumjunstar:@/tmp/.ICE-unix/1756,unix/yumjunstar:/tmp/.ICE-unix/1756', 'INVOCATION_ID': 'cad7fa623799496fa99b06fc780fff75', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/45de19b1_21f2_4d42_a9f2_ec65765261d8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/home/yumjunstar/robot_ws/install/topic_service_action_rclpy_example:/home/yumjunstar/robot_ws/install/topic_service_action_rclcpp_example:/home/yumjunstar/robot_ws/install/time_rclpy_example:/home/yumjunstar/robot_ws/install/time_rclcpp_example:/home/yumjunstar/robot_ws/install/tf2_rclpy_example:/home/yumjunstar/robot_ws/install/tf2_rclcpp_example:/home/yumjunstar/robot_ws/install/testbot_description:/home/yumjunstar/robot_ws/install/rqt_example:/home/yumjunstar/robot_ws/install/ros2env:/home/yumjunstar/robot_ws/install/my_first_ros_rclpy_pkg:/home/yumjunstar/robot_ws/install/my_first_ros_rclcpp_pkg:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example:/home/yumjunstar/robot_ws/install/logging_rclpy_example:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'RCUTILS_LOGGING_USE_STDOUT': '0', 'PWD': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'RCUTILS_COLORIZED_OUTPUT': '1', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=ea6c23a1f269d6be18762ed664835c92', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/topic_service_action_rclpy_example:/home/yumjunstar/robot_ws/install/topic_service_action_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/time_rclpy_example:/home/yumjunstar/robot_ws/install/time_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/tf2_rclpy_example:/home/yumjunstar/robot_ws/install/tf2_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/install/rqt_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/ros2env:/home/yumjunstar/robot_ws/install/ros2env/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/my_first_ros_rclpy_pkg:/home/yumjunstar/robot_ws/install/my_first_ros_rclpy_pkg/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/logging_rclpy_example:/home/yumjunstar/robot_ws/install/logging_rclpy_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/yumjunstar/robot_ws/install/topic_service_action_rclcpp_example:/home/yumjunstar/robot_ws/install/time_rclcpp_example:/home/yumjunstar/robot_ws/install/tf2_rclcpp_example:/home/yumjunstar/robot_ws/install/testbot_description:/home/yumjunstar/robot_ws/install/rqt_example:/home/yumjunstar/robot_ws/install/my_first_ros_rclcpp_pkg:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example'}, 'shell': False}
+[1.704557] (-) TimerEvent: {}
+[1.736091] (slam_toolbox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.804652] (-) TimerEvent: {}
+[1.872742] (tf_transformations) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations/build', '--no-deps', 'install_data'], 'cwd': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations', 'env': {'RCUTILS_LOGGING_BUFFERED_STREAM': '0', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en', 'USER': 'yumjunstar', 'LC_TIME': 'ko_KR.UTF-8', 'ROS_NAMESPACE': 'robot1', 'SSH_AGENT_PID': '1718', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'RCUTILS_CONSOLE_OUTPUT_FORMAT': '[{severity}]: {message}', 'LD_LIBRARY_PATH': '/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/yumjunstar', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1540', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=ea6c23a1f269d6be18762ed664835c92', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/home/yumjunstar/robot_ws', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/yumjunstar/robot_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'yumjunstar', 'JOURNAL_STREAM': '8:47342', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'yumjunstar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/yumjunstar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/yumjunstar:@/tmp/.ICE-unix/1756,unix/yumjunstar:/tmp/.ICE-unix/1756', 'INVOCATION_ID': 'cad7fa623799496fa99b06fc780fff75', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/45de19b1_21f2_4d42_a9f2_ec65765261d8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/home/yumjunstar/robot_ws/install/topic_service_action_rclpy_example:/home/yumjunstar/robot_ws/install/topic_service_action_rclcpp_example:/home/yumjunstar/robot_ws/install/time_rclpy_example:/home/yumjunstar/robot_ws/install/time_rclcpp_example:/home/yumjunstar/robot_ws/install/tf2_rclpy_example:/home/yumjunstar/robot_ws/install/tf2_rclcpp_example:/home/yumjunstar/robot_ws/install/testbot_description:/home/yumjunstar/robot_ws/install/rqt_example:/home/yumjunstar/robot_ws/install/ros2env:/home/yumjunstar/robot_ws/install/my_first_ros_rclpy_pkg:/home/yumjunstar/robot_ws/install/my_first_ros_rclcpp_pkg:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example:/home/yumjunstar/robot_ws/install/logging_rclpy_example:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'RCUTILS_LOGGING_USE_STDOUT': '0', 'PWD': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'RCUTILS_COLORIZED_OUTPUT': '1', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=ea6c23a1f269d6be18762ed664835c92', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/topic_service_action_rclpy_example:/home/yumjunstar/robot_ws/install/topic_service_action_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/time_rclpy_example:/home/yumjunstar/robot_ws/install/time_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/tf2_rclpy_example:/home/yumjunstar/robot_ws/install/tf2_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/install/rqt_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/ros2env:/home/yumjunstar/robot_ws/install/ros2env/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/my_first_ros_rclpy_pkg:/home/yumjunstar/robot_ws/install/my_first_ros_rclpy_pkg/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/logging_rclpy_example:/home/yumjunstar/robot_ws/install/logging_rclpy_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/yumjunstar/robot_ws/install/topic_service_action_rclcpp_example:/home/yumjunstar/robot_ws/install/time_rclcpp_example:/home/yumjunstar/robot_ws/install/tf2_rclcpp_example:/home/yumjunstar/robot_ws/install/testbot_description:/home/yumjunstar/robot_ws/install/rqt_example:/home/yumjunstar/robot_ws/install/my_first_ros_rclcpp_pkg:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example'}, 'shell': False}
+[1.878977] (static_tf) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf/build', '--no-deps', 'install_data'], 'cwd': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf', 'env': {'RCUTILS_LOGGING_BUFFERED_STREAM': '0', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en', 'USER': 'yumjunstar', 'LC_TIME': 'ko_KR.UTF-8', 'ROS_NAMESPACE': 'robot1', 'SSH_AGENT_PID': '1718', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'RCUTILS_CONSOLE_OUTPUT_FORMAT': '[{severity}]: {message}', 'LD_LIBRARY_PATH': '/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/yumjunstar', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1540', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=ea6c23a1f269d6be18762ed664835c92', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/home/yumjunstar/robot_ws', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/yumjunstar/robot_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'yumjunstar', 'JOURNAL_STREAM': '8:47342', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'yumjunstar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/yumjunstar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/yumjunstar:@/tmp/.ICE-unix/1756,unix/yumjunstar:/tmp/.ICE-unix/1756', 'INVOCATION_ID': 'cad7fa623799496fa99b06fc780fff75', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/45de19b1_21f2_4d42_a9f2_ec65765261d8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/home/yumjunstar/robot_ws/install/topic_service_action_rclpy_example:/home/yumjunstar/robot_ws/install/topic_service_action_rclcpp_example:/home/yumjunstar/robot_ws/install/time_rclpy_example:/home/yumjunstar/robot_ws/install/time_rclcpp_example:/home/yumjunstar/robot_ws/install/tf2_rclpy_example:/home/yumjunstar/robot_ws/install/tf2_rclcpp_example:/home/yumjunstar/robot_ws/install/testbot_description:/home/yumjunstar/robot_ws/install/rqt_example:/home/yumjunstar/robot_ws/install/ros2env:/home/yumjunstar/robot_ws/install/my_first_ros_rclpy_pkg:/home/yumjunstar/robot_ws/install/my_first_ros_rclcpp_pkg:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example:/home/yumjunstar/robot_ws/install/logging_rclpy_example:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'RCUTILS_LOGGING_USE_STDOUT': '0', 'PWD': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'RCUTILS_COLORIZED_OUTPUT': '1', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=ea6c23a1f269d6be18762ed664835c92', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/topic_service_action_rclpy_example:/home/yumjunstar/robot_ws/install/topic_service_action_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/time_rclpy_example:/home/yumjunstar/robot_ws/install/time_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/tf2_rclpy_example:/home/yumjunstar/robot_ws/install/tf2_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/install/rqt_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/ros2env:/home/yumjunstar/robot_ws/install/ros2env/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/my_first_ros_rclpy_pkg:/home/yumjunstar/robot_ws/install/my_first_ros_rclpy_pkg/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/logging_rclpy_example:/home/yumjunstar/robot_ws/install/logging_rclpy_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/yumjunstar/robot_ws/install/topic_service_action_rclcpp_example:/home/yumjunstar/robot_ws/install/time_rclcpp_example:/home/yumjunstar/robot_ws/install/tf2_rclcpp_example:/home/yumjunstar/robot_ws/install/testbot_description:/home/yumjunstar/robot_ws/install/rqt_example:/home/yumjunstar/robot_ws/install/my_first_ros_rclcpp_pkg:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example'}, 'shell': False}
+[1.887580] (lidar) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar/build', '--no-deps', 'install_data'], 'cwd': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar', 'env': {'RCUTILS_LOGGING_BUFFERED_STREAM': '0', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en', 'USER': 'yumjunstar', 'LC_TIME': 'ko_KR.UTF-8', 'ROS_NAMESPACE': 'robot1', 'SSH_AGENT_PID': '1718', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'RCUTILS_CONSOLE_OUTPUT_FORMAT': '[{severity}]: {message}', 'LD_LIBRARY_PATH': '/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/yumjunstar', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1540', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=ea6c23a1f269d6be18762ed664835c92', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/home/yumjunstar/robot_ws', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/yumjunstar/robot_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'yumjunstar', 'JOURNAL_STREAM': '8:47342', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'yumjunstar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/yumjunstar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/yumjunstar:@/tmp/.ICE-unix/1756,unix/yumjunstar:/tmp/.ICE-unix/1756', 'INVOCATION_ID': 'cad7fa623799496fa99b06fc780fff75', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/45de19b1_21f2_4d42_a9f2_ec65765261d8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/home/yumjunstar/robot_ws/install/topic_service_action_rclpy_example:/home/yumjunstar/robot_ws/install/topic_service_action_rclcpp_example:/home/yumjunstar/robot_ws/install/time_rclpy_example:/home/yumjunstar/robot_ws/install/time_rclcpp_example:/home/yumjunstar/robot_ws/install/tf2_rclpy_example:/home/yumjunstar/robot_ws/install/tf2_rclcpp_example:/home/yumjunstar/robot_ws/install/testbot_description:/home/yumjunstar/robot_ws/install/rqt_example:/home/yumjunstar/robot_ws/install/ros2env:/home/yumjunstar/robot_ws/install/my_first_ros_rclpy_pkg:/home/yumjunstar/robot_ws/install/my_first_ros_rclcpp_pkg:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example:/home/yumjunstar/robot_ws/install/logging_rclpy_example:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'RCUTILS_LOGGING_USE_STDOUT': '0', 'PWD': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'RCUTILS_COLORIZED_OUTPUT': '1', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=ea6c23a1f269d6be18762ed664835c92', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/topic_service_action_rclpy_example:/home/yumjunstar/robot_ws/install/topic_service_action_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/time_rclpy_example:/home/yumjunstar/robot_ws/install/time_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/tf2_rclpy_example:/home/yumjunstar/robot_ws/install/tf2_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/install/rqt_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/ros2env:/home/yumjunstar/robot_ws/install/ros2env/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/my_first_ros_rclpy_pkg:/home/yumjunstar/robot_ws/install/my_first_ros_rclpy_pkg/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/logging_rclpy_example:/home/yumjunstar/robot_ws/install/logging_rclpy_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/yumjunstar/robot_ws/install/topic_service_action_rclcpp_example:/home/yumjunstar/robot_ws/install/time_rclcpp_example:/home/yumjunstar/robot_ws/install/tf2_rclcpp_example:/home/yumjunstar/robot_ws/install/testbot_description:/home/yumjunstar/robot_ws/install/rqt_example:/home/yumjunstar/robot_ws/install/my_first_ros_rclcpp_pkg:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example'}, 'shell': False}
+[1.904767] (-) TimerEvent: {}
+[1.944018] (camera) StdoutLine: {'line': b'running develop\n'}
+[2.004124] (slam_toolbox) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[2.004837] (-) TimerEvent: {}
+[2.070710] (slam_toolbox) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[2.071904] (slam_toolbox) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.072954] (slam_toolbox) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.104949] (-) TimerEvent: {}
+[2.150892] (slam_toolbox) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[2.151170] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[2.177864] (camera) StdoutLine: {'line': b'running egg_info\n'}
+[2.179220] (camera) StdoutLine: {'line': b'creating camera.egg-info\n'}
+[2.180156] (camera) StdoutLine: {'line': b'writing camera.egg-info/PKG-INFO\n'}
+[2.180358] (camera) StdoutLine: {'line': b'writing dependency_links to camera.egg-info/dependency_links.txt\n'}
+[2.180491] (camera) StdoutLine: {'line': b'writing entry points to camera.egg-info/entry_points.txt\n'}
+[2.180618] (camera) StdoutLine: {'line': b'writing requirements to camera.egg-info/requires.txt\n'}
+[2.180748] (camera) StdoutLine: {'line': b'writing top-level names to camera.egg-info/top_level.txt\n'}
+[2.180908] (camera) StdoutLine: {'line': b"writing manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[2.205040] (-) TimerEvent: {}
+[2.227910] (camera) StdoutLine: {'line': b"reading manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[2.228619] (camera) StdoutLine: {'line': b"writing manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[2.275856] (camera) StdoutLine: {'line': b'running build_ext\n'}
+[2.276190] (camera) StdoutLine: {'line': b'Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/lib/python3.8/site-packages/site.py\n'}
+[2.276505] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[2.276670] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[2.279469] (camera) StdoutLine: {'line': b'Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/lib/python3.8/site-packages/camera.egg-link (link to .)\n'}
+[2.280305] (camera) StdoutLine: {'line': b'\n'}
+[2.280474] (camera) StdoutLine: {'line': b'Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera\n'}
+[2.280680] (camera) StdoutLine: {'line': b'running install_data\n'}
+[2.280851] (camera) StdoutLine: {'line': b'creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/share/ament_index\n'}
+[2.280976] (camera) StdoutLine: {'line': b'creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/share/ament_index/resource_index\n'}
+[2.281098] (camera) StdoutLine: {'line': b'creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/share/ament_index/resource_index/packages\n'}
+[2.281214] (camera) StdoutLine: {'line': b'copying resource/camera -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/share/ament_index/resource_index/packages\n'}
+[2.281322] (camera) StdoutLine: {'line': b'copying package.xml -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/share/camera\n'}
+[2.308175] (-) TimerEvent: {}
+[2.338537] (camera) CommandEnded: {'returncode': 0}
+[2.345704] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.346043] (slam_toolbox) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.348323] (lidar) StdoutLine: {'line': b'running develop\n'}
+[2.353266] (tf_transformations) StdoutLine: {'line': b'running develop\n'}
+[2.353957] (static_tf) StdoutLine: {'line': b'running develop\n'}
+[2.367020] (camera) JobEnded: {'identifier': 'camera', 'rc': 0}
+[2.408265] (-) TimerEvent: {}
+[2.507064] (slam_toolbox) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[2.508340] (-) TimerEvent: {}
+[2.567113] (lidar) StdoutLine: {'line': b'running egg_info\n'}
+[2.567412] (lidar) StdoutLine: {'line': b'creating lidar.egg-info\n'}
+[2.567562] (lidar) StdoutLine: {'line': b'writing lidar.egg-info/PKG-INFO\n'}
+[2.567772] (lidar) StdoutLine: {'line': b'writing dependency_links to lidar.egg-info/dependency_links.txt\n'}
+[2.567942] (lidar) StdoutLine: {'line': b'writing entry points to lidar.egg-info/entry_points.txt\n'}
+[2.568076] (lidar) StdoutLine: {'line': b'writing requirements to lidar.egg-info/requires.txt\n'}
+[2.568201] (lidar) StdoutLine: {'line': b'writing top-level names to lidar.egg-info/top_level.txt\n'}
+[2.569194] (lidar) StdoutLine: {'line': b"writing manifest file 'lidar.egg-info/SOURCES.txt'\n"}
+[2.586825] (slam_toolbox) StdoutLine: {'line': b'-- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[2.600776] (slam_toolbox) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[2.603006] (lidar) StdoutLine: {'line': b"reading manifest file 'lidar.egg-info/SOURCES.txt'\n"}
+[2.603745] (lidar) StdoutLine: {'line': b"writing manifest file 'lidar.egg-info/SOURCES.txt'\n"}
+[2.608435] (-) TimerEvent: {}
+[2.640706] (lidar) StdoutLine: {'line': b'running build_ext\n'}
+[2.641046] (lidar) StdoutLine: {'line': b'Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/lib/python3.8/site-packages/site.py\n'}
+[2.643049] (lidar) StdoutLine: {'line': b'Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/lib/python3.8/site-packages/lidar.egg-link (link to .)\n'}
+[2.643788] (lidar) StdoutLine: {'line': b'\n'}
+[2.643945] (lidar) StdoutLine: {'line': b'Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar\n'}
+[2.644132] (lidar) StdoutLine: {'line': b'running install_data\n'}
+[2.644250] (lidar) StdoutLine: {'line': b'creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/share/ament_index\n'}
+[2.644363] (lidar) StdoutLine: {'line': b'creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/share/ament_index/resource_index\n'}
+[2.644474] (lidar) StdoutLine: {'line': b'creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/share/ament_index/resource_index/packages\n'}
+[2.644629] (lidar) StdoutLine: {'line': b'copying resource/lidar -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/share/ament_index/resource_index/packages\n'}
+[2.644753] (lidar) StdoutLine: {'line': b'copying package.xml -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/share/lidar\n'}
+[2.653943] (static_tf) StdoutLine: {'line': b'running egg_info\n'}
+[2.654182] (tf_transformations) StdoutLine: {'line': b'running egg_info\n'}
+[2.654394] (tf_transformations) StdoutLine: {'line': b'creating tf_transformations.egg-info\n'}
+[2.654518] (static_tf) StdoutLine: {'line': b'creating static_tf.egg-info\n'}
+[2.654675] (static_tf) StdoutLine: {'line': b'writing static_tf.egg-info/PKG-INFO\n'}
+[2.654920] (tf_transformations) StdoutLine: {'line': b'writing tf_transformations.egg-info/PKG-INFO\n'}
+[2.655050] (static_tf) StdoutLine: {'line': b'writing dependency_links to static_tf.egg-info/dependency_links.txt\n'}
+[2.655152] (tf_transformations) StdoutLine: {'line': b'writing dependency_links to tf_transformations.egg-info/dependency_links.txt\n'}
+[2.655261] (static_tf) StdoutLine: {'line': b'writing entry points to static_tf.egg-info/entry_points.txt\n'}
+[2.655370] (tf_transformations) StdoutLine: {'line': b'writing requirements to tf_transformations.egg-info/requires.txt\n'}
+[2.655479] (tf_transformations) StdoutLine: {'line': b'writing top-level names to tf_transformations.egg-info/top_level.txt\n'}
+[2.655585] (static_tf) StdoutLine: {'line': b'writing requirements to static_tf.egg-info/requires.txt\n'}
+[2.655694] (static_tf) StdoutLine: {'line': b'writing top-level names to static_tf.egg-info/top_level.txt\n'}
+[2.656774] (tf_transformations) StdoutLine: {'line': b"writing manifest file 'tf_transformations.egg-info/SOURCES.txt'\n"}
+[2.656952] (static_tf) StdoutLine: {'line': b"writing manifest file 'static_tf.egg-info/SOURCES.txt'\n"}
+[2.680800] (lidar) CommandEnded: {'returncode': 0}
+[2.706105] (tf_transformations) StdoutLine: {'line': b"reading manifest file 'tf_transformations.egg-info/SOURCES.txt'\n"}
+[2.706399] (static_tf) StdoutLine: {'line': b"reading manifest file 'static_tf.egg-info/SOURCES.txt'\n"}
+[2.706840] (static_tf) StdoutLine: {'line': b"writing manifest file 'static_tf.egg-info/SOURCES.txt'\n"}
+[2.707025] (tf_transformations) StdoutLine: {'line': b"writing manifest file 'tf_transformations.egg-info/SOURCES.txt'\n"}
+[2.707907] (lidar) JobEnded: {'identifier': 'lidar', 'rc': 0}
+[2.708493] (-) TimerEvent: {}
+[2.743132] (tf_transformations) StdoutLine: {'line': b'running build_ext\n'}
+[2.743417] (tf_transformations) StdoutLine: {'line': b'Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/lib/python3.8/site-packages/site.py\n'}
+[2.745551] (tf_transformations) StdoutLine: {'line': b'Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/lib/python3.8/site-packages/tf-transformations.egg-link (link to .)\n'}
+[2.746350] (tf_transformations) StdoutLine: {'line': b'\n'}
+[2.746478] (tf_transformations) StdoutLine: {'line': b'Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations\n'}
+[2.748187] (tf_transformations) StdoutLine: {'line': b'running install_data\n'}
+[2.748327] (tf_transformations) StdoutLine: {'line': b'creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/share/ament_index\n'}
+[2.748421] (tf_transformations) StdoutLine: {'line': b'creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/share/ament_index/resource_index\n'}
+[2.748506] (tf_transformations) StdoutLine: {'line': b'creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/share/ament_index/resource_index/packages\n'}
+[2.748589] (tf_transformations) StdoutLine: {'line': b'copying resource/tf_transformations -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/share/ament_index/resource_index/packages\n'}
+[2.748679] (tf_transformations) StdoutLine: {'line': b'copying package.xml -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/share/tf_transformations\n'}
+[2.755979] (static_tf) StdoutLine: {'line': b'running build_ext\n'}
+[2.756385] (static_tf) StdoutLine: {'line': b'Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/lib/python3.8/site-packages/site.py\n'}
+[2.758609] (static_tf) StdoutLine: {'line': b'Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/lib/python3.8/site-packages/static-tf.egg-link (link to .)\n'}
+[2.759451] (static_tf) StdoutLine: {'line': b'\n'}
+[2.759630] (static_tf) StdoutLine: {'line': b'Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf\n'}
+[2.759838] (static_tf) StdoutLine: {'line': b'running install_data\n'}
+[2.760001] (static_tf) StdoutLine: {'line': b'creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/share/ament_index\n'}
+[2.760158] (static_tf) StdoutLine: {'line': b'creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/share/ament_index/resource_index\n'}
+[2.760281] (static_tf) StdoutLine: {'line': b'creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/share/ament_index/resource_index/packages\n'}
+[2.760388] (static_tf) StdoutLine: {'line': b'copying resource/static_tf -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/share/ament_index/resource_index/packages\n'}
+[2.760495] (static_tf) StdoutLine: {'line': b'copying package.xml -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/share/static_tf\n'}
+[2.778015] (tf_transformations) CommandEnded: {'returncode': 0}
+[2.796719] (tf_transformations) JobEnded: {'identifier': 'tf_transformations', 'rc': 0}
+[2.800869] (robot_localization) JobStarted: {'identifier': 'robot_localization'}
+[2.808607] (-) TimerEvent: {}
+[2.821588] (static_tf) CommandEnded: {'returncode': 0}
+[2.837396] (static_tf) JobEnded: {'identifier': 'static_tf', 'rc': 0}
+[2.908785] (-) TimerEvent: {}
+[2.980638] (slam_toolbox) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[3.008860] (-) TimerEvent: {}
+[3.062019] (slam_toolbox) StdoutLine: {'line': b'-- Found pluginlib: 2.5.4 (/opt/ros/foxy/share/pluginlib/cmake)\n'}
+[3.087403] (slam_toolbox) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)\n'}
+[3.099020] (slam_toolbox) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[3.103435] (slam_toolbox) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[3.108944] (-) TimerEvent: {}
+[3.132400] (slam_toolbox) StdoutLine: {'line': b'-- Found tf2_sensor_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_sensor_msgs/cmake)\n'}
+[3.155446] (slam_toolbox) StdoutLine: {'line': b'-- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)\n'}
+[3.167566] (slam_toolbox) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[3.181814] (slam_toolbox) StdoutLine: {'line': b'-- Found nav2_map_server: 0.4.7 (/opt/ros/foxy/share/nav2_map_server/cmake)\n'}
+[3.185071] (slam_toolbox) StdoutLine: {'line': b'-- Found rviz_common: 8.2.8 (/opt/ros/foxy/share/rviz_common/cmake)\n'}
+[3.203282] (slam_toolbox) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/foxy/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[3.205317] (slam_toolbox) StdoutLine: {'line': b'-- Found OGRE\n'}
+[3.205524] (slam_toolbox) StdoutLine: {'line': b'--   static     : OFF\n'}
+[3.205653] (slam_toolbox) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[3.205770] (slam_toolbox) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[3.205927] (slam_toolbox) StdoutLine: {'line': b'--   media      : /opt/ros/foxy/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[3.206083] (slam_toolbox) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[3.206204] (slam_toolbox) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/foxy/opt/rviz_ogre_vendor/lib\n'}
+[3.206330] (slam_toolbox) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[3.206487] (slam_toolbox) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[3.206596] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[3.206714] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[3.206819] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[3.206919] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[3.208837] (slam_toolbox) StdoutLine: {'line': b'-- Could not find freeimage library\n'}
+[3.209029] (-) TimerEvent: {}
+[3.251863] (slam_toolbox) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11")  \n'}
+[3.260032] (slam_toolbox) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[3.309145] (-) TimerEvent: {}
+[3.395147] (slam_toolbox) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[3.395630] (slam_toolbox) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[3.409274] (-) TimerEvent: {}
+[3.454453] (slam_toolbox) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[3.454722] (slam_toolbox) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[3.502073] (slam_toolbox) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[3.502395] (slam_toolbox) StdoutLine: {'line': b'-- Looking for connect\n'}
+[3.509412] (-) TimerEvent: {}
+[3.550779] (slam_toolbox) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[3.551000] (slam_toolbox) StdoutLine: {'line': b'-- Looking for remove\n'}
+[3.602640] (slam_toolbox) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[3.602885] (slam_toolbox) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[3.609547] (-) TimerEvent: {}
+[3.627470] (robot_localization) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/robot_localization/build', '--no-deps', 'install_data'], 'cwd': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/robot_localization', 'env': {'RCUTILS_LOGGING_BUFFERED_STREAM': '0', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en', 'USER': 'yumjunstar', 'LC_TIME': 'ko_KR.UTF-8', 'ROS_NAMESPACE': 'robot1', 'SSH_AGENT_PID': '1718', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'RCUTILS_CONSOLE_OUTPUT_FORMAT': '[{severity}]: {message}', 'LD_LIBRARY_PATH': '/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/yumjunstar', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1540', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=ea6c23a1f269d6be18762ed664835c92', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/home/yumjunstar/robot_ws', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/yumjunstar/robot_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'yumjunstar', 'JOURNAL_STREAM': '8:47342', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'yumjunstar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/yumjunstar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/yumjunstar:@/tmp/.ICE-unix/1756,unix/yumjunstar:/tmp/.ICE-unix/1756', 'INVOCATION_ID': 'cad7fa623799496fa99b06fc780fff75', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/45de19b1_21f2_4d42_a9f2_ec65765261d8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations:/home/yumjunstar/robot_ws/install/topic_service_action_rclpy_example:/home/yumjunstar/robot_ws/install/topic_service_action_rclcpp_example:/home/yumjunstar/robot_ws/install/time_rclpy_example:/home/yumjunstar/robot_ws/install/time_rclcpp_example:/home/yumjunstar/robot_ws/install/tf2_rclpy_example:/home/yumjunstar/robot_ws/install/tf2_rclcpp_example:/home/yumjunstar/robot_ws/install/testbot_description:/home/yumjunstar/robot_ws/install/rqt_example:/home/yumjunstar/robot_ws/install/ros2env:/home/yumjunstar/robot_ws/install/my_first_ros_rclpy_pkg:/home/yumjunstar/robot_ws/install/my_first_ros_rclcpp_pkg:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example:/home/yumjunstar/robot_ws/install/logging_rclpy_example:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'RCUTILS_LOGGING_USE_STDOUT': '0', 'PWD': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/robot_localization', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'RCUTILS_COLORIZED_OUTPUT': '1', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=ea6c23a1f269d6be18762ed664835c92', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/robot_localization/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/lib/python3.8/site-packages:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/topic_service_action_rclpy_example:/home/yumjunstar/robot_ws/install/topic_service_action_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/time_rclpy_example:/home/yumjunstar/robot_ws/install/time_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/tf2_rclpy_example:/home/yumjunstar/robot_ws/install/tf2_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/install/rqt_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/ros2env:/home/yumjunstar/robot_ws/install/ros2env/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/my_first_ros_rclpy_pkg:/home/yumjunstar/robot_ws/install/my_first_ros_rclpy_pkg/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/logging_rclpy_example:/home/yumjunstar/robot_ws/install/logging_rclpy_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/yumjunstar/robot_ws/install/topic_service_action_rclcpp_example:/home/yumjunstar/robot_ws/install/time_rclcpp_example:/home/yumjunstar/robot_ws/install/tf2_rclcpp_example:/home/yumjunstar/robot_ws/install/testbot_description:/home/yumjunstar/robot_ws/install/rqt_example:/home/yumjunstar/robot_ws/install/my_first_ros_rclcpp_pkg:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example'}, 'shell': False}
+[3.656676] (slam_toolbox) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[3.656949] (slam_toolbox) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[3.706146] (slam_toolbox) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[3.709365] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND\n'}
+[3.709536] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND\n'}
+[3.709613] (-) TimerEvent: {}
+[3.714562] (slam_toolbox) StdoutLine: {'line': b'-- library: libassimp.so.5\n'}
+[3.793021] (slam_toolbox) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[3.809722] (-) TimerEvent: {}
+[3.888130] (slam_toolbox) StdoutLine: {'line': b"-- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'\n"}
+[3.890833] (slam_toolbox) StdoutLine: {'line': b'-- Found rviz_default_plugins: 8.2.8 (/opt/ros/foxy/share/rviz_default_plugins/cmake)\n'}
+[3.912106] (-) TimerEvent: {}
+[3.920034] (robot_localization) StdoutLine: {'line': b'running develop\n'}
+[4.012199] (-) TimerEvent: {}
+[4.112569] (-) TimerEvent: {}
+[4.115356] (robot_localization) StdoutLine: {'line': b'running egg_info\n'}
+[4.115566] (robot_localization) StdoutLine: {'line': b'creating robot_localization.egg-info\n'}
+[4.115715] (robot_localization) StdoutLine: {'line': b'writing robot_localization.egg-info/PKG-INFO\n'}
+[4.115871] (robot_localization) StdoutLine: {'line': b'writing dependency_links to robot_localization.egg-info/dependency_links.txt\n'}
+[4.116033] (robot_localization) StdoutLine: {'line': b'writing entry points to robot_localization.egg-info/entry_points.txt\n'}
+[4.116154] (robot_localization) StdoutLine: {'line': b'writing requirements to robot_localization.egg-info/requires.txt\n'}
+[4.116252] (robot_localization) StdoutLine: {'line': b'writing top-level names to robot_localization.egg-info/top_level.txt\n'}
+[4.117298] (robot_localization) StdoutLine: {'line': b"writing manifest file 'robot_localization.egg-info/SOURCES.txt'\n"}
+[4.149248] (robot_localization) StdoutLine: {'line': b"reading manifest file 'robot_localization.egg-info/SOURCES.txt'\n"}
+[4.149728] (robot_localization) StdoutLine: {'line': b"writing manifest file 'robot_localization.egg-info/SOURCES.txt'\n"}
+[4.184319] (robot_localization) StdoutLine: {'line': b'running build_ext\n'}
+[4.184611] (robot_localization) StdoutLine: {'line': b'Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/lib/python3.8/site-packages/site.py\n'}
+[4.186588] (robot_localization) StdoutLine: {'line': b'Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/lib/python3.8/site-packages/robot-localization.egg-link (link to .)\n'}
+[4.187285] (robot_localization) StdoutLine: {'line': b'Installing robot_localization script to /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/lib/robot_localization\n'}
+[4.187505] (robot_localization) StdoutLine: {'line': b'\n'}
+[4.187606] (robot_localization) StdoutLine: {'line': b'Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/robot_localization\n'}
+[4.187680] (robot_localization) StdoutLine: {'line': b'running install_data\n'}
+[4.187830] (robot_localization) StdoutLine: {'line': b'creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/share/ament_index\n'}
+[4.187931] (robot_localization) StdoutLine: {'line': b'creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/share/ament_index/resource_index\n'}
+[4.188001] (robot_localization) StdoutLine: {'line': b'creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/share/ament_index/resource_index/packages\n'}
+[4.188084] (robot_localization) StdoutLine: {'line': b'copying resource/robot_localization -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/share/ament_index/resource_index/packages\n'}
+[4.188152] (robot_localization) StdoutLine: {'line': b'copying package.xml -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization/share/robot_localization\n'}
+[4.212030] (robot_localization) CommandEnded: {'returncode': 0}
+[4.215426] (-) TimerEvent: {}
+[4.231115] (robot_localization) JobEnded: {'identifier': 'robot_localization', 'rc': 0}
+[4.285463] (slam_toolbox) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: system serialization filesystem thread \n'}
+[4.315539] (-) TimerEvent: {}
+[4.383761] (slam_toolbox) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") \n'}
+[4.388608] (slam_toolbox) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/yumjunstar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[4.388882] (slam_toolbox) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (CSPARSE)\n'}
+[4.389016] (slam_toolbox) StderrLine: {'line': b'  does not match the name of the calling package (CSparse).  This can lead to\n'}
+[4.389144] (slam_toolbox) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[4.389262] (slam_toolbox) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[4.389383] (slam_toolbox) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.389498] (slam_toolbox) StderrLine: {'line': b'  CMake/FindCSparse.cmake:24 (find_package_handle_standard_args)\n'}
+[4.389615] (slam_toolbox) StderrLine: {'line': b'  CMakeLists.txt:77 (find_package)\n'}
+[4.389733] (slam_toolbox) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[4.389847] (slam_toolbox) StderrLine: {'line': b'\x1b[0m\n'}
+[4.389963] (slam_toolbox) StdoutLine: {'line': b'-- Found CSPARSE: /usr/include/suitesparse  \n'}
+[4.415681] (-) TimerEvent: {}
+[4.454322] (slam_toolbox) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/yumjunstar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[4.454534] (slam_toolbox) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (CHOLMOD)\n'}
+[4.454612] (slam_toolbox) StderrLine: {'line': b'  does not match the name of the calling package (Cholmod).  This can lead to\n'}
+[4.454675] (slam_toolbox) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[4.454734] (slam_toolbox) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[4.454793] (slam_toolbox) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.454852] (slam_toolbox) StderrLine: {'line': b'  CMake/FindCholmod.cmake:86 (find_package_handle_standard_args)\n'}
+[4.454911] (slam_toolbox) StderrLine: {'line': b'  CMakeLists.txt:79 (find_package)\n'}
+[4.454971] (slam_toolbox) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[4.455035] (slam_toolbox) StderrLine: {'line': b'\x1b[0m\n'}
+[4.455127] (slam_toolbox) StdoutLine: {'line': b'-- Found CHOLMOD: /usr/include/suitesparse  \n'}
+[4.457570] (slam_toolbox) StdoutLine: {'line': b'-- Looking for sgemm_\n'}
+[4.502975] (slam_toolbox) StdoutLine: {'line': b'-- Looking for sgemm_ - not found\n'}
+[4.515836] (-) TimerEvent: {}
+[4.587780] (slam_toolbox) StdoutLine: {'line': b'-- Looking for sgemm_\n'}
+[4.615967] (-) TimerEvent: {}
+[4.637131] (slam_toolbox) StdoutLine: {'line': b'-- Looking for sgemm_ - found\n'}
+[4.637485] (slam_toolbox) StdoutLine: {'line': b'-- Found BLAS: /usr/lib/x86_64-linux-gnu/libblas.so  \n'}
+[4.640079] (slam_toolbox) StdoutLine: {'line': b'-- Looking for cheev_\n'}
+[4.691340] (slam_toolbox) StdoutLine: {'line': b'-- Looking for cheev_ - not found\n'}
+[4.716102] (-) TimerEvent: {}
+[4.724169] (slam_toolbox) StdoutLine: {'line': b'-- Looking for cheev_\n'}
+[4.783148] (slam_toolbox) StdoutLine: {'line': b'-- Looking for cheev_ - found\n'}
+[4.783568] (slam_toolbox) StdoutLine: {'line': b'-- Found LAPACK: /usr/lib/x86_64-linux-gnu/liblapack.so;/usr/lib/x86_64-linux-gnu/libblas.so  \n'}
+[4.787384] (slam_toolbox) StdoutLine: {'line': b'-- Found installed version of Eigen: /usr/lib/cmake/eigen3\n'}
+[4.788778] (slam_toolbox) StdoutLine: {'line': b'-- Found required Ceres dependency: Eigen version 3.3.7 in /usr/include/eigen3\n'}
+[4.792812] (slam_toolbox) StdoutLine: {'line': b'-- Found required Ceres dependency: glog\n'}
+[4.794737] (slam_toolbox) StdoutLine: {'line': b'-- Found installed version of gflags: /usr/lib/x86_64-linux-gnu/cmake/gflags\n'}
+[4.794877] (slam_toolbox) StdoutLine: {'line': b'-- Detected gflags version: 2.2.2\n'}
+[4.795957] (slam_toolbox) StdoutLine: {'line': b'-- Found required Ceres dependency: gflags\n'}
+[4.796578] (slam_toolbox) StdoutLine: {'line': b'-- Found Ceres version: 1.14.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, OpenMP, Multithreading]\n'}
+[4.816230] (-) TimerEvent: {}
+[4.846700] (slam_toolbox) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[4.916324] (-) TimerEvent: {}
+[5.016670] (-) TimerEvent: {}
+[5.117049] (-) TimerEvent: {}
+[5.181665] (slam_toolbox) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[5.217191] (-) TimerEvent: {}
+[5.317477] (-) TimerEvent: {}
+[5.417796] (-) TimerEvent: {}
+[5.518164] (-) TimerEvent: {}
+[5.520276] (slam_toolbox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.618261] (-) TimerEvent: {}
+[5.696960] (slam_toolbox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.718388] (-) TimerEvent: {}
+[5.738162] (slam_toolbox) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[5.740138] (slam_toolbox) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[5.782202] (slam_toolbox) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[5.782564] (slam_toolbox) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.782700] (slam_toolbox) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[5.782810] (slam_toolbox) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[5.813737] (slam_toolbox) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[5.818487] (-) TimerEvent: {}
+[5.918806] (-) TimerEvent: {}
+[6.018525] (slam_toolbox) StdoutLine: {'line': b'-- Configuring done (5.2s)\n'}
+[6.018856] (-) TimerEvent: {}
+[6.119079] (-) TimerEvent: {}
+[6.219354] (-) TimerEvent: {}
+[6.306044] (slam_toolbox) StdoutLine: {'line': b'-- Generating done (0.2s)\n'}
+[6.311965] (slam_toolbox) StdoutLine: {'line': b'-- Build files have been written to: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox\n'}
+[6.319489] (-) TimerEvent: {}
+[6.338141] (slam_toolbox) CommandEnded: {'returncode': 0}
+[6.339039] (slam_toolbox) JobProgress: {'identifier': 'slam_toolbox', 'progress': 'build'}
+[6.341474] (slam_toolbox) Command: {'cmd': ['/home/yumjunstar/.local/bin/cmake', '--build', '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox', '--', '-j8', '-l8'], 'cwd': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '0'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'yumjunstar'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_NAMESPACE', 'robot1'), ('SSH_AGENT_PID', '1718'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}]: {message}'), ('LD_LIBRARY_PATH', '/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/yumjunstar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1540'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=ea6c23a1f269d6be18762ed664835c92'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/yumjunstar/robot_ws'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/yumjunstar/robot_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'yumjunstar'), ('JOURNAL_STREAM', '8:47342'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yumjunstar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/yumjunstar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/yumjunstar:@/tmp/.ICE-unix/1756,unix/yumjunstar:/tmp/.ICE-unix/1756'), ('INVOCATION_ID', 'cad7fa623799496fa99b06fc780fff75'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45de19b1_21f2_4d42_a9f2_ec65765261d8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/home/yumjunstar/robot_ws/install/topic_service_action_rclpy_example:/home/yumjunstar/robot_ws/install/topic_service_action_rclcpp_example:/home/yumjunstar/robot_ws/install/time_rclpy_example:/home/yumjunstar/robot_ws/install/time_rclcpp_example:/home/yumjunstar/robot_ws/install/tf2_rclpy_example:/home/yumjunstar/robot_ws/install/tf2_rclcpp_example:/home/yumjunstar/robot_ws/install/testbot_description:/home/yumjunstar/robot_ws/install/rqt_example:/home/yumjunstar/robot_ws/install/ros2env:/home/yumjunstar/robot_ws/install/my_first_ros_rclpy_pkg:/home/yumjunstar/robot_ws/install/my_first_ros_rclcpp_pkg:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example:/home/yumjunstar/robot_ws/install/logging_rclpy_example:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=ea6c23a1f269d6be18762ed664835c92'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yumjunstar/robot_ws/build/topic_service_action_rclpy_example:/home/yumjunstar/robot_ws/install/topic_service_action_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/time_rclpy_example:/home/yumjunstar/robot_ws/install/time_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/tf2_rclpy_example:/home/yumjunstar/robot_ws/install/tf2_rclpy_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/install/rqt_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/ros2env:/home/yumjunstar/robot_ws/install/ros2env/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/my_first_ros_rclpy_pkg:/home/yumjunstar/robot_ws/install/my_first_ros_rclpy_pkg/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example/lib/python3.8/site-packages:/home/yumjunstar/robot_ws/build/logging_rclpy_example:/home/yumjunstar/robot_ws/install/logging_rclpy_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/yumjunstar/robot_ws/install/topic_service_action_rclcpp_example:/home/yumjunstar/robot_ws/install/time_rclcpp_example:/home/yumjunstar/robot_ws/install/tf2_rclcpp_example:/home/yumjunstar/robot_ws/install/testbot_description:/home/yumjunstar/robot_ws/install/rqt_example:/home/yumjunstar/robot_ws/install/my_first_ros_rclcpp_pkg:/home/yumjunstar/robot_ws/install/msg_srv_action_interface_example:/home/yumjunstar/robot_ws/install/topic_service_action_rclpy_example:/home/yumjunstar/robot_ws/install/time_rclpy_example:/home/yumjunstar/robot_ws/install/tf2_rclpy_example:/home/yumjunstar/robot_ws/install/ros2env:/home/yumjunstar/robot_ws/install/my_first_ros_rclpy_pkg:/home/yumjunstar/robot_ws/install/logging_rclpy_example:/opt/ros/foxy')]), 'shell': False}
+[6.394443] (slam_toolbox) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.397649] (slam_toolbox) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object lib/karto_sdk/CMakeFiles/kartoSlamToolbox.dir/src/Karto.cpp.o\x1b[0m\n'}
+[6.398078] (slam_toolbox) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.398268] (slam_toolbox) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object lib/karto_sdk/CMakeFiles/kartoSlamToolbox.dir/src/Mapper.cpp.o\x1b[0m\n'}
+[6.419594] (-) TimerEvent: {}
+[6.519934] (-) TimerEvent: {}
+[6.620301] (-) TimerEvent: {}
+[6.721010] (-) TimerEvent: {}
+[6.821395] (-) TimerEvent: {}
+[6.921785] (-) TimerEvent: {}
+[7.022186] (-) TimerEvent: {}
+[7.122604] (-) TimerEvent: {}
+[7.223043] (-) TimerEvent: {}
+[7.323478] (-) TimerEvent: {}
+[7.423970] (-) TimerEvent: {}
+[7.524462] (-) TimerEvent: {}
+[7.624947] (-) TimerEvent: {}
+[7.725445] (-) TimerEvent: {}
+[7.831594] (-) TimerEvent: {}
+[7.935108] (-) TimerEvent: {}
+[8.038310] (-) TimerEvent: {}
+[8.138809] (-) TimerEvent: {}
+[8.239335] (-) TimerEvent: {}
+[8.341588] (-) TimerEvent: {}
+[8.442114] (-) TimerEvent: {}
+[8.448457] (slam_toolbox) StdoutLine: {'line': b'[  3%] Built target slam_toolbox__cpp\n'}
+[8.472086] (slam_toolbox) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.472615] (slam_toolbox) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[8.473083] (slam_toolbox) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.542244] (-) TimerEvent: {}
+[8.642870] (-) TimerEvent: {}
+[8.744277] (-) TimerEvent: {}
+[8.844995] (-) TimerEvent: {}
+[8.946087] (-) TimerEvent: {}
+[9.001703] (slam_toolbox) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/toggle_interactive__functions.c.o\x1b[0m\n'}
+[9.010552] (slam_toolbox) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/clear_queue__functions.c.o\x1b[0m\n'}
+[9.014051] (slam_toolbox) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/pause__functions.c.o\x1b[0m\n'}
+[9.056150] (-) TimerEvent: {}
+[9.164235] (-) TimerEvent: {}
+[9.268663] (-) TimerEvent: {}
+[9.369222] (-) TimerEvent: {}
+[9.469928] (-) TimerEvent: {}
+[9.552411] (slam_toolbox) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/clear__functions.c.o\x1b[0m\n'}
+[9.570072] (-) TimerEvent: {}
+[9.645417] (slam_toolbox) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/save_map__functions.c.o\x1b[0m\n'}
+[9.670212] (-) TimerEvent: {}
+[9.785406] (slam_toolbox) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/loop_closure__functions.c.o\x1b[0m\n'}
+[9.785939] (-) TimerEvent: {}
+[9.892469] (-) TimerEvent: {}
+[9.993757] (-) TimerEvent: {}
+[10.094474] (-) TimerEvent: {}
+[10.195146] (-) TimerEvent: {}
+[10.296350] (-) TimerEvent: {}
+[10.338740] (slam_toolbox) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/merge_maps__functions.c.o\x1b[0m\n'}
+[10.396496] (-) TimerEvent: {}
+[10.430090] (slam_toolbox) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/add_submap__functions.c.o\x1b[0m\n'}
+[10.496630] (-) TimerEvent: {}
+[10.597393] (-) TimerEvent: {}
+[10.707169] (-) TimerEvent: {}
+[10.747706] (slam_toolbox) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/deserialize_pose_graph__functions.c.o\x1b[0m\n'}
+[10.807313] (-) TimerEvent: {}
+[10.908138] (-) TimerEvent: {}
+[11.012165] (-) TimerEvent: {}
+[11.113126] (-) TimerEvent: {}
+[11.115939] (slam_toolbox) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/serialize_pose_graph__functions.c.o\x1b[0m\n'}
+[11.213302] (-) TimerEvent: {}
+[11.319267] (-) TimerEvent: {}
+[11.420005] (-) TimerEvent: {}
+[11.520575] (-) TimerEvent: {}
+[11.621120] (-) TimerEvent: {}
+[11.711832] (slam_toolbox) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking C shared library libslam_toolbox__rosidl_generator_c.so\x1b[0m\n'}
+[11.721258] (-) TimerEvent: {}
+[11.746102] (slam_toolbox) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/pause__type_support.cpp.o\x1b[0m\n'}
+[11.805710] (slam_toolbox) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/toggle_interactive__type_support.cpp.o\x1b[0m\n'}
+[11.809553] (slam_toolbox) StdoutLine: {'line': b'[ 16%] Built target slam_toolbox__rosidl_generator_c\n'}
+[11.810396] (slam_toolbox) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/clear_queue__type_support.cpp.o\x1b[0m\n'}
+[11.821387] (-) TimerEvent: {}
+[11.897440] (slam_toolbox) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[11.921528] (-) TimerEvent: {}
+[12.022068] (-) TimerEvent: {}
+[12.122571] (-) TimerEvent: {}
+[12.223082] (-) TimerEvent: {}
+[12.226432] (slam_toolbox) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/pause__type_support.cpp.o\x1b[0m\n'}
+[12.324186] (-) TimerEvent: {}
+[12.427923] (-) TimerEvent: {}
+[12.552142] (-) TimerEvent: {}
+[12.668152] (-) TimerEvent: {}
+[12.768899] (-) TimerEvent: {}
+[12.869508] (-) TimerEvent: {}
+[12.970133] (-) TimerEvent: {}
+[13.070688] (-) TimerEvent: {}
+[13.171450] (-) TimerEvent: {}
+[13.264091] (slam_toolbox) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/pause__type_support.cpp.o\x1b[0m\n'}
+[13.272609] (-) TimerEvent: {}
+[13.311753] (slam_toolbox) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/clear__type_support.cpp.o\x1b[0m\n'}
+[13.314447] (slam_toolbox) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/clear_queue__type_support.cpp.o\x1b[0m\n'}
+[13.353486] (slam_toolbox) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/save_map__type_support.cpp.o\x1b[0m\n'}
+[13.372746] (-) TimerEvent: {}
+[13.473926] (-) TimerEvent: {}
+[13.575510] (-) TimerEvent: {}
+[13.677011] (-) TimerEvent: {}
+[13.778230] (-) TimerEvent: {}
+[13.879212] (-) TimerEvent: {}
+[13.980079] (-) TimerEvent: {}
+[14.080648] (-) TimerEvent: {}
+[14.181992] (-) TimerEvent: {}
+[14.282682] (-) TimerEvent: {}
+[14.392187] (-) TimerEvent: {}
+[14.497881] (-) TimerEvent: {}
+[14.598622] (-) TimerEvent: {}
+[14.665516] (slam_toolbox) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/clear_queue__type_support.cpp.o\x1b[0m\n'}
+[14.698761] (-) TimerEvent: {}
+[14.761308] (slam_toolbox) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/toggle_interactive__type_support.cpp.o\x1b[0m\n'}
+[14.798906] (-) TimerEvent: {}
+[14.899473] (-) TimerEvent: {}
+[15.000072] (-) TimerEvent: {}
+[15.100607] (-) TimerEvent: {}
+[15.113110] (slam_toolbox) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/loop_closure__type_support.cpp.o\x1b[0m\n'}
+[15.201416] (-) TimerEvent: {}
+[15.320162] (-) TimerEvent: {}
+[15.420774] (-) TimerEvent: {}
+[15.472308] (slam_toolbox) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/merge_maps__type_support.cpp.o\x1b[0m\n'}
+[15.520915] (-) TimerEvent: {}
+[15.621526] (-) TimerEvent: {}
+[15.722422] (-) TimerEvent: {}
+[15.801990] (slam_toolbox) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/clear__type_support.cpp.o\x1b[0m\n'}
+[15.822606] (-) TimerEvent: {}
+[15.843670] (slam_toolbox) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/pause__type_support.c.o\x1b[0m\n'}
+[15.922767] (-) TimerEvent: {}
+[16.024323] (-) TimerEvent: {}
+[16.040460] (slam_toolbox) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/clear_queue__type_support.c.o\x1b[0m\n'}
+[16.086125] (slam_toolbox) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/toggle_interactive__type_support.cpp.o\x1b[0m\n'}
+[16.125077] (-) TimerEvent: {}
+[16.222536] (slam_toolbox) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/toggle_interactive__type_support.c.o\x1b[0m\n'}
+[16.225201] (-) TimerEvent: {}
+[16.325898] (-) TimerEvent: {}
+[16.391998] (slam_toolbox) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/clear__type_support.c.o\x1b[0m\n'}
+[16.426044] (-) TimerEvent: {}
+[16.469468] (slam_toolbox) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[16.531485] (-) TimerEvent: {}
+[16.585492] (slam_toolbox) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/add_submap__type_support.cpp.o\x1b[0m\n'}
+[16.634749] (-) TimerEvent: {}
+[16.656393] (slam_toolbox) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/save_map__type_support.c.o\x1b[0m\n'}
+[16.734898] (-) TimerEvent: {}
+[16.809143] (slam_toolbox) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/loop_closure__type_support.c.o\x1b[0m\n'}
+[16.813063] (slam_toolbox) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/merge_maps__type_support.c.o\x1b[0m\n'}
+[16.835040] (-) TimerEvent: {}
+[16.934652] (slam_toolbox) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/clear__type_support.cpp.o\x1b[0m\n'}
+[16.935098] (-) TimerEvent: {}
+[17.035522] (-) TimerEvent: {}
+[17.073245] (slam_toolbox) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/add_submap__type_support.c.o\x1b[0m\n'}
+[17.136262] (-) TimerEvent: {}
+[17.236990] (-) TimerEvent: {}
+[17.338573] (-) TimerEvent: {}
+[17.421077] (slam_toolbox) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.c.o\x1b[0m\n'}
+[17.438714] (-) TimerEvent: {}
+[17.508286] (slam_toolbox) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/save_map__type_support.cpp.o\x1b[0m\n'}
+[17.538866] (-) TimerEvent: {}
+[17.639500] (-) TimerEvent: {}
+[17.641049] (slam_toolbox) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/serialize_pose_graph__type_support.c.o\x1b[0m\n'}
+[17.715600] (slam_toolbox) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/deserialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[17.739647] (-) TimerEvent: {}
+[17.805701] (slam_toolbox) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/loop_closure__type_support.cpp.o\x1b[0m\n'}
+[17.840307] (-) TimerEvent: {}
+[17.925419] (slam_toolbox) StdoutLine: {'line': b'[ 37%] \x1b[32m\x1b[1mLinking C shared library libslam_toolbox__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[17.940443] (-) TimerEvent: {}
+[18.040980] (-) TimerEvent: {}
+[18.120505] (slam_toolbox) StdoutLine: {'line': b'[ 37%] Built target slam_toolbox__rosidl_typesupport_introspection_c\n'}
+[18.141109] (-) TimerEvent: {}
+[18.156761] (slam_toolbox) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/serialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[18.228305] (slam_toolbox) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/save_map__type_support.cpp.o\x1b[0m\n'}
+[18.241954] (-) TimerEvent: {}
+[18.342478] (-) TimerEvent: {}
+[18.443070] (-) TimerEvent: {}
+[18.543646] (-) TimerEvent: {}
+[18.644253] (-) TimerEvent: {}
+[18.682252] (slam_toolbox) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/pause__type_support.cpp.o\x1b[0m\n'}
+[18.744396] (-) TimerEvent: {}
+[18.845115] (-) TimerEvent: {}
+[18.927595] (slam_toolbox) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/clear_queue__type_support.cpp.o\x1b[0m\n'}
+[18.945270] (-) TimerEvent: {}
+[19.012303] (slam_toolbox) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/merge_maps__type_support.cpp.o\x1b[0m\n'}
+[19.045410] (-) TimerEvent: {}
+[19.062350] (slam_toolbox) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/toggle_interactive__type_support.cpp.o\x1b[0m\n'}
+[19.145578] (-) TimerEvent: {}
+[19.246208] (-) TimerEvent: {}
+[19.252742] (slam_toolbox) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/clear__type_support.cpp.o\x1b[0m\n'}
+[19.346354] (-) TimerEvent: {}
+[19.408164] (slam_toolbox) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/add_submap__type_support.cpp.o\x1b[0m\n'}
+[19.424857] (slam_toolbox) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/save_map__type_support.cpp.o\x1b[0m\n'}
+[19.446496] (-) TimerEvent: {}
+[19.510445] (slam_toolbox) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[19.546679] (-) TimerEvent: {}
+[19.547444] (slam_toolbox) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/loop_closure__type_support.cpp.o\x1b[0m\n'}
+[19.621075] (slam_toolbox) StdoutLine: {'line': b'[ 46%] Built target slam_toolbox__rosidl_typesupport_cpp\n'}
+[19.625015] (slam_toolbox) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/merge_maps__type_support.cpp.o\x1b[0m\n'}
+[19.628229] (slam_toolbox) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/deserialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[19.646822] (-) TimerEvent: {}
+[19.647416] (slam_toolbox) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/loop_closure__type_support.cpp.o\x1b[0m\n'}
+[19.708313] (slam_toolbox) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/add_submap__type_support.cpp.o\x1b[0m\n'}
+[19.748153] (-) TimerEvent: {}
+[19.789101] (slam_toolbox) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/deserialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[19.833170] (slam_toolbox) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/serialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[19.848311] (-) TimerEvent: {}
+[19.898625] (slam_toolbox) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/serialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[19.948462] (-) TimerEvent: {}
+[20.049304] (-) TimerEvent: {}
+[20.052123] (slam_toolbox) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_c.so\x1b[0m\n'}
+[20.149453] (-) TimerEvent: {}
+[20.246780] (slam_toolbox) StdoutLine: {'line': b'[ 51%] Built target slam_toolbox__rosidl_typesupport_c\n'}
+[20.249577] (-) TimerEvent: {}
+[20.262411] (slam_toolbox) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/merge_maps__type_support.cpp.o\x1b[0m\n'}
+[20.349756] (-) TimerEvent: {}
+[20.450339] (-) TimerEvent: {}
+[20.550988] (-) TimerEvent: {}
+[20.651669] (-) TimerEvent: {}
+[20.752427] (-) TimerEvent: {}
+[20.853235] (-) TimerEvent: {}
+[20.853758] (slam_toolbox) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/add_submap__type_support.cpp.o\x1b[0m\n'}
+[20.949035] (slam_toolbox) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[20.953379] (-) TimerEvent: {}
+[21.055533] (-) TimerEvent: {}
+[21.189252] (-) TimerEvent: {}
+[21.306876] (-) TimerEvent: {}
+[21.387194] (slam_toolbox) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/serialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[21.407023] (-) TimerEvent: {}
+[21.507880] (-) TimerEvent: {}
+[21.609589] (-) TimerEvent: {}
+[21.710164] (-) TimerEvent: {}
+[21.780167] (slam_toolbox) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[21.810308] (-) TimerEvent: {}
+[21.910862] (-) TimerEvent: {}
+[21.989727] (slam_toolbox) StdoutLine: {'line': b'[ 55%] Built target slam_toolbox__rosidl_typesupport_fastrtps_cpp\n'}
+[22.011016] (-) TimerEvent: {}
+[22.025023] (slam_toolbox) StdoutLine: {'line': b'[ 56%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[22.111198] (-) TimerEvent: {}
+[22.211692] (-) TimerEvent: {}
+[22.312236] (-) TimerEvent: {}
+[22.330962] (slam_toolbox) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[22.412371] (-) TimerEvent: {}
+[22.438418] (slam_toolbox) StdoutLine: {'line': b'[ 57%] Built target slam_toolbox__rosidl_typesupport_introspection_cpp\n'}
+[22.512507] (-) TimerEvent: {}
+[22.613018] (-) TimerEvent: {}
+[22.713519] (-) TimerEvent: {}
+[22.813992] (-) TimerEvent: {}
+[22.914478] (-) TimerEvent: {}
+[23.014971] (-) TimerEvent: {}
+[23.115421] (-) TimerEvent: {}
+[23.215901] (-) TimerEvent: {}
+[23.316439] (-) TimerEvent: {}
+[23.416903] (-) TimerEvent: {}
+[23.517421] (-) TimerEvent: {}
+[23.617936] (-) TimerEvent: {}
+[23.718436] (-) TimerEvent: {}
+[23.818941] (-) TimerEvent: {}
+[23.919444] (-) TimerEvent: {}
+[23.996473] (slam_toolbox) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/pause__type_support_c.cpp.o\x1b[0m\n'}
+[23.996895] (slam_toolbox) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/clear_queue__type_support_c.cpp.o\x1b[0m\n'}
+[23.997158] (slam_toolbox) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/toggle_interactive__type_support_c.cpp.o\x1b[0m\n'}
+[23.997417] (slam_toolbox) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/clear__type_support_c.cpp.o\x1b[0m\n'}
+[24.019585] (-) TimerEvent: {}
+[24.026932] (slam_toolbox) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/save_map__type_support_c.cpp.o\x1b[0m\n'}
+[24.031939] (slam_toolbox) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/loop_closure__type_support_c.cpp.o\x1b[0m\n'}
+[24.119721] (-) TimerEvent: {}
+[24.220327] (-) TimerEvent: {}
+[24.320849] (-) TimerEvent: {}
+[24.421557] (-) TimerEvent: {}
+[24.522321] (-) TimerEvent: {}
+[24.622863] (-) TimerEvent: {}
+[24.724471] (-) TimerEvent: {}
+[24.825180] (-) TimerEvent: {}
+[24.925767] (-) TimerEvent: {}
+[25.026356] (-) TimerEvent: {}
+[25.126941] (-) TimerEvent: {}
+[25.227515] (-) TimerEvent: {}
+[25.328105] (-) TimerEvent: {}
+[25.344984] (slam_toolbox) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/merge_maps__type_support_c.cpp.o\x1b[0m\n'}
+[25.356169] (slam_toolbox) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/add_submap__type_support_c.cpp.o\x1b[0m\n'}
+[25.428261] (-) TimerEvent: {}
+[25.503084] (slam_toolbox) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/deserialize_pose_graph__type_support_c.cpp.o\x1b[0m\n'}
+[25.528161] (slam_toolbox) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/serialize_pose_graph__type_support_c.cpp.o\x1b[0m\n'}
+[25.529275] (-) TimerEvent: {}
+[25.629782] (-) TimerEvent: {}
+[25.730390] (-) TimerEvent: {}
+[25.830934] (-) TimerEvent: {}
+[25.931468] (-) TimerEvent: {}
+[26.031973] (-) TimerEvent: {}
+[26.132528] (-) TimerEvent: {}
+[26.233272] (-) TimerEvent: {}
+[26.333804] (-) TimerEvent: {}
+[26.434341] (-) TimerEvent: {}
+[26.534873] (-) TimerEvent: {}
+[26.635411] (-) TimerEvent: {}
+[26.735942] (-) TimerEvent: {}
+[26.812877] (slam_toolbox) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[26.836104] (-) TimerEvent: {}
+[26.936607] (-) TimerEvent: {}
+[26.966996] (slam_toolbox) StdoutLine: {'line': b'[ 65%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c\n'}
+[26.981231] (slam_toolbox) StdoutLine: {'line': b'[ 65%] Built target slam_toolbox\n'}
+[26.990732] (slam_toolbox) StdoutLine: {'line': b'[ 65%] \x1b[34m\x1b[1mGenerating rviz_plugin/moc_slam_toolbox_rviz_plugin.cpp\x1b[0m\n'}
+[26.997730] (slam_toolbox) StdoutLine: {'line': b'[ 66%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[27.012471] (slam_toolbox) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/SlamToolboxPlugin.dir/rviz_plugin/slam_toolbox_rviz_plugin.cpp.o\x1b[0m\n'}
+[27.014114] (slam_toolbox) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/SlamToolboxPlugin.dir/rviz_plugin/moc_slam_toolbox_rviz_plugin.cpp.o\x1b[0m\n'}
+[27.036728] (-) TimerEvent: {}
+[27.137204] (-) TimerEvent: {}
+[27.237728] (-) TimerEvent: {}
+[27.338218] (-) TimerEvent: {}
+[27.448125] (-) TimerEvent: {}
+[27.548895] (-) TimerEvent: {}
+[27.649621] (-) TimerEvent: {}
+[27.750092] (-) TimerEvent: {}
+[27.850575] (-) TimerEvent: {}
+[27.951057] (-) TimerEvent: {}
+[28.051607] (-) TimerEvent: {}
+[28.152162] (-) TimerEvent: {}
+[28.252682] (-) TimerEvent: {}
+[28.353174] (-) TimerEvent: {}
+[28.453686] (-) TimerEvent: {}
+[28.554208] (-) TimerEvent: {}
+[28.654738] (-) TimerEvent: {}
+[28.757942] (-) TimerEvent: {}
+[28.858490] (-) TimerEvent: {}
+[28.959189] (-) TimerEvent: {}
+[29.059784] (-) TimerEvent: {}
+[29.160502] (-) TimerEvent: {}
+[29.261124] (-) TimerEvent: {}
+[29.361840] (-) TimerEvent: {}
+[29.462414] (-) TimerEvent: {}
+[29.562997] (-) TimerEvent: {}
+[29.663569] (-) TimerEvent: {}
+[29.767109] (-) TimerEvent: {}
+[29.867646] (-) TimerEvent: {}
+[29.968179] (-) TimerEvent: {}
+[30.068785] (-) TimerEvent: {}
+[30.169322] (-) TimerEvent: {}
+[30.269837] (-) TimerEvent: {}
+[30.370342] (-) TimerEvent: {}
+[30.470870] (-) TimerEvent: {}
+[30.571290] (-) TimerEvent: {}
+[30.671741] (-) TimerEvent: {}
+[30.772232] (-) TimerEvent: {}
+[30.872703] (-) TimerEvent: {}
+[30.973187] (-) TimerEvent: {}
+[31.074487] (-) TimerEvent: {}
+[31.175981] (-) TimerEvent: {}
+[31.276590] (-) TimerEvent: {}
+[31.377362] (-) TimerEvent: {}
+[31.477929] (-) TimerEvent: {}
+[31.588155] (-) TimerEvent: {}
+[31.688751] (-) TimerEvent: {}
+[31.789384] (-) TimerEvent: {}
+[31.891995] (-) TimerEvent: {}
+[31.992572] (-) TimerEvent: {}
+[32.093556] (-) TimerEvent: {}
+[32.198113] (-) TimerEvent: {}
+[32.236169] (slam_toolbox) StdoutLine: {'line': b'[ 68%] Built target slam_toolbox__py\n'}
+[32.266089] (slam_toolbox) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_clear_queue_s.c.o\x1b[0m\n'}
+[32.267598] (slam_toolbox) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_pause_s.c.o\x1b[0m\n'}
+[32.291854] (slam_toolbox) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_clear_s.c.o\x1b[0m\n'}
+[32.298284] (-) TimerEvent: {}
+[32.337046] (slam_toolbox) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_toggle_interactive_s.c.o\x1b[0m\n'}
+[32.398556] (-) TimerEvent: {}
+[32.499487] (-) TimerEvent: {}
+[32.600336] (-) TimerEvent: {}
+[32.700938] (-) TimerEvent: {}
+[32.801541] (-) TimerEvent: {}
+[32.813076] (slam_toolbox) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_save_map_s.c.o\x1b[0m\n'}
+[32.813762] (slam_toolbox) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_loop_closure_s.c.o\x1b[0m\n'}
+[32.814707] (slam_toolbox) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_merge_maps_s.c.o\x1b[0m\n'}
+[32.901694] (-) TimerEvent: {}
+[32.990895] (slam_toolbox) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_add_submap_s.c.o\x1b[0m\n'}
+[33.001836] (-) TimerEvent: {}
+[33.102364] (-) TimerEvent: {}
+[33.202929] (-) TimerEvent: {}
+[33.303514] (-) TimerEvent: {}
+[33.363324] (slam_toolbox) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_deserialize_pose_graph_s.c.o\x1b[0m\n'}
+[33.403667] (-) TimerEvent: {}
+[33.413469] (slam_toolbox) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_serialize_pose_graph_s.c.o\x1b[0m\n'}
+[33.504230] (-) TimerEvent: {}
+[33.605063] (-) TimerEvent: {}
+[33.705952] (-) TimerEvent: {}
+[33.806800] (-) TimerEvent: {}
+[33.908230] (-) TimerEvent: {}
+[34.009220] (-) TimerEvent: {}
+[34.110203] (-) TimerEvent: {}
+[34.112465] (slam_toolbox) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/slam_toolbox/libslam_toolbox__python.so\x1b[0m\n'}
+[34.210359] (-) TimerEvent: {}
+[34.229344] (slam_toolbox) StdoutLine: {'line': b'[ 76%] Built target slam_toolbox__python\n'}
+[34.255020] (slam_toolbox) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[34.256767] (slam_toolbox) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[34.263672] (slam_toolbox) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[34.310508] (-) TimerEvent: {}
+[34.411058] (-) TimerEvent: {}
+[34.512079] (-) TimerEvent: {}
+[34.612706] (-) TimerEvent: {}
+[34.720158] (-) TimerEvent: {}
+[34.824175] (-) TimerEvent: {}
+[34.925716] (-) TimerEvent: {}
+[35.032154] (-) TimerEvent: {}
+[35.132670] (-) TimerEvent: {}
+[35.233218] (-) TimerEvent: {}
+[35.333785] (-) TimerEvent: {}
+[35.434337] (-) TimerEvent: {}
+[35.534889] (-) TimerEvent: {}
+[35.591729] (slam_toolbox) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/slam_toolbox/slam_toolbox_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[35.635037] (-) TimerEvent: {}
+[35.687423] (slam_toolbox) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/slam_toolbox/slam_toolbox_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[35.694481] (slam_toolbox) StdoutLine: {'line': b'[ 78%] Built target slam_toolbox__rosidl_typesupport_introspection_c__pyext\n'}
+[35.735185] (-) TimerEvent: {}
+[35.742819] (slam_toolbox) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/slam_toolbox/slam_toolbox_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[35.852149] (-) TimerEvent: {}
+[35.860837] (slam_toolbox) StdoutLine: {'line': b'[ 79%] Built target slam_toolbox__rosidl_typesupport_c__pyext\n'}
+[35.888721] (slam_toolbox) StdoutLine: {'line': b'[ 79%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c__pyext\n'}
+[35.952268] (-) TimerEvent: {}
+[36.052708] (-) TimerEvent: {}
+[36.153121] (-) TimerEvent: {}
+[36.253569] (-) TimerEvent: {}
+[36.354065] (-) TimerEvent: {}
+[36.454472] (-) TimerEvent: {}
+[36.554877] (-) TimerEvent: {}
+[36.655301] (-) TimerEvent: {}
+[36.755767] (-) TimerEvent: {}
+[36.856285] (-) TimerEvent: {}
+[36.956766] (-) TimerEvent: {}
+[37.057254] (-) TimerEvent: {}
+[37.157746] (-) TimerEvent: {}
+[37.258254] (-) TimerEvent: {}
+[37.358760] (-) TimerEvent: {}
+[37.459264] (-) TimerEvent: {}
+[37.559773] (-) TimerEvent: {}
+[37.660273] (-) TimerEvent: {}
+[37.760737] (-) TimerEvent: {}
+[37.861251] (-) TimerEvent: {}
+[37.961754] (-) TimerEvent: {}
+[38.062244] (-) TimerEvent: {}
+[38.162774] (-) TimerEvent: {}
+[38.263307] (-) TimerEvent: {}
+[38.364181] (-) TimerEvent: {}
+[38.464709] (-) TimerEvent: {}
+[38.565212] (-) TimerEvent: {}
+[38.665708] (-) TimerEvent: {}
+[38.766185] (-) TimerEvent: {}
+[38.866738] (-) TimerEvent: {}
+[38.967248] (-) TimerEvent: {}
+[39.067757] (-) TimerEvent: {}
+[39.168282] (-) TimerEvent: {}
+[39.268804] (-) TimerEvent: {}
+[39.369346] (-) TimerEvent: {}
+[39.469863] (-) TimerEvent: {}
+[39.570363] (-) TimerEvent: {}
+[39.670900] (-) TimerEvent: {}
+[39.771408] (-) TimerEvent: {}
+[39.871888] (-) TimerEvent: {}
+[39.972379] (-) TimerEvent: {}
+[40.072842] (-) TimerEvent: {}
+[40.173308] (-) TimerEvent: {}
+[40.273791] (-) TimerEvent: {}
+[40.374286] (-) TimerEvent: {}
+[40.474767] (-) TimerEvent: {}
+[40.575256] (-) TimerEvent: {}
+[40.675650] (-) TimerEvent: {}
+[40.776016] (-) TimerEvent: {}
+[40.876415] (-) TimerEvent: {}
+[40.976828] (-) TimerEvent: {}
+[41.077208] (-) TimerEvent: {}
+[41.177653] (-) TimerEvent: {}
+[41.278029] (-) TimerEvent: {}
+[41.378428] (-) TimerEvent: {}
+[41.478819] (-) TimerEvent: {}
+[41.579216] (-) TimerEvent: {}
+[41.679611] (-) TimerEvent: {}
+[41.779987] (-) TimerEvent: {}
+[41.880384] (-) TimerEvent: {}
+[41.980759] (-) TimerEvent: {}
+[42.081158] (-) TimerEvent: {}
+[42.181551] (-) TimerEvent: {}
+[42.281933] (-) TimerEvent: {}
+[42.382297] (-) TimerEvent: {}
+[42.482654] (-) TimerEvent: {}
+[42.583060] (-) TimerEvent: {}
+[42.683431] (-) TimerEvent: {}
+[42.783782] (-) TimerEvent: {}
+[42.884128] (-) TimerEvent: {}
+[42.984458] (-) TimerEvent: {}
+[43.084807] (-) TimerEvent: {}
+[43.185143] (-) TimerEvent: {}
+[43.285479] (-) TimerEvent: {}
+[43.385821] (-) TimerEvent: {}
+[43.486181] (-) TimerEvent: {}
+[43.586539] (-) TimerEvent: {}
+[43.686878] (-) TimerEvent: {}
+[43.787236] (-) TimerEvent: {}
+[43.887632] (-) TimerEvent: {}
+[43.988075] (-) TimerEvent: {}
+[44.088430] (-) TimerEvent: {}
+[44.188909] (-) TimerEvent: {}
+[44.289311] (-) TimerEvent: {}
+[44.389751] (-) TimerEvent: {}
+[44.490182] (-) TimerEvent: {}
+[44.590614] (-) TimerEvent: {}
+[44.691006] (-) TimerEvent: {}
+[44.791394] (-) TimerEvent: {}
+[44.891763] (-) TimerEvent: {}
+[44.992142] (-) TimerEvent: {}
+[45.092503] (-) TimerEvent: {}
+[45.192862] (-) TimerEvent: {}
+[45.293253] (-) TimerEvent: {}
+[45.393622] (-) TimerEvent: {}
+[45.494000] (-) TimerEvent: {}
+[45.594365] (-) TimerEvent: {}
+[45.694726] (-) TimerEvent: {}
+[45.795089] (-) TimerEvent: {}
+[45.895467] (-) TimerEvent: {}
+[45.995844] (-) TimerEvent: {}
+[46.096164] (-) TimerEvent: {}
+[46.196505] (-) TimerEvent: {}
+[46.296859] (-) TimerEvent: {}
+[46.397245] (-) TimerEvent: {}
+[46.497630] (-) TimerEvent: {}
+[46.598047] (-) TimerEvent: {}
+[46.698403] (-) TimerEvent: {}
+[46.798758] (-) TimerEvent: {}
+[46.899113] (-) TimerEvent: {}
+[46.999457] (-) TimerEvent: {}
+[47.099803] (-) TimerEvent: {}
+[47.200146] (-) TimerEvent: {}
+[47.304151] (-) TimerEvent: {}
+[47.405187] (-) TimerEvent: {}
+[47.506361] (-) TimerEvent: {}
+[47.606823] (-) TimerEvent: {}
+[47.707291] (-) TimerEvent: {}
+[47.807757] (-) TimerEvent: {}
+[47.908214] (-) TimerEvent: {}
+[48.008661] (-) TimerEvent: {}
+[48.109103] (-) TimerEvent: {}
+[48.209518] (-) TimerEvent: {}
+[48.309938] (-) TimerEvent: {}
+[48.410366] (-) TimerEvent: {}
+[48.510790] (-) TimerEvent: {}
+[48.611197] (-) TimerEvent: {}
+[48.711607] (-) TimerEvent: {}
+[48.812004] (-) TimerEvent: {}
+[48.912430] (-) TimerEvent: {}
+[49.012797] (-) TimerEvent: {}
+[49.113215] (-) TimerEvent: {}
+[49.213668] (-) TimerEvent: {}
+[49.314052] (-) TimerEvent: {}
+[49.414437] (-) TimerEvent: {}
+[49.514804] (-) TimerEvent: {}
+[49.615182] (-) TimerEvent: {}
+[49.715563] (-) TimerEvent: {}
+[49.815947] (-) TimerEvent: {}
+[49.916292] (-) TimerEvent: {}
+[50.016645] (-) TimerEvent: {}
+[50.116983] (-) TimerEvent: {}
+[50.217337] (-) TimerEvent: {}
+[50.317771] (-) TimerEvent: {}
+[50.418195] (-) TimerEvent: {}
+[50.518589] (-) TimerEvent: {}
+[50.618980] (-) TimerEvent: {}
+[50.719381] (-) TimerEvent: {}
+[50.819766] (-) TimerEvent: {}
+[50.920167] (-) TimerEvent: {}
+[51.020574] (-) TimerEvent: {}
+[51.120951] (-) TimerEvent: {}
+[51.221327] (-) TimerEvent: {}
+[51.321733] (-) TimerEvent: {}
+[51.422157] (-) TimerEvent: {}
+[51.522510] (-) TimerEvent: {}
+[51.622891] (-) TimerEvent: {}
+[51.723227] (-) TimerEvent: {}
+[51.823624] (-) TimerEvent: {}
+[51.924007] (-) TimerEvent: {}
+[52.024390] (-) TimerEvent: {}
+[52.124756] (-) TimerEvent: {}
+[52.225109] (-) TimerEvent: {}
+[52.325479] (-) TimerEvent: {}
+[52.425852] (-) TimerEvent: {}
+[52.526237] (-) TimerEvent: {}
+[52.626626] (-) TimerEvent: {}
+[52.727001] (-) TimerEvent: {}
+[52.827361] (-) TimerEvent: {}
+[52.927703] (-) TimerEvent: {}
+[53.028077] (-) TimerEvent: {}
+[53.128457] (-) TimerEvent: {}
+[53.228816] (-) TimerEvent: {}
+[53.329219] (-) TimerEvent: {}
+[53.429647] (-) TimerEvent: {}
+[53.530070] (-) TimerEvent: {}
+[53.630471] (-) TimerEvent: {}
+[53.730923] (-) TimerEvent: {}
+[53.831340] (-) TimerEvent: {}
+[53.931728] (-) TimerEvent: {}
+[54.032100] (-) TimerEvent: {}
+[54.132562] (-) TimerEvent: {}
+[54.233085] (-) TimerEvent: {}
+[54.333467] (-) TimerEvent: {}
+[54.433823] (-) TimerEvent: {}
+[54.534240] (-) TimerEvent: {}
+[54.634619] (-) TimerEvent: {}
+[54.734988] (-) TimerEvent: {}
+[54.835367] (-) TimerEvent: {}
+[54.935730] (-) TimerEvent: {}
+[55.036251] (-) TimerEvent: {}
+[55.136731] (-) TimerEvent: {}
+[55.237142] (-) TimerEvent: {}
+[55.337515] (-) TimerEvent: {}
+[55.437850] (-) TimerEvent: {}
+[55.538262] (-) TimerEvent: {}
+[55.638709] (-) TimerEvent: {}
+[55.739135] (-) TimerEvent: {}
+[55.839492] (-) TimerEvent: {}
+[55.939870] (-) TimerEvent: {}
+[56.040244] (-) TimerEvent: {}
+[56.140692] (-) TimerEvent: {}
+[56.210605] (slam_toolbox) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libSlamToolboxPlugin.so\x1b[0m\n'}
+[56.240813] (-) TimerEvent: {}
+[56.341232] (-) TimerEvent: {}
+[56.441663] (-) TimerEvent: {}
+[56.542129] (-) TimerEvent: {}
+[56.642575] (-) TimerEvent: {}
+[56.742995] (-) TimerEvent: {}
+[56.843419] (-) TimerEvent: {}
+[56.943849] (-) TimerEvent: {}
+[57.044308] (-) TimerEvent: {}
+[57.144753] (-) TimerEvent: {}
+[57.245193] (-) TimerEvent: {}
+[57.345656] (-) TimerEvent: {}
+[57.446121] (-) TimerEvent: {}
+[57.489817] (slam_toolbox) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libkartoSlamToolbox.so\x1b[0m\n'}
+[57.546251] (-) TimerEvent: {}
+[57.646684] (-) TimerEvent: {}
+[57.747104] (-) TimerEvent: {}
+[57.847494] (-) TimerEvent: {}
+[57.869422] (slam_toolbox) StdoutLine: {'line': b'[ 80%] Built target SlamToolboxPlugin\n'}
+[57.947605] (-) TimerEvent: {}
+[58.047976] (-) TimerEvent: {}
+[58.090469] (slam_toolbox) StdoutLine: {'line': b'[ 80%] Built target kartoSlamToolbox\n'}
+[58.102452] (slam_toolbox) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/ceres_solver_plugin.dir/solvers/ceres_solver.cpp.o\x1b[0m\n'}
+[58.102831] (slam_toolbox) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/slam_toolbox_common.cpp.o\x1b[0m\n'}
+[58.103053] (slam_toolbox) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/map_saver.cpp.o\x1b[0m\n'}
+[58.103261] (slam_toolbox) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/slam_mapper.cpp.o\x1b[0m\n'}
+[58.106118] (slam_toolbox) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/loop_closure_assistant.cpp.o\x1b[0m\n'}
+[58.106341] (slam_toolbox) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/laser_utils.cpp.o\x1b[0m\n'}
+[58.148157] (-) TimerEvent: {}
+[58.248622] (-) TimerEvent: {}
+[58.349111] (-) TimerEvent: {}
+[58.449600] (-) TimerEvent: {}
+[58.550077] (-) TimerEvent: {}
+[58.650513] (-) TimerEvent: {}
+[58.751084] (-) TimerEvent: {}
+[58.851711] (-) TimerEvent: {}
+[58.952376] (-) TimerEvent: {}
+[59.052907] (-) TimerEvent: {}
+[59.153419] (-) TimerEvent: {}
+[59.253997] (-) TimerEvent: {}
+[59.354596] (-) TimerEvent: {}
+[59.455104] (-) TimerEvent: {}
+[59.555608] (-) TimerEvent: {}
+[59.656123] (-) TimerEvent: {}
+[59.756622] (-) TimerEvent: {}
+[59.857131] (-) TimerEvent: {}
+[59.957639] (-) TimerEvent: {}
+[60.058156] (-) TimerEvent: {}
+[60.158787] (-) TimerEvent: {}
+[60.260089] (-) TimerEvent: {}
+[60.360646] (-) TimerEvent: {}
+[60.461380] (-) TimerEvent: {}
+[60.565031] (-) TimerEvent: {}
+[60.672144] (-) TimerEvent: {}
+[60.773368] (-) TimerEvent: {}
+[60.876822] (-) TimerEvent: {}
+[60.977711] (-) TimerEvent: {}
+[61.078532] (-) TimerEvent: {}
+[61.179105] (-) TimerEvent: {}
+[61.279657] (-) TimerEvent: {}
+[61.380206] (-) TimerEvent: {}
+[61.480945] (-) TimerEvent: {}
+[61.581795] (-) TimerEvent: {}
+[61.682632] (-) TimerEvent: {}
+[61.783459] (-) TimerEvent: {}
+[61.884081] (-) TimerEvent: {}
+[61.984638] (-) TimerEvent: {}
+[62.085194] (-) TimerEvent: {}
+[62.186865] (-) TimerEvent: {}
+[62.287488] (-) TimerEvent: {}
+[62.388028] (-) TimerEvent: {}
+[62.488598] (-) TimerEvent: {}
+[62.589182] (-) TimerEvent: {}
+[62.689917] (-) TimerEvent: {}
+[62.790443] (-) TimerEvent: {}
+[62.890989] (-) TimerEvent: {}
+[62.991560] (-) TimerEvent: {}
+[63.092121] (-) TimerEvent: {}
+[63.192647] (-) TimerEvent: {}
+[63.293192] (-) TimerEvent: {}
+[63.394742] (-) TimerEvent: {}
+[63.495245] (-) TimerEvent: {}
+[63.595769] (-) TimerEvent: {}
+[63.696359] (-) TimerEvent: {}
+[63.797023] (-) TimerEvent: {}
+[63.897540] (-) TimerEvent: {}
+[63.998108] (-) TimerEvent: {}
+[64.099614] (-) TimerEvent: {}
+[64.200351] (-) TimerEvent: {}
+[64.300914] (-) TimerEvent: {}
+[64.401455] (-) TimerEvent: {}
+[64.502022] (-) TimerEvent: {}
+[64.602584] (-) TimerEvent: {}
+[64.703410] (-) TimerEvent: {}
+[64.804204] (-) TimerEvent: {}
+[64.904933] (-) TimerEvent: {}
+[65.005869] (-) TimerEvent: {}
+[65.106812] (-) TimerEvent: {}
+[65.207619] (-) TimerEvent: {}
+[65.309104] (-) TimerEvent: {}
+[65.409655] (-) TimerEvent: {}
+[65.510332] (-) TimerEvent: {}
+[65.610922] (-) TimerEvent: {}
+[65.711499] (-) TimerEvent: {}
+[65.812100] (-) TimerEvent: {}
+[65.912679] (-) TimerEvent: {}
+[66.013347] (-) TimerEvent: {}
+[66.114771] (-) TimerEvent: {}
+[66.215351] (-) TimerEvent: {}
+[66.316214] (-) TimerEvent: {}
+[66.416749] (-) TimerEvent: {}
+[66.517291] (-) TimerEvent: {}
+[66.617821] (-) TimerEvent: {}
+[66.718373] (-) TimerEvent: {}
+[66.820155] (-) TimerEvent: {}
+[66.921846] (-) TimerEvent: {}
+[67.024223] (-) TimerEvent: {}
+[67.125149] (-) TimerEvent: {}
+[67.225962] (-) TimerEvent: {}
+[67.326791] (-) TimerEvent: {}
+[67.427587] (-) TimerEvent: {}
+[67.528322] (-) TimerEvent: {}
+[67.629104] (-) TimerEvent: {}
+[67.730576] (-) TimerEvent: {}
+[67.831135] (-) TimerEvent: {}
+[67.931875] (-) TimerEvent: {}
+[68.032442] (-) TimerEvent: {}
+[68.133037] (-) TimerEvent: {}
+[68.233563] (-) TimerEvent: {}
+[68.334164] (-) TimerEvent: {}
+[68.434728] (-) TimerEvent: {}
+[68.541747] (-) TimerEvent: {}
+[68.648197] (-) TimerEvent: {}
+[68.748813] (-) TimerEvent: {}
+[68.849690] (-) TimerEvent: {}
+[68.950665] (-) TimerEvent: {}
+[69.051206] (-) TimerEvent: {}
+[69.152010] (-) TimerEvent: {}
+[69.260250] (-) TimerEvent: {}
+[69.369474] (-) TimerEvent: {}
+[69.470052] (-) TimerEvent: {}
+[69.570745] (-) TimerEvent: {}
+[69.671534] (-) TimerEvent: {}
+[69.772417] (-) TimerEvent: {}
+[69.872994] (-) TimerEvent: {}
+[69.973793] (-) TimerEvent: {}
+[70.076183] (-) TimerEvent: {}
+[70.176908] (-) TimerEvent: {}
+[70.277502] (-) TimerEvent: {}
+[70.378108] (-) TimerEvent: {}
+[70.478664] (-) TimerEvent: {}
+[70.579163] (-) TimerEvent: {}
+[70.679648] (-) TimerEvent: {}
+[70.780152] (-) TimerEvent: {}
+[70.880670] (-) TimerEvent: {}
+[70.981123] (-) TimerEvent: {}
+[71.081598] (-) TimerEvent: {}
+[71.182714] (-) TimerEvent: {}
+[71.283532] (-) TimerEvent: {}
+[71.384106] (-) TimerEvent: {}
+[71.484820] (-) TimerEvent: {}
+[71.585336] (-) TimerEvent: {}
+[71.685868] (-) TimerEvent: {}
+[71.788174] (-) TimerEvent: {}
+[71.888739] (-) TimerEvent: {}
+[71.989369] (-) TimerEvent: {}
+[72.090192] (-) TimerEvent: {}
+[72.191002] (-) TimerEvent: {}
+[72.291672] (-) TimerEvent: {}
+[72.392211] (-) TimerEvent: {}
+[72.492735] (-) TimerEvent: {}
+[72.593253] (-) TimerEvent: {}
+[72.693828] (-) TimerEvent: {}
+[72.794371] (-) TimerEvent: {}
+[72.894920] (-) TimerEvent: {}
+[72.995469] (-) TimerEvent: {}
+[73.096018] (-) TimerEvent: {}
+[73.196575] (-) TimerEvent: {}
+[73.297335] (-) TimerEvent: {}
+[73.397844] (-) TimerEvent: {}
+[73.498354] (-) TimerEvent: {}
+[73.598883] (-) TimerEvent: {}
+[73.699378] (-) TimerEvent: {}
+[73.799911] (-) TimerEvent: {}
+[73.900494] (-) TimerEvent: {}
+[74.000997] (-) TimerEvent: {}
+[74.101496] (-) TimerEvent: {}
+[74.202009] (-) TimerEvent: {}
+[74.302510] (-) TimerEvent: {}
+[74.403004] (-) TimerEvent: {}
+[74.503505] (-) TimerEvent: {}
+[74.604023] (-) TimerEvent: {}
+[74.704542] (-) TimerEvent: {}
+[74.805060] (-) TimerEvent: {}
+[74.905587] (-) TimerEvent: {}
+[75.006115] (-) TimerEvent: {}
+[75.106632] (-) TimerEvent: {}
+[75.207128] (-) TimerEvent: {}
+[75.307640] (-) TimerEvent: {}
+[75.408148] (-) TimerEvent: {}
+[75.508655] (-) TimerEvent: {}
+[75.609190] (-) TimerEvent: {}
+[75.709684] (-) TimerEvent: {}
+[75.810175] (-) TimerEvent: {}
+[75.910680] (-) TimerEvent: {}
+[76.011187] (-) TimerEvent: {}
+[76.111714] (-) TimerEvent: {}
+[76.212253] (-) TimerEvent: {}
+[76.312803] (-) TimerEvent: {}
+[76.413344] (-) TimerEvent: {}
+[76.513864] (-) TimerEvent: {}
+[76.614366] (-) TimerEvent: {}
+[76.714894] (-) TimerEvent: {}
+[76.815443] (-) TimerEvent: {}
+[76.915982] (-) TimerEvent: {}
+[77.016949] (-) TimerEvent: {}
+[77.117570] (-) TimerEvent: {}
+[77.218076] (-) TimerEvent: {}
+[77.318634] (-) TimerEvent: {}
+[77.419186] (-) TimerEvent: {}
+[77.519927] (-) TimerEvent: {}
+[77.621333] (-) TimerEvent: {}
+[77.725731] (-) TimerEvent: {}
+[77.828191] (-) TimerEvent: {}
+[77.929131] (-) TimerEvent: {}
+[78.032419] (-) TimerEvent: {}
+[78.133333] (-) TimerEvent: {}
+[78.235061] (-) TimerEvent: {}
+[78.337690] (-) TimerEvent: {}
+[78.438797] (-) TimerEvent: {}
+[78.540399] (-) TimerEvent: {}
+[78.641158] (-) TimerEvent: {}
+[78.742032] (-) TimerEvent: {}
+[78.842979] (-) TimerEvent: {}
+[78.943825] (-) TimerEvent: {}
+[79.044477] (-) TimerEvent: {}
+[79.147028] (-) TimerEvent: {}
+[79.248180] (-) TimerEvent: {}
+[79.349076] (-) TimerEvent: {}
+[79.449708] (-) TimerEvent: {}
+[79.550149] (-) TimerEvent: {}
+[79.650617] (-) TimerEvent: {}
+[79.751054] (-) TimerEvent: {}
+[79.851522] (-) TimerEvent: {}
+[79.953234] (-) TimerEvent: {}
+[80.053817] (-) TimerEvent: {}
+[80.154835] (-) TimerEvent: {}
+[80.255647] (-) TimerEvent: {}
+[80.358119] (-) TimerEvent: {}
+[80.458867] (-) TimerEvent: {}
+[80.561720] (-) TimerEvent: {}
+[80.662528] (-) TimerEvent: {}
+[80.763189] (-) TimerEvent: {}
+[80.863915] (-) TimerEvent: {}
+[80.964753] (-) TimerEvent: {}
+[81.065386] (-) TimerEvent: {}
+[81.166266] (-) TimerEvent: {}
+[81.267017] (-) TimerEvent: {}
+[81.367797] (-) TimerEvent: {}
+[81.468597] (-) TimerEvent: {}
+[81.569354] (-) TimerEvent: {}
+[81.669924] (-) TimerEvent: {}
+[81.778429] (-) TimerEvent: {}
