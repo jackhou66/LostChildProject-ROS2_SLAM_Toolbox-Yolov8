@@ -30,10 +30,16 @@ SLAM Toolbox의 launch 파일을 실행 했을때 Package not found 오류가 �
 # Odometry
 
 map frame
-세계 중심
+세계 중심 프레임이다. 지구에 고정되어 있는 절대 움직이지 않는 기준 프레임이다.
 
 odometry frame
-로봇의 출발 지점으로 부터 얼마나 떨어져 있는가를 알려주는 프레임
+로봇의 출발 지점으로 부터 얼마나 떨어져 있는가를 알려주는 프레임이다.
+
+로봇의 출발 위치에 생성되는 프레임으로 로봇이 다시 시작 될때마다 바뀌는 프레임이다.
+
+즉, local reference frame으로 짧은 기간 로봇의 움직임을 추적하는데 유용한 프레임이다.
+
+
 
 base foot print frame 
 로봇 바닥 프레임
