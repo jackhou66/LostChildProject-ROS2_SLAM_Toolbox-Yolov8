@@ -25,4 +25,10 @@ Kwangwoon University Robot Programming class's project
 
 # Error fix
 SLAM Toolbox의 launch 파일을 실행 했을때 Package not found 오류가 나오는 경우가 있었다.
-이럴때는 source slam_toolbox/install/setup.bash 를 실행하면 오류가 발생하지 않는다. ~/.bashrc에 기본 ws가 robot_ws 로 설정되어있어 ros2 launch를 할때 package를 못찾
+이럴때는 source install/local_setup.bash 를 실행하면 오류가 발생하지 않는다. ~/.bashrc에 기본 ws가 robot_ws 로 설정되어있어 ros2 launch를 할때 package를 못찾는 것 같다.
+
+
+# 참고 자료
+
+## Odometry 
+https://blog.naver.com/PostView.naver?blogId=ycpiglet&logNo=222139215170&categoryNo=139&parentCategoryNo=0
