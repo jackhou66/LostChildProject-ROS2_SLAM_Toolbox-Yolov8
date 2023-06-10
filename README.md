@@ -21,3 +21,8 @@ Kwangwoon University Robot Programming class's project
 실종 아동을 줄이는데 크게 도움이 될거라고 생각한다. 
 
 그래서 이번 작품 주제를 위와 같이 실종 아동 탐색 로봇으로 정하게 되었다.  
+
+
+# Error fix
+SLAM Toolbox의 launch 파일을 실행 했을때 Package not found 오류가 나오는 경우가 있었다.
+이럴때는 source slam_toolbox/install/setup.bash 를 실행하면 오류가 발생하지 않는다. ~/.bashrc에 기본 ws가 robot_ws 로 설정되어있어 ros2 launch를 할때 package를 못찾
