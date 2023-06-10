@@ -6,7 +6,7 @@ from roboid import *
 from std_msgs.msg import Header
 import math
 from tf_transformations import quaternion_from_euler
-class IMUPublisher(Node):
+class IMUPublisher_class(Node):
     def __init__(self, b):
         self.b = b
         super().__init__("IMU_publisher")
@@ -50,13 +50,18 @@ class IMUPublisher(Node):
         self.get_logger().info("Published value: %s" % msg)
 
 
-def main(args=None):
-    b = Beagle()
+def main(args=None, beagle_instance = None):
+
+    if (beagle_instance is None):
+        beagle_instance = Beagle()
     rclpy.init(args=args)
-    imu_publisher = IMUPublisher(b)
-    rclpy.spin(imu_publisher)
-    imu_publisher.destroy_node()
-    rclpy.shutdown()
+    imu_publisher = IMUPublisher_class(beagle_instance)
+    try:
+        rclpy.spin(imu_publisher)
+    finally:
+        beagle_instance.dispose()
+        imu_publisher.destroy_node()
+        rclpy.shutdown()
 
 
 if __name__ == "__main__":

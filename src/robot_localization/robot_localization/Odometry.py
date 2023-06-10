@@ -12,6 +12,11 @@ from std_msgs.msg import Header
 
 class OdometryCalculator(Node):
     def __init__(self):
+        self.prev_encoder_values = [0, 0]
+        self.prev_imu_orientation = None
+        self.x = 0.0
+        self.y = 0.0
+        self.theta = 0.0
         super().__init__("odometry_calculator")
         self.encoder_subscriber = self.create_subscription(
             Float32MultiArray, "encoder_topic", self.encoder_callback, 10
@@ -21,12 +26,8 @@ class OdometryCalculator(Node):
         )
         self.odometry_publisher = self.create_publisher(Odometry, "odom", 10)
         self.tf_broadcaster = tf2_ros.TransformBroadcaster(self)
-        self.prev_encoder_values = [0, 0]
-        self.prev_imu_orientation = None
-        self.x = 0.0
-        self.y = 0.0
-        self.theta = 0.0
 
+        print('odometry')
     def encoder_callback(self, msg):
         encoder_values = msg.data
         delta_encoder_left = encoder_values[0] - self.prev_encoder_values[0]
@@ -39,7 +40,6 @@ class OdometryCalculator(Node):
         angular_distance = (
             delta_encoder_right - delta_encoder_left
         ) / 2.0  # Calculate the average angular distance
-
         self.calculate_odometry(linear_distance, angular_distance)
 
     def imu_callback(self, msg):
@@ -53,7 +53,6 @@ class OdometryCalculator(Node):
             angular_distance = delta_orientation
 
             self.calculate_odometry(linear_distance, angular_distance)
-
         self.prev_imu_orientation = imu_orientation
 
     def calculate_delta_orientation(self, current_orientation, previous_orientation):
@@ -92,6 +91,8 @@ class OdometryCalculator(Node):
         odometry_msg = Odometry()
         odometry_msg.header = Header()
         odometry_msg.header.stamp = self.get_clock().now().to_msg()
+        odometry_msg.header.frame_id = 'map'
+        odometry_msg.child_frame_id = 'odom'
 
         # Set the position
         odometry_msg.pose.pose.position.x = self.x

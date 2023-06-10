@@ -42,23 +42,7 @@ class camera_pub(Node):
         except Exception as e:
             self.get_logger().info('Error : {error}'.format(error = e))
         else:
-            self.get_logger().info('Camera Publishing')
-        # camera_msg = Image()
-        # camera_msg.header = Header()
-
-        # camera_msg.header.frame_id = "image"
-        # camera_msg.header.stamp = Node.get_clock(self).now().to_msg()
-        # cam_height = len(cam_image)
-        # cam_width = len(cam_image[0])
-        # cam_channel = len(cam_image[0][0])
-
-        # camera_msg.encoding = "bgr8"
-        # camera_msg.is_bigendian = False
-        # camera_msg.step = cam_height * cam_channel * 1 # 1 byte = 8 bit
-        # camera_msg.height = cam_height
-        # camera_msg.width = cam_width
-        # print (cam_height, cam_width, cam_channel)
-        # camera_msg.data = sum(cam_image, []) # 풀어 해진 8bit data #8bit 데이터라서 딱히 변환할 필요 없을 것 같음
+            self.get_logger().info(str(camera_msg))
 
 def camera_undistort():
 

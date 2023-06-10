@@ -5,7 +5,7 @@ from roboid import *
 import math
 
 import time
-class PulsePublisher(Node):
+class PulsePublisher_class(Node):
 
     timer_interval = 1
     pulses_per_one_revolution = 1900 # 대략
@@ -36,7 +36,7 @@ class PulsePublisher(Node):
         # w = d theta / dts
 
         # v = r w
-
+        print (self.left_encoder_sum, self.right_encoder_sum)
         # s = r * theta # 누적
 
 
@@ -68,22 +68,24 @@ class PulsePublisher(Node):
         self.b.reset_encoder()
 
 
-def main(args=None):
-    b = Beagle()
+def main(args=None, beagle_instance = None):
+
 
 
     # 1886 1875
 
-
+    if beagle_instance is None:
+        beagle_instance = Beagle()
     #대
     rclpy.init(args=args)
-    encoder_publisher = PulsePublisher(b)
+    encoder_publisher = PulsePublisher_class(beagle_instance)
 
     try:
         rclpy.spin(encoder_publisher)
     except KeyboardInterrupt as e:
         print (e)
     finally:
+        beagle_instance.dispose()
         encoder_publisher.destroy_node()
         rclpy.shutdown()
 

@@ -6,7 +6,7 @@ from std_msgs.msg import Header
 import math
 
 
-class lidar(Node):
+class LidarPublisher_class(Node):
     def __init__(self, b):
         self.b = b
         super().__init__("laser")
@@ -31,15 +31,19 @@ class lidar(Node):
         self.get_logger().info("Published LiDAR value: %s" % msg.ranges)
 
 
-def main(args=None):
-    b = Beagle()
-    b.start_lidar()
-    b.wait_until_lidar_ready()
+def main(args=None, beagle_instance = None):
+    if beagle_instance is None:
+        beagle_instance = Beagle()
+    beagle_instance.start_lidar()
+    beagle_instance.wait_until_lidar_ready()
     rclpy.init(args=args)
-    lidar_publish = lidar(b)
-    rclpy.spin(lidar_publish)
-    lidar_publish.destroy_node()
-    rclpy.shutdown()
+    lidar_publish = LidarPublisher_class(beagle_instance)
+    try:
+        rclpy.spin(lidar_publish)
+    finally:
+        lidar_publish.destroy_node()
+        rclpy.shutdown()
+        beagle_instance.dispose()
 
 
 if __name__ == "__main__":
