@@ -39,8 +39,6 @@ odometry frame
 
 즉, local reference frame으로 짧은 기간 로봇의 움직임을 추적하는데 유용한 프레임이다.
 
-
-
 base foot print frame 
 로봇 바닥 프레임
 
@@ -48,6 +46,25 @@ base link frame
 로봇의 중심 프레임
 
 laser frame
+
+
+map-> odom -> base footprint -> base link -> laser
+
+
+
+
+
+odom -> base foot print 필요
+ 변환은 slam tool box가 한다.
+
+map -> odom 필요
+
+이건 odometry.py 에서 header -> child
+
+
+
+slam toolbox는 map -> odometry 
+
 
 # 참고 자료
 
