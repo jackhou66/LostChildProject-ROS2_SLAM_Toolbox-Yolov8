@@ -32,3 +32,7 @@ SLAM Toolbox의 launch 파일을 실행 했을때 Package not found 오류가 �
 
 ## Odometry 
 https://blog.naver.com/PostView.naver?blogId=ycpiglet&logNo=222139215170&categoryNo=139&parentCategoryNo=0
+
+## Topic
+
+https://docs.ros.org/en/crystal/Tutorials/Topics/Understanding-ROS2-Topics.html
