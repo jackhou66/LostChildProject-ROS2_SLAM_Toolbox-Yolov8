@@ -17,8 +17,9 @@ class OdometryCalculator(Node):
         self.encoder_angular_distance = 0.0
         self.encoder_linear_distance = 0.0
         self.prev_encoder_values = [0, 0]
-        self.prev_imu_orientation = None
-        self.imu_prev_second = None
+        self.imu_prev_msg = None
+        self.imu_average_linear_velocity = 0.0 #초기 속도는 0이라 가정
+
         self.x = 0.0
         self.y = 0.0
         self.theta = 0.0
@@ -33,6 +34,9 @@ class OdometryCalculator(Node):
         self.tf_broadcaster = tf2_ros.TransformBroadcaster(self)
 
         print('odometry')
+    def time_stamp_to_second(self, stamp):
+        imu_get_second = float(str(stamp.sec) +'.'+ str(stamp.nanosec))
+        return imu_get_second
     def encoder_callback(self, msg):
         encoder_values = msg.data
         delta_encoder_left = encoder_values[0] - self.prev_encoder_values[0]
@@ -50,18 +54,37 @@ class OdometryCalculator(Node):
 
     def imu_callback(self, msg):
         #imu_orientation = msg.orientation
-        imu_angular_velocity = msg.angular_velocity.z
-        imu_get_second = float(str(msg.header.stamp.sec) +'.'+ str(msg.header.stamp.nanosec))
-        print (imu_get_second)
-        if self.imu_prev_second is not None:
-            imu_second = imu_get_second -self.imu_prev_second # 보내는 간격이 짧을 수록 오차가 작아진다.
 
 
-            self.imu_linear_distance = 0.0
-            self.imu_angular_distance = imu_angular_velocity * imu_second
-            print ('시간 차이 %lf %lf' % (imu_second, self.imu_angular_distance))
+ 
+
+
+        
+        if self.imu_prev_msg is not None:
+            imu_current_sec = self.time_stamp_to_second(msg.header.stamp)
+            imu_prev_sec = self.time_stamp_to_second(self.imu_prev_msg.header.stamp)
+            imu_second = imu_current_sec - imu_prev_sec # 보내는 간격이 짧을 수록 오차가 작아진다.
+
+
+            # 평균 전진 이동 속도 = s0  + v0 t + (1/2) * (평균 x 축 가속도) * 시간^2 
+            imu_average_linear_acceleration = (msg.linear_acceleration.x + self.imu_prev_msg.linear_acceleration.x)/2
+            self.imu_average_linear_velocity += imu_average_linear_acceleration * imu_second
+
+
+            
+            
+            # 평균 이동 각도 = 평균 각속도 * 시간
+            imu_average_angular_velocity = (msg.angular_velocity.z + self.imu_prev_msg.angular_velocity.z)/2
+
+
+            #self.imu_linear_distance = 0.0
+
+            self.imu_linear_distance = self.imu_average_linear_velocity * imu_second 
+            self.imu_angular_distance = imu_average_angular_velocity * imu_second
+            #print ('시간 차이 :%lf, 회전 각도 %lf, 전진 이동 거리 %lf' % (imu_second, self.imu_angular_distance, self.imu_linear_distance))
+            #print ('raw accel : %lf %lf %lf' % (msg.linear_acceleration.x, msg.linear_acceleration.y, msg.linear_acceleration.z ))
             self.calculate_weight_odometry()
-        self.imu_prev_second = imu_get_second
+        self.imu_prev_msg = msg
 
 
 
@@ -79,10 +102,16 @@ class OdometryCalculator(Node):
         # self.prev_imu_orientation = imu_orientation
 
     def calculate_weight_odometry (self):
-        linear_distance = self.encoder_linear_distance
+        linear_distance = 0.999 * self.encoder_linear_distance + 0.001 * self.imu_linear_distance
+
+
 
         #imu가 더 정확하다고 가정
-        angular_distance = 0.2 * self.encoder_angular_distance + 0.8 * self.imu_angular_distance
+        angular_distance = 0.1 * self.encoder_angular_distance + 0.9 * self.imu_angular_distance
+
+        print ('Encoder 추정 : 전진 이동 거리 {0}, 각도 거리 {1}'.format(self.encoder_linear_distance, self.encoder_angular_distance))
+        print ('IMU 추정 : 전진 이동 거리 {0}, 각도 거리 {1}'.format(self.imu_linear_distance, self.imu_angular_distance))
+        print ('통합 추정 : 전진 이동 거리 {0}, 각도 거리 {1}'.format(linear_distance, angular_distance))
         self.calculate_odometry(linear_distance, angular_distance)
     def calculate_delta_orientation(self, current_orientation, previous_orientation):
         # Calculate the change in orientation given current and previous IMU orientations
