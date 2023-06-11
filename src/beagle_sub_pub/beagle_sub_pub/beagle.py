@@ -179,17 +179,17 @@ def main(args=None, beagle_instance = None):
 
 
     # 1886 1875
+
+    if beagle_instance is None:
+        beagle_instance = Beagle()
+
+    beagle_instance.start_lidar()
+    beagle_instance.wait_until_lidar_ready()
+
+    rclpy.init(args=args)
+    publisher = BeagleSubPub_class(beagle_instance)
+
     try:
-        if beagle_instance is None:
-            beagle_instance = Beagle()
-
-        beagle_instance.start_lidar()
-        beagle_instance.wait_until_lidar_ready()
-
-        rclpy.init(args=args)
-        publisher = BeagleSubPub_class(beagle_instance)
-
-
         rclpy.spin(publisher)
     except KeyboardInterrupt as e:
         print (e)
