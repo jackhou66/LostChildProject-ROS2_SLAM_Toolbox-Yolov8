@@ -30,10 +30,11 @@ class motor(Node):
                 self.motor_publish(10, 0)
         elif (msg.ranges[left] < 0.4): # 내 왼쪽에 장애물이 있는 경우
             self.motor_publish(10, 0) #오른쪽으로 튼다.
-        elif (msg.ranges[back] < 0.4):# 뒤쪽에 있으면 조금더 빨리 간다.
-            self.motor_publish(15, 15)
         elif (msg.ranges[right] < 0.4):#오른쪽에 있으면 왼쪽으로 꺾는다.
             self.motor_publish(0, 10)
+        elif (msg.ranges[back] < 0.4):# 뒤쪽에 있으면 조금더 빨리 간다.
+            self.motor_publish(15, 15)
+
         else: # 그냥 괜찮은 경우
             self.motor_publish(10, 10)
         # if (minimum_ranges < 0.5): #50 cm 보다 작다면

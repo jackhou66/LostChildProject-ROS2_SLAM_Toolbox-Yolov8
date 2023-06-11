@@ -12,8 +12,13 @@ from std_msgs.msg import Header
 
 class OdometryCalculator(Node):
     def __init__(self):
+        self.imu_linear_distance = 0.0
+        self.imu_angular_distance = 0.0
+        self.encoder_angular_distance = 0.0
+        self.encoder_linear_distance = 0.0
         self.prev_encoder_values = [0, 0]
         self.prev_imu_orientation = None
+        self.imu_prev_second = None
         self.x = 0.0
         self.y = 0.0
         self.theta = 0.0
@@ -34,27 +39,51 @@ class OdometryCalculator(Node):
         delta_encoder_right = encoder_values[1] - self.prev_encoder_values[1]
         self.prev_encoder_values = encoder_values
 
-        linear_distance = (
+        self.encoder_linear_distance = (
             delta_encoder_left + delta_encoder_right
         ) / 2.0  # Calculate the average linear distance
-        angular_distance = (
+        self.encoder_angular_distance = (
             delta_encoder_right - delta_encoder_left
         ) / 2.0  # Calculate the average angular distance
-        self.calculate_odometry(linear_distance, angular_distance)
+        
+        self.calculate_weight_odometry()
 
     def imu_callback(self, msg):
-        imu_orientation = msg.orientation
-        if self.prev_imu_orientation is not None:
-            delta_orientation = self.calculate_delta_orientation(
-                imu_orientation, self.prev_imu_orientation
-            )
+        #imu_orientation = msg.orientation
+        imu_angular_velocity = msg.angular_velocity.z
+        imu_get_second = float(str(msg.header.stamp.sec) +'.'+ str(msg.header.stamp.nanosec))
+        print (imu_get_second)
+        if self.imu_prev_second is not None:
+            imu_second = imu_get_second -self.imu_prev_second # 보내는 간격이 짧을 수록 오차가 작아진다.
 
-            linear_distance = 0.0
-            angular_distance = delta_orientation
 
-            self.calculate_odometry(linear_distance, angular_distance)
-        self.prev_imu_orientation = imu_orientation
+            self.imu_linear_distance = 0.0
+            self.imu_angular_distance = imu_angular_velocity * imu_second
+            print ('시간 차이 %lf %lf' % (imu_second, self.imu_angular_distance))
+            self.calculate_weight_odometry()
+        self.imu_prev_second = imu_get_second
 
+
+
+
+
+        # if self.prev_imu_orientation is not None:
+        #     delta_orientation = self.calculate_delta_orientation(
+        #         imu_orientation, self.prev_imu_orientation
+        #     )
+
+            
+        #     self.imu_angular_distance = delta_orientation
+
+        #     self.calculate_weight_odometry()
+        # self.prev_imu_orientation = imu_orientation
+
+    def calculate_weight_odometry (self):
+        linear_distance = self.encoder_linear_distance
+
+        #imu가 더 정확하다고 가정
+        angular_distance = 0.2 * self.encoder_angular_distance + 0.8 * self.imu_angular_distance
+        self.calculate_odometry(linear_distance, angular_distance)
     def calculate_delta_orientation(self, current_orientation, previous_orientation):
         # Calculate the change in orientation given current and previous IMU orientations
         current_quaternion = (
@@ -100,7 +129,7 @@ class OdometryCalculator(Node):
         odometry_msg.pose.pose.position.z = 0.0
 
         # Set the orientation as a quaternion
-        quaternion = self.euler_to_quaternion(0.0, 0.0, self.theta)
+        quaternion = self.euler_to_quaternion(0.0, 0.0, self.theta) #z축을 기준으로 얼마나 회전했는가
         odometry_msg.pose.pose.orientation.x = quaternion[0]
         odometry_msg.pose.pose.orientation.y = quaternion[1]
         odometry_msg.pose.pose.orientation.z = quaternion[2]
