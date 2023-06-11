@@ -179,10 +179,11 @@ def main(args=None, beagle_instance = None):
 
 
     # 1886 1875
+    beagle_instance_ = Beagle()
+    beagle_instance_.dispose() #이전에 dispose 가 안되는 경우가 있음
 
     if beagle_instance is None:
         beagle_instance = Beagle()
-
     beagle_instance.start_lidar()
     beagle_instance.wait_until_lidar_ready()
 
@@ -190,6 +191,7 @@ def main(args=None, beagle_instance = None):
     publisher = BeagleSubPub_class(beagle_instance)
 
     try:
+
         rclpy.spin(publisher)
     except KeyboardInterrupt as e:
         print (e)

@@ -22,17 +22,17 @@ class motor(Node):
         right = back + 90
         print (msg.ranges[front], msg.ranges[left], msg.ranges[back], msg.ranges[right])
 
-        if (msg.ranges[front] < 0.3):
+        if (msg.ranges[front] < 0.4):
             #왼쪽 또는 오른쪽을 비교 한뒤 더 긴 곳으로 간다.
             if (msg.ranges[left] > msg.ranges[right]):
                 self.motor_publish(0, 10)
             else:
                 self.motor_publish(10, 0)
-        elif (msg.ranges[left] < 0.3): # 내 왼쪽에 장애물이 있는 경우
+        elif (msg.ranges[left] < 0.4): # 내 왼쪽에 장애물이 있는 경우
             self.motor_publish(10, 0) #오른쪽으로 튼다.
-        elif (msg.ranges[back] < 0.3):# 뒤쪽에 있으면 조금더 빨리 간다.
+        elif (msg.ranges[back] < 0.4):# 뒤쪽에 있으면 조금더 빨리 간다.
             self.motor_publish(15, 15)
-        elif (msg.ranges[right] < 0.3):#오른쪽에 있으면 왼쪽으로 꺾는다.
+        elif (msg.ranges[right] < 0.4):#오른쪽에 있으면 왼쪽으로 꺾는다.
             self.motor_publish(0, 10)
         else: # 그냥 괜찮은 경우
             self.motor_publish(10, 10)
