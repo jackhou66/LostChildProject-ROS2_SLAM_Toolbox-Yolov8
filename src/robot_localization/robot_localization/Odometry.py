@@ -102,8 +102,9 @@ class OdometryCalculator(Node):
         # self.prev_imu_orientation = imu_orientation
 
     def calculate_weight_odometry (self):
-        linear_distance = 0.999 * self.encoder_linear_distance + 0.001 * self.imu_linear_distance
-
+        linear_distance = 1.0 * self.encoder_linear_distance + 0.0 * self.imu_linear_distance
+        #바퀴가 sleep 일어날 것을 고려해서 lidar의 변화가 없으면 linear_distance를 0으로 하는게 낫지 않을까
+        #평소 바퀴 속도일때 (현재 lidar 변화율 / 평균 lidar 변화율) * linear_distance
 
 
         #imu가 더 정확하다고 가정

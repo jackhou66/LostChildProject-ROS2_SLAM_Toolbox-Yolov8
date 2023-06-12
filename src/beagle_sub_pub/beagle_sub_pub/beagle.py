@@ -27,33 +27,43 @@ class BeagleSubPub_class(Node):
 
     encoder_pulses_per_one_revolution = 1900 # 대략
     wheel_radius = 0.033 # 3.3 cm
-
     lidar_send_hz = 4
     timer_interval = 0.4
-
+    
 
 
     lidar_timer_interval = 1/lidar_send_hz # lidar는 업데이트 속도가 느림
 
     encoder_total_degree = 2 * math.pi
     scale_factor = encoder_total_degree/encoder_pulses_per_one_revolution
-
     count_lidar_timer = lidar_timer_interval//timer_interval
     current_lidar_count = 0
+
+
     def __init__(self, b):
+        super().__init__("beagle_sensors_motors")
         self.left_encoder_sum = 0.0
         self.right_encoder_sum = 0.0
         self.current_lidar_count = 0
         self.b = b
 
+
+
+        self.error_acc_x = 0.0
+        self.error_acc_y = 0.0
+        self.error_acc_z = 0.0
+
+        self.error_gyr_x = 0.0
+        self.error_gyr_y = 0.0
+        self.error_gyr_z = 0.0
         #gyro 와 가속도의 평균값 같은 timestamp 에 여러개의 가속도를 찍어서 정확도를 높인다.
 
         self.accel = [0 for _ in range(16)]
         self.gyro = [0 for _ in range(16)]
         self.b.listen_accelerometer(self.accel_update)
         self.b.listen_gyroscope(self.gyro_update)
-
-        super().__init__("beagle_sensors_motors")
+        
+        #self.imu_calibrate()
 
         # lidar
         self.lidar_publisher = self.create_publisher(LaserScan, "scan", 10)
@@ -68,6 +78,43 @@ class BeagleSubPub_class(Node):
         self.motor_subscriber = self.create_subscription(Float32MultiArray, "motor_topic", self.motor_callback, 10)
 
         self.timer = self.create_timer(self.timer_interval, self.call_back)
+
+    def imu_calibrate(self):
+        print ('calibration start')
+
+        calibration_time = 2
+        target_accel = [0.0, 0.0, -1.0]
+        target_gyro = [0.0, 0.0, 0.0]
+
+        accel_list = []
+        gyro_list = []
+
+
+        # 완전이 값이 가져올때까지 대기
+
+        time.sleep(1)
+        start_time = time.time()
+        while (time.time()-start_time <= calibration_time):
+            accel_list.append(self.get_mean(self.accel))
+            gyro_list.append(self.get_mean(self.gyro))
+
+        # calibration_time 초 동안 평균
+        c_a_x, c_a_y, c_a_z, c_t = self.get_mean(accel_list)
+        c_g_x, c_g_y, c_g_z, c_t = self.get_mean(gyro_list)
+
+        self.error_acc_x = target_accel[0] - c_a_x
+        self.error_acc_y = target_accel[1] - c_a_y
+        self.error_acc_z = target_accel[2] - c_a_z
+
+        self.error_gyr_x = target_gyro[0] - c_g_x
+        self.error_gyr_y = target_gyro[1] - c_g_y
+        self.error_gyr_z = target_gyro[2] - c_g_z
+
+
+        print ('calibration complete')
+        print ('acc : ', self.error_acc_x, self.error_acc_y,self.error_acc_z)
+        print ('gyro : ', self.error_gyr_x, self.error_gyr_y, self.error_gyr_z)
+
     def accel_update(self, index, timestamp, x, y, z):
         self.accel[index] = [x, y, z, timestamp]
     def gyro_update(self, index, timestamp, x, y, z):
@@ -109,16 +156,16 @@ class BeagleSubPub_class(Node):
     def get_mean(self, twondarr):
         row = len(twondarr)
 
-        sum_x = 0
+        sum_x = 0.0
         for i in range(row):
             sum_x += twondarr[i][0]
-        sum_y = 0
+        sum_y = 0.0
         for i in range(row):
             sum_y += twondarr[i][1]
-        sum_z = 0
+        sum_z = 0.0
         for i in range(row):
             sum_z += twondarr[i][2]
-        sum_t = 0
+        sum_t = 0.0
         for i in range(row):
             sum_t += twondarr[i][3]
         return sum_x/row, sum_y/row, sum_z/row, sum_t/row
@@ -133,25 +180,26 @@ class BeagleSubPub_class(Node):
 
 
 
+
         msg = Imu()
         msg.header = Header()
         msg.header.frame_id = "imu"
         msg.header.stamp = self.get_clock().now().to_msg()
 
         acceleration = Vector3()
-        acceleration.x = a_x *9.81
-        acceleration.y = a_y * 9.81
-        acceleration.z = a_z * 9.81
+        acceleration.x = (a_x + self.error_acc_x) *9.81
+        acceleration.y = (a_y + self.error_acc_y)* 9.81
+        acceleration.z = (a_z + self.error_acc_z) * 9.81
         msg.linear_acceleration = acceleration
 
 
         angular = Vector3()
-        angular.x = math.radians(g_x)
-        angular.y = math.radians(g_y)
-        angular.z = math.radians(g_z)
+        angular.x = math.radians(g_x + self.error_gyr_x)
+        angular.y = math.radians(g_y + self.error_gyr_y)
+        angular.z = math.radians(g_z + self.error_gyr_z)
         msg.angular_velocity = angular
 
-        print (acceleration.x, acceleration.y, acceleration.z)
+        #print (acceleration.x, acceleration.y, acceleration.z)
         orientation = Quaternion()
         ox, oy, oz, ow = quaternion_from_euler(angular.x, angular.y, angular.z)
 
@@ -163,7 +211,7 @@ class BeagleSubPub_class(Node):
 
         self.imu_publisher.publish(msg)
 
-        self.get_logger().info("Imu published value : %s" % msg.angular_velocity)
+        self.get_logger().info("Imu published value : %s %s" % (msg.angular_velocity, msg.linear_acceleration))
 
 
     def publish_encoder_data(self):
