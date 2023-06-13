@@ -265,16 +265,19 @@ def main(args=None, beagle_instance = None):
 
 
 
-    # 1886 1875
-    beagle_instance_ = Beagle()
-    beagle_instance_.dispose() #이전에 dispose 가 안되는 경우가 있음
+    # 1886 1875map 값이 안받아지는 문제가 있어서 다시 업데이트
 
     if beagle_instance is None:
         beagle_instance = Beagle()
+    beagle_instance.reset()
     beagle_instance.start_lidar()
     beagle_instance.wait_until_lidar_ready()
 
-    rclpy.init(args=args)
+    try:
+        rclpy.init(args=args)
+    finally:
+        rclpy.shutdown()
+        rclpy.init(args=args)
     publisher = BeagleSubPub_class(beagle_instance)
 
     try:

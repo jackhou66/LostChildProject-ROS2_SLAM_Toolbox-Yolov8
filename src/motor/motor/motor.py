@@ -61,7 +61,11 @@ class motor(Node):
         self.publisher_.publish(msg)
 
 def main(args=None):
-    rclpy.init(args=args)
+    try:
+        rclpy.init(args=args)
+    finally:
+        rclpy.shutdown()
+        rclpy.init(args=args)
     motor_publish = motor()
     try:
         rclpy.spin(motor_publish)

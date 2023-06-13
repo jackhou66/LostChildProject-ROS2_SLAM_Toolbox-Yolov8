@@ -205,11 +205,19 @@ class OdometryCalculator(Node):
 
 
 def main(args=None):
-    rclpy.init(args=args)
+    try:
+        rclpy.init(args=args)
+    finally:
+        rclpy.shutdown()
+        rclpy.init(args=args)
+
+    
     odometry_calculator = OdometryCalculator()
-    rclpy.spin(odometry_calculator)
-    odometry_calculator.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.spin(odometry_calculator)
+    finally:
+        odometry_calculator.destroy_node()
+        rclpy.shutdown()
 
 
 if __name__ == "__main__":
