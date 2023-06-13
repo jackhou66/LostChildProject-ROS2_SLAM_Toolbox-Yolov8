@@ -78,7 +78,7 @@ class OdometryCalculator(Node):
 
 
             #self.imu_linear_distance = 0.0
-
+            print ('imu Sampling time {0}', imu_second)
             self.imu_linear_distance = self.imu_average_linear_velocity * imu_second 
             self.imu_angular_distance = imu_average_angular_velocity * imu_second
             #print ('시간 차이 :%lf, 회전 각도 %lf, 전진 이동 거리 %lf' % (imu_second, self.imu_angular_distance, self.imu_linear_distance))
@@ -109,6 +109,7 @@ class OdometryCalculator(Node):
 
         #imu가 더 정확하다고 가정
         angular_distance = 0.1 * self.encoder_angular_distance + 0.9 * self.imu_angular_distance
+
 
         print ('Encoder 추정 : 전진 이동 거리 {0}, 각도 거리 {1}'.format(self.encoder_linear_distance, self.encoder_angular_distance))
         print ('IMU 추정 : 전진 이동 거리 {0}, 각도 거리 {1}'.format(self.imu_linear_distance, self.imu_angular_distance))

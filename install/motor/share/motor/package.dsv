@@ -1,0 +1,9 @@
+source;share/motor/hook/pythonpath.ps1
+source;share/motor/hook/pythonpath.dsv
+source;share/motor/hook/pythonpath.sh
+source;share/motor/hook/ament_prefix_path.ps1
+source;share/motor/hook/ament_prefix_path.dsv
+source;share/motor/hook/ament_prefix_path.sh
+source;../../build/motor/share/motor/hook/pythonpath_develop.ps1
+source;../../build/motor/share/motor/hook/pythonpath_develop.dsv
+source;../../build/motor/share/motor/hook/pythonpath_develop.sh

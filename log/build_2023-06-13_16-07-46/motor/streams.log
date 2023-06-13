@@ -1,0 +1,24 @@
+[1.857s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor/build --no-deps install_data
+[2.315s] running develop
+[2.576s] running egg_info
+[2.576s] creating motor.egg-info
+[2.577s] writing motor.egg-info/PKG-INFO
+[2.577s] writing dependency_links to motor.egg-info/dependency_links.txt
+[2.577s] writing entry points to motor.egg-info/entry_points.txt
+[2.577s] writing requirements to motor.egg-info/requires.txt
+[2.577s] writing top-level names to motor.egg-info/top_level.txt
+[2.579s] writing manifest file 'motor.egg-info/SOURCES.txt'
+[2.612s] reading manifest file 'motor.egg-info/SOURCES.txt'
+[2.613s] writing manifest file 'motor.egg-info/SOURCES.txt'
+[2.649s] running build_ext
+[2.649s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/lib/python3.8/site-packages/site.py
+[2.656s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/lib/python3.8/site-packages/motor.egg-link (link to .)
+[2.656s] 
+[2.656s] Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor
+[2.656s] running install_data
+[2.656s] creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/share/ament_index
+[2.656s] creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/share/ament_index/resource_index
+[2.656s] creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/share/ament_index/resource_index/packages
+[2.657s] copying resource/motor -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/share/ament_index/resource_index/packages
+[2.657s] copying package.xml -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/share/motor
+[3.175s] Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor' returned '0': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor/build --no-deps install_data

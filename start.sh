@@ -10,4 +10,4 @@ gnome-terminal --command "sh ros2_slam_start.sh"
 sleep 5s
 gnome-terminal --command "rviz2"
 
-#gnome-terminal --command "sh motor_start.sh"
+gnome-terminal --command "sh motor_start.sh"

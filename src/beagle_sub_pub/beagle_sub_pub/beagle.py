@@ -28,7 +28,7 @@ class BeagleSubPub_class(Node):
     encoder_pulses_per_one_revolution = 1900 # 대략
     wheel_radius = 0.033 # 3.3 cm
     lidar_send_hz = 4
-    timer_interval = 0.4
+    timer_interval = 0.25
     
 
 
