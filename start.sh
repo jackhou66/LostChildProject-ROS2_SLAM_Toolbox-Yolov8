@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 gnome-terminal --command "sh beagle_start.sh"
 
@@ -11,3 +11,9 @@ sleep 5s
 gnome-terminal --command "rviz2"
 
 gnome-terminal --command "sh motor_start.sh"
+
+echo "CTRL+C to exit"
+while true;
+do
+  sleep 1
+done
