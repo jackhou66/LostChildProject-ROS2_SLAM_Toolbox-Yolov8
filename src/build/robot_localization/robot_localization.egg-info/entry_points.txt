@@ -1,0 +1,3 @@
+[console_scripts]
+robot_localization = robot_localization.robot_localization:main
+

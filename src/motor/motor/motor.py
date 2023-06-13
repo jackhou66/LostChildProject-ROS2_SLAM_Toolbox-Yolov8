@@ -20,10 +20,10 @@ class motor(Node):
         left = front + 90
         back = left + 90
         right = back + 90
-        print (msg.ranges[front], msg.ranges[left], msg.ranges[back], msg.ranges[right])
+        print (msg.ranges[front], msg.ranges[left], msg.rangslam map 값이 안받아지는 문제가 있어서 다시 업데이트es[back], msg.ranges[right])
 
         motor_speed = 10
-        distance_filter = 0.15
+        distance_filter = 0.08 # map 사이즈가 폭이 16cm 라서 변경
 
         if (msg.ranges[front] < distance_filter and msg.ranges[left] < distance_filter and msg.ranges[right]< distance_filter): #모두 막혀있는 경우 뒤로 회전
             if (msg.ranges[left] > msg.ranges[right]):

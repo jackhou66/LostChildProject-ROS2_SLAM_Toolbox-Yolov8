@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+motor/__init__.py
+motor/motor.py
+motor.egg-info/PKG-INFO
+motor.egg-info/SOURCES.txt
+motor.egg-info/dependency_links.txt
+motor.egg-info/entry_points.txt
+motor.egg-info/requires.txt
+motor.egg-info/top_level.txt
+motor.egg-info/zip-safe
+resource/motor

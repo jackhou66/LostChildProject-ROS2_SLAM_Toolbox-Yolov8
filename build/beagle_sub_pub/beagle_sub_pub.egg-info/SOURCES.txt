@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+beagle_sub_pub/__init__.py
+beagle_sub_pub/beagle.py
+beagle_sub_pub.egg-info/PKG-INFO
+beagle_sub_pub.egg-info/SOURCES.txt
+beagle_sub_pub.egg-info/dependency_links.txt
+beagle_sub_pub.egg-info/entry_points.txt
+beagle_sub_pub.egg-info/requires.txt
+beagle_sub_pub.egg-info/top_level.txt
+beagle_sub_pub.egg-info/zip-safe
+resource/beagle_sub_pub

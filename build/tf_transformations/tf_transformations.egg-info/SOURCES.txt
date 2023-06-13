@@ -1,0 +1,11 @@
+package.xml
+setup.cfg
+setup.py
+resource/tf_transformations
+tf_transformations/__init__.py
+tf_transformations.egg-info/PKG-INFO
+tf_transformations.egg-info/SOURCES.txt
+tf_transformations.egg-info/dependency_links.txt
+tf_transformations.egg-info/requires.txt
+tf_transformations.egg-info/top_level.txt
+tf_transformations.egg-info/zip-safe
