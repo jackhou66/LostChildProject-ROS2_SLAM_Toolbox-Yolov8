@@ -23,7 +23,7 @@ class motor(Node):
         print (msg.ranges[front], msg.ranges[left], msg.ranges[back], msg.ranges[right])
 
         motor_speed = 10
-        distance_filter = 0.08 # map 사이즈가 폭이 16cm 라서
+        distance_filter = 0.2 # map 사이즈가 폭이 16cm 라서
 
         if (msg.ranges[front] < distance_filter and msg.ranges[left] < distance_filter and msg.ranges[right]< distance_filter): #모두 막혀있는 경우 뒤로 회전
             if (msg.ranges[left] > msg.ranges[right]):
