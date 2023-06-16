@@ -16,7 +16,7 @@ class camera_pub(Node):
 
         node_name = 'camera' # ROS2 노드 이름
         topic_msg_type = Image # Topic msg type
-        topic_msg_name = 'camera_image' # Topic msg name
+        topic_msg_name = 'camera_raw' # Topic msg name
         qos_profile = 10
         fps = 15 # 얼마의 주기로 topic msg 를 보낼 것인지 (카메리의 FPS와 동일하게 설정)
         timer_period = 1/fps
@@ -42,34 +42,7 @@ class camera_pub(Node):
         except Exception as e:
             self.get_logger().info('Error : {error}'.format(error = e))
         else:
-            self.get_logger().info(str(camera_msg))
-
-def camera_undistort():
-
-
-    dist = np.array([k1, k2, p1, p2, k3])
-    mtx = np.array([[fx, 0, cx], [0, fy, cy], [0, 0, 1]])
-
-    image = cv2.imread('./cali_images/WIN_20230110_13_21_30_Pro.jpg')
-
-    h, w = image.shape[:2]
-
-    newcameramtx, roi = cv2.getOptimalNewCameraMatrix(mtx,
-                                                    dist,
-                                                    (w, h),
-                                                    1, (w, h))
-
-    # undistort
-    dst = cv2.undistort(image, mtx, dist, None, newcameramtx)
-
-    x, y, w, h = roi
-    dst = dst[y:y+h, x:x+w]
-
-    cv2.imshow('result', dst)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-
-    return dst
+            self.get_logger().info('Camera published : {0}x{1}'.format(camera_msg.width, camera_msg.height))
 def main(args = None):
     camera_type = 'ip0'
     cam = ai.Camera(camera_type)
