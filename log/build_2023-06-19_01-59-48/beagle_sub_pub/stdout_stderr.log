@@ -1,0 +1,14 @@
+running develop
+running egg_info
+writing beagle_sub_pub.egg-info/PKG-INFO
+writing dependency_links to beagle_sub_pub.egg-info/dependency_links.txt
+writing entry points to beagle_sub_pub.egg-info/entry_points.txt
+writing requirements to beagle_sub_pub.egg-info/requires.txt
+writing top-level names to beagle_sub_pub.egg-info/top_level.txt
+reading manifest file 'beagle_sub_pub.egg-info/SOURCES.txt'
+writing manifest file 'beagle_sub_pub.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/beagle_sub_pub/lib/python3.8/site-packages/beagle-sub-pub.egg-link (link to .)
+
+Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/beagle_sub_pub
+running install_data

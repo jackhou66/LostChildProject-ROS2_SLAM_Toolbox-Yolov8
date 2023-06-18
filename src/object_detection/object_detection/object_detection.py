@@ -4,17 +4,18 @@ from cv_bridge import CvBridge
 
 # ROS Library
 import rclpy
+from rclpy.action import ActionServer
 from rclpy.node import Node
 from sensor_msgs.msg import *
 from std_msgs.msg import *
+from msg_interface.action import AString
 
 from ultralytics import YOLO
 import os
+
+
 import time
 import threading
-
-from collections import deque
-
 
 class object_detection(Node):
     result_plotted_img = None
@@ -39,8 +40,8 @@ class object_detection(Node):
         self.br = CvBridge()
 
         # 서비스를 입력 받아서 받은 queue에 찾으려는 아이 목록 클래스 변수로 저장하기
-        self.target_childeren_id_set = set()
-        self.target_childeren_id_set.add(2)
+        #self.target_childeren_id_set = set()
+        #self.target_childeren_id_set.add(2)
         
 
         self.id2name = ['ben_afflek', 'elton_john', 'face', 'gang_ho_dong', 'iu', 'jerry_seinfeld', 'kim_soo_hyun', 'madonna', 'mindy_kaling', 'nam_joo_hyuk', 'newjeans_minji', 'park_soi']
@@ -63,9 +64,22 @@ class object_detection(Node):
                                                 detect_image_sub_topic_msg_name, 
                                                 self.dummy,
                                                 qos_profile)
+
+        self._action_server = ActionServer(self, AString, 'string_action', self.execute_callback)
         
         self.get_logger().info('Object_detection')
         self.get_logger().info('Waiting undistorted camera image input')
+
+
+    def execute_callback(self, goal_handle):
+        self.get_logger().info('Executing goal...')
+        feedback_msg = AString.Feedback()
+        feedback_msg.feedback_string = 'Processing: ' + goal_handle.request.input_string
+        goal_handle.publish_feedback(feedback_msg)
+        
+        result = AString.Result()
+        result.output_string = 'Output: ' + goal_handle.request.input_string
+        return result
     def show_image(self, image):
         try:
             cv2.imshow("YOLOv8 Inference", image)
