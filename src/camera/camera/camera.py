@@ -16,7 +16,7 @@ class camera_pub(Node):
 
         node_name = 'camera' # ROS2 노드 이름
         topic_msg_type = Image # Topic msg type
-        topic_msg_name = 'camera_raw' # Topic msg name
+        topic_msg_name = 'camera' # Topic msg name
         qos_profile = 10
         fps = 15 # 얼마의 주기로 topic msg 를 보낼 것인지 (카메리의 FPS와 동일하게 설정)
         timer_period = 1/fps
