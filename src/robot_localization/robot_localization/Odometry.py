@@ -117,16 +117,16 @@ class OdometryCalculator(Node):
 
             # 평균 전진 이동 속도 = s0  + v0 t + (1/2) * (평균 x 축 가속도) * 시간^2 
             imu_average_linear_acceleration = (msg.linear_acceleration.x + self.imu_prev_msg.linear_acceleration.x)/2.0
-            self.imu_average_linear_velocity += imu_average_linear_acceleration * imu_second
+            self.imu_average_linear_velocity += imu_average_linear_acceleration * (imu_second/2)
 
             # 평균 이동 각도 = 평균 각속도 * 시간
-            imu_average_angular_velocity = (self.imu_prev_msg.angular_velocity.z + msg.angular_velocity.z)/2.0
+            self.imu_average_angular_velocity = (self.imu_prev_msg.angular_velocity.z + msg.angular_velocity.z)/2.0
 
 
             #self.imu_linear_distance = 0.0
             self.get_logger().info("IMU Sampling time {0}".format(imu_second))
-            self.imu_linear_distance = self.imu_average_linear_velocity * imu_second 
-            self.imu_angular_distance = imu_average_angular_velocity * imu_second
+            self.imu_linear_distance = self.imu_average_linear_velocity * (imu_second/2)
+            self.imu_angular_distance = self.imu_average_angular_velocity * (imu_second/2)
             #print ('시간 차이 :%lf, 회전 각도 %lf, 전진 이동 거리 %lf' % (imu_second, self.imu_angular_distance, self.imu_linear_distance))
             #print ('raw accel : %lf %lf %lf' % (msg.linear_acceleration.x, msg.linear_acceleration.y, msg.linear_acceleration.z ))
             self.calculate_weight_odometry()
@@ -154,7 +154,7 @@ class OdometryCalculator(Node):
 
 
         #imu가 더 정확하다고 가정
-        angular_distance = 0.1 * self.encoder_angular_distance + 0.9 * self.imu_angular_distance
+        angular_distance = 0.4 * self.encoder_angular_distance + 0.6 * self.imu_angular_distance
 
         self.get_logger().info("Encoder 추정 : 전진 이동 거리 {0}, 각도 거리 {1}".format(self.encoder_linear_distance, self.encoder_angular_distance))
         self.get_logger().info("IMU 추정 : 전진 이동 거리 {0}, 각도 거리 {1} rad".format(self.imu_linear_distance, self.imu_angular_distance))

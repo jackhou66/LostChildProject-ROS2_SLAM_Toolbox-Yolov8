@@ -186,6 +186,7 @@ class BeagleSubPub_class(Node):
             pulse_right_diff = self.b.right_encoder()
             encoder_actual_interval = time.perf_counter() - self.encoder_prev_time
 
+            assert(encoder_actual_interval > 0)
             self.left_encoder_sum += pulse_left_diff
             self.right_encoder_sum += pulse_right_diff
             # 최종 이동거리
