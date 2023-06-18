@@ -1,0 +1,15 @@
+[6.339s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar/build --no-deps install_data
+[8.582s] running develop
+[9.694s] running egg_info
+[9.695s] writing lidar.egg-info/PKG-INFO
+[9.695s] writing dependency_links to lidar.egg-info/dependency_links.txt
+[9.695s] writing entry points to lidar.egg-info/entry_points.txt
+[9.696s] writing requirements to lidar.egg-info/requires.txt
+[9.696s] writing top-level names to lidar.egg-info/top_level.txt
+[9.834s] reading manifest file 'lidar.egg-info/SOURCES.txt'
+[9.834s] writing manifest file 'lidar.egg-info/SOURCES.txt'
+[10.053s] running build_ext
+[10.079s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/lib/python3.8/site-packages/lidar.egg-link (link to .)
+[10.079s] 
+[10.081s] Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar
+[10.081s] running install_data

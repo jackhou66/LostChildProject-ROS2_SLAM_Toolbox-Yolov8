@@ -4,7 +4,7 @@ from rclpy.node import Node
 
 from std_msgs.msg import Float32MultiArray, Header
 from sensor_msgs.msg import Imu, LaserScan
-from geometry_msgs.msg import Vector3, Quaternion
+from geometry_msgs.msg import Vector3, Quaternion, Twist
 from tf_transformations import quaternion_from_euler
 
 
@@ -64,56 +64,23 @@ class BeagleSubPub_class(Node):
 
         # encoder
         self.motor_subscriber = self.create_subscription(Float32MultiArray, "motor_topic", self.motor_callback, 10)
+        #self.twist_subscriber = self.create_subscription(Twist, "cmd_vel", self.teleop_callback, 10)
+
+
+	# keyboard
+	
+        self.subscription = self.create_subscription(
+            Arithmetic, "keyboard", self.keyboard_callback, 10
+        )
+        
         self.encoder_publisher = self.create_publisher(Float32MultiArray, "encoder_topic", 10)
 
-
-        # self.t1 = threading.Thread(target = self.create_timer, args = (self.imu_timer_interval, self.publish_imu_data))
-        # self.t2 = threading.Thread(target = self.create_timer, args = (self.encoder_timer_interval, self.publish_encoder_data))
-        # self.t3 = threading.Thread(target = self.create_timer, args = (self.lidar_timer_interval, self.publish_lidar_data))
-        
-        # self.t1.start()
-        # self.t2.start()
-        # self.t3.start()
         
         self.timer1 = self.create_timer(self.imu_timer_interval, self.publish_imu_data)
         self.timer2 = self.create_timer(self.encoder_timer_interval, self.publish_encoder_data)
         self.timer3 = self.create_timer(self.lidar_timer_interval, self.publish_lidar_data)
-    # def imu_calibrate(self):
-    #     print ('calibration start')
 
-    #     calibration_time = 2
-    #     target_accel = [0.0, 0.0, -1.0]
-    #     target_gyro = [0.0, 0.0, 0.0]
-
-    #     accel_list = []
-    #     gyro_list = []
-
-
-    #     # 완전이 값이 가져올때까지 대기
-
-    #     time.sleep(1)
-    #     start_time = time.time()
-    #     while (time.time()-start_time <= calibration_time):
-    #         accel_list.append(self.get_mean(self.accel))
-    #         gyro_list.append(self.get_mean(self.gyro))
-
-    #     # calibration_time 초 동안 평균
-    #     c_a_x, c_a_y, c_a_z, c_t = self.get_mean(accel_list)
-    #     c_g_x, c_g_y, c_g_z, c_t = self.get_mean(gyro_list)
-
-    #     self.error_acc_x = target_accel[0] - c_a_x
-    #     self.error_acc_y = target_accel[1] - c_a_y
-    #     self.error_acc_z = target_accel[2] - c_a_z
-
-    #     self.error_gyr_x = target_gyro[0] - c_g_x
-    #     self.error_gyr_y = target_gyro[1] - c_g_y
-    #     self.error_gyr_z = target_gyro[2] - c_g_z
-
-
-    #     print ('calibration complete')
-    #     print ('acc : ', self.error_acc_x, self.error_acc_y,self.error_acc_z)
-    #     print ('gyro : ', self.error_gyr_x, self.error_gyr_y, self.error_gyr_z)
-
+        
     def accel_update(self, index, timestamp, x, y, z):
         self.accel[index] = [x, y, z, timestamp]
     def gyro_update(self, index, timestamp, x, y, z):
@@ -145,29 +112,6 @@ class BeagleSubPub_class(Node):
         self.get_logger().info("Published LiDAR value: {0}".format(msg.ranges[50])) 
         msg.header.stamp = self.get_clock().now().to_msg() # 항상 publish 전에 붙어있어야 된다. 그 사이에 연산이 있으면 time stamp 차이가 음수가 될 수 있음
         self.lidar_publisher.publish(msg)
-
-    # def get_mean(self, twondarr):
-    #     row = len(twondarr)
-    #     col = 0
-    #     print (row)
-    #     print(len(twondarr[0]))
-    #     if row != 0:
-    #         if (len(twondarr[0]) != 0):
-    #             sum_x = 0.0
-    #             for i in range(row):
-    #                 sum_x += twondarr[i][0]
-    #             sum_y = 0.0
-    #             for i in range(row):
-    #                 sum_y += twondarr[i][1]
-    #             sum_z = 0.0
-    #             for i in range(row):
-    #                 sum_z += twondarr[i][2]
-    #             sum_t = 0.0
-    #             for i in range(row):
-    #                 sum_t += twondarr[i][3]
-    #             return sum_x/row, sum_y/row, sum_z/row, sum_t/row
-    #     self.get_logger().info('Error : mean function input data value is not valid. Row {row}, Col {col}'.format(row=row, col=col))
-    #     return -1, -1, -1, -1
 
     def publish_imu_data(self):
         # 가속도
@@ -271,7 +215,24 @@ class BeagleSubPub_class(Node):
         self.encoder_publisher.publish(msg)
         self.b.reset_encoder()
 
+    def keyboard_callback(self, msg):
+        data = msg.argument
+        # self.get_logger().info("Received KeyBoard value: {0}".format(data))
 
+        if data == 1:
+            self.b.move_forward(0.1, 20)
+            print("w")
+        elif data == 2:
+            self.b.move_backward(0.1, 20)
+            print("s")
+        elif data == 3:
+            self.b.turn_left(0.1, 20)
+            print("a")
+        elif data == 4:
+            self.b.turn_right(0.1, 20)
+            print("d")
+        else:
+            print("NO WASD")
 
 
 

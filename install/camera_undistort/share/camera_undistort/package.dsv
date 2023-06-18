@@ -1,0 +1,9 @@
+source;share/camera_undistort/hook/pythonpath.ps1
+source;share/camera_undistort/hook/pythonpath.dsv
+source;share/camera_undistort/hook/pythonpath.sh
+source;share/camera_undistort/hook/ament_prefix_path.ps1
+source;share/camera_undistort/hook/ament_prefix_path.dsv
+source;share/camera_undistort/hook/ament_prefix_path.sh
+source;../../build/camera_undistort/share/camera_undistort/hook/pythonpath_develop.ps1
+source;../../build/camera_undistort/share/camera_undistort/hook/pythonpath_develop.dsv
+source;../../build/camera_undistort/share/camera_undistort/hook/pythonpath_develop.sh

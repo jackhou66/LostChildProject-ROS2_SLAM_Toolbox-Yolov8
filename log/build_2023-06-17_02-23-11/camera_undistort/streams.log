@@ -1,0 +1,16 @@
+[6.062s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera_undistort': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera_undistort/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera_undistort/build --no-deps install_data
+[9.153s] running develop
+[9.155s] running egg_info
+[9.157s] writing camera_undistort.egg-info/PKG-INFO
+[9.159s] writing dependency_links to camera_undistort.egg-info/dependency_links.txt
+[9.159s] writing entry points to camera_undistort.egg-info/entry_points.txt
+[9.159s] writing requirements to camera_undistort.egg-info/requires.txt
+[9.160s] writing top-level names to camera_undistort.egg-info/top_level.txt
+[9.222s] reading manifest file 'camera_undistort.egg-info/SOURCES.txt'
+[9.223s] writing manifest file 'camera_undistort.egg-info/SOURCES.txt'
+[9.431s] running build_ext
+[9.431s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort/lib/python3.8/site-packages/camera-undistort.egg-link (link to .)
+[9.435s] 
+[9.435s] Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera_undistort
+[9.444s] running install_data
+[9.746s] Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera_undistort' returned '0': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera_undistort/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera_undistort/build --no-deps install_data

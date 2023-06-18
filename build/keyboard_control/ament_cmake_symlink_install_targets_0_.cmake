@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/keyboard_control/keyboard_publisher" "TARGETS" "keyboard_publisher" "DESTINATION" "lib/keyboard_control")

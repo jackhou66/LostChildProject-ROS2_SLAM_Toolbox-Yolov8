@@ -1,0 +1,25 @@
+[1.598s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/teleop_twist_keyboard': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/teleop_twist_keyboard/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/teleop_twist_keyboard/build --no-deps install_data
+[2.034s] running develop
+[2.366s] running egg_info
+[2.367s] creating teleop_twist_keyboard.egg-info
+[2.367s] writing teleop_twist_keyboard.egg-info/PKG-INFO
+[2.367s] writing dependency_links to teleop_twist_keyboard.egg-info/dependency_links.txt
+[2.368s] writing entry points to teleop_twist_keyboard.egg-info/entry_points.txt
+[2.368s] writing requirements to teleop_twist_keyboard.egg-info/requires.txt
+[2.368s] writing top-level names to teleop_twist_keyboard.egg-info/top_level.txt
+[2.371s] writing manifest file 'teleop_twist_keyboard.egg-info/SOURCES.txt'
+[2.445s] reading manifest file 'teleop_twist_keyboard.egg-info/SOURCES.txt'
+[2.446s] writing manifest file 'teleop_twist_keyboard.egg-info/SOURCES.txt'
+[2.539s] running build_ext
+[2.540s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard/lib/python3.8/site-packages/site.py
+[2.547s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard/lib/python3.8/site-packages/teleop-twist-keyboard.egg-link (link to .)
+[2.549s] Installing teleop_twist_keyboard script to /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard/lib/teleop_twist_keyboard
+[2.550s] 
+[2.550s] Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/teleop_twist_keyboard
+[2.551s] running install_data
+[2.551s] creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard/share/ament_index
+[2.552s] creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard/share/ament_index/resource_index
+[2.552s] creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard/share/ament_index/resource_index/packages
+[2.552s] copying resource/teleop_twist_keyboard -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard/share/ament_index/resource_index/packages
+[2.553s] copying package.xml -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard/share/teleop_twist_keyboard
+[2.615s] Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/teleop_twist_keyboard' returned '0': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/teleop_twist_keyboard/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/teleop_twist_keyboard/build --no-deps install_data

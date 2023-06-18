@@ -1,0 +1,15 @@
+[3.635s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/object_detection': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/object_detection/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/object_detection/build --no-deps install_data
+[4.298s] running develop
+[4.893s] running egg_info
+[4.896s] writing object_detection.egg-info/PKG-INFO
+[4.898s] writing dependency_links to object_detection.egg-info/dependency_links.txt
+[4.901s] writing entry points to object_detection.egg-info/entry_points.txt
+[4.902s] writing requirements to object_detection.egg-info/requires.txt
+[4.904s] writing top-level names to object_detection.egg-info/top_level.txt
+[5.046s] reading manifest file 'object_detection.egg-info/SOURCES.txt'
+[5.048s] writing manifest file 'object_detection.egg-info/SOURCES.txt'
+[5.144s] running build_ext
+[5.144s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection/lib/python3.8/site-packages/object-detection.egg-link (link to .)
+[5.145s] 
+[5.145s] Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/object_detection
+[5.145s] running install_data

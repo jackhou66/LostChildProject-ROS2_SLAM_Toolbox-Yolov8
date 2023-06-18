@@ -1,0 +1,18 @@
+[01m[K/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/keyboard_control/src/keyboard_control.cpp:[m[K In constructor ‘[01m[KKeyboardPublisher::KeyboardPublisher()[m[K’:
+[01m[K/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/keyboard_control/src/keyboard_control.cpp:18:60:[m[K [01;31m[Kerror: [m[K‘[01m[KMinimalPublisher[m[K’ has not been declared
+   18 |         timer_ = this->create_wall_timer(500ms, std::bind(&[01;31m[KMinimalPublisher[m[K::timer_callback, this));
+      |                                                            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/keyboard_control/src/keyboard_control.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/keyboard_control/src/keyboard_control.cpp:39:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_shard[m[K’ is not a member of ‘[01m[Kstd[m[K’; did you mean ‘[01m[Kmake_shared[m[K’?
+   39 |     rclcpp::spin(std::[01;31m[Kmake_shard[m[K<KeyboardPublisher>())
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[Kmake_shared[m[K
+[01m[K/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/keyboard_control/src/keyboard_control.cpp:39:51:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   39 |     rclcpp::spin(std::make_shard<KeyboardPublisher[01;31m[K>[m[K())
+      |                                                   [01;31m[K^[m[K
+[01m[K/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/keyboard_control/src/keyboard_control.cpp:39:53:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   39 |     rclcpp::spin(std::make_shard<KeyboardPublisher>([01;31m[K)[m[K)
+      |                                                     [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/keyboard_publisher.dir/build.make:76: CMakeFiles/keyboard_publisher.dir/src/keyboard_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/keyboard_publisher.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

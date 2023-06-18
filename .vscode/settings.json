@@ -1,0 +1,8 @@
+{
+    "cmake.sourceDirectory": "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/keyboard_control",
+    "files.associations": {
+        "functional": "cpp",
+        "chrono": "cpp",
+        "string": "cpp"
+    }
+}

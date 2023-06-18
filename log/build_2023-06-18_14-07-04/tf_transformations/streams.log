@@ -1,0 +1,15 @@
+[3.131s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations/build --no-deps install_data
+[3.823s] running develop
+[4.290s] running egg_info
+[4.291s] writing tf_transformations.egg-info/PKG-INFO
+[4.292s] writing dependency_links to tf_transformations.egg-info/dependency_links.txt
+[4.292s] writing requirements to tf_transformations.egg-info/requires.txt
+[4.292s] writing top-level names to tf_transformations.egg-info/top_level.txt
+[4.361s] reading manifest file 'tf_transformations.egg-info/SOURCES.txt'
+[4.362s] writing manifest file 'tf_transformations.egg-info/SOURCES.txt'
+[4.454s] running build_ext
+[4.468s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/lib/python3.8/site-packages/tf-transformations.egg-link (link to .)
+[4.469s] 
+[4.469s] Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations
+[4.469s] running install_data
+[4.649s] Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations' returned '0': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations/build --no-deps install_data

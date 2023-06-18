@@ -1,0 +1,14 @@
+running develop
+running egg_info
+writing camera_undistort.egg-info/PKG-INFO
+writing dependency_links to camera_undistort.egg-info/dependency_links.txt
+writing entry points to camera_undistort.egg-info/entry_points.txt
+writing requirements to camera_undistort.egg-info/requires.txt
+writing top-level names to camera_undistort.egg-info/top_level.txt
+reading manifest file 'camera_undistort.egg-info/SOURCES.txt'
+writing manifest file 'camera_undistort.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort/lib/python3.8/site-packages/camera-undistort.egg-link (link to .)
+
+Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera_undistort
+running install_data

@@ -13,6 +13,8 @@ import os
 import time
 import threading
 class object_detection(Node):
+    result_plotted_img = None
+    image = None
     def __init__ (self, model):
         self.model = model
 
@@ -37,22 +39,27 @@ class object_detection(Node):
         self.get_logger().info('Object_detection')
         self.get_logger().info('Waiting undistorted camera image input')
 
-        self.get_result_img = cv2.imread('src/bus.jpg')
-        t1 = threading.Thread(target=self.show_image)
-        t1.start()
-    def show_image(self):
-        while True:
-            cv2.imshow("YOLOv8 Inference", self.get_result_img)
-            cv2.waitKey(2)
-        cv2.destroyAllWindows()
+
+        #t1 = threading.Thread(target=self.show_image)
+        #t1.start()
+
+        #t2 = threading.Thread(target=self.object_detect)
+        #t2.start()
+    def show_image(self, image):
+        try:
+            cv2.imshow("YOLOv8 Inference", image)
+            cv2.waitKey(1)
+        except Exception as e:
+            self.get_logger().error("{0}".format(e))
+            cv2.destroyAllWindows()
     def object_detect(self, image):
         pred_result = list(self.model(image)) # 예측된 결과 모두 불러오기
-
-        get_boxes = pred_result[0].boxes # 예측된 결과의 박스 좌표 가져오기
-        self.get_result_img = pred_result[0].plot() # 예측된 결과 이미지 그리기
-
+        #self.get_logger().info('self.image {0}'.format(self.image))
+        result_boxes = pred_result[0].boxes # 예측된 결과의 박스 좌표 가져오기
+        result_plotted_img = pred_result[0].plot() # 예측된 결과 이미지 그리기
+        #self.get_logger().info('object_detection result_plotted_img {0}'.format(self.result_plotted_img))
         
-        for i, box in enumerate(get_boxes): # 모든 박스 불러오기
+        for i, box in enumerate(result_boxes): # 모든 박스 불러오기
             print (box.cls) # 박스의 클래스 출력
             if box.cls in self.target_childeren_class_id:
                 print (box.xywhn)
@@ -68,12 +75,14 @@ class object_detection(Node):
                 # if abs(error_x) <= allowed_error:
                 #     print ("{name} childeren infront of me".format(name = target_child_name))
                 #     #Robot Stop
-                
-        
+        return (result_plotted_img, result_boxes)
+        #print('terminated')
     def camera_callback(self, msg):
         self.image = self.br.imgmsg_to_cv2(msg)
-        self.object_detect(self.image)
 
+        self.get_logger().info('Image subscribed {0}'.format(self.image.shape))
+        ri, rb = self.object_detect(self.image)
+        self.show_image(ri)
         
 def main(args = None):
     rclpy.init(args = args)

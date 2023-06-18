@@ -1,0 +1,15 @@
+[3.758s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor/build --no-deps install_data
+[4.481s] running develop
+[4.978s] running egg_info
+[4.980s] writing motor.egg-info/PKG-INFO
+[4.982s] writing dependency_links to motor.egg-info/dependency_links.txt
+[5.103s] writing entry points to motor.egg-info/entry_points.txt
+[5.116s] writing requirements to motor.egg-info/requires.txt
+[5.116s] writing top-level names to motor.egg-info/top_level.txt
+[5.187s] reading manifest file 'motor.egg-info/SOURCES.txt'
+[5.188s] writing manifest file 'motor.egg-info/SOURCES.txt'
+[5.281s] running build_ext
+[5.282s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/lib/python3.8/site-packages/motor.egg-link (link to .)
+[5.284s] 
+[5.284s] Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor
+[5.284s] running install_data

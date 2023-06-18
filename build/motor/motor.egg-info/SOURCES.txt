@@ -2,6 +2,8 @@ package.xml
 setup.cfg
 setup.py
 motor/__init__.py
+motor/keyboard_control.py
+motor/keyboard_subscriber.py
 motor/motor.py
 motor.egg-info/PKG-INFO
 motor.egg-info/SOURCES.txt

@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating object_detection.egg-info
+writing object_detection.egg-info/PKG-INFO
+writing dependency_links to object_detection.egg-info/dependency_links.txt
+writing entry points to object_detection.egg-info/entry_points.txt
+writing requirements to object_detection.egg-info/requires.txt
+writing top-level names to object_detection.egg-info/top_level.txt
+writing manifest file 'object_detection.egg-info/SOURCES.txt'
+reading manifest file 'object_detection.egg-info/SOURCES.txt'
+writing manifest file 'object_detection.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection/lib/python3.8/site-packages/site.py
+Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection/lib/python3.8/site-packages/object-detection.egg-link (link to .)
+
+Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/object_detection
+running install_data
+creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection/share/ament_index
+creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection/share/ament_index/resource_index
+creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection/share/ament_index/resource_index/packages
+copying resource/object_detection -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection/share/ament_index/resource_index/packages
+copying package.xml -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection/share/object_detection

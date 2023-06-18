@@ -1,0 +1,15 @@
+[3.656s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera/build --no-deps install_data
+[4.341s] running develop
+[4.789s] running egg_info
+[4.789s] writing camera.egg-info/PKG-INFO
+[4.789s] writing dependency_links to camera.egg-info/dependency_links.txt
+[4.790s] writing entry points to camera.egg-info/entry_points.txt
+[4.790s] writing requirements to camera.egg-info/requires.txt
+[4.793s] writing top-level names to camera.egg-info/top_level.txt
+[4.860s] reading manifest file 'camera.egg-info/SOURCES.txt'
+[4.862s] writing manifest file 'camera.egg-info/SOURCES.txt'
+[4.948s] running build_ext
+[4.948s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/lib/python3.8/site-packages/camera.egg-link (link to .)
+[4.949s] 
+[4.949s] Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera
+[4.950s] running install_data

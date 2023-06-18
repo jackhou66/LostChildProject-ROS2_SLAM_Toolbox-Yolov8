@@ -8,7 +8,7 @@ from nav_msgs.msg import Odometry
 from tf_transformations import euler_from_quaternion
 import math
 import pandas as pd
-# import keyboard
+import keyboard # 루트 계정 필요 루트로 돌리면 다른 라이브러리 못씀
 class motor(Node):
     def __init__(self):
         super().__init__("motor")
@@ -20,19 +20,20 @@ class motor(Node):
         self.publisher_ = self.create_publisher(Float32MultiArray, "motor_topic", 10)
         #self.t1 = threading.Thread(target=self.input_parameter)
         #self.t1.start()
+        self.input_parameter()
 
         #self.timer = self.create_timer(1, self.motor_publish)
-    # def input_parameter(self):
-    #     while True:
-    #         print (keyboard.read_key())
-    #         if keyboard.is_pressed("w"):
-    #             self.motor_publish(20, 20)
-    #         elif keyboard.is_pressed("s"):
-    #             self.motor_publish(-20, -20)
-    #         elif keyboard.is_pressed("a"):
-    #             self.motor_publish(-20, 20)
-    #         elif keyboard.is_pressed("d"):
-    #             self.motor_publish(20, -20)
+    def input_parameter(self):
+        while True:
+            print (keyboard.read_key())
+            if keyboard.is_pressed("w"):
+                self.motor_publish(20, 20)
+            elif keyboard.is_pressed("s"):
+                self.motor_publish(-20, -20)
+            elif keyboard.is_pressed("a"):
+                self.motor_publish(-20, 20)
+            elif keyboard.is_pressed("d"):
+                self.motor_publish(20, -20)
 
     # def odometry_callback(self, msg):
     #     self.x_r, self.y_r, self.z_r = euler_from_quaternion(msg.pose.pose.orientation)

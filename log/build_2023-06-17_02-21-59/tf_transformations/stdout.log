@@ -1,0 +1,13 @@
+running develop
+running egg_info
+writing tf_transformations.egg-info/PKG-INFO
+writing dependency_links to tf_transformations.egg-info/dependency_links.txt
+writing requirements to tf_transformations.egg-info/requires.txt
+writing top-level names to tf_transformations.egg-info/top_level.txt
+reading manifest file 'tf_transformations.egg-info/SOURCES.txt'
+writing manifest file 'tf_transformations.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/lib/python3.8/site-packages/tf-transformations.egg-link (link to .)
+
+Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations
+running install_data

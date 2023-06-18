@@ -1,0 +1,1047 @@
+[0.520s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.520s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1960b0b8e0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1960b0b8e0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f1960bacdc0>)
+[0.553s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.553s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.553s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.553s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.553s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.553s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.553s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature) by extensions ['ignore', 'ignore_ament_install']
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature) by extension 'ignore'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature) by extension 'ignore_ament_install'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature) by extensions ['colcon_pkg']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature) by extension 'colcon_pkg'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature) by extensions ['colcon_meta']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature) by extension 'colcon_meta'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature) by extensions ['ros']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature) by extension 'ros'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature) by extensions ['cmake', 'python']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature) by extension 'cmake'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature) by extension 'python'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature) by extensions ['python_setup_py']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature) by extension 'python_setup_py'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:) by extensions ['ignore', 'ignore_ament_install']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:) by extension 'ignore'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:) by extension 'ignore_ament_install'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:) by extensions ['colcon_pkg']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:) by extension 'colcon_pkg'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:) by extensions ['colcon_meta']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:) by extension 'colcon_meta'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:) by extensions ['ros']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:) by extension 'ros'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:) by extensions ['cmake', 'python']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:) by extension 'cmake'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:) by extension 'python'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:) by extensions ['python_setup_py']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:) by extension 'python_setup_py'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid) by extensions ['ignore', 'ignore_ament_install']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid) by extension 'ignore'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid) by extension 'ignore_ament_install'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid) by extensions ['colcon_pkg']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid) by extension 'colcon_pkg'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid) by extensions ['colcon_meta']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid) by extension 'colcon_meta'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid) by extensions ['ros']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid) by extension 'ros'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid) by extensions ['cmake', 'python']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid) by extension 'cmake'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid) by extension 'python'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid) by extensions ['python_setup_py']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid) by extension 'python_setup_py'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid/model) by extensions ['ignore', 'ignore_ament_install']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid/model) by extension 'ignore'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid/model) by extension 'ignore_ament_install'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid/model) by extensions ['colcon_pkg']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid/model) by extension 'colcon_pkg'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid/model) by extensions ['colcon_meta']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid/model) by extension 'colcon_meta'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid/model) by extensions ['ros']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid/model) by extension 'ros'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid/model) by extensions ['cmake', 'python']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid/model) by extension 'cmake'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid/model) by extension 'python'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid/model) by extensions ['python_setup_py']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/c:/roboid/model) by extension 'python_setup_py'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset) by extensions ['ignore', 'ignore_ament_install']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset) by extension 'ignore'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset) by extension 'ignore_ament_install'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset) by extensions ['colcon_pkg']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset) by extension 'colcon_pkg'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset) by extensions ['colcon_meta']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset) by extension 'colcon_meta'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset) by extensions ['ros']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset) by extension 'ros'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset) by extensions ['cmake', 'python']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset) by extension 'cmake'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset) by extension 'python'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset) by extensions ['python_setup_py']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset) by extension 'python_setup_py'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test) by extensions ['ignore', 'ignore_ament_install']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test) by extension 'ignore'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test) by extension 'ignore_ament_install'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test) by extensions ['colcon_pkg']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test) by extension 'colcon_pkg'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test) by extensions ['colcon_meta']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test) by extension 'colcon_meta'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test) by extensions ['ros']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test) by extension 'ros'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test) by extensions ['cmake', 'python']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test) by extension 'cmake'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test) by extension 'python'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test) by extensions ['python_setup_py']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test) by extension 'python_setup_py'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/images) by extensions ['ignore', 'ignore_ament_install']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/images) by extension 'ignore'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/images) by extension 'ignore_ament_install'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/images) by extensions ['colcon_pkg']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/images) by extension 'colcon_pkg'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/images) by extensions ['colcon_meta']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/images) by extension 'colcon_meta'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/images) by extensions ['ros']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/images) by extension 'ros'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/images) by extensions ['cmake', 'python']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/images) by extension 'cmake'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/images) by extension 'python'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/images) by extensions ['python_setup_py']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/images) by extension 'python_setup_py'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/labels) by extensions ['ignore', 'ignore_ament_install']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/labels) by extension 'ignore'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/labels) by extension 'ignore_ament_install'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/labels) by extensions ['colcon_pkg']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/labels) by extension 'colcon_pkg'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/labels) by extensions ['colcon_meta']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/labels) by extension 'colcon_meta'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/labels) by extensions ['ros']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/labels) by extension 'ros'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/labels) by extensions ['cmake', 'python']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/labels) by extension 'cmake'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/labels) by extension 'python'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/labels) by extensions ['python_setup_py']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/test/labels) by extension 'python_setup_py'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train) by extensions ['ignore', 'ignore_ament_install']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train) by extension 'ignore'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train) by extension 'ignore_ament_install'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train) by extensions ['colcon_pkg']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train) by extension 'colcon_pkg'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train) by extensions ['colcon_meta']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train) by extension 'colcon_meta'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train) by extensions ['ros']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train) by extension 'ros'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train) by extensions ['cmake', 'python']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train) by extension 'cmake'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train) by extension 'python'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train) by extensions ['python_setup_py']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train) by extension 'python_setup_py'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/images) by extensions ['ignore', 'ignore_ament_install']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/images) by extension 'ignore'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/images) by extension 'ignore_ament_install'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/images) by extensions ['colcon_pkg']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/images) by extension 'colcon_pkg'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/images) by extensions ['colcon_meta']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/images) by extension 'colcon_meta'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/images) by extensions ['ros']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/images) by extension 'ros'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/images) by extensions ['cmake', 'python']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/images) by extension 'cmake'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/images) by extension 'python'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/images) by extensions ['python_setup_py']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/images) by extension 'python_setup_py'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/labels) by extensions ['ignore', 'ignore_ament_install']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/labels) by extension 'ignore'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/labels) by extension 'ignore_ament_install'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/labels) by extensions ['colcon_pkg']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/labels) by extension 'colcon_pkg'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/labels) by extensions ['colcon_meta']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/labels) by extension 'colcon_meta'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/labels) by extensions ['ros']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/labels) by extension 'ros'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/labels) by extensions ['cmake', 'python']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/labels) by extension 'cmake'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/labels) by extension 'python'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/labels) by extensions ['python_setup_py']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/train/labels) by extension 'python_setup_py'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid) by extensions ['ignore', 'ignore_ament_install']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid) by extension 'ignore'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid) by extension 'ignore_ament_install'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid) by extensions ['colcon_pkg']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid) by extension 'colcon_pkg'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid) by extensions ['colcon_meta']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid) by extension 'colcon_meta'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid) by extensions ['ros']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid) by extension 'ros'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid) by extensions ['cmake', 'python']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid) by extension 'cmake'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid) by extension 'python'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid) by extensions ['python_setup_py']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid) by extension 'python_setup_py'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/images) by extensions ['ignore', 'ignore_ament_install']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/images) by extension 'ignore'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/images) by extension 'ignore_ament_install'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/images) by extensions ['colcon_pkg']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/images) by extension 'colcon_pkg'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/images) by extensions ['colcon_meta']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/images) by extension 'colcon_meta'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/images) by extensions ['ros']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/images) by extension 'ros'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/images) by extensions ['cmake', 'python']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/images) by extension 'cmake'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/images) by extension 'python'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/images) by extensions ['python_setup_py']
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/images) by extension 'python_setup_py'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/labels) by extensions ['ignore', 'ignore_ament_install']
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/labels) by extension 'ignore'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/labels) by extension 'ignore_ament_install'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/labels) by extensions ['colcon_pkg']
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/labels) by extension 'colcon_pkg'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/labels) by extensions ['colcon_meta']
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/labels) by extension 'colcon_meta'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/labels) by extensions ['ros']
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/labels) by extension 'ros'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/labels) by extensions ['cmake', 'python']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/labels) by extension 'cmake'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/labels) by extension 'python'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/labels) by extensions ['python_setup_py']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/dataset/valid/labels) by extension 'python_setup_py'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs) by extensions ['ignore', 'ignore_ament_install']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs) by extension 'ignore'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs) by extension 'ignore_ament_install'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs) by extensions ['colcon_pkg']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs) by extension 'colcon_pkg'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs) by extensions ['colcon_meta']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs) by extension 'colcon_meta'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs) by extensions ['ros']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs) by extension 'ros'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs) by extensions ['cmake', 'python']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs) by extension 'cmake'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs) by extension 'python'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs) by extensions ['python_setup_py']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs) by extension 'python_setup_py'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect) by extensions ['ignore', 'ignore_ament_install']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect) by extension 'ignore'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect) by extension 'ignore_ament_install'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect) by extensions ['colcon_pkg']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect) by extension 'colcon_pkg'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect) by extensions ['colcon_meta']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect) by extension 'colcon_meta'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect) by extensions ['ros']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect) by extension 'ros'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect) by extensions ['cmake', 'python']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect) by extension 'cmake'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect) by extension 'python'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect) by extensions ['python_setup_py']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect) by extension 'python_setup_py'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train) by extensions ['ignore', 'ignore_ament_install']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train) by extension 'ignore'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train) by extension 'ignore_ament_install'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train) by extensions ['colcon_pkg']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train) by extension 'colcon_pkg'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train) by extensions ['colcon_meta']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train) by extension 'colcon_meta'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train) by extensions ['ros']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train) by extension 'ros'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train) by extensions ['cmake', 'python']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train) by extension 'cmake'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train) by extension 'python'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train) by extensions ['python_setup_py']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train) by extension 'python_setup_py'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train/weights) by extension 'ignore'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train/weights) by extension 'ignore_ament_install'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train/weights) by extensions ['colcon_pkg']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train/weights) by extension 'colcon_pkg'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train/weights) by extensions ['colcon_meta']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train/weights) by extension 'colcon_meta'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train/weights) by extensions ['ros']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train/weights) by extension 'ros'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train/weights) by extensions ['cmake', 'python']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train/weights) by extension 'cmake'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train/weights) by extension 'python'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train/weights) by extensions ['python_setup_py']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train/weights) by extension 'python_setup_py'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10) by extensions ['ignore', 'ignore_ament_install']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10) by extension 'ignore'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10) by extension 'ignore_ament_install'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10) by extensions ['colcon_pkg']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10) by extension 'colcon_pkg'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10) by extensions ['colcon_meta']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10) by extension 'colcon_meta'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10) by extensions ['ros']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10) by extension 'ros'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10) by extensions ['cmake', 'python']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10) by extension 'cmake'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10) by extension 'python'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10) by extensions ['python_setup_py']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10) by extension 'python_setup_py'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10/weights) by extension 'ignore'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10/weights) by extension 'ignore_ament_install'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10/weights) by extensions ['colcon_pkg']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10/weights) by extension 'colcon_pkg'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10/weights) by extensions ['colcon_meta']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10/weights) by extension 'colcon_meta'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10/weights) by extensions ['ros']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10/weights) by extension 'ros'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10/weights) by extensions ['cmake', 'python']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10/weights) by extension 'cmake'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10/weights) by extension 'python'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10/weights) by extensions ['python_setup_py']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train10/weights) by extension 'python_setup_py'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11) by extensions ['ignore', 'ignore_ament_install']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11) by extension 'ignore'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11) by extension 'ignore_ament_install'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11) by extensions ['colcon_pkg']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11) by extension 'colcon_pkg'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11) by extensions ['colcon_meta']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11) by extension 'colcon_meta'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11) by extensions ['ros']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11) by extension 'ros'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11) by extensions ['cmake', 'python']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11) by extension 'cmake'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11) by extension 'python'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11) by extensions ['python_setup_py']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11) by extension 'python_setup_py'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11/weights) by extension 'ignore'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11/weights) by extension 'ignore_ament_install'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11/weights) by extensions ['colcon_pkg']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11/weights) by extension 'colcon_pkg'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11/weights) by extensions ['colcon_meta']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11/weights) by extension 'colcon_meta'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11/weights) by extensions ['ros']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11/weights) by extension 'ros'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11/weights) by extensions ['cmake', 'python']
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11/weights) by extension 'cmake'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11/weights) by extension 'python'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11/weights) by extensions ['python_setup_py']
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train11/weights) by extension 'python_setup_py'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12) by extensions ['ignore', 'ignore_ament_install']
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12) by extension 'ignore'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12) by extension 'ignore_ament_install'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12) by extensions ['colcon_pkg']
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12) by extension 'colcon_pkg'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12) by extensions ['colcon_meta']
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12) by extension 'colcon_meta'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12) by extensions ['ros']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12) by extension 'ros'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12) by extensions ['cmake', 'python']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12) by extension 'cmake'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12) by extension 'python'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12) by extensions ['python_setup_py']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12) by extension 'python_setup_py'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12/weights) by extension 'ignore'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12/weights) by extension 'ignore_ament_install'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12/weights) by extensions ['colcon_pkg']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12/weights) by extension 'colcon_pkg'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12/weights) by extensions ['colcon_meta']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12/weights) by extension 'colcon_meta'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12/weights) by extensions ['ros']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12/weights) by extension 'ros'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12/weights) by extensions ['cmake', 'python']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12/weights) by extension 'cmake'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12/weights) by extension 'python'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12/weights) by extensions ['python_setup_py']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train12/weights) by extension 'python_setup_py'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2) by extensions ['ignore', 'ignore_ament_install']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2) by extension 'ignore'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2) by extension 'ignore_ament_install'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2) by extensions ['colcon_pkg']
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2) by extension 'colcon_pkg'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2) by extensions ['colcon_meta']
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2) by extension 'colcon_meta'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2) by extensions ['ros']
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2) by extension 'ros'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2) by extensions ['cmake', 'python']
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2) by extension 'cmake'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2) by extension 'python'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2) by extensions ['python_setup_py']
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2) by extension 'python_setup_py'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2/weights) by extension 'ignore'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2/weights) by extension 'ignore_ament_install'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2/weights) by extensions ['colcon_pkg']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2/weights) by extension 'colcon_pkg'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2/weights) by extensions ['colcon_meta']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2/weights) by extension 'colcon_meta'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2/weights) by extensions ['ros']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2/weights) by extension 'ros'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2/weights) by extensions ['cmake', 'python']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2/weights) by extension 'cmake'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2/weights) by extension 'python'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2/weights) by extensions ['python_setup_py']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train2/weights) by extension 'python_setup_py'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3) by extensions ['ignore', 'ignore_ament_install']
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3) by extension 'ignore'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3) by extension 'ignore_ament_install'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3) by extensions ['colcon_pkg']
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3) by extension 'colcon_pkg'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3) by extensions ['colcon_meta']
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3) by extension 'colcon_meta'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3) by extensions ['ros']
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3) by extension 'ros'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3) by extensions ['cmake', 'python']
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3) by extension 'cmake'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3) by extension 'python'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3) by extensions ['python_setup_py']
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3) by extension 'python_setup_py'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3/weights) by extension 'ignore'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3/weights) by extension 'ignore_ament_install'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3/weights) by extensions ['colcon_pkg']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3/weights) by extension 'colcon_pkg'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3/weights) by extensions ['colcon_meta']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3/weights) by extension 'colcon_meta'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3/weights) by extensions ['ros']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3/weights) by extension 'ros'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3/weights) by extensions ['cmake', 'python']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3/weights) by extension 'cmake'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3/weights) by extension 'python'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3/weights) by extensions ['python_setup_py']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train3/weights) by extension 'python_setup_py'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4) by extensions ['ignore', 'ignore_ament_install']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4) by extension 'ignore'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4) by extension 'ignore_ament_install'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4) by extensions ['colcon_pkg']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4) by extension 'colcon_pkg'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4) by extensions ['colcon_meta']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4) by extension 'colcon_meta'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4) by extensions ['ros']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4) by extension 'ros'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4) by extensions ['cmake', 'python']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4) by extension 'cmake'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4) by extension 'python'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4) by extensions ['python_setup_py']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4) by extension 'python_setup_py'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4/weights) by extension 'ignore'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4/weights) by extension 'ignore_ament_install'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4/weights) by extensions ['colcon_pkg']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4/weights) by extension 'colcon_pkg'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4/weights) by extensions ['colcon_meta']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4/weights) by extension 'colcon_meta'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4/weights) by extensions ['ros']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4/weights) by extension 'ros'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4/weights) by extensions ['cmake', 'python']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4/weights) by extension 'cmake'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4/weights) by extension 'python'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4/weights) by extensions ['python_setup_py']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train4/weights) by extension 'python_setup_py'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train41_version6) by extensions ['ignore', 'ignore_ament_install']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train41_version6) by extension 'ignore'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train41_version6) by extension 'ignore_ament_install'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train41_version6) by extensions ['colcon_pkg']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train41_version6) by extension 'colcon_pkg'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train41_version6) by extensions ['colcon_meta']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train41_version6) by extension 'colcon_meta'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train41_version6) by extensions ['ros']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train41_version6) by extension 'ros'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train41_version6) by extensions ['cmake', 'python']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train41_version6) by extension 'cmake'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train41_version6) by extension 'python'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train41_version6) by extensions ['python_setup_py']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train41_version6) by extension 'python_setup_py'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5) by extensions ['ignore', 'ignore_ament_install']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5) by extension 'ignore'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5) by extension 'ignore_ament_install'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5) by extensions ['colcon_pkg']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5) by extension 'colcon_pkg'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5) by extensions ['colcon_meta']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5) by extension 'colcon_meta'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5) by extensions ['ros']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5) by extension 'ros'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5) by extensions ['cmake', 'python']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5) by extension 'cmake'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5) by extension 'python'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5) by extensions ['python_setup_py']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5) by extension 'python_setup_py'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5/weights) by extension 'ignore'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5/weights) by extension 'ignore_ament_install'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5/weights) by extensions ['colcon_pkg']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5/weights) by extension 'colcon_pkg'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5/weights) by extensions ['colcon_meta']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5/weights) by extension 'colcon_meta'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5/weights) by extensions ['ros']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5/weights) by extension 'ros'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5/weights) by extensions ['cmake', 'python']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5/weights) by extension 'cmake'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5/weights) by extension 'python'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5/weights) by extensions ['python_setup_py']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train5/weights) by extension 'python_setup_py'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train57_version7) by extensions ['ignore', 'ignore_ament_install']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train57_version7) by extension 'ignore'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train57_version7) by extension 'ignore_ament_install'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train57_version7) by extensions ['colcon_pkg']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train57_version7) by extension 'colcon_pkg'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train57_version7) by extensions ['colcon_meta']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train57_version7) by extension 'colcon_meta'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train57_version7) by extensions ['ros']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train57_version7) by extension 'ros'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train57_version7) by extensions ['cmake', 'python']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train57_version7) by extension 'cmake'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train57_version7) by extension 'python'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train57_version7) by extensions ['python_setup_py']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train57_version7) by extension 'python_setup_py'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6) by extensions ['ignore', 'ignore_ament_install']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6) by extension 'ignore'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6) by extension 'ignore_ament_install'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6) by extensions ['colcon_pkg']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6) by extension 'colcon_pkg'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6) by extensions ['colcon_meta']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6) by extension 'colcon_meta'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6) by extensions ['ros']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6) by extension 'ros'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6) by extensions ['cmake', 'python']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6) by extension 'cmake'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6) by extension 'python'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6) by extensions ['python_setup_py']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6) by extension 'python_setup_py'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6/weights) by extension 'ignore'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6/weights) by extension 'ignore_ament_install'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6/weights) by extensions ['colcon_pkg']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6/weights) by extension 'colcon_pkg'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6/weights) by extensions ['colcon_meta']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6/weights) by extension 'colcon_meta'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6/weights) by extensions ['ros']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6/weights) by extension 'ros'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6/weights) by extensions ['cmake', 'python']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6/weights) by extension 'cmake'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6/weights) by extension 'python'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6/weights) by extensions ['python_setup_py']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train6/weights) by extension 'python_setup_py'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7) by extensions ['ignore', 'ignore_ament_install']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7) by extension 'ignore'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7) by extension 'ignore_ament_install'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7) by extensions ['colcon_pkg']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7) by extension 'colcon_pkg'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7) by extensions ['colcon_meta']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7) by extension 'colcon_meta'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7) by extensions ['ros']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7) by extension 'ros'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7) by extensions ['cmake', 'python']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7) by extension 'cmake'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7) by extension 'python'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7) by extensions ['python_setup_py']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7) by extension 'python_setup_py'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7/weights) by extension 'ignore'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7/weights) by extension 'ignore_ament_install'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7/weights) by extensions ['colcon_pkg']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7/weights) by extension 'colcon_pkg'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7/weights) by extensions ['colcon_meta']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7/weights) by extension 'colcon_meta'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7/weights) by extensions ['ros']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7/weights) by extension 'ros'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7/weights) by extensions ['cmake', 'python']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7/weights) by extension 'cmake'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7/weights) by extension 'python'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7/weights) by extensions ['python_setup_py']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train7/weights) by extension 'python_setup_py'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8) by extensions ['ignore', 'ignore_ament_install']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8) by extension 'ignore'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8) by extension 'ignore_ament_install'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8) by extensions ['colcon_pkg']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8) by extension 'colcon_pkg'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8) by extensions ['colcon_meta']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8) by extension 'colcon_meta'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8) by extensions ['ros']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8) by extension 'ros'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8) by extensions ['cmake', 'python']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8) by extension 'cmake'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8) by extension 'python'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8) by extensions ['python_setup_py']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8) by extension 'python_setup_py'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8/weights) by extension 'ignore'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8/weights) by extension 'ignore_ament_install'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8/weights) by extensions ['colcon_pkg']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8/weights) by extension 'colcon_pkg'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8/weights) by extensions ['colcon_meta']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8/weights) by extension 'colcon_meta'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8/weights) by extensions ['ros']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8/weights) by extension 'ros'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8/weights) by extensions ['cmake', 'python']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8/weights) by extension 'cmake'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8/weights) by extension 'python'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8/weights) by extensions ['python_setup_py']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train8/weights) by extension 'python_setup_py'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9) by extensions ['ignore', 'ignore_ament_install']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9) by extension 'ignore'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9) by extension 'ignore_ament_install'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9) by extensions ['colcon_pkg']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9) by extension 'colcon_pkg'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9) by extensions ['colcon_meta']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9) by extension 'colcon_meta'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9) by extensions ['ros']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9) by extension 'ros'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9) by extensions ['cmake', 'python']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9) by extension 'cmake'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9) by extension 'python'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9) by extensions ['python_setup_py']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9) by extension 'python_setup_py'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9/weights) by extension 'ignore'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9/weights) by extension 'ignore_ament_install'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9/weights) by extensions ['colcon_pkg']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9/weights) by extension 'colcon_pkg'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9/weights) by extensions ['colcon_meta']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9/weights) by extension 'colcon_meta'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9/weights) by extensions ['ros']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9/weights) by extension 'ros'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9/weights) by extensions ['cmake', 'python']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9/weights) by extension 'cmake'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9/weights) by extension 'python'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9/weights) by extensions ['python_setup_py']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(Vision_immature/runs/detect/train9/weights) by extension 'python_setup_py'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['ignore', 'ignore_ament_install']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'ignore'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'ignore_ament_install'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['colcon_pkg']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'colcon_pkg'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['colcon_meta']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'colcon_meta'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['ros']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'ros'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['cmake', 'python']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'cmake'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'python'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['python_setup_py']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'python_setup_py'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['ignore', 'ignore_ament_install']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'ignore'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'ignore_ament_install'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['colcon_pkg']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'colcon_pkg'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['colcon_meta']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'colcon_meta'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['ros']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'ros'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['cmake', 'python']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'cmake'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'python'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['python_setup_py']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'python_setup_py'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train57_version7) by extensions ['ignore', 'ignore_ament_install']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train57_version7) by extension 'ignore'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train57_version7) by extension 'ignore_ament_install'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train57_version7) by extensions ['colcon_pkg']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train57_version7) by extension 'colcon_pkg'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train57_version7) by extensions ['colcon_meta']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train57_version7) by extension 'colcon_meta'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train57_version7) by extensions ['ros']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train57_version7) by extension 'ros'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train57_version7) by extensions ['cmake', 'python']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train57_version7) by extension 'cmake'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train57_version7) by extension 'python'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train57_version7) by extensions ['python_setup_py']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train57_version7) by extension 'python_setup_py'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/beagle_sub_pub) by extensions ['ignore', 'ignore_ament_install']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/beagle_sub_pub) by extension 'ignore'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/beagle_sub_pub) by extension 'ignore_ament_install'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/beagle_sub_pub) by extensions ['colcon_pkg']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/beagle_sub_pub) by extension 'colcon_pkg'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/beagle_sub_pub) by extensions ['colcon_meta']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/beagle_sub_pub) by extension 'colcon_meta'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/beagle_sub_pub) by extensions ['ros']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/beagle_sub_pub) by extension 'ros'
+[0.620s] DEBUG:colcon.colcon_core.package_identification:Package 'src/beagle_sub_pub' with type 'ros.ament_python' and name 'beagle_sub_pub'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['ignore', 'ignore_ament_install']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ignore'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ignore_ament_install'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['colcon_pkg']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'colcon_pkg'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['colcon_meta']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'colcon_meta'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['ros']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ros'
+[0.622s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera' with type 'ros.ament_python' and name 'camera'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_undistort) by extensions ['ignore', 'ignore_ament_install']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_undistort) by extension 'ignore'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_undistort) by extension 'ignore_ament_install'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_undistort) by extensions ['colcon_pkg']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_undistort) by extension 'colcon_pkg'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_undistort) by extensions ['colcon_meta']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_undistort) by extension 'colcon_meta'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_undistort) by extensions ['ros']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_undistort) by extension 'ros'
+[0.623s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera_undistort' with type 'ros.ament_python' and name 'camera_undistort'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extensions ['ignore', 'ignore_ament_install']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extension 'ignore'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extension 'ignore_ament_install'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extensions ['colcon_pkg']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extension 'colcon_pkg'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extensions ['colcon_meta']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extension 'colcon_meta'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extensions ['ros']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extension 'ros'
+[0.625s] DEBUG:colcon.colcon_core.package_identification:Package 'src/keyboard_control' with type 'ros.ament_cmake' and name 'keyboard_control'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extensions ['ignore', 'ignore_ament_install']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extension 'ignore'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extension 'ignore_ament_install'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extensions ['colcon_pkg']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extension 'colcon_pkg'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extensions ['colcon_meta']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extension 'colcon_meta'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extensions ['ros']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extension 'ros'
+[0.626s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lidar' with type 'ros.ament_python' and name 'lidar'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extensions ['ignore', 'ignore_ament_install']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extension 'ignore'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extension 'ignore_ament_install'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extensions ['colcon_pkg']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extension 'colcon_pkg'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extensions ['colcon_meta']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extension 'colcon_meta'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extensions ['ros']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor) by extension 'ros'
+[0.628s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor' with type 'ros.ament_python' and name 'motor'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extensions ['ignore', 'ignore_ament_install']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extension 'ignore'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extension 'ignore_ament_install'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extensions ['colcon_pkg']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extension 'colcon_pkg'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extensions ['colcon_meta']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extension 'colcon_meta'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extensions ['ros']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extension 'ros'
+[0.630s] DEBUG:colcon.colcon_core.package_identification:Package 'src/object_detection' with type 'ros.ament_python' and name 'object_detection'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_localization) by extensions ['ignore', 'ignore_ament_install']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_localization) by extension 'ignore'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_localization) by extension 'ignore_ament_install'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_localization) by extensions ['colcon_pkg']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_localization) by extension 'colcon_pkg'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_localization) by extensions ['colcon_meta']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_localization) by extension 'colcon_meta'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_localization) by extensions ['ros']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_localization) by extension 'ros'
+[0.631s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_localization' with type 'ros.ament_python' and name 'robot_localization'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox-foxy-devel) by extensions ['ignore', 'ignore_ament_install']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox-foxy-devel) by extension 'ignore'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox-foxy-devel) by extension 'ignore_ament_install'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox-foxy-devel) by extensions ['colcon_pkg']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox-foxy-devel) by extension 'colcon_pkg'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox-foxy-devel) by extensions ['colcon_meta']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox-foxy-devel) by extension 'colcon_meta'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox-foxy-devel) by extensions ['ros']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox-foxy-devel) by extension 'ros'
+[0.634s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam_toolbox-foxy-devel' with type 'ros.ament_cmake' and name 'slam_toolbox'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/static_tf) by extensions ['ignore', 'ignore_ament_install']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/static_tf) by extension 'ignore'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/static_tf) by extension 'ignore_ament_install'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/static_tf) by extensions ['colcon_pkg']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/static_tf) by extension 'colcon_pkg'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/static_tf) by extensions ['colcon_meta']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/static_tf) by extension 'colcon_meta'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/static_tf) by extensions ['ros']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/static_tf) by extension 'ros'
+[0.635s] DEBUG:colcon.colcon_core.package_identification:Package 'src/static_tf' with type 'ros.ament_python' and name 'static_tf'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_transformations) by extensions ['ignore', 'ignore_ament_install']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_transformations) by extension 'ignore'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_transformations) by extension 'ignore_ament_install'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_transformations) by extensions ['colcon_pkg']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_transformations) by extension 'colcon_pkg'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_transformations) by extensions ['colcon_meta']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_transformations) by extension 'colcon_meta'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_transformations) by extensions ['ros']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_transformations) by extension 'ros'
+[0.636s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tf_transformations' with type 'ros.ament_python' and name 'tf_transformations'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(weight_file) by extensions ['ignore', 'ignore_ament_install']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(weight_file) by extension 'ignore'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(weight_file) by extension 'ignore_ament_install'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(weight_file) by extensions ['colcon_pkg']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(weight_file) by extension 'colcon_pkg'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(weight_file) by extensions ['colcon_meta']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(weight_file) by extension 'colcon_meta'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(weight_file) by extensions ['ros']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(weight_file) by extension 'ros'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(weight_file) by extensions ['cmake', 'python']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(weight_file) by extension 'cmake'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(weight_file) by extension 'python'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(weight_file) by extensions ['python_setup_py']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(weight_file) by extension 'python_setup_py'
+[0.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.673s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.673s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.681s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 13 installed packages in /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install
+[0.684s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 265 installed packages in /opt/ros/foxy
+[0.687s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_args' from command line to 'None'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_target' from command line to 'None'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.784s] DEBUG:colcon.colcon_core.verb:Building package 'camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera', 'merge_install': False, 'path': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/camera', 'symlink_install': True, 'test_result_base': None}
+[0.786s] Level 5:colcon.colcon_core.verb:set package 'camera_undistort' build argument 'cmake_args' from command line to 'None'
+[0.786s] Level 5:colcon.colcon_core.verb:set package 'camera_undistort' build argument 'cmake_target' from command line to 'None'
+[0.786s] Level 5:colcon.colcon_core.verb:set package 'camera_undistort' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.786s] Level 5:colcon.colcon_core.verb:set package 'camera_undistort' build argument 'cmake_clean_cache' from command line to 'False'
+[0.786s] Level 5:colcon.colcon_core.verb:set package 'camera_undistort' build argument 'cmake_clean_first' from command line to 'False'
+[0.786s] Level 5:colcon.colcon_core.verb:set package 'camera_undistort' build argument 'cmake_force_configure' from command line to 'False'
+[0.786s] Level 5:colcon.colcon_core.verb:set package 'camera_undistort' build argument 'ament_cmake_args' from command line to 'None'
+[0.786s] Level 5:colcon.colcon_core.verb:set package 'camera_undistort' build argument 'catkin_cmake_args' from command line to 'None'
+[0.786s] Level 5:colcon.colcon_core.verb:set package 'camera_undistort' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.786s] DEBUG:colcon.colcon_core.verb:Building package 'camera_undistort' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera_undistort', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort', 'merge_install': False, 'path': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/camera_undistort', 'symlink_install': True, 'test_result_base': None}
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_args' from command line to 'None'
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_target' from command line to 'None'
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.789s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.789s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.789s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.789s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.789s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.789s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.789s] DEBUG:colcon.colcon_core.verb:Building package 'keyboard_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/keyboard_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control', 'merge_install': False, 'path': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/keyboard_control', 'symlink_install': True, 'test_result_base': None}
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_args' from command line to 'None'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_target' from command line to 'None'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_clean_cache' from command line to 'False'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_clean_first' from command line to 'False'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_force_configure' from command line to 'False'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'ament_cmake_args' from command line to 'None'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'catkin_cmake_args' from command line to 'None'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.793s] DEBUG:colcon.colcon_core.verb:Building package 'lidar' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar', 'merge_install': False, 'path': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/lidar', 'symlink_install': True, 'test_result_base': None}
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'cmake_args' from command line to 'None'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'cmake_target' from command line to 'None'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'cmake_clean_first' from command line to 'False'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'cmake_force_configure' from command line to 'False'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'ament_cmake_args' from command line to 'None'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'motor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.795s] DEBUG:colcon.colcon_core.verb:Building package 'motor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor', 'merge_install': False, 'path': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/motor', 'symlink_install': True, 'test_result_base': None}
+[0.797s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'cmake_args' from command line to 'None'
+[0.797s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'cmake_target' from command line to 'None'
+[0.797s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.797s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'cmake_clean_cache' from command line to 'False'
+[0.797s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'cmake_clean_first' from command line to 'False'
+[0.797s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'cmake_force_configure' from command line to 'False'
+[0.797s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'ament_cmake_args' from command line to 'None'
+[0.798s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'catkin_cmake_args' from command line to 'None'
+[0.798s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.798s] DEBUG:colcon.colcon_core.verb:Building package 'object_detection' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/object_detection', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection', 'merge_install': False, 'path': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/object_detection', 'symlink_install': True, 'test_result_base': None}
+[0.799s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_args' from command line to 'None'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_target' from command line to 'None'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_clean_cache' from command line to 'False'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_clean_first' from command line to 'False'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_force_configure' from command line to 'False'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'ament_cmake_args' from command line to 'None'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'catkin_cmake_args' from command line to 'None'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.800s] DEBUG:colcon.colcon_core.verb:Building package 'slam_toolbox' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox', 'merge_install': False, 'path': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/slam_toolbox-foxy-devel', 'symlink_install': True, 'test_result_base': None}
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'cmake_args' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'cmake_target' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'cmake_clean_cache' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'cmake_clean_first' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'cmake_force_configure' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'ament_cmake_args' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'catkin_cmake_args' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'static_tf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.802s] DEBUG:colcon.colcon_core.verb:Building package 'static_tf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf', 'merge_install': False, 'path': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/static_tf', 'symlink_install': True, 'test_result_base': None}
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_args' from command line to 'None'
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_target' from command line to 'None'
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_clean_cache' from command line to 'False'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_clean_first' from command line to 'False'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_force_configure' from command line to 'False'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'ament_cmake_args' from command line to 'None'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'catkin_cmake_args' from command line to 'None'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.805s] DEBUG:colcon.colcon_core.verb:Building package 'tf_transformations' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations', 'merge_install': False, 'path': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/tf_transformations', 'symlink_install': True, 'test_result_base': None}
+[0.809s] Level 5:colcon.colcon_core.verb:set package 'beagle_sub_pub' build argument 'cmake_args' from command line to 'None'
+[0.809s] Level 5:colcon.colcon_core.verb:set package 'beagle_sub_pub' build argument 'cmake_target' from command line to 'None'
+[0.809s] Level 5:colcon.colcon_core.verb:set package 'beagle_sub_pub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.809s] Level 5:colcon.colcon_core.verb:set package 'beagle_sub_pub' build argument 'cmake_clean_cache' from command line to 'False'
+[0.809s] Level 5:colcon.colcon_core.verb:set package 'beagle_sub_pub' build argument 'cmake_clean_first' from command line to 'False'
+[0.809s] Level 5:colcon.colcon_core.verb:set package 'beagle_sub_pub' build argument 'cmake_force_configure' from command line to 'False'
+[0.809s] Level 5:colcon.colcon_core.verb:set package 'beagle_sub_pub' build argument 'ament_cmake_args' from command line to 'None'
+[0.809s] Level 5:colcon.colcon_core.verb:set package 'beagle_sub_pub' build argument 'catkin_cmake_args' from command line to 'None'
+[0.809s] Level 5:colcon.colcon_core.verb:set package 'beagle_sub_pub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.810s] DEBUG:colcon.colcon_core.verb:Building package 'beagle_sub_pub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/beagle_sub_pub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/beagle_sub_pub', 'merge_install': False, 'path': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/beagle_sub_pub', 'symlink_install': True, 'test_result_base': None}
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_args' from command line to 'None'
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_target' from command line to 'None'
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_clean_first' from command line to 'False'
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'cmake_force_configure' from command line to 'False'
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'ament_cmake_args' from command line to 'None'
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'robot_localization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.812s] DEBUG:colcon.colcon_core.verb:Building package 'robot_localization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/robot_localization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization', 'merge_install': False, 'path': '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/robot_localization', 'symlink_install': True, 'test_result_base': None}
+[0.814s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.826s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.827s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/tf_transformations' with build type 'ament_python'
+[0.827s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf_transformations', 'ament_prefix_path')
+[0.840s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/share/tf_transformations/hook/ament_prefix_path.ps1'
+[0.841s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/share/tf_transformations/hook/ament_prefix_path.dsv'
+[0.841s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/share/tf_transformations/hook/ament_prefix_path.sh'
+[0.848s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.848s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.858s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/camera' with build type 'ament_python'
+[0.859s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera', 'ament_prefix_path')
+[0.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/share/camera/hook/ament_prefix_path.ps1'
+[0.864s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/share/camera/hook/ament_prefix_path.dsv'
+[0.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/share/camera/hook/ament_prefix_path.sh'
+[0.868s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.868s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.875s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/camera_undistort' with build type 'ament_python'
+[0.876s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_undistort', 'ament_prefix_path')
+[0.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort/share/camera_undistort/hook/ament_prefix_path.ps1'
+[0.880s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort/share/camera_undistort/hook/ament_prefix_path.dsv'
+[0.881s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort/share/camera_undistort/hook/ament_prefix_path.sh'
+[0.884s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.884s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.896s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/keyboard_control' with build type 'ament_cmake'
+[0.897s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/keyboard_control'
+[0.900s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.900s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.909s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/lidar' with build type 'ament_python'
+[0.910s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar', 'ament_prefix_path')
+[0.913s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/share/lidar/hook/ament_prefix_path.ps1'
+[0.914s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/share/lidar/hook/ament_prefix_path.dsv'
+[0.915s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/share/lidar/hook/ament_prefix_path.sh'
+[0.919s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.919s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.928s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/motor' with build type 'ament_python'
+[0.928s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor', 'ament_prefix_path')
+[0.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/share/motor/hook/ament_prefix_path.ps1'
+[0.933s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/share/motor/hook/ament_prefix_path.dsv'
+[0.933s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/share/motor/hook/ament_prefix_path.sh'
+[0.937s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.937s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.945s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/object_detection' with build type 'ament_python'
+[0.945s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_detection', 'ament_prefix_path')
+[0.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection/share/object_detection/hook/ament_prefix_path.ps1'
+[0.950s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection/share/object_detection/hook/ament_prefix_path.dsv'
+[0.951s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection/share/object_detection/hook/ament_prefix_path.sh'
+[0.954s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.954s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.965s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/slam_toolbox-foxy-devel' with build type 'ament_cmake'
+[0.966s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/slam_toolbox-foxy-devel'
+[0.971s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.971s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.329s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/tf_transformations'
+[1.333s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.333s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.721s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/camera'
+[1.728s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.729s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.143s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/camera_undistort'
+[2.149s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.149s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.170s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/keyboard_control': CMAKE_PREFIX_PATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/beagle_sub_pub:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera:/opt/ros/foxy:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/karto_sdk /home/yumjunstar/.local/bin/cmake --build /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/keyboard_control -- -j8 -l8
+[2.524s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/lidar'
+[2.528s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.528s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.834s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/motor'
+[2.838s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.838s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.313s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/object_detection'
+[3.319s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.319s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.346s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox': CMAKE_PREFIX_PATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/beagle_sub_pub:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera:/opt/ros/foxy:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/karto_sdk /home/yumjunstar/.local/bin/cmake --build /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox -- -j8 -l8
+[4.425s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/beagle_sub_pub:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera:/opt/ros/foxy:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/karto_sdk /home/yumjunstar/.local/bin/cmake --build /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox -- -j8 -l8
+[4.520s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera/build --no-deps install_data
+[4.548s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar/build --no-deps install_data
+[4.588s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera_undistort': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera_undistort/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera_undistort/build --no-deps install_data
+[4.653s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/object_detection': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/object_detection/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/object_detection/build --no-deps install_data
+[4.691s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor/build --no-deps install_data
+[4.821s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/tf_transformations/build --no-deps install_data
+[5.390s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox': CMAKE_PREFIX_PATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/beagle_sub_pub:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera:/opt/ros/foxy:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/karto_sdk /home/yumjunstar/.local/bin/cmake --install /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox
+[5.420s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/keyboard_control' returned '2': CMAKE_PREFIX_PATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/beagle_sub_pub:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera:/opt/ros/foxy:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/karto_sdk /home/yumjunstar/.local/bin/cmake --build /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/keyboard_control -- -j8 -l8
+[5.614s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(keyboard_control)
+[5.636s] Level 1:colcon.colcon_core.environment:checking '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control' for CMake module files
+[5.637s] Level 1:colcon.colcon_core.environment:checking '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control' for CMake config files
+[5.638s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard_control', 'cmake_prefix_path')
+[5.651s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control/share/keyboard_control/hook/cmake_prefix_path.ps1'
+[5.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control/share/keyboard_control/hook/cmake_prefix_path.dsv'
+[5.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control/share/keyboard_control/hook/cmake_prefix_path.sh'
+[5.662s] Level 1:colcon.colcon_core.environment:checking '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control/lib'
+[5.662s] Level 1:colcon.colcon_core.environment:checking '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control/bin'
+[5.663s] Level 1:colcon.colcon_core.environment:checking '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control/lib/pkgconfig/keyboard_control.pc'
+[5.664s] Level 1:colcon.colcon_core.environment:checking '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control/lib/python3.8/site-packages'
+[5.664s] Level 1:colcon.colcon_core.environment:checking '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control/bin'
+[5.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control/share/keyboard_control/package.ps1'
+[5.679s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control/share/keyboard_control/package.dsv'
+[5.681s] INFO:colcon.colcon_core.shell:Creating package script '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control/share/keyboard_control/package.sh'
+[5.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control/share/keyboard_control/package.bash'
+[5.686s] INFO:colcon.colcon_core.shell:Creating package script '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control/share/keyboard_control/package.zsh'
+[5.689s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/keyboard_control/share/colcon-core/packages/keyboard_control)
+[6.348s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.348s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.348s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[6.348s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.363s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.364s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.364s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.397s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.403s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/local_setup.ps1'
+[6.404s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/_local_setup_util_ps1.py'
+[6.406s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/setup.ps1'
+[6.412s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/local_setup.sh'
+[6.413s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/_local_setup_util_sh.py'
+[6.414s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/setup.sh'
+[6.419s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/local_setup.bash'
+[6.420s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/setup.bash'
+[6.424s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/local_setup.zsh'
+[6.425s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/setup.zsh'
