@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python3 src/motor/motor/motor.py
+python3 src/motor/motor/keyboard_control.py

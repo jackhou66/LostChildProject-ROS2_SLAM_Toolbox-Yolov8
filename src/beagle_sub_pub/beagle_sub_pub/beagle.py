@@ -6,6 +6,7 @@ from std_msgs.msg import Float32MultiArray, Header
 from sensor_msgs.msg import Imu, LaserScan
 from geometry_msgs.msg import Vector3, Quaternion, Twist
 from tf_transformations import quaternion_from_euler
+from msg_interface.msg import Arithmetic
 
 
 from roboid import *
@@ -18,8 +19,8 @@ import pandas as pd
 
 class BeagleSubPub_class(Node):
 
-    encoder_pulses_per_one_revolution = 1900 # 대략
-    wheel_radius = 0.033 # 3.3 cm
+    encoder_pulses_per_one_revolution = 1910 # 대략
+    wheel_radius = 0.0325 # 3.25 cm
 
     # sensor update and publish interval
     encoder_timer_interval = 0.1
@@ -55,30 +56,35 @@ class BeagleSubPub_class(Node):
         self.error_gyr_x = 0.0
         self.error_gyr_y = 0.0
         self.error_gyr_z = 0.0
+
+
+        # 실제 정확한 엔코더 time interval을 위해서
+        self.encoder_prev_time = None
+
         #gyro 와 가속도의 평균값 같은 timestamp 에 여러개의 가속도를 찍어서 정확도를 높인다.
 
         # lidar
         self.lidar_publisher = self.create_publisher(LaserScan, "scan", 10)
+        self.timer1 = self.create_timer(self.lidar_timer_interval, self.publish_lidar_data)
+
         # imu
         self.imu_publisher = self.create_publisher(Imu, "imu_topic", 10)
+        self.timer2 = self.create_timer(self.imu_timer_interval, self.publish_imu_data)
+        
+        # encoder 반드시 모터보다 엔코더가 먼저 실행 되어야 한다.
+        self.encoder_publisher = self.create_publisher(Float32MultiArray, "encoder_topic", 10)
+        self.timer3 = self.create_timer(self.encoder_timer_interval, self.publish_encoder_data)
 
-        # encoder
+
         self.motor_subscriber = self.create_subscription(Float32MultiArray, "motor_topic", self.motor_callback, 10)
         #self.twist_subscriber = self.create_subscription(Twist, "cmd_vel", self.teleop_callback, 10)
 
 
 	# keyboard
-	
-        self.subscription = self.create_subscription(
-            Arithmetic, "keyboard", self.keyboard_callback, 10
-        )
+        self.subscription = self.create_subscription(Arithmetic, "keyboard", self.keyboard_callback, 10)
         
-        self.encoder_publisher = self.create_publisher(Float32MultiArray, "encoder_topic", 10)
 
-        
-        self.timer1 = self.create_timer(self.imu_timer_interval, self.publish_imu_data)
-        self.timer2 = self.create_timer(self.encoder_timer_interval, self.publish_encoder_data)
-        self.timer3 = self.create_timer(self.lidar_timer_interval, self.publish_lidar_data)
+
 
         
     def accel_update(self, index, timestamp, x, y, z):
@@ -119,6 +125,8 @@ class BeagleSubPub_class(Node):
         df_accel = pd.DataFrame(self.accel)
         df_gyro = pd.DataFrame(self.gyro)
 
+        df_accel.dropna()
+        df_gyro.dropna()
 
         a_x = df_accel[0].mean()
         a_y = df_accel[1].mean()
@@ -129,10 +137,6 @@ class BeagleSubPub_class(Node):
         g_y = df_gyro[1].mean()
         g_z = df_gyro[2].mean()
         g_t = df_gyro[3].mean()
-        #a_x, a_y, a_z, a_t = self.get_mean(self.accel)
-
-        # 자이로
-        #g_x, g_y, g_z, g_t = self.get_mean(self.gyro)
 
 
 
@@ -143,8 +147,8 @@ class BeagleSubPub_class(Node):
 
 
         acceleration = Vector3()
-        acceleration.x = (a_x + self.error_acc_x) *9.81
-        acceleration.y = (a_y + self.error_acc_y)* 9.81
+        acceleration.x = (a_x + self.error_acc_x) * 9.81
+        acceleration.y = (a_y + self.error_acc_y) * 9.81
         acceleration.z = (a_z + self.error_acc_z) * 9.81
         msg.linear_acceleration = acceleration
 
@@ -176,44 +180,47 @@ class BeagleSubPub_class(Node):
     def publish_encoder_data(self):
 
 
-        # 엔코더 값은 정수 -2147483648 ~ 2147483647 초기 0 의 정수 값을 가진다
-        pulse_right_diff = self.b.left_encoder()
-        pulse_left_diff = self.b.right_encoder()
+        if self.encoder_prev_time is not None:
+            # 엔코더 값은 정수 -2147483648 ~ 2147483647 초기 0 의 정수 값을 가진다
+            pulse_left_diff = self.b.left_encoder()
+            pulse_right_diff = self.b.right_encoder()
+            encoder_actual_interval = time.perf_counter() - self.encoder_prev_time
+
+            self.left_encoder_sum += pulse_left_diff
+            self.right_encoder_sum += pulse_right_diff
+            # 최종 이동거리
+            # w = d theta / dts
+
+            # v = r w
+
+            # s = r * theta # 누적
 
 
-        self.left_encoder_sum += pulse_left_diff
-        self.right_encoder_sum += pulse_right_diff
-        # 최종 이동거리
-        # w = d theta / dts
+            left_theta = pulse_left_diff * self.scale_factor #self.total_degree * (pulse_right_diff / self.pulses_per_one_revolution)
+            right_theta = pulse_right_diff * self.scale_factor #self.total_degree * (pulse_left_diff / self.pulses_per_one_revolution)
 
-        # v = r w
-
-        # s = r * theta # 누적
+            total_left_theta = self.left_encoder_sum * self.scale_factor
+            total_right_theta = self.right_encoder_sum * self.scale_factor
 
 
-        left_theta = pulse_right_diff * self.scale_factor #self.total_degree * (pulse_right_diff / self.pulses_per_one_revolution)
-        right_theta = pulse_left_diff * self.scale_factor #self.total_degree * (pulse_left_diff / self.pulses_per_one_revolution)
-
-        total_left_theta = self.left_encoder_sum * self.scale_factor
-        total_right_theta = self.right_encoder_sum * self.scale_factor
+            left_angular_velocity = left_theta / encoder_actual_interval
+            right_angular_velocity = right_theta / encoder_actual_interval
 
 
-        left_angular_velocity = left_theta / self.imu_timer_interval
-        right_angular_velocity = right_theta / self.imu_timer_interval
+            left_velocity_mps = left_angular_velocity * self.wheel_radius
+            right_velocity_mps = right_angular_velocity * self.wheel_radius
+
+            left_distance_m = self.wheel_radius * total_left_theta
+            right_distance_m = self.wheel_radius * total_right_theta
+            msg = Float32MultiArray()
+            msg.data = [left_distance_m, right_distance_m, left_velocity_mps, right_velocity_mps]
 
 
-        left_velocity_mps = left_angular_velocity * self.wheel_radius
-        right_velocity_mps = right_angular_velocity * self.wheel_radius
+            self.get_logger().info('Encoder published value %s ' % str(msg.data))
+            self.encoder_publisher.publish(msg)
+            self.b.reset_encoder()
+        self.encoder_prev_time = time.perf_counter()
 
-        left_distance_m = self.wheel_radius * total_left_theta
-        right_distance_m = self.wheel_radius * total_right_theta
-        msg = Float32MultiArray()
-        msg.data = [left_distance_m, right_distance_m, left_velocity_mps, right_velocity_mps]
-
-
-        self.get_logger().info('Encoder published value %s ' % str(msg.data))
-        self.encoder_publisher.publish(msg)
-        self.b.reset_encoder()
 
     def keyboard_callback(self, msg):
         data = msg.argument

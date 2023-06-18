@@ -19,6 +19,8 @@ class OdometryCalculator(Node):
         self.prev_encoder_values = [0, 0]
         self.imu_prev_msg = None
         self.imu_average_linear_velocity = 0.0 #초기 속도는 0이라 가정
+        
+        self.rotate_radius = 0.05 # 회전 중심으로부터 바퀴 까지의 거리 (바퀴에 연결되어 있는 나사 부분)
 
         self.x = 0.0
         self.y = 0.0
@@ -95,7 +97,7 @@ class OdometryCalculator(Node):
         ) / 2.0  # Calculate the average linear distance
         self.encoder_angular_distance = (
             delta_encoder_right - delta_encoder_left
-        ) / 2.0  # Calculate the average angular distance
+        ) / (2.0*self.rotate_radius)  # Calculate the average angular distance
         
         self.calculate_weight_odometry()
 
@@ -103,6 +105,7 @@ class OdometryCalculator(Node):
         if self.imu_prev_msg is not None:
 
             imu_second = self.time_stamp_diff(msg.header.stamp, self.imu_prev_msg.header.stamp)
+            print (msg.header.stamp.sec, msg.header.stamp.nanosec, self.imu_prev_msg.header.stamp.sec, self.imu_prev_msg.header.stamp.nanosec)
             #imu_prev_sec = self.time_stamp_to_second(self.imu_prev_msg.header.stamp)
             #imu_current_sec = self.time_stamp_to_second(msg.header.stamp)
             #imu_second = imu_current_sec - imu_prev_sec # 보내는 간격이 짧을 수록 오차가 작아진다.
@@ -113,14 +116,11 @@ class OdometryCalculator(Node):
             
 
             # 평균 전진 이동 속도 = s0  + v0 t + (1/2) * (평균 x 축 가속도) * 시간^2 
-            imu_average_linear_acceleration = (msg.linear_acceleration.x + self.imu_prev_msg.linear_acceleration.x)/2
+            imu_average_linear_acceleration = (msg.linear_acceleration.x + self.imu_prev_msg.linear_acceleration.x)/2.0
             self.imu_average_linear_velocity += imu_average_linear_acceleration * imu_second
 
-
-            
-            
             # 평균 이동 각도 = 평균 각속도 * 시간
-            imu_average_angular_velocity = (msg.angular_velocity.z + self.imu_prev_msg.angular_velocity.z)/2
+            imu_average_angular_velocity = (self.imu_prev_msg.angular_velocity.z + msg.angular_velocity.z)/2.0
 
 
             #self.imu_linear_distance = 0.0
@@ -157,8 +157,8 @@ class OdometryCalculator(Node):
         angular_distance = 0.1 * self.encoder_angular_distance + 0.9 * self.imu_angular_distance
 
         self.get_logger().info("Encoder 추정 : 전진 이동 거리 {0}, 각도 거리 {1}".format(self.encoder_linear_distance, self.encoder_angular_distance))
-        self.get_logger().info("IMU 추정 : 전진 이동 거리 {0}, 각도 거리 {1}".format(self.imu_linear_distance, self.imu_angular_distance))
-        self.get_logger().info("통합 추정 : 전진 이동 거리 {0}, 각도 거리 {1}".format(linear_distance, angular_distance))
+        self.get_logger().info("IMU 추정 : 전진 이동 거리 {0}, 각도 거리 {1} rad".format(self.imu_linear_distance, self.imu_angular_distance))
+        self.get_logger().info("통합 추정 : 전진 이동 거리 {0}, 각도 거리 {1} rad".format(linear_distance, angular_distance))
 
         self.calculate_odometry(linear_distance, angular_distance)
     def calculate_delta_orientation(self, current_orientation, previous_orientation):
