@@ -3,8 +3,12 @@
 gnome-terminal --command "sh beagle_start.sh"
 
 gnome-terminal --command "sh camera.sh"
-#gnome-terminal --command "sh camera_undistort.sh"
+
 gnome-terminal --command "sh object_detection.sh"
+
+gnome-terminal --command "sh add_queue_server_start.sh"
+
+gnome-terminal --command "sh add_queue_client_start.sh"
 
 gnome-terminal --command "sh static_tf_start.sh"
 

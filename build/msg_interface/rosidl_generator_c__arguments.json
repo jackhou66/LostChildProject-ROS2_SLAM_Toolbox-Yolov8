@@ -3,11 +3,18 @@
   "output_dir": "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_generator_c/msg_interface",
   "template_dir": "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_adapter/msg_interface:msg/Arithmetic.idl"
+    "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_adapter/msg_interface:msg/Arithmetic.idl",
+    "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_adapter/msg_interface:srv/AddToQueue.idl",
+    "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_adapter/msg_interface:action/AString.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl",
-    "builtin_interfaces:/opt/ros/foxy/share/builtin_interfaces/msg/Time.idl"
+    "builtin_interfaces:/opt/ros/foxy/share/builtin_interfaces/msg/Time.idl",
+    "action_msgs:/opt/ros/foxy/share/action_msgs/msg/GoalInfo.idl",
+    "action_msgs:/opt/ros/foxy/share/action_msgs/msg/GoalStatus.idl",
+    "action_msgs:/opt/ros/foxy/share/action_msgs/msg/GoalStatusArray.idl",
+    "action_msgs:/opt/ros/foxy/share/action_msgs/srv/CancelGoal.idl",
+    "unique_identifier_msgs:/opt/ros/foxy/share/unique_identifier_msgs/msg/UUID.idl"
   ],
   "target_dependencies": [
     "/opt/ros/foxy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -24,7 +31,14 @@
     "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
     "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_adapter/msg_interface/msg/Arithmetic.idl",
+    "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_adapter/msg_interface/srv/AddToQueue.idl",
+    "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_adapter/msg_interface/action/AString.idl",
     "/opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl",
-    "/opt/ros/foxy/share/builtin_interfaces/msg/Time.idl"
+    "/opt/ros/foxy/share/builtin_interfaces/msg/Time.idl",
+    "/opt/ros/foxy/share/action_msgs/msg/GoalInfo.idl",
+    "/opt/ros/foxy/share/action_msgs/msg/GoalStatus.idl",
+    "/opt/ros/foxy/share/action_msgs/msg/GoalStatusArray.idl",
+    "/opt/ros/foxy/share/action_msgs/srv/CancelGoal.idl",
+    "/opt/ros/foxy/share/unique_identifier_msgs/msg/UUID.idl"
   ]
 }

@@ -1,2 +1,8 @@
+action/AString.action
+action/AString.idl
 msg/Arithmetic.idl
 msg/Arithmetic.msg
+srv/AddToQueue.idl
+srv/AddToQueue.srv
+srv/AddToQueue_Request.msg
+srv/AddToQueue_Response.msg

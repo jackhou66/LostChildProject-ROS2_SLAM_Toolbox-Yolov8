@@ -1,6 +1,8 @@
 {
   "package_name": "msg_interface",
   "non_idl_tuples": [
-    "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface:msg/Arithmetic.msg"
+    "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface:msg/Arithmetic.msg",
+    "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface:srv/AddToQueue.srv",
+    "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface:action/AString.action"
   ]
 }

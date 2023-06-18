@@ -1,1 +1,3 @@
 /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_adapter/msg_interface:msg/Arithmetic.idl
+/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_adapter/msg_interface:srv/AddToQueue.idl
+/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_adapter/msg_interface:action/AString.idl

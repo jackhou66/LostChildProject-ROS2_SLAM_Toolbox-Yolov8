@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from msg_interface/action/AString.action
+// generated code does not contain a copyright notice
+
+
+module msg_interface {
+  module action {
+    @verbatim (language="comment", text=
+      " Define the goal")
+    struct AString_Goal {
+      string input_string;
+    };
+    struct AString_Result {
+      @verbatim (language="comment", text=
+        " Define the result")
+      string output_string;
+    };
+    struct AString_Feedback {
+      @verbatim (language="comment", text=
+        " Define a feedback message")
+      string feedback_string;
+    };
+  };
+};

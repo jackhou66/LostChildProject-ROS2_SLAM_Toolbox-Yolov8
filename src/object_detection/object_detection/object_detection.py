@@ -5,6 +5,7 @@ from cv_bridge import CvBridge
 # ROS Library
 import rclpy
 from rclpy.action import ActionServer
+from rclpy.executors import MultiThreadedExecutor
 from rclpy.node import Node
 from sensor_msgs.msg import *
 from std_msgs.msg import *
@@ -15,13 +16,17 @@ import os
 
 
 import time
-import threading
+from threading import Lock
 
 class object_detection(Node):
     result_plotted_img = None
     image = None
     def __init__ (self, model):
         self.model = model
+        self.shared_data = None
+
+        # 멀티 스레딩 용도
+        self.lock = Lock()
 
 
         node_name = 'object_detection' # ROS2 노드 이름
@@ -43,9 +48,16 @@ class object_detection(Node):
         #self.target_childeren_id_set = set()
         #self.target_childeren_id_set.add(2)
         
+        # None 일 경우 아이를 찾는 중이 아님 즉 Object detection 비활성화
+
+        self.target_childeren_id = None
+
+        # 아이를 찾은 경우 이 변수가 None에서 찾은 결과로 바뀜 
+        # 그 전까지 계속 FEEDBACK 반환
+        # action 이 반환되면 다시 None으로 변경
+        self.childeren_match_result = None
 
         self.id2name = ['ben_afflek', 'elton_john', 'face', 'gang_ho_dong', 'iu', 'jerry_seinfeld', 'kim_soo_hyun', 'madonna', 'mindy_kaling', 'nam_joo_hyuk', 'newjeans_minji', 'park_soi']
-
 
 
         self.image_subscriber_ = self.create_subscription(sub_topic_msg_type, 
@@ -65,20 +77,56 @@ class object_detection(Node):
                                                 self.dummy,
                                                 qos_profile)
 
-        self._action_server = ActionServer(self, AString, 'string_action', self.execute_callback)
+        self._action_server = ActionServer(self, AString, 'detect_childeren', self.action_callback)
         
         self.get_logger().info('Object_detection')
         self.get_logger().info('Waiting undistorted camera image input')
 
 
-    def execute_callback(self, goal_handle):
+    def action_callback(self, goal_handle):
         self.get_logger().info('Executing goal...')
         feedback_msg = AString.Feedback()
-        feedback_msg.feedback_string = 'Processing: ' + goal_handle.request.input_string
-        goal_handle.publish_feedback(feedback_msg)
-        
         result = AString.Result()
-        result.output_string = 'Output: ' + goal_handle.request.input_string
+
+        target_child_name = goal_handle.request.input_string
+        # 아예 없는 이름이면 NULL, NULL 반환
+
+        # 찾는 중이면 Searching
+        # 찾은 다음에는 바로 Founded 이름
+
+        # Result 는 box값
+        if target_child_name in self.id2name:
+            # 해당 이름의 아이를 찾는 다고 전체에서 설정
+
+            # target_childeren_id를 target_child_name의 id로 변경
+            
+            # self.target_childeren_id는 여기서만 바꾸기 때문에 lock을 하지 않았다.
+            self.target_childeren_id = self.id2name.index(target_child_name)
+
+            # 아이를 완전히 찾을때 까지 feedback 메세지를 계속 보낸다.
+            # 아이를 찾으면 self.childeren_match_result 가 None 이 아니게 된다.
+            while self.childeren_match_result is None:
+                feedback_msg.feedback_string = 'Searching {0}'.format(target_child_name)
+                goal_handle.publish_feedback(feedback_msg)
+                time.sleep(1)
+
+            feedback_msg.feedback_string = 'Founded {0}'.format(target_child_name)
+            result.output_string = self.childeren_match_result
+
+
+            # 아이를 다 찾았으면 다시 초기화 한다.
+            with self.lock:
+                self.childeren_match_result = None
+            self.target_childeren_id = None
+            
+            # 성공한 경우는 succeed하기
+            goal_handle.succeed()
+        else: # 찾을려는 아이 이름이 없는 경우
+            feedback_msg.feedback_string = 'NULL'
+            result.output_string = 'NULL'
+
+        goal_handle.publish_feedback(feedback_msg)
+
         return result
     def show_image(self, image):
         try:
@@ -89,11 +137,22 @@ class object_detection(Node):
             cv2.destroyAllWindows()
     def dummy(self, msg):
         pass
-    def object_detect(self, image):
+    def object_detect(self, image, cls_id):
+        assert (cls_id < len(self.id2name) and cls_id >= 0)
+
         pred_result = list(self.model(image)) # 예측된 결과 모두 불러오기
-        #self.get_logger().info('self.image {0}'.format(self.image))
+        result_plotted_img = pred_result[0].plot() # 예측된 결과 이미지 그리기
         result_boxes = pred_result[0].boxes # 예측된 결과의 모든 박스 좌표 가져오기 그 중에서 골라야 된다.
 
+        #print (pred_result)
+        #print (result_boxes)
+
+
+        match_result = []
+        for box in result_boxes:
+            if box.cls == cls_id:
+                match_result.append(box)
+        return (result_plotted_img, match_result)
         # print(result_boxes.cls)
         # founded = self.target_childeren_list & set(result_boxes.cls)
         # if founded:
@@ -116,23 +175,40 @@ class object_detection(Node):
 
             #         break
 
-        
-        result_plotted_img = pred_result[0].plot() # 예측된 결과 이미지 그리기
-        return (result_plotted_img, result_boxes)
+
     def camera_callback(self, msg):
+
+        # image는 동시에 쓰는 것이 아니기 때문에 lock을 하지 않았다.
         self.image = self.br.imgmsg_to_cv2(msg)
+
         self.get_logger().info('Image subscribed {0}'.format(self.image.shape))
-        self.get_logger().info('Target Childeren {0}'.format(self.target_childeren_list))
-        ri, rb = self.object_detect(self.image)
-        self.detect_image_recursive_publish_.publish(self.br.cv2_to_imgmsg(ri))
+        
+
+
+        # 찾으려는 target의 id가 있는 경우
+
+        # 중간에 self.target_childeren_id가 not None이었다가 id2name에서 None이 되버리는 경우가 생길 수 있으므로 하나로 묶어줬다.
+
+        with self.lock:
+            if self.target_childeren_id is not None:
+                ri, match_result = self.object_detect(self.image, self.target_childeren_id)
+                self.get_logger().info('Target Childeren id : {0}, name : {1}'.format(self.target_childeren_id, self.id2name[self.target_childeren_id]))
+
+                # 찾은 경우
+                if len(match_result) > 0:
+                    # action 부분에서도 바꾸기 때문에 충돌 방지를 위해 설정
+                    self.childeren_match_result = str(match_result)
+                    #self.id2name[self.target_childeren_id]
+                self.detect_image_recursive_publish_.publish(self.br.cv2_to_imgmsg(ri))
         
 def main(args = None):
     rclpy.init(args = args)
     print(os.getcwd())
     model = YOLO('src/object_detection/object_detection/weight_file/best.pt')
     node = object_detection(model)
+    executor = MultiThreadedExecutor()
     try:
-        rclpy.spin(node)
+        rclpy.spin(node, executor=executor)
     except KeyboardInterrupt:
         node.get_logger().info('Keyboard INterrupt (SIGINT)')
     finally:

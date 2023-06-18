@@ -74,8 +74,8 @@ class camera_pub(Node):
 
     def camera_publish(self):
         cam_image = self.camera_instance.read()
-        calibrated_image = self.camera_undistort(cam_image)
         try:
+            calibrated_image = self.camera_undistort(cam_image)
             camera_msg = self.br.cv2_to_imgmsg(calibrated_image)
             self.publisher_.publish(camera_msg) # Init에서 create_publish 한 instance를 이용해 publish 
         except (UnboundLocalError, TypeError) as e:

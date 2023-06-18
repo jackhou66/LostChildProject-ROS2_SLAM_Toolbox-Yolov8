@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from msg_interface/srv/AddToQueue.srv
+// generated code does not contain a copyright notice
+
+
+module msg_interface {
+  module srv {
+    @verbatim (language="comment", text=
+      " File: AddToQueue.srv")
+    struct AddToQueue_Request {
+      string input_string;
+    };
+    struct AddToQueue_Response {
+      boolean success;
+
+      string string_list;
+    };
+  };
+};

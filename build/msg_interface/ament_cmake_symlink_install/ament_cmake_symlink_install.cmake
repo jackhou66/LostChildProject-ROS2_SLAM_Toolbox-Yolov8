@@ -355,6 +355,12 @@ ament_cmake_symlink_install_files("/home/yumjunstar/Desktop/YJW/RoboticsProgram/
 # install(DIRECTORY "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_generator_py/msg_interface/msg/" "DESTINATION" "lib/python3.8/site-packages/msg_interface/msg" "PATTERN" "*.py")
 ament_cmake_symlink_install_directory("/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface" DIRECTORY "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_generator_py/msg_interface/msg/" "DESTINATION" "lib/python3.8/site-packages/msg_interface/msg" "PATTERN" "*.py")
 
+# install(DIRECTORY "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_generator_py/msg_interface/srv/" "DESTINATION" "lib/python3.8/site-packages/msg_interface/srv" "PATTERN" "*.py")
+ament_cmake_symlink_install_directory("/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface" DIRECTORY "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_generator_py/msg_interface/srv/" "DESTINATION" "lib/python3.8/site-packages/msg_interface/srv" "PATTERN" "*.py")
+
+# install(DIRECTORY "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_generator_py/msg_interface/action/" "DESTINATION" "lib/python3.8/site-packages/msg_interface/action" "PATTERN" "*.py")
+ament_cmake_symlink_install_directory("/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface" DIRECTORY "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_generator_py/msg_interface/action/" "DESTINATION" "lib/python3.8/site-packages/msg_interface/action" "PATTERN" "*.py")
+
 # install("TARGETS" "msg_interface__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "lib/python3.8/site-packages/msg_interface")
 include("/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
@@ -370,8 +376,26 @@ include("/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-R
 # install(FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_adapter/msg_interface/msg/Arithmetic.idl" "DESTINATION" "share/msg_interface/msg")
 ament_cmake_symlink_install_files("/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface" FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_adapter/msg_interface/msg/Arithmetic.idl" "DESTINATION" "share/msg_interface/msg")
 
+# install(FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_adapter/msg_interface/srv/AddToQueue.idl" "DESTINATION" "share/msg_interface/srv")
+ament_cmake_symlink_install_files("/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface" FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_adapter/msg_interface/srv/AddToQueue.idl" "DESTINATION" "share/msg_interface/srv")
+
+# install(FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_adapter/msg_interface/action/AString.idl" "DESTINATION" "share/msg_interface/action")
+ament_cmake_symlink_install_files("/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface" FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_adapter/msg_interface/action/AString.idl" "DESTINATION" "share/msg_interface/action")
+
 # install(FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface/msg/Arithmetic.msg" "DESTINATION" "share/msg_interface/msg")
 ament_cmake_symlink_install_files("/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface" FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface/msg/Arithmetic.msg" "DESTINATION" "share/msg_interface/msg")
+
+# install(FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface/srv/AddToQueue.srv" "DESTINATION" "share/msg_interface/srv")
+ament_cmake_symlink_install_files("/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface" FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface/srv/AddToQueue.srv" "DESTINATION" "share/msg_interface/srv")
+
+# install(FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_cmake/srv/AddToQueue_Request.msg" "DESTINATION" "share/msg_interface/srv")
+ament_cmake_symlink_install_files("/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface" FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_cmake/srv/AddToQueue_Request.msg" "DESTINATION" "share/msg_interface/srv")
+
+# install(FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_cmake/srv/AddToQueue_Response.msg" "DESTINATION" "share/msg_interface/srv")
+ament_cmake_symlink_install_files("/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface" FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/rosidl_cmake/srv/AddToQueue_Response.msg" "DESTINATION" "share/msg_interface/srv")
+
+# install(FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface/action/AString.action" "DESTINATION" "share/msg_interface/action")
+ament_cmake_symlink_install_files("/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface" FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface/action/AString.action" "DESTINATION" "share/msg_interface/action")
 
 # install(FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/msg_interface" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/msg_interface" FILES "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/msg_interface/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/msg_interface" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
