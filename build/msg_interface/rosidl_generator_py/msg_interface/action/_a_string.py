@@ -53,11 +53,11 @@ class AString_Goal(metaclass=Metaclass_AString_Goal):
     """Message class 'AString_Goal'."""
 
     __slots__ = [
-        '_input_strg',
+        '_input_string',
     ]
 
     _fields_and_field_types = {
-        'input_strg': 'string',
+        'input_string': 'string',
     }
 
     SLOT_TYPES = (
@@ -68,7 +68,7 @@ class AString_Goal(metaclass=Metaclass_AString_Goal):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.input_strg = kwargs.get('input_strg', str())
+        self.input_string = kwargs.get('input_string', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -99,7 +99,7 @@ class AString_Goal(metaclass=Metaclass_AString_Goal):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.input_strg != other.input_strg:
+        if self.input_string != other.input_string:
             return False
         return True
 
@@ -109,17 +109,17 @@ class AString_Goal(metaclass=Metaclass_AString_Goal):
         return copy(cls._fields_and_field_types)
 
     @property
-    def input_strg(self):
-        """Message field 'input_strg'."""
-        return self._input_strg
+    def input_string(self):
+        """Message field 'input_string'."""
+        return self._input_string
 
-    @input_strg.setter
-    def input_strg(self, value):
+    @input_string.setter
+    def input_string(self, value):
         if __debug__:
             assert \
                 isinstance(value, str), \
-                "The 'input_strg' field must be of type 'str'"
-        self._input_strg = value
+                "The 'input_string' field must be of type 'str'"
+        self._input_string = value
 
 
 # Import statements for member types

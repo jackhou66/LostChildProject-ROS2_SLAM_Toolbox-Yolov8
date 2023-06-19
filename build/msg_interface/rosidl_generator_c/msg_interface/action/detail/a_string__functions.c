@@ -12,7 +12,7 @@
 
 
 // Include directives for member types
-// Member `input_strg`
+// Member `input_string`
 #include "rosidl_runtime_c/string_functions.h"
 
 bool
@@ -21,8 +21,8 @@ msg_interface__action__AString_Goal__init(msg_interface__action__AString_Goal * 
   if (!msg) {
     return false;
   }
-  // input_strg
-  if (!rosidl_runtime_c__String__init(&msg->input_strg)) {
+  // input_string
+  if (!rosidl_runtime_c__String__init(&msg->input_string)) {
     msg_interface__action__AString_Goal__fini(msg);
     return false;
   }
@@ -35,8 +35,8 @@ msg_interface__action__AString_Goal__fini(msg_interface__action__AString_Goal * 
   if (!msg) {
     return;
   }
-  // input_strg
-  rosidl_runtime_c__String__fini(&msg->input_strg);
+  // input_string
+  rosidl_runtime_c__String__fini(&msg->input_string);
 }
 
 bool
@@ -45,9 +45,9 @@ msg_interface__action__AString_Goal__are_equal(const msg_interface__action__AStr
   if (!lhs || !rhs) {
     return false;
   }
-  // input_strg
+  // input_string
   if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->input_strg), &(rhs->input_strg)))
+      &(lhs->input_string), &(rhs->input_string)))
   {
     return false;
   }
@@ -62,9 +62,9 @@ msg_interface__action__AString_Goal__copy(
   if (!input || !output) {
     return false;
   }
-  // input_strg
+  // input_string
   if (!rosidl_runtime_c__String__copy(
-      &(input->input_strg), &(output->input_strg)))
+      &(input->input_string), &(output->input_string)))
   {
     return false;
   }

@@ -32,8 +32,8 @@ cdr_serialize(
   const msg_interface::action::AString_Goal & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: input_strg
-  cdr << ros_message.input_strg;
+  // Member: input_string
+  cdr << ros_message.input_string;
   return true;
 }
 
@@ -43,8 +43,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   msg_interface::action::AString_Goal & ros_message)
 {
-  // Member: input_strg
-  cdr >> ros_message.input_strg;
+  // Member: input_string
+  cdr >> ros_message.input_string;
 
   return true;
 }
@@ -62,10 +62,10 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: input_strg
+  // Member: input_string
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.input_strg.size() + 1);
+    (ros_message.input_string.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -85,7 +85,7 @@ max_serialized_size_AString_Goal(
   (void)full_bounded;
 
 
-  // Member: input_strg
+  // Member: input_string
   {
     size_t array_size = 1;
 

@@ -18,13 +18,13 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'input_strg'
+// Member 'input_string'
 #include "rosidl_runtime_c/string.h"
 
 // Struct defined in action/AString in the package msg_interface.
 typedef struct msg_interface__action__AString_Goal
 {
-  rosidl_runtime_c__String input_strg;
+  rosidl_runtime_c__String input_string;
 } msg_interface__action__AString_Goal;
 
 // Struct for a sequence of msg_interface__action__AString_Goal.
