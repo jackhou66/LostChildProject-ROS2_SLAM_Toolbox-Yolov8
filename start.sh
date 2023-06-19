@@ -1,5 +1,7 @@
 #!/bin/sh
 
+gnome-terminal --command "sh timer_start.sh"
+
 gnome-terminal --command "sh beagle_start.sh"
 
 gnome-terminal --command "sh camera.sh"

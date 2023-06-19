@@ -12,6 +12,7 @@ from msg_interface.msg import Arithmetic
 from roboid import *
 import math
 import time
+import yaml
 
 import threading
 
@@ -37,7 +38,7 @@ class BeagleSubPub_class(Node):
  #   current_lidar_count = 0
 
 
-    def __init__(self, b):
+    def __init__(self, b, config_file):
         super().__init__("beagle_sensors_motors")
         self.left_encoder_sum = 0.0
         self.right_encoder_sum = 0.0
@@ -66,6 +67,13 @@ class BeagleSubPub_class(Node):
         # lidar
         self.lidar_publisher = self.create_publisher(LaserScan, "scan", 10)
         self.timer1 = self.create_timer(self.lidar_timer_interval, self.publish_lidar_data)
+
+        self.frame_id = config_file["frame_id"]
+        self.angle_min = config_file["angle_min"]
+        self.angle_max = config_file["angle_max"]
+        self.angle_increment = config_file["angle_increment"]
+        self.range_min = config_file["range_min"]
+        self.range_max = config_file["range_max"]
 
         # imu
         self.imu_publisher = self.create_publisher(Imu, "imu_topic", 10)
@@ -105,13 +113,13 @@ class BeagleSubPub_class(Node):
 
         msg = LaserScan()
         msg.header = Header()
-        msg.header.frame_id = "laser"
+        msg.header.frame_id = self.frame_id
 
-        msg.angle_min = math.radians(0)
-        msg.angle_max = math.radians(359)
-        msg.angle_increment = math.radians(1)
-        msg.range_min = float(0)
-        msg.range_max = float(65534 / 1000)
+        msg.angle_min = math.radians(self.angle_min)
+        msg.angle_max = math.radians(self.angle_max)
+        msg.angle_increment = math.radians(self.angle_increment)
+        msg.range_min = float(self.range_min)
+        msg.range_max = float(self.range_max)
         msg.ranges = [i / 1000 for i in lidar_values]
 
 
@@ -247,7 +255,10 @@ class BeagleSubPub_class(Node):
 
 def main(args=None):
 
+    config_file = "src/beagle_sub_pub/beagle_sub_pub/lidar_config.yaml"  # Path to the YAML configuration file
 
+    with open(config_file, "r") as file:
+        config = yaml.safe_load(file)
 
     # 1886 1875map 값이 안받아지는 문제가 있어서 다시 업데이트
     beagle_instance = Beagle()
@@ -260,7 +271,7 @@ def main(args=None):
     finally:
         rclpy.shutdown()
         rclpy.init(args=args)
-    publisher = BeagleSubPub_class(beagle_instance)
+    publisher = BeagleSubPub_class(beagle_instance, config)
 
     try:
 
