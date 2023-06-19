@@ -1,0 +1,24 @@
+[6.405s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera/build --no-deps install_data
+[8.326s] running develop
+[9.275s] running egg_info
+[9.276s] creating camera.egg-info
+[9.276s] writing camera.egg-info/PKG-INFO
+[9.276s] writing dependency_links to camera.egg-info/dependency_links.txt
+[9.276s] writing entry points to camera.egg-info/entry_points.txt
+[9.277s] writing requirements to camera.egg-info/requires.txt
+[9.277s] writing top-level names to camera.egg-info/top_level.txt
+[9.283s] writing manifest file 'camera.egg-info/SOURCES.txt'
+[9.433s] reading manifest file 'camera.egg-info/SOURCES.txt'
+[9.436s] writing manifest file 'camera.egg-info/SOURCES.txt'
+[9.571s] running build_ext
+[9.572s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/lib/python3.8/site-packages/site.py
+[9.599s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/lib/python3.8/site-packages/camera.egg-link (link to .)
+[9.599s] 
+[9.600s] Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera
+[9.600s] running install_data
+[9.600s] creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/share/ament_index
+[9.601s] creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/share/ament_index/resource_index
+[9.601s] creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/share/ament_index/resource_index/packages
+[9.602s] copying resource/camera -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/share/ament_index/resource_index/packages
+[9.602s] copying package.xml -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/share/camera
+[9.806s] Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera' returned '0': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/camera/build --no-deps install_data

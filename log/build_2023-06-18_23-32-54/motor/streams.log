@@ -1,0 +1,16 @@
+[3.525s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor/build --no-deps install_data
+[4.556s] running develop
+[5.253s] running egg_info
+[5.254s] writing motor.egg-info/PKG-INFO
+[5.254s] writing dependency_links to motor.egg-info/dependency_links.txt
+[5.254s] writing entry points to motor.egg-info/entry_points.txt
+[5.255s] writing requirements to motor.egg-info/requires.txt
+[5.255s] writing top-level names to motor.egg-info/top_level.txt
+[5.360s] reading manifest file 'motor.egg-info/SOURCES.txt'
+[5.361s] writing manifest file 'motor.egg-info/SOURCES.txt'
+[5.435s] running build_ext
+[5.437s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/lib/python3.8/site-packages/motor.egg-link (link to .)
+[5.438s] 
+[5.439s] Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor
+[5.439s] running install_data
+[5.921s] Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor' returned '0': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/motor/build --no-deps install_data

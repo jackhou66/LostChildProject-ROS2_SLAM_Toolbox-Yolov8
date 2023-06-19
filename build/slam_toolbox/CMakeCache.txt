@@ -955,7 +955,7 @@ ZLIB_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libz.so
 _lib:FILEPATH=/opt/ros/foxy/lib/libmap_msgs__rosidl_typesupport_fastrtps_cpp.so
 
 //Path to a file.
-_numpy_h:FILEPATH=/usr/include/python3.8/numpy/numpyconfig.h
+_numpy_h:FILEPATH=/usr/include/numpy/numpyconfig.h
 
 //Path to a library.
 _ogre_main_static_library_abs:FILEPATH=/opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so

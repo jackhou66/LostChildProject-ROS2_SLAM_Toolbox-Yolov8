@@ -1,0 +1,24 @@
+[6.298s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf/build --no-deps install_data
+[8.650s] running develop
+[8.718s] running egg_info
+[8.718s] creating static_tf.egg-info
+[8.718s] writing static_tf.egg-info/PKG-INFO
+[8.719s] writing dependency_links to static_tf.egg-info/dependency_links.txt
+[8.719s] writing entry points to static_tf.egg-info/entry_points.txt
+[8.719s] writing requirements to static_tf.egg-info/requires.txt
+[8.719s] writing top-level names to static_tf.egg-info/top_level.txt
+[8.720s] writing manifest file 'static_tf.egg-info/SOURCES.txt'
+[8.941s] reading manifest file 'static_tf.egg-info/SOURCES.txt'
+[8.943s] writing manifest file 'static_tf.egg-info/SOURCES.txt'
+[9.149s] running build_ext
+[9.150s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/lib/python3.8/site-packages/site.py
+[9.156s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/lib/python3.8/site-packages/static-tf.egg-link (link to .)
+[9.159s] 
+[9.160s] Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf
+[9.160s] running install_data
+[9.161s] creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/share/ament_index
+[9.161s] creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/share/ament_index/resource_index
+[9.162s] creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/share/ament_index/resource_index/packages
+[9.163s] copying resource/static_tf -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/share/ament_index/resource_index/packages
+[9.164s] copying package.xml -> /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/share/static_tf
+[9.308s] Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf' returned '0': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf/build --no-deps install_data

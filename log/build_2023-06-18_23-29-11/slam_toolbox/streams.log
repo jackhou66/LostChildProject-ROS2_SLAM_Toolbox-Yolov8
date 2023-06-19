@@ -1,0 +1,618 @@
+[3.491s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/beagle_sub_pub:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera:/opt/ros/foxy /home/yumjunstar/.local/bin/cmake /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/slam_toolbox-foxy-devel -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox
+[4.122s] -- The C compiler identification is GNU 9.4.0
+[4.122s] -- The CXX compiler identification is GNU 9.4.0
+[4.122s] -- Detecting C compiler ABI info
+[4.123s] -- Detecting C compiler ABI info - done
+[4.123s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.123s] -- Detecting C compile features
+[4.123s] -- Detecting C compile features - done
+[4.123s] -- Detecting CXX compiler ABI info
+[4.123s] -- Detecting CXX compiler ABI info - done
+[4.123s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.123s] -- Detecting CXX compile features
+[4.124s] -- Detecting CXX compile features - done
+[4.124s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[4.124s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.124s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.875s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.005s] -- Found message_filters: 3.2.5 (/opt/ros/foxy/share/message_filters/cmake)
+[5.026s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[5.183s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.211s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[5.755s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[5.967s] -- Found FastRTPS: /opt/ros/foxy/include  
+[6.527s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.638s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[7.867s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[7.877s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.885s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.453s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[8.454s] -- Looking for pthread_create in pthreads
+[8.830s] -- Looking for pthread_create in pthreads - not found
+[8.831s] -- Looking for pthread_create in pthread
+[9.068s] -- Looking for pthread_create in pthread - found
+[9.069s] -- Found Threads: TRUE  
+[9.693s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[10.007s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[10.064s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[11.882s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[12.169s] -- Found pluginlib: 2.5.4 (/opt/ros/foxy/share/pluginlib/cmake)
+[12.229s] -- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[12.264s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[12.279s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[12.345s] -- Found tf2_sensor_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_sensor_msgs/cmake)
+[12.417s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[12.460s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[12.494s] -- Found nav2_map_server: 0.4.7 (/opt/ros/foxy/share/nav2_map_server/cmake)
+[12.506s] -- Found rviz_common: 8.2.8 (/opt/ros/foxy/share/rviz_common/cmake)
+[12.556s] -- Setting OGRE_DIR to: '/opt/ros/foxy/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[12.563s] -- Found OGRE
+[12.563s] --   static     : OFF
+[12.564s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[12.564s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[12.564s] --   media      : /opt/ros/foxy/opt/rviz_ogre_vendor/share/OGRE/Media
+[12.565s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[12.565s] -- OGRE_LIBRARY_DIRS: /opt/ros/foxy/opt/rviz_ogre_vendor/lib
+[12.565s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[12.565s] -- OGRE_PLUGIN_DIR: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/OGRE
+[12.566s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[12.566s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[12.566s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[12.567s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[12.574s] -- Could not find freeimage library
+[12.732s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11")  
+[12.756s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[13.252s] -- Found X11: /usr/include   
+[13.253s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[13.500s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[13.502s] -- Looking for gethostbyname
+[13.709s] -- Looking for gethostbyname - found
+[13.709s] -- Looking for connect
+[13.878s] -- Looking for connect - found
+[13.879s] -- Looking for remove
+[14.012s] -- Looking for remove - found
+[14.013s] -- Looking for shmat
+[14.177s] -- Looking for shmat - found
+[14.177s] -- Looking for IceConnectionNumber in ICE
+[14.364s] -- Looking for IceConnectionNumber in ICE - found
+[14.378s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND
+[14.379s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND
+[14.399s] -- library: libassimp.so.5
+[14.687s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[15.036s] -- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'
+[15.050s] -- Found rviz_default_plugins: 8.2.8 (/opt/ros/foxy/share/rviz_default_plugins/cmake)
+[16.397s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: system serialization filesystem thread 
+[16.761s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[16.777s] -- Found CSPARSE: /usr/include/suitesparse  
+[16.778s] [33mCMake Warning (dev) at /home/yumjunstar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[16.778s]   The package name passed to `find_package_handle_standard_args` (CSPARSE)
+[16.779s]   does not match the name of the calling package (CSparse).  This can lead to
+[16.779s]   problems in calling code that expects `find_package` result variables
+[16.779s]   (e.g., `_FOUND`) to follow a certain pattern.
+[16.780s] Call Stack (most recent call first):
+[16.780s]   CMake/FindCSparse.cmake:24 (find_package_handle_standard_args)
+[16.780s]   CMakeLists.txt:77 (find_package)
+[16.780s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[16.781s] [0m
+[16.952s] [33mCMake Warning (dev) at /home/yumjunstar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[16.952s]   The package name passed to `find_package_handle_standard_args` (CHOLMOD)
+[16.952s]   does not match the name of the calling package (Cholmod).  This can lead to
+[16.952s]   problems in calling code that expects `find_package` result variables
+[16.952s]   (e.g., `_FOUND`) to follow a certain pattern.
+[16.952s] Call Stack (most recent call first):
+[16.953s]   CMake/FindCholmod.cmake:86 (find_package_handle_standard_args)
+[16.953s]   CMakeLists.txt:79 (find_package)
+[16.953s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[16.953s] [0m
+[16.953s] -- Found CHOLMOD: /usr/include/suitesparse  
+[16.960s] -- Looking for sgemm_
+[17.076s] -- Looking for sgemm_ - not found
+[17.311s] -- Looking for sgemm_
+[17.417s] -- Looking for sgemm_ - found
+[17.418s] -- Found BLAS: /usr/lib/x86_64-linux-gnu/libblas.so  
+[17.427s] -- Looking for cheev_
+[17.541s] -- Looking for cheev_ - not found
+[17.623s] -- Looking for cheev_
+[17.756s] -- Looking for cheev_ - found
+[17.758s] -- Found LAPACK: /usr/lib/x86_64-linux-gnu/liblapack.so;/usr/lib/x86_64-linux-gnu/libblas.so  
+[17.790s] -- Found installed version of Eigen: /usr/lib/cmake/eigen3
+[17.791s] -- Found required Ceres dependency: Eigen version 3.3.7 in /usr/include/eigen3
+[17.791s] -- Found required Ceres dependency: glog
+[17.791s] -- Found installed version of gflags: /usr/lib/x86_64-linux-gnu/cmake/gflags
+[17.791s] -- Detected gflags version: 2.2.2
+[17.791s] -- Found required Ceres dependency: gflags
+[17.792s] -- Found Ceres version: 1.14.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, OpenMP, Multithreading]
+[17.904s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[18.556s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[19.134s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[19.397s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[19.470s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[19.473s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[19.544s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[19.545s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[19.545s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[19.545s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[19.607s] -- Found PythonExtra: .so  
+[19.948s] -- Configuring done (16.4s)
+[20.362s] -- Generating done (0.3s)
+[20.372s] -- Build files have been written to: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox
+[20.404s] Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/beagle_sub_pub:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera:/opt/ros/foxy /home/yumjunstar/.local/bin/cmake /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/src/slam_toolbox-foxy-devel -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox
+[20.409s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/beagle_sub_pub:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera:/opt/ros/foxy /home/yumjunstar/.local/bin/cmake --build /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox -- -j8 -l8
+[20.507s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[20.512s] [  2%] [32mBuilding CXX object lib/karto_sdk/CMakeFiles/kartoSlamToolbox.dir/src/Karto.cpp.o[0m
+[20.513s] [  2%] [32mBuilding CXX object lib/karto_sdk/CMakeFiles/kartoSlamToolbox.dir/src/Mapper.cpp.o[0m
+[20.514s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[23.075s] [  3%] Built target slam_toolbox__cpp
+[23.089s] [  5%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[23.089s] [  5%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[23.091s] [  6%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[23.739s] [  7%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/clear_queue__functions.c.o[0m
+[23.740s] [  7%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/pause__functions.c.o[0m
+[23.746s] [  8%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/toggle_interactive__functions.c.o[0m
+[24.247s] [  9%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/clear__functions.c.o[0m
+[24.561s] [  9%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/save_map__functions.c.o[0m
+[24.566s] [ 10%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/loop_closure__functions.c.o[0m
+[24.932s] [ 11%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/merge_maps__functions.c.o[0m
+[25.059s] [ 12%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/add_submap__functions.c.o[0m
+[25.218s] [ 12%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/deserialize_pose_graph__functions.c.o[0m
+[25.495s] [ 13%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/serialize_pose_graph__functions.c.o[0m
+[25.679s] [ 14%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/pause__type_support.cpp.o[0m
+[25.723s] [ 14%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/clear_queue__type_support.cpp.o[0m
+[26.007s] [ 15%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/toggle_interactive__type_support.cpp.o[0m
+[26.090s] [ 16%] [32m[1mLinking C shared library libslam_toolbox__rosidl_generator_c.so[0m
+[26.322s] [ 16%] Built target slam_toolbox__rosidl_generator_c
+[26.394s] [ 17%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[26.965s] [ 18%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/pause__type_support.cpp.o[0m
+[27.464s] [ 19%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/clear_queue__type_support.cpp.o[0m
+[27.527s] [ 20%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/clear__type_support.cpp.o[0m
+[27.639s] [ 21%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/pause__type_support.cpp.o[0m
+[27.822s] [ 21%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/clear_queue__type_support.cpp.o[0m
+[28.772s] [ 22%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/toggle_interactive__type_support.cpp.o[0m
+[28.902s] [ 23%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/save_map__type_support.cpp.o[0m
+[29.219s] [ 23%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/toggle_interactive__type_support.cpp.o[0m
+[29.819s] [ 23%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/loop_closure__type_support.cpp.o[0m
+[30.510s] [ 24%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/merge_maps__type_support.cpp.o[0m
+[30.595s] [ 25%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/add_submap__type_support.cpp.o[0m
+[30.649s] [ 26%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/clear__type_support.cpp.o[0m
+[30.662s] [ 27%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/pause__type_support.c.o[0m
+[30.801s] [ 27%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/clear_queue__type_support.c.o[0m
+[30.937s] [ 28%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/toggle_interactive__type_support.c.o[0m
+[31.120s] [ 29%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/clear__type_support.c.o[0m
+[31.322s] [ 30%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/clear__type_support.cpp.o[0m
+[31.389s] [ 30%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/save_map__type_support.c.o[0m
+[31.459s] [ 30%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/deserialize_pose_graph__type_support.cpp.o[0m
+[31.750s] [ 31%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/loop_closure__type_support.c.o[0m
+[32.109s] [ 32%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/merge_maps__type_support.c.o[0m
+[32.182s] [ 33%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/serialize_pose_graph__type_support.cpp.o[0m
+[32.374s] [ 34%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/add_submap__type_support.c.o[0m
+[32.436s] [ 34%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.c.o[0m
+[32.506s] [ 35%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/save_map__type_support.cpp.o[0m
+[32.566s] [ 36%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/serialize_pose_graph__type_support.c.o[0m
+[32.678s] [ 37%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[32.927s] [ 38%] [32m[1mLinking C shared library libslam_toolbox__rosidl_typesupport_introspection_c.so[0m
+[33.147s] [ 38%] Built target slam_toolbox__rosidl_typesupport_introspection_c
+[33.174s] [ 38%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/loop_closure__type_support.cpp.o[0m
+[33.264s] [ 39%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/merge_maps__type_support.cpp.o[0m
+[33.731s] [ 40%] [32m[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_cpp.so[0m
+[34.139s] [ 40%] Built target slam_toolbox__rosidl_typesupport_cpp
+[34.183s] [ 41%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/save_map__type_support.cpp.o[0m
+[34.223s] [ 41%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/loop_closure__type_support.cpp.o[0m
+[34.392s] [ 42%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/add_submap__type_support.cpp.o[0m
+[35.206s] [ 43%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.cpp.o[0m
+[35.460s] [ 43%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/serialize_pose_graph__type_support.cpp.o[0m
+[36.178s] [ 44%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/merge_maps__type_support.cpp.o[0m
+[36.454s] [ 44%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/pause__type_support.cpp.o[0m
+[36.721s] [ 45%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/clear_queue__type_support.cpp.o[0m
+[36.810s] [ 46%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/add_submap__type_support.cpp.o[0m
+[37.002s] [ 47%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/toggle_interactive__type_support.cpp.o[0m
+[37.078s] [ 48%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/deserialize_pose_graph__type_support.cpp.o[0m
+[37.098s] [ 48%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/serialize_pose_graph__type_support.cpp.o[0m
+[37.258s] [ 48%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/clear__type_support.cpp.o[0m
+[37.346s] [ 49%] [32m[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_introspection_cpp.so[0m
+[37.440s] [ 50%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/save_map__type_support.cpp.o[0m
+[37.543s] [ 51%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/loop_closure__type_support.cpp.o[0m
+[37.564s] [ 51%] Built target slam_toolbox__rosidl_typesupport_introspection_cpp
+[37.575s] [ 52%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/merge_maps__type_support.cpp.o[0m
+[37.666s] [ 53%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/deserialize_pose_graph__type_support.cpp.o[0m
+[37.676s] [ 53%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/add_submap__type_support.cpp.o[0m
+[37.768s] [ 54%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/serialize_pose_graph__type_support.cpp.o[0m
+[37.966s] [ 55%] [32m[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_c.so[0m
+[38.256s] [ 55%] Built target slam_toolbox__rosidl_typesupport_c
+[39.220s] [ 56%] [32m[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_fastrtps_cpp.so[0m
+[39.408s] [ 56%] Built target slam_toolbox__rosidl_typesupport_fastrtps_cpp
+[39.418s] [ 57%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[41.253s] [ 58%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/clear_queue__type_support_c.cpp.o[0m
+[41.253s] [ 59%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/clear__type_support_c.cpp.o[0m
+[41.254s] [ 60%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/toggle_interactive__type_support_c.cpp.o[0m
+[41.254s] [ 60%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/pause__type_support_c.cpp.o[0m
+[41.255s] [ 61%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/loop_closure__type_support_c.cpp.o[0m
+[41.266s] [ 61%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/save_map__type_support_c.cpp.o[0m
+[42.917s] [ 62%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/merge_maps__type_support_c.cpp.o[0m
+[42.925s] [ 63%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/add_submap__type_support_c.cpp.o[0m
+[43.022s] [ 63%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/deserialize_pose_graph__type_support_c.cpp.o[0m
+[43.081s] [ 64%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/serialize_pose_graph__type_support_c.cpp.o[0m
+[44.392s] [ 65%] [32m[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_fastrtps_c.so[0m
+[44.544s] [ 65%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c
+[44.559s] [ 65%] Built target slam_toolbox
+[44.569s] [ 65%] [34m[1mGenerating rviz_plugin/moc_slam_toolbox_rviz_plugin.cpp[0m
+[44.575s] [ 66%] [34m[1mGenerating Python code for ROS interfaces[0m
+[44.598s] [ 68%] [32mBuilding CXX object CMakeFiles/SlamToolboxPlugin.dir/rviz_plugin/slam_toolbox_rviz_plugin.cpp.o[0m
+[44.599s] [ 68%] [32mBuilding CXX object CMakeFiles/SlamToolboxPlugin.dir/rviz_plugin/moc_slam_toolbox_rviz_plugin.cpp.o[0m
+[50.079s] [ 68%] Built target slam_toolbox__py
+[50.105s] [ 69%] [32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_toggle_interactive_s.c.o[0m
+[50.106s] [ 69%] [32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_clear_queue_s.c.o[0m
+[50.106s] [ 70%] [32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_pause_s.c.o[0m
+[50.111s] [ 71%] [32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_clear_s.c.o[0m
+[50.492s] [ 72%] [32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_save_map_s.c.o[0m
+[50.521s] [ 72%] [32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_loop_closure_s.c.o[0m
+[50.562s] [ 73%] [32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_merge_maps_s.c.o[0m
+[50.706s] [ 74%] [32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_add_submap_s.c.o[0m
+[50.953s] [ 75%] [32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_deserialize_pose_graph_s.c.o[0m
+[50.955s] [ 75%] [32mBuilding C object CMakeFiles/slam_toolbox__python.dir/rosidl_generator_py/slam_toolbox/srv/_serialize_pose_graph_s.c.o[0m
+[51.439s] [ 76%] [32m[1mLinking C shared library rosidl_generator_py/slam_toolbox/libslam_toolbox__python.so[0m
+[51.525s] [ 76%] Built target slam_toolbox__python
+[51.549s] [ 76%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_c.c.o[0m
+[51.553s] [ 76%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[51.554s] [ 77%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[52.860s] [ 78%] [32m[1mLinking CXX shared library rosidl_generator_py/slam_toolbox/slam_toolbox_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[52.947s] [ 79%] [32m[1mLinking C shared library rosidl_generator_py/slam_toolbox/slam_toolbox_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[52.970s] [ 79%] [32m[1mLinking C shared library rosidl_generator_py/slam_toolbox/slam_toolbox_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[53.060s] [ 79%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c__pyext
+[53.063s] [ 79%] Built target slam_toolbox__rosidl_typesupport_introspection_c__pyext
+[53.067s] [ 79%] Built target slam_toolbox__rosidl_typesupport_c__pyext
+[80.240s] [ 79%] [32m[1mLinking CXX shared library libSlamToolboxPlugin.so[0m
+[81.344s] [ 80%] [32m[1mLinking CXX shared library libkartoSlamToolbox.so[0m
+[82.330s] [ 80%] Built target kartoSlamToolbox
+[82.349s] [ 83%] [32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/map_saver.cpp.o[0m
+[82.349s] [ 84%] [32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/laser_utils.cpp.o[0m
+[82.349s] [ 83%] [32mBuilding CXX object CMakeFiles/ceres_solver_plugin.dir/solvers/ceres_solver.cpp.o[0m
+[82.350s] [ 84%] [32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/slam_toolbox_common.cpp.o[0m
+[82.350s] [ 84%] [32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/loop_closure_assistant.cpp.o[0m
+[82.354s] [ 85%] [32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/slam_mapper.cpp.o[0m
+[82.880s] [ 85%] Built target SlamToolboxPlugin
+[122.027s] [ 86%] [32m[1mLinking CXX shared library libceres_solver_plugin.so[0m
+[122.961s] [ 86%] Built target ceres_solver_plugin
+[142.950s] [ 87%] [32m[1mLinking CXX shared library libtoolbox_common.so[0m
+[144.331s] [ 87%] Built target toolbox_common
+[144.354s] [ 88%] [32mBuilding CXX object CMakeFiles/async_slam_toolbox.dir/src/slam_toolbox_async.cpp.o[0m
+[144.359s] [ 89%] [32mBuilding CXX object CMakeFiles/sync_slam_toolbox.dir/src/slam_toolbox_sync.cpp.o[0m
+[144.359s] [ 91%] [32mBuilding CXX object CMakeFiles/lifelong_slam_toolbox.dir/src/experimental/slam_toolbox_lifelong.cpp.o[0m
+[144.360s] [ 91%] [32mBuilding CXX object CMakeFiles/merge_maps_kinematic.dir/src/merge_maps_kinematic.cpp.o[0m
+[144.362s] [ 92%] [32mBuilding CXX object CMakeFiles/localization_slam_toolbox.dir/src/slam_toolbox_localization.cpp.o[0m
+[170.952s] [ 93%] [32m[1mLinking CXX shared library libasync_slam_toolbox.so[0m
+[171.871s] [ 93%] Built target async_slam_toolbox
+[171.889s] [ 94%] [32mBuilding CXX object CMakeFiles/async_slam_toolbox_node.dir/src/slam_toolbox_async_node.cpp.o[0m
+[179.089s] [ 95%] [32m[1mLinking CXX shared library liblifelong_slam_toolbox.so[0m
+[179.496s] [ 95%] [32m[1mLinking CXX shared library liblocalization_slam_toolbox.so[0m
+[180.032s] [ 96%] [32m[1mLinking CXX shared library libsync_slam_toolbox.so[0m
+[180.344s] [ 96%] [32m[1mLinking CXX executable merge_maps_kinematic[0m
+[180.404s] [ 96%] Built target lifelong_slam_toolbox
+[180.428s] [ 96%] [32mBuilding CXX object CMakeFiles/lifelong_slam_toolbox_node.dir/src/experimental/slam_toolbox_lifelong_node.cpp.o[0m
+[180.496s] [ 96%] Built target localization_slam_toolbox
+[180.520s] [ 97%] [32mBuilding CXX object CMakeFiles/localization_slam_toolbox_node.dir/src/slam_toolbox_localization_node.cpp.o[0m
+[180.961s] [ 97%] Built target sync_slam_toolbox
+[180.977s] [ 97%] [32mBuilding CXX object CMakeFiles/sync_slam_toolbox_node.dir/src/slam_toolbox_sync_node.cpp.o[0m
+[182.395s] [ 97%] Built target merge_maps_kinematic
+[193.483s] [ 97%] [32m[1mLinking CXX executable async_slam_toolbox_node[0m
+[194.551s] [ 97%] Built target async_slam_toolbox_node
+[199.921s] [ 98%] [32m[1mLinking CXX executable lifelong_slam_toolbox_node[0m
+[200.401s] [ 99%] [32m[1mLinking CXX executable sync_slam_toolbox_node[0m
+[200.565s] [100%] [32m[1mLinking CXX executable localization_slam_toolbox_node[0m
+[200.900s] [100%] Built target lifelong_slam_toolbox_node
+[201.375s] [100%] Built target sync_slam_toolbox_node
+[201.533s] [100%] Built target localization_slam_toolbox_node
+[201.544s] Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/beagle_sub_pub:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera:/opt/ros/foxy /home/yumjunstar/.local/bin/cmake --build /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox -- -j8 -l8
+[201.808s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/beagle_sub_pub:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera:/opt/ros/foxy /home/yumjunstar/.local/bin/cmake --install /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox
+[201.857s] -- Install configuration: "Release"
+[201.858s] -- Execute custom install script
+[201.859s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include//karto_sdk/Karto.h
+[201.862s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include//karto_sdk/Macros.h
+[201.864s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include//karto_sdk/Mapper.h
+[201.866s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include//karto_sdk/Math.h
+[201.869s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include//karto_sdk/Types.h
+[201.871s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include//karto_sdk/nanoflann.hpp
+[201.874s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include//karto_sdk/nanoflann_adaptors.h
+[201.876s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libkartoSlamToolbox.so
+[201.879s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/environment/library_path.sh
+[201.881s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/environment/library_path.dsv
+[201.884s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/ament_index/resource_index/package_run_dependencies/karto_sdk
+[201.887s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/ament_index/resource_index/parent_prefix_path/karto_sdk
+[201.889s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/environment/ament_prefix_path.sh
+[201.892s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/environment/ament_prefix_path.dsv
+[201.894s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/environment/path.sh
+[201.897s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/environment/path.dsv
+[201.899s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/local_setup.bash
+[201.902s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/local_setup.sh
+[201.904s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/local_setup.zsh
+[201.907s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/local_setup.dsv
+[201.909s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/package.dsv
+[201.912s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/ament_index/resource_index/packages/karto_sdk
+[201.914s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/cmake/ament_cmake_export_libraries-extras.cmake
+[201.917s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/cmake/ament_cmake_export_include_directories-extras.cmake
+[201.919s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/cmake/ament_cmake_export_dependencies-extras.cmake
+[201.922s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/cmake/karto_sdkConfig.cmake
+[201.925s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/cmake/karto_sdkConfig-version.cmake
+[201.927s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/karto_sdk/package.xml
+[201.930s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/ament_index/resource_index/rosidl_interfaces/slam_toolbox
+[201.933s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/msg/rosidl_generator_c__visibility_control.h
+[201.936s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/add_submap.h
+[201.938s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/clear.h
+[201.940s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/clear_queue.h
+[201.943s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/deserialize_pose_graph.h
+[201.945s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__functions.h
+[201.948s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__struct.h
+[201.950s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__type_support.h
+[201.952s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__functions.h
+[201.955s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__struct.h
+[201.957s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__type_support.h
+[201.960s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__functions.h
+[201.962s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__struct.h
+[201.965s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__type_support.h
+[201.967s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__functions.h
+[201.969s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__struct.h
+[201.972s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.h
+[201.974s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__functions.h
+[201.976s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__struct.h
+[201.979s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__type_support.h
+[201.981s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__functions.h
+[201.984s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__struct.h
+[201.986s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__type_support.h
+[201.989s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__functions.h
+[201.991s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__struct.h
+[201.994s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__type_support.h
+[201.996s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__functions.h
+[201.998s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__struct.h
+[202.001s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__type_support.h
+[202.003s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__functions.h
+[202.006s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__struct.h
+[202.008s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__type_support.h
+[202.010s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__functions.h
+[202.013s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__struct.h
+[202.015s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__type_support.h
+[202.017s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/loop_closure.h
+[202.020s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/merge_maps.h
+[202.022s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/pause.h
+[202.025s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/save_map.h
+[202.027s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/serialize_pose_graph.h
+[202.029s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/toggle_interactive.h
+[202.032s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/environment/library_path.sh
+[202.034s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/environment/library_path.dsv
+[202.037s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[202.040s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_fastrtps_c.h
+[202.042s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__rosidl_typesupport_fastrtps_c.h
+[202.044s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_fastrtps_c.h
+[202.047s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_fastrtps_c.h
+[202.049s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_fastrtps_c.h
+[202.051s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_fastrtps_c.h
+[202.054s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__rosidl_typesupport_fastrtps_c.h
+[202.056s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__rosidl_typesupport_fastrtps_c.h
+[202.058s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_fastrtps_c.h
+[202.061s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_fastrtps_c.h
+[202.063s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_c.so
+[202.066s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[202.069s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_fastrtps_cpp.hpp
+[202.071s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__rosidl_typesupport_fastrtps_cpp.hpp
+[202.073s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_fastrtps_cpp.hpp
+[202.076s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_fastrtps_cpp.hpp
+[202.078s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_fastrtps_cpp.hpp
+[202.080s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_fastrtps_cpp.hpp
+[202.083s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__rosidl_typesupport_fastrtps_cpp.hpp
+[202.085s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__rosidl_typesupport_fastrtps_cpp.hpp
+[202.088s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_fastrtps_cpp.hpp
+[202.090s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_fastrtps_cpp.hpp
+[202.093s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_cpp.so
+[202.095s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[202.098s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_introspection_c.h
+[202.100s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__rosidl_typesupport_introspection_c.h
+[202.103s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_introspection_c.h
+[202.105s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_introspection_c.h
+[202.107s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_introspection_c.h
+[202.110s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_introspection_c.h
+[202.112s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__rosidl_typesupport_introspection_c.h
+[202.114s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__rosidl_typesupport_introspection_c.h
+[202.117s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_introspection_c.h
+[202.119s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_introspection_c.h
+[202.122s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/add_submap.hpp
+[202.125s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/clear.hpp
+[202.127s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/clear_queue.hpp
+[202.130s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/deserialize_pose_graph.hpp
+[202.132s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__builder.hpp
+[202.134s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__struct.hpp
+[202.137s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__traits.hpp
+[202.139s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__builder.hpp
+[202.141s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__struct.hpp
+[202.144s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__traits.hpp
+[202.146s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__builder.hpp
+[202.148s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__struct.hpp
+[202.151s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__traits.hpp
+[202.153s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__builder.hpp
+[202.156s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__struct.hpp
+[202.158s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__traits.hpp
+[202.160s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__builder.hpp
+[202.162s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__struct.hpp
+[202.165s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__traits.hpp
+[202.167s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__builder.hpp
+[202.170s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__struct.hpp
+[202.172s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__traits.hpp
+[202.175s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__builder.hpp
+[202.178s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__struct.hpp
+[202.180s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__traits.hpp
+[202.183s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__builder.hpp
+[202.185s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__struct.hpp
+[202.187s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__traits.hpp
+[202.190s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__builder.hpp
+[202.192s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__struct.hpp
+[202.194s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__traits.hpp
+[202.197s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__builder.hpp
+[202.199s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__struct.hpp
+[202.202s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__traits.hpp
+[202.204s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/loop_closure.hpp
+[202.207s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/merge_maps.hpp
+[202.209s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/pause.hpp
+[202.211s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/save_map.hpp
+[202.213s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/serialize_pose_graph.hpp
+[202.216s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/toggle_interactive.hpp
+[202.219s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_introspection_cpp.hpp
+[202.221s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear__rosidl_typesupport_introspection_cpp.hpp
+[202.224s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_introspection_cpp.hpp
+[202.226s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_introspection_cpp.hpp
+[202.228s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_introspection_cpp.hpp
+[202.231s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_introspection_cpp.hpp
+[202.233s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/pause__rosidl_typesupport_introspection_cpp.hpp
+[202.236s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/save_map__rosidl_typesupport_introspection_cpp.hpp
+[202.238s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_introspection_cpp.hpp
+[202.240s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_introspection_cpp.hpp
+[202.243s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/environment/pythonpath.sh
+[202.245s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/environment/pythonpath.dsv
+[202.247s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/__init__.py
+[202.250s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/__init__.py
+[202.253s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_add_submap.py
+[202.255s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_clear.py
+[202.258s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_clear_queue.py
+[202.260s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_deserialize_pose_graph.py
+[202.262s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_loop_closure.py
+[202.265s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_merge_maps.py
+[202.267s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_pause.py
+[202.269s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_save_map.py
+[202.272s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_serialize_pose_graph.py
+[202.274s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/srv/_toggle_interactive.py
+[202.276s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[202.279s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[202.281s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[202.284s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libslam_toolbox__python.so
+[202.286s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srv/Pause.idl
+[202.289s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srv/ClearQueue.idl
+[202.291s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srv/ToggleInteractive.idl
+[202.294s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srv/Clear.idl
+[202.296s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srv/SaveMap.idl
+[202.298s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srv/LoopClosure.idl
+[202.301s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srv/MergeMaps.idl
+[202.303s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srv/AddSubmap.idl
+[202.306s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srv/DeserializePoseGraph.idl
+[202.308s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srv/SerializePoseGraph.idl
+[202.311s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/Pause.srv
+[202.313s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/Pause_Request.msg
+[202.315s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/Pause_Response.msg
+[202.318s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/ClearQueue.srv
+[202.321s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/ClearQueue_Request.msg
+[202.324s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/ClearQueue_Response.msg
+[202.327s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/ToggleInteractive.srv
+[202.330s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/ToggleInteractive_Request.msg
+[202.333s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/ToggleInteractive_Response.msg
+[202.336s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/Clear.srv
+[202.339s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/Clear_Request.msg
+[202.341s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/Clear_Response.msg
+[202.344s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/SaveMap.srv
+[202.347s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/SaveMap_Request.msg
+[202.350s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/SaveMap_Response.msg
+[202.352s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/LoopClosure.srv
+[202.355s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/LoopClosure_Request.msg
+[202.357s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/LoopClosure_Response.msg
+[202.360s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/MergeMaps.srv
+[202.362s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/MergeMaps_Request.msg
+[202.365s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/MergeMaps_Response.msg
+[202.367s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/AddSubmap.srv
+[202.370s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/AddSubmap_Request.msg
+[202.372s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/AddSubmap_Response.msg
+[202.375s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/DeserializePoseGraph.srv
+[202.377s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/DeserializePoseGraph_Request.msg
+[202.380s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/DeserializePoseGraph_Response.msg
+[202.382s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/SerializePoseGraph.srv
+[202.384s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/SerializePoseGraph_Request.msg
+[202.387s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/srvs/SerializePoseGraph_Response.msg
+[202.390s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox//rviz_plugins.xml
+[202.392s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox//solver_plugins.xml
+[202.395s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/slam_toolbox/async_slam_toolbox_node
+[202.397s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/slam_toolbox/sync_slam_toolbox_node
+[202.400s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/slam_toolbox/localization_slam_toolbox_node
+[202.402s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/slam_toolbox/lifelong_slam_toolbox_node
+[202.405s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/slam_toolbox/merge_maps_kinematic
+[202.407s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libtoolbox_common.so
+[202.409s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libSlamToolboxPlugin.so
+[202.412s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libceres_solver_plugin.so
+[202.414s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libasync_slam_toolbox.so
+[202.417s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libsync_slam_toolbox.so
+[202.419s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/liblocalization_slam_toolbox.so
+[202.422s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/liblifelong_slam_toolbox.so
+[202.425s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/experimental/slam_toolbox_lifelong.hpp
+[202.428s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/get_pose_helper.hpp
+[202.430s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/laser_utils.hpp
+[202.433s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/loop_closure_assistant.hpp
+[202.435s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/map_saver.hpp
+[202.437s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/merge_maps_kinematic.hpp
+[202.440s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/serialization.hpp
+[202.442s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/slam_mapper.hpp
+[202.444s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/slam_toolbox_async.hpp
+[202.447s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/slam_toolbox_common.hpp
+[202.449s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/slam_toolbox_localization.hpp
+[202.451s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/slam_toolbox_sync.hpp
+[202.454s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/snap_utils.hpp
+[202.456s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/toolbox_msgs.hpp
+[202.458s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/toolbox_types.hpp
+[202.461s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/include/slam_toolbox/visualization_utils.hpp
+[202.463s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/launch/__pycache__/lifelong_launch.cpython-38.pyc
+[202.466s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/launch/__pycache__/localization_launch.cpython-38.pyc
+[202.468s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/launch/__pycache__/online_async_launch.cpython-38.pyc
+[202.471s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/launch/__pycache__/online_sync_launch.cpython-38.pyc
+[202.473s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/launch/lifelong_launch.py
+[202.475s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/launch/localization_launch.py
+[202.478s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/launch/merge_maps_kinematic_launch.py
+[202.480s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/launch/offline_launch.py
+[202.482s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/launch/online_async_launch.py
+[202.485s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/launch/online_sync_launch.py
+[202.487s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/config/mapper_params_lifelong.yaml
+[202.490s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/config/mapper_params_localization.yaml
+[202.492s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/config/mapper_params_offline.yaml
+[202.494s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/config/mapper_params_online_async.yaml
+[202.497s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/config/mapper_params_online_sync.yaml
+[202.499s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/solver_plugins.xml
+[202.502s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/rviz_plugins.xml
+[202.504s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/ament_index/resource_index/package_run_dependencies/slam_toolbox
+[202.507s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/ament_index/resource_index/parent_prefix_path/slam_toolbox
+[202.509s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/environment/ament_prefix_path.sh
+[202.511s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/environment/ament_prefix_path.dsv
+[202.514s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/environment/path.sh
+[202.516s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/environment/path.dsv
+[202.519s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/local_setup.bash
+[202.522s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/local_setup.sh
+[202.524s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/local_setup.zsh
+[202.527s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/local_setup.dsv
+[202.529s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/package.dsv
+[202.531s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/ament_index/resource_index/packages/slam_toolbox
+[202.534s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/ament_index/resource_index/rviz_common__pluginlib__plugin/slam_toolbox
+[202.537s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/ament_index/resource_index/slam_toolbox__pluginlib__plugin/slam_toolbox
+[202.539s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake-extras.cmake
+[202.542s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_dependencies-extras.cmake
+[202.544s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_libraries-extras.cmake
+[202.546s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_targets-extras.cmake
+[202.549s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_include_directories-extras.cmake
+[202.551s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[202.554s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[202.556s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolboxConfig.cmake
+[202.558s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolboxConfig-version.cmake
+[202.561s] -- Symlinking: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/package.xml
+[202.563s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libslam_toolbox__rosidl_generator_c.so
+[202.564s] -- Set runtime path of "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libslam_toolbox__rosidl_generator_c.so" to ""
+[202.564s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_c.so
+[202.565s] -- Set runtime path of "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_c.so" to ""
+[202.565s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_c.so
+[202.565s] -- Set runtime path of "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_c.so" to ""
+[202.566s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_cpp.so
+[202.566s] -- Set runtime path of "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_cpp.so" to ""
+[202.566s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_cpp.so
+[202.567s] -- Set runtime path of "/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_cpp.so" to ""
+[202.617s] Compiling '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/lib/python3.8/site-packages/slam_toolbox/__init__.py'...
+[202.622s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_generator_cExport.cmake
+[202.622s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_generator_cExport-release.cmake
+[202.622s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cExport.cmake
+[202.623s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cExport-release.cmake
+[202.623s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cExport.cmake
+[202.623s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cExport-release.cmake
+[202.623s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_generator_cppExport.cmake
+[202.623s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cppExport.cmake
+[202.623s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cppExport-release.cmake
+[202.623s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cppExport.cmake
+[202.624s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cppExport-release.cmake
+[202.624s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/SlamToolboxPluginExport.cmake
+[202.624s] -- Installing: /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/slam_toolbox/share/slam_toolbox/cmake/SlamToolboxPluginExport-release.cmake
+[202.635s] Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/robot_localization:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/beagle_sub_pub:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/tf_transformations:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/teleop_twist_keyboard:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/object_detection:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/motor:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera_undistort:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/camera:/opt/ros/foxy /home/yumjunstar/.local/bin/cmake --install /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/slam_toolbox

@@ -1,0 +1,16 @@
+[5.623s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar/build --no-deps install_data
+[6.768s] running develop
+[7.562s] running egg_info
+[7.564s] writing lidar.egg-info/PKG-INFO
+[7.564s] writing dependency_links to lidar.egg-info/dependency_links.txt
+[7.565s] writing entry points to lidar.egg-info/entry_points.txt
+[7.565s] writing requirements to lidar.egg-info/requires.txt
+[7.566s] writing top-level names to lidar.egg-info/top_level.txt
+[7.610s] reading manifest file 'lidar.egg-info/SOURCES.txt'
+[7.610s] writing manifest file 'lidar.egg-info/SOURCES.txt'
+[7.701s] running build_ext
+[7.702s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/lib/python3.8/site-packages/lidar.egg-link (link to .)
+[7.702s] 
+[7.703s] Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar
+[7.712s] running install_data
+[7.877s] Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar' returned '0': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/lidar/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/lidar/build --no-deps install_data
