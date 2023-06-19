@@ -42,6 +42,7 @@ class Server(Node):
                 self.send_goal(target)
                 while self.IsSearching:#검색이 완료될때까지 보내는 것 대기
                     pass
+
     def add_to_queue_callback(self, request, response):
 
         # 넣을때마다 queue에 집어넣어지고 queue가 다 비워질때 까지 계속 send_goal
@@ -58,7 +59,15 @@ class Server(Node):
             response.string_list = ", ".join(self.string_queue)
             # 문자열은 self.string_queue에 저장된다.
             self.get_logger().info(f"Concatenated strings: {', '.join(self.string_queue)}")
+        elif input_string == 'r': # r이 입력되면 리셋
+            with self.lock:
+                self.string_queue = deque()
 
+            response.success = True
+            response.string_list = ", ".join(self.string_queue)
+            self.get_logger().info(f"Reset Success Concatenated strings: {', '.join(self.string_queue)}")
+
+                #초기화
         return response
 
     def feedback_callback(self, feedback):

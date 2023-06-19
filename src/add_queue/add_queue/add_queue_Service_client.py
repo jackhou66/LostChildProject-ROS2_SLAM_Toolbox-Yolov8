@@ -16,10 +16,13 @@ class AddToQueueClient(Node):
         rclpy.spin_until_future_complete(self, future)
         if future.result() is not None:
             success = future.result().success
+            response = future.result()
             if success:
                 self.get_logger().info(f"String added to the queue: {input_string}")
+                self.get_logger().info(f"Service response: {response}")
             else:
                 self.get_logger().info("Failed to add string to the queue")
+                self.get_logger().info(f"Service response: {response}")
         else:
             self.get_logger().info("Service call failed")
 
@@ -30,7 +33,7 @@ def main(args=None):
 
     # Example usage: Adding strings to the queue interactively
     while True:
-        input_string = input("Enter a string (or 'q' to quit): ")
+        input_string = input("Enter a string (or 'q' to quit and 'r' to reset): ")
         if input_string == "q":
             break
         add_to_queue_client.add_to_queue(input_string)
