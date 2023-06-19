@@ -1,0 +1,16 @@
+[4.341s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/add_queue': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/add_queue/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/add_queue/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/add_queue/build --no-deps install_data
+[6.718s] running develop
+[7.934s] running egg_info
+[7.938s] writing add_queue.egg-info/PKG-INFO
+[7.938s] writing dependency_links to add_queue.egg-info/dependency_links.txt
+[7.939s] writing entry points to add_queue.egg-info/entry_points.txt
+[7.944s] writing requirements to add_queue.egg-info/requires.txt
+[7.948s] writing top-level names to add_queue.egg-info/top_level.txt
+[8.125s] reading manifest file 'add_queue.egg-info/SOURCES.txt'
+[8.126s] writing manifest file 'add_queue.egg-info/SOURCES.txt'
+[8.381s] running build_ext
+[8.384s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/add_queue/lib/python3.8/site-packages/add-queue.egg-link (link to .)
+[8.387s] 
+[8.388s] Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/add_queue
+[8.396s] running install_data
+[8.561s] Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/add_queue' returned '0': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/add_queue/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/add_queue/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/add_queue/build --no-deps install_data

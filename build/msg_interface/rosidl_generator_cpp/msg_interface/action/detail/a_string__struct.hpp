@@ -37,30 +37,30 @@ struct AString_Goal_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->input_string = "";
+      this->input_strg = "";
     }
   }
 
   explicit AString_Goal_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : input_string(_alloc)
+  : input_strg(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->input_string = "";
+      this->input_strg = "";
     }
   }
 
   // field types and members
-  using _input_string_type =
+  using _input_strg_type =
     std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
-  _input_string_type input_string;
+  _input_strg_type input_strg;
 
   // setters for named parameter idiom
-  Type & set__input_string(
+  Type & set__input_strg(
     const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
   {
-    this->input_string = _arg;
+    this->input_strg = _arg;
     return *this;
   }
 
@@ -106,7 +106,7 @@ struct AString_Goal_
   // comparison operators
   bool operator==(const AString_Goal_ & other) const
   {
-    if (this->input_string != other.input_string) {
+    if (this->input_strg != other.input_strg) {
       return false;
     }
     return true;

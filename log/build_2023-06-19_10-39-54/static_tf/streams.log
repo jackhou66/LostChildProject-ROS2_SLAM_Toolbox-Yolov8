@@ -1,0 +1,16 @@
+[6.920s] Invoking command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf/build --no-deps install_data
+[8.395s] running develop
+[9.070s] running egg_info
+[9.071s] writing static_tf.egg-info/PKG-INFO
+[9.072s] writing dependency_links to static_tf.egg-info/dependency_links.txt
+[9.072s] writing entry points to static_tf.egg-info/entry_points.txt
+[9.072s] writing requirements to static_tf.egg-info/requires.txt
+[9.073s] writing top-level names to static_tf.egg-info/top_level.txt
+[9.179s] reading manifest file 'static_tf.egg-info/SOURCES.txt'
+[9.181s] writing manifest file 'static_tf.egg-info/SOURCES.txt'
+[9.302s] running build_ext
+[9.303s] Creating /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/lib/python3.8/site-packages/static-tf.egg-link (link to .)
+[9.306s] 
+[9.306s] Installed /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf
+[9.307s] running install_data
+[9.407s] Invoked command in '/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf' returned '0': PYTHONPATH=/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf/prefix_override:/home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/install/static_tf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yumjunstar/Desktop/YJW/RoboticsProgram/Project/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/build/static_tf/build --no-deps install_data

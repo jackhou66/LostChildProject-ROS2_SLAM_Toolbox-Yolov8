@@ -16,6 +16,8 @@ import os
 
 
 import time
+
+# 멀티 스레딩
 from threading import Lock
 
 class object_detection(Node):
@@ -65,7 +67,7 @@ class object_detection(Node):
                                                 self.camera_callback,
                                                 qos_profile)
         
-
+    
         self.detect_image_recursive_publish_ = self.create_publisher(
                                                 detect_image_pub_topic_msg_type, 
                                                 detect_image_pub_topic_msg_name, 

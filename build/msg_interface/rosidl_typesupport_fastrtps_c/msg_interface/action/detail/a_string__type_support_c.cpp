@@ -34,8 +34,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // input_string
-#include "rosidl_runtime_c/string_functions.h"  // input_string
+#include "rosidl_runtime_c/string.h"  // input_strg
+#include "rosidl_runtime_c/string_functions.h"  // input_strg
 
 // forward declare type support functions
 
@@ -51,9 +51,9 @@ static bool _AString_Goal__cdr_serialize(
     return false;
   }
   const _AString_Goal__ros_msg_type * ros_message = static_cast<const _AString_Goal__ros_msg_type *>(untyped_ros_message);
-  // Field name: input_string
+  // Field name: input_strg
   {
-    const rosidl_runtime_c__String * str = &ros_message->input_string;
+    const rosidl_runtime_c__String * str = &ros_message->input_strg;
     if (str->capacity == 0 || str->capacity <= str->size) {
       fprintf(stderr, "string capacity not greater than size\n");
       return false;
@@ -77,18 +77,18 @@ static bool _AString_Goal__cdr_deserialize(
     return false;
   }
   _AString_Goal__ros_msg_type * ros_message = static_cast<_AString_Goal__ros_msg_type *>(untyped_ros_message);
-  // Field name: input_string
+  // Field name: input_strg
   {
     std::string tmp;
     cdr >> tmp;
-    if (!ros_message->input_string.data) {
-      rosidl_runtime_c__String__init(&ros_message->input_string);
+    if (!ros_message->input_strg.data) {
+      rosidl_runtime_c__String__init(&ros_message->input_strg);
     }
     bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->input_string,
+      &ros_message->input_strg,
       tmp.c_str());
     if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'input_string'\n");
+      fprintf(stderr, "failed to assign string into field 'input_strg'\n");
       return false;
     }
   }
@@ -110,10 +110,10 @@ size_t get_serialized_size_msg_interface__action__AString_Goal(
   (void)padding;
   (void)wchar_size;
 
-  // field.name input_string
+  // field.name input_strg
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->input_string.size + 1);
+    (ros_message->input_strg.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -138,7 +138,7 @@ size_t max_serialized_size_msg_interface__action__AString_Goal(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: input_string
+  // member: input_strg
   {
     size_t array_size = 1;
 

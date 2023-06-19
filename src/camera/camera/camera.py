@@ -15,6 +15,7 @@ class camera_pub(Node):
         self.camera_instance = camera_instance_
 
         node_name = 'camera' # ROS2 노드 이름
+        super().__init__(node_name)
         topic_msg_type = Image # Topic msg type
         topic_msg_name = 'camera' # Topic msg name
         qos_profile = 10
@@ -22,25 +23,55 @@ class camera_pub(Node):
         timer_period = 1/fps
 
 
-
         # 카메라 매개변수 설정
-        self.rms = 0.628610
-        self.fx = 389.438894
-        self.fy = 389.438894
-        self.cx = 320.000000
-        self.cy = 160.000000
-        self.k1 = -0.357859
-        self.k2 = 0.142288
-        self.p1 = -0.010197
-        self.p2 = -0.001690
-        self.k3 = 0.0  # 추가: k3 왜곡 계수
+        rms = 0.628610
+        fx = 389.438894
+        fy = 389.438894
+        cx = 320.000000
+        cy = 160.000000
+        k1 = -0.357859
+        k2 = 0.142288
+        p1 = -0.010197
+        p2 = -0.001690
+        k3 = 0.0  # 추가: k3 왜곡 계수
 
-        self.hfov = 78.8
-        self.vfov = 44.7
+        hfov = 78.8
+        vfov = 44.7
+
+        self.declare_parameter('rms', rms)
+        self.declare_parameter('fx', fx)
+        self.declare_parameter('fy', fy)
+        self.declare_parameter('cx', cx)
+        self.declare_parameter('cy', cy)
+        self.declare_parameter('k1', k1)
+        self.declare_parameter('k2', k2)
+        self.declare_parameter('p1', p1)
+        self.declare_parameter('p2', p2)
+        self.declare_parameter('k3', k3)
+
+        self.declare_parameter('hfov', hfov)
+        self.declare_parameter('vfov', vfov)
+
+
+        self.rms = self.get_parameter('rms').get_parameter_value().double_value
+        self.fx = self.get_parameter('fx').get_parameter_value().double_value
+        self.fy = self.get_parameter('fy').get_parameter_value().double_value
+        self.cx = self.get_parameter('cx').get_parameter_value().double_value
+        self.cy = self.get_parameter('cy').get_parameter_value().double_value
+        self.k1 = self.get_parameter('k1').get_parameter_value().double_value
+        self.k2 = self.get_parameter('k2').get_parameter_value().double_value
+        self.p1 = self.get_parameter('p1').get_parameter_value().double_value
+        self.p2 = self.get_parameter('p2').get_parameter_value().double_value
+        self.k3 = self.get_parameter('k3').get_parameter_value().double_value
+
+        self.hfov = self.get_parameter('hfov').get_parameter_value().double_value
+        self.vfov = self.get_parameter('vfov').get_parameter_value().double_value
 
 
 
-        super().__init__(node_name)
+
+
+
 
         self.br = CvBridge()
         self.publisher_ = self.create_publisher(topic_msg_type, 

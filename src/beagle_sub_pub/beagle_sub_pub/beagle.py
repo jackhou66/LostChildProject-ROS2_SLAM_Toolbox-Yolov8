@@ -245,14 +245,12 @@ class BeagleSubPub_class(Node):
 
 
 
-def main(args=None, beagle_instance = None):
+def main(args=None):
 
 
 
     # 1886 1875map 값이 안받아지는 문제가 있어서 다시 업데이트
-
-    if beagle_instance is None:
-        beagle_instance = Beagle()
+    beagle_instance = Beagle()
     beagle_instance.reset()
     beagle_instance.start_lidar()
     beagle_instance.wait_until_lidar_ready()

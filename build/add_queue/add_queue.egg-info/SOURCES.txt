@@ -2,8 +2,8 @@ package.xml
 setup.cfg
 setup.py
 add_queue/__init__.py
-add_queue/add_quene_cilent.py
-add_queue/add_queue_server.py
+add_queue/add_queue_Service_client.py
+add_queue/add_queue_Service_server_and_Action_client.py
 add_queue.egg-info/PKG-INFO
 add_queue.egg-info/SOURCES.txt
 add_queue.egg-info/dependency_links.txt

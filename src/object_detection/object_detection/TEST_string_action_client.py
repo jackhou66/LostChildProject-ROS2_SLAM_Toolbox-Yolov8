@@ -53,11 +53,12 @@ def main(args=None):
 
     action_client = StringActionClient()
 
-    action_client.send_goal('newjeans_minjai')
-
-    rclpy.spin(action_client)
-
-    rclpy.shutdown()
+    try:
+        action_client.send_goal('newjeans_minjai')
+        rclpy.spin(action_client)
+    finally:
+        action_client.destroy_node()
+        rclpy.shutdown()
 
 
 if __name__ == '__main__':

@@ -8,7 +8,7 @@ module msg_interface {
     @verbatim (language="comment", text=
       " Define the goal")
     struct AString_Goal {
-      string input_string;
+      string input_strg;
     };
     struct AString_Result {
       @verbatim (language="comment", text=

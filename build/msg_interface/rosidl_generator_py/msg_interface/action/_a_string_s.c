@@ -53,8 +53,8 @@ bool msg_interface__action__a_string__goal__convert_from_py(PyObject * _pymsg, v
     assert(strncmp("msg_interface.action._a_string.AString_Goal", full_classname_dest, 43) == 0);
   }
   msg_interface__action__AString_Goal * ros_message = _ros_message;
-  {  // input_string
-    PyObject * field = PyObject_GetAttrString(_pymsg, "input_string");
+  {  // input_strg
+    PyObject * field = PyObject_GetAttrString(_pymsg, "input_strg");
     if (!field) {
       return false;
     }
@@ -64,7 +64,7 @@ bool msg_interface__action__a_string__goal__convert_from_py(PyObject * _pymsg, v
       Py_DECREF(field);
       return false;
     }
-    rosidl_runtime_c__String__assign(&ros_message->input_string, PyBytes_AS_STRING(encoded_field));
+    rosidl_runtime_c__String__assign(&ros_message->input_strg, PyBytes_AS_STRING(encoded_field));
     Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
@@ -90,17 +90,17 @@ PyObject * msg_interface__action__a_string__goal__convert_to_py(void * raw_ros_m
     }
   }
   msg_interface__action__AString_Goal * ros_message = (msg_interface__action__AString_Goal *)raw_ros_message;
-  {  // input_string
+  {  // input_strg
     PyObject * field = NULL;
     field = PyUnicode_DecodeUTF8(
-      ros_message->input_string.data,
-      strlen(ros_message->input_string.data),
+      ros_message->input_strg.data,
+      strlen(ros_message->input_strg.data),
       "replace");
     if (!field) {
       return NULL;
     }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "input_string", field);
+      int rc = PyObject_SetAttrString(_pymessage, "input_strg", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

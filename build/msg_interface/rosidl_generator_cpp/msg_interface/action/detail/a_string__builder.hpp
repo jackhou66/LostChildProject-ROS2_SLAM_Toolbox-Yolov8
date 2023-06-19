@@ -20,15 +20,15 @@ namespace action
 namespace builder
 {
 
-class Init_AString_Goal_input_string
+class Init_AString_Goal_input_strg
 {
 public:
-  Init_AString_Goal_input_string()
+  Init_AString_Goal_input_strg()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::msg_interface::action::AString_Goal input_string(::msg_interface::action::AString_Goal::_input_string_type arg)
+  ::msg_interface::action::AString_Goal input_strg(::msg_interface::action::AString_Goal::_input_strg_type arg)
   {
-    msg_.input_string = std::move(arg);
+    msg_.input_strg = std::move(arg);
     return std::move(msg_);
   }
 
@@ -47,7 +47,7 @@ template<>
 inline
 auto build<::msg_interface::action::AString_Goal>()
 {
-  return msg_interface::action::builder::Init_AString_Goal_input_string();
+  return msg_interface::action::builder::Init_AString_Goal_input_strg();
 }
 
 }  // namespace msg_interface

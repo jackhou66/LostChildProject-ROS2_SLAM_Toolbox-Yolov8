@@ -1,6 +1,7 @@
 package.xml
 setup.cfg
 setup.py
+object_detection/TEST_string_action_client.py
 object_detection/__init__.py
 object_detection/object_detection.py
 object_detection.egg-info/PKG-INFO
