@@ -70,6 +70,8 @@ slam toolbox는 map -> odometry
 
 ![Screenshot from 2023-06-19 16-06-22](https://github.com/yumjunstar/LostChildProject-ROS2_SLAM_Toolbox-Yolov8/assets/24960675/fa2a6101-7c68-452d-94bd-5ec47912fecb)
 
+https://youtu.be/pjiBiYbcrg0
+
 # 참고 자료
 
 ## Odometry 
